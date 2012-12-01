@@ -162,8 +162,11 @@ _1CTestRunnerForm = new (ScriptForm.extend({
 	},
 	
 	getConnectString: function () {
-	    //Артур: Нужно брать из профайла CmdLine\UserName и CmdLine\UserPassword
-		return InfoBaseConnectionString();
+	    //Артур: Нужно брать из профайmла CmdLine\UserName и CmdLine\UserPassword
+		var connStr = InfoBaseConnectionString();
+		connStr += 'Usr="' + profileRoot.getValue("CmdLine/UserName") + '";';
+		connStr += 'Pwd="' + profileRoot.getValue("CmdLine/UserPassword") + '";';
+		return connStr;
 	},
 	
 	/* Обработчики событий формы. */
