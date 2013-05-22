@@ -81,6 +81,8 @@ TestRunnerForm1C = new (ScriptForm.extend({
 	formFolderPath : stdlib.getSnegopatMainFolder() + "scripts\\1CUnit_my\\",
 		//stdlib.getSnegopatMainFolder() + "user\\1CUnit\\
 		
+	testsPath : "",
+	
 	construct: function () {	
 		
         this._super(SelfScript.fullPath.replace(/js$/, 'ssf'));                
@@ -122,6 +124,8 @@ TestRunnerForm1C = new (ScriptForm.extend({
 	
 	LoadAllTests: function (path) {
 		this.testConnect();
+		
+		testsPath = path;
 		
 		this.open();
 		
@@ -253,6 +257,36 @@ TestRunnerForm1C = new (ScriptForm.extend({
 		this.testRunner = null;
 		this.v8 = null;
 	},
+	
+	LoadAllTestWithSelectFolderPath: function() {
+		path = this.SelectFolderPath()
+		if(path != null)
+			this.LoadAllTests(path);
+	},
+
+	SelectFolderPath : function () {
+	
+		ДиалогВыбораКаталога = v8New("ДиалогВыбораФайла", РежимДиалогаВыбораФайла.ВыборКаталога);
+		ДиалогВыбораКаталога.Каталог = testsPath;
+
+        if(ДиалогВыбораКаталога.Выбрать() != false) {
+			
+			testsPath = ДиалогВыбораКаталога.Каталог;
+			return testsPath;
+		}
+		
+				//ДиалогОткрытияФайла=v8New("ДиалогВыбораФайла", РежимДиалогаВыбораФайла.Открытие)
+				//ДиалогОткрытияФайла.ПолноеИмяФайла = ""+Control.val.Значение;
+				//ДиалогОткрытияФайла.Заголовок = "Выберите внешнюю обработку"
+				//if(ДиалогОткрытияФайла.Выбрать()==false) {
+				//	
+				//} else {
+				//	Control.val.Значение = ДиалогОткрытияФайла.ПолноеИмяФайла;
+				//}
+		
+		return null;
+		
+	},
 		
 	getTestRunnerFilepath: function () {
 		return this.formFolderPath + "UnitTestRunner.epf"
@@ -275,12 +309,12 @@ TestRunnerForm1C = new (ScriptForm.extend({
 		//Message("test Form_OnOpen 2");
 	},
 	
-	ЗагрузитьВсеТесты_Click: function(Button) {
+	ЗагрузитьНаборыТестов_Click: function(Button) {
 		//Message("ЗагрузитьВсеТесты_Нажатие");
-		this.LoadAllTests();
+		this.LoadAllTestWithSelectFolderPath();
 	},
 	
-	ЗагрузитьТестКейс_Нажатие: function(button) {
+	ЗагрузитьОтдельныйТестовыйНабор_Нажатие: function(button) {
 		Message("ЗагрузитьТесты_Нажатие");
 		this.LoadTest();
 	},
