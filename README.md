@@ -1,8 +1,8 @@
-# 1CUnit - Set of unit testing tools for 1C:Enterprise 8 platform
+# xUnit For 1C - Set of unit testing tools for 1C:Enterprise 8 platform
 
-1CUnit is a set of unit testing tools for 1C:Enterprise 8 platform (http://v8.1c.ru).
+xUnit For 1C is a set of unit testing tools for 1C:Enterprise 8 platform (http://v8.1c.ru).
 
-1CUnit - набор инструментов для выполнения юнит-тестирования (модульного тестирования) в 1С:Предприятии 8.
+xUnit для 1С - набор инструментов для выполнения юнит-тестирования (модульного тестирования) в 1С:Предприятии 8.
 
 ## Что к чему
 
@@ -31,6 +31,6 @@ TestRunner.js пока находится в состоянии "proof of concep
 
 1. Если вы занимаетесь разработкой на 1С:Преприятии 8 пробуйте писать и выполнять тесты при помощи 1CUnit, сообщайте нам об обнаруженных ошибках, пишите пожелания. Для управления сообщениями об ошибках и пожеланиями мы используем [баг-трекер GitHub'а](https://github.com/kuntashov/1CUnit/issues?sort=created&state=open).
 
-2. Если у вас есть время разобраться в исходном коде, вы можете взять на себя реализацию одной из  [открытых задач](https://github.com/kuntashov/1CUnit/issues?sort=created&state=open).
+2. Если у вас есть время разобраться в исходном коде, вы можете взять на себя реализацию одной из  [открытых задач](https://github.com/kuntashov/xUnitFor1C/issues?sort=created&state=open).
 
-3. Если вы уже используете 1CUnit на практике, напишите об этом статью, например, на [Инфостарте](http://infostart.ru).
+3. Если вы уже используете xUnit For 1C на практике, напишите об этом статью, например, на [Инфостарте](http://infostart.ru).
