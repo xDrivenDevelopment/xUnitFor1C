@@ -1,0 +1,60 @@
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+task xUnitFor1C(type:Exec) {
+//Пример для нашей тестовой базы
+//"C:\Program Files (x86)\1cv82\common\1cestart.exe" /DisableStartupMessages /Execute \\ws-msk-a1934\Обмен\1CUnit\UnitTestRunner.epf /S "as-msk-a6122\im_test" /Out "E:\ТестыИМ\log.txt"  /C "Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования" /LogUI
+// или для 8.3
+//"C:\Program Files (x86)\1cv8\8.3.3.721\bin\1cv8c.exe" /DisableStartupMessages /Execute E:\ТестыИМ\UnitTestRunner.epf /S "as-msk-a6122:3541\im_test" /Out "E:\ТестыИМ\Тесты\log.txt"  /C "Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования" /LogUI
+
+   //catalog="C:/Program Files (x86)/1cv82/"
+   //version="8.2.19.73"
+   //version="8.2.18.82"
+   //executable(catalog+version+"/bin/1cv8.exe")
+println '""Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\Тесты управляемое приложение\\selftests;ЗавершитьРаботуПослеТестирования""'
+
+   bin1cv8 = 'C:\\Program Files (x86)\\1cv82\\common\\1cestart.exe'
+
+//   executable(bin1cv8)
+//   args  "/DisableStartupMessages", "/Execute", 'C:\\Обмен\\1CUnit\\UnitTestRunner.epf', "/F", 'W:\\Конфигурации\\Разработка\\1CUnit\\ТестоваяБаза', "/Out", 'F:\\xUnitFor1C_log.txt', "/C", ""Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\Тесты управляемое приложение\\selftests;ЗавершитьРаботуПослеТестирования"", "/LogUI"
+	   //args "/F", "Z:\\v.kazmin\\test\\msfo\\msfo", "/N", "autotest", "/Execute", "Z:\\Public\\Downloads\\MSFO\\test_4.epf", "/Out", "log.xml"
+
+   doLast {
+//      echoLog('F:\\xUnitFor1C_log.txt') //echoLog("Log.xml")
+   }
+}
+
+// http://infostart.ru/ajax/comment_pub.php?t=102620&c=12
+task test4(type:Exec) {
+   catalog="C:/Program Files (x86)/1cv82/"
+   version="8.2.19.73"
+   //version="8.2.18.82"
+   executable(catalog+version+"/bin/1cv8.exe")
+   args "/F", "Z:\\v.kazmin\\test\\msfo\\msfo", "/N", "autotest", "/Execute", "Z:\\Public\\Downloads\\MSFO\\test_4.epf", "/Out", "log.xml"
+   doLast {
+      echoLog("Log.xml")
+   }
+}
+
+void echoLog(String name) {
+
+   def f = new File(name)
+   def parsedLogXml = (new XmlParser()).parseText(f.getText('utf8'))
+   //def parsedLogXml = (new XmlParser()).parseText(f.getText('cp1251'))
+   def succ = true
+   parsedLogXml.test.each{ test ->
+      println "Name : " +  test.@name + ", result : " + test.result.@value
+      if(test.result.@value!='true') {
+         succ = false
+         println test.message.text()
+         println test.error.text()
+      }
+   }
+   
+   if(succ!=true) {
+      assert false: "Error test"
+   }
+}
