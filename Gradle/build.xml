@@ -1,0 +1,318 @@
+﻿<project name="1ctestrunner" default="runTest">
+  <description>Shenja Sosna build1</description>
+  <property environment="env"/>
+  <!-- Свойство builds указывает на полный каталог к сборочной директории, для jenkins хранится в переменной WORKSPACE если использовать просто ant то можно указывать вручную. -->
+  <!-- <property name="builds" location="C:\Users\admin\.jenkins\workspace\runTest1C"/> -->
+  <property name="builds" value="${basedir}"/>
+  <property name="builds" value="${env.WORKSPACE}"/>
+  <property name="rep" value="tcp://1cterminal1.sigma.local/udk"/>
+  <!-- внешняя обработка для распаковывания файла конфигурации , может применятьса для синхронизации истории хранилища с git, принцип вызова смотри в директиве decompile , обратить внимание, что для запуска использую сервесную базу 1С - полная копия Инструментов разработчика -->
+  <property name="v83unpack" value="${builds}\build\v83unpack\bin\decompile.epf"/> <!-- использую специально латинский адресс, т.к. на разных машинках (win 7, xp) бывают проблемы с кирилицей -->
+  <property name="ibService" value="/F&quot;${builds}\build\ibService&quot;"/>
+  <property name="testRunner" value="${builds}\build\1Cunit\UnitTestRunner.epf"/>
+  <property name="v83pack" value="${builds}\build\v83unpack\bin\decompile.epf"/>
+  <property name="replogin" value="База_Тест"/>
+  <property name="reppassword" value="234567890"/>
+  <!-- Задается пути к базе данных, пользователь и пароль. Для примера везде используется свойство ib , можно указывать как файловую версию, так и сетевую -->
+  <property name="ibname" value="1cserver1\udk_dev_sosna"/>
+  <!-- <property name="ib" value="/F &quot;${ibname}&quot;"/> -->
+  <property name="ib" value="/S&quot;${ibname}&quot;" />
+  <property name="iblogin" value="user_test"/>
+  <property name="ibpassword" value="234567890"/>
+  <property name="1cbin" location="C:\Program Files (x86)\1cv82\8.2.17.169\bin\1cv8.exe"/>
+  <property name="src" location="${builds}\src"/>
+  <property name="NBegin" value="1"/>
+  <property name="NEnd" value="1"/>
+  <property name="version" value ="${env.version}"/>
+  <target name="clean">
+      <delete file=".version"/>
+      <delete file=".checkerror"/>
+      <delete file=".updatescf"/>
+      <delete file=".resultcheck"/>
+      <delete file=".report"/>
+      <delete file="out*.txt"/>
+      <echo message="ok"/>
+  </target>
+  <target name="update">
+      <exec executable="${1cbin}" failonerror="true">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/ConfigurationRepositoryF${rep}"/>
+          <arg value="/ConfigurationRepositoryN${replogin}"/>
+          <arg value="/ConfigurationRepositoryP${reppassword}"/>
+          <arg value="/ConfigurationRepositoryUpdateCfg"/>
+          <arg value="-force /UpdateDBCfg"/>
+          <arg value="/outOutUpdate.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="OutUpdate.txt" encoding="utf-8">
+      </loadfile>
+      <echo message="${checkerror}" encoding="cp866"/>
+      <echo message="ok"/>
+  </target>
+  <target name="check">
+      <exec executable="${1cbin}" output=".resultcheck" failonerror="true">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/ConfigurationRepositoryF${rep}"/>
+          <arg value="/ConfigurationRepositoryN${replogin}"/>
+          <arg value="/ConfigurationRepositoryP${reppassword}"/>
+          <arg value="/CheckConfig"/>
+          <arg value="-IncorrectReferences"/>
+          <arg value="-Client"/>
+          <arg value="-ClientServer"/>
+          <arg value="-ExternalConnectionServer"/>
+          <arg value="-ExternalConnection"/>
+          <arg value="-Server"/>
+          <arg value="-DistributiveModules"/>
+          <arg value="-ConfigLogicalIntegrity"/>
+          <arg value="/DumpResult .checkerror"/>
+      </exec>
+      <loadfile property="checkerror" srcFile=".checkerror" encoding="utf-8">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+      <echo message="ok"/>
+  </target>
+  <target name="build" depends="check,init2" unless="version_present">
+      <exec executable="${1cbin}" output=".resultcheck" failonerror="true">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/ConfigurationRepositoryF${rep}"/>
+          <arg value="/ConfigurationRepositoryN${replogin}"/>
+          <arg value="/ConfigurationRepositoryP${reppassword}"/>
+          <arg value="/CreateDistributionFiles -cffile ${version}\1cv8.cf -cfufile ${version}\1cv8.cfu"/>
+          <arg value="${updatessubcf}"/>
+          <arg value="${updatescf}"/>
+      </exec>
+      <sleep seconds="2"/>
+      <echo message="ok"/>
+  </target>
+  <target name="report">
+      <exec executable="${1cbin}">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/ConfigurationRepositoryF${rep}"/>
+          <arg value="/ConfigurationRepositoryN${replogin}"/>
+          <arg value="/ConfigurationRepositoryP${reppassword}"/>
+          <arg value="/ConfigurationRepositoryReportreport.mxl -GroupByObject -GroupByComment"/>
+          <arg value="/outoutReport.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="outDumpCfg.txt" encoding="utf-8">
+      </loadfile>
+      <echo message="$checkerror"/>
+      <loadfile property="checkerror" srcFile="outReport.txt" encoding="utf-8">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+  <target name="dumpcfg">
+      <mkdir dir="bin"/>
+      <exec executable="${1cbin}">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/ConfigurationRepositoryF${rep}"/>
+          <arg value="/ConfigurationRepositoryN${replogin}"/>
+          <arg value="/ConfigurationRepositoryP${reppassword}"/>
+          <arg value="/ConfigurationRepositoryDumpCfg${builds}/bin/1cv8.cf"/>
+          <arg value="/outoutDumpCfg.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="outDumpCfg.txt" encoding="cp1251">
+      </loadfile>
+      <echo message="${checkerror}" encoding="cp866"/>
+      <loadfile property="checkerror" srcFile="outDumpCfg.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="успешно|success"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+  <target name="loadcfg">
+      <exec executable="${1cbin}">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/LoadCfg${builds}/bin/1cv8.cf"/>
+          <arg value="/outoutLoadCfg.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="outLoadCfg.txt" encoding="cp1251">
+      </loadfile>
+      <echo message="${checkerror}"  encoding="cp866"/>
+      <loadfile property="checkerror" srcFile="outLoadCfg.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="успешно|success"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+
+      <exec executable="${1cbin}">
+          <arg value="CONFIG"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/UpdateDBCfg${builds}/bin/1cv8.cf -Server"/>
+          <arg value="/outoutUpdateDBCfg.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="outUpdateDBCfg.txt" encoding="cp1251">
+      </loadfile>
+      <echo message="${checkerror}" encoding="cp1251"/>
+      <loadfile property="checkerror" srcFile="outUpdateDBCfg.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="успешно|success"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+
+  </target>
+  <target name="decompile">
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ibService}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/C&quot;pathToCF;${builds}\bin\1cv8.cf;auto;decompile;out;${builds}\out.txt;pathOut;${builds}\src\;&quot;" />
+          <arg value="/Execute&quot;${v83unpack}&quot;"/>
+          <arg value="/outoutDecompile.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+
+  <target name="decompileversion">
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ibService}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/C&quot;pathToCF;${builds}\bin\v${version}.cf;auto;decompile;out;${builds}\out.txt;pathOut;${builds}\src\;&quot;" />
+          <arg value="/Execute&quot;${v83unpack}&quot;"/>
+          <arg value="/outoutDecompile.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+
+<target name="syncrepo">
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ibService}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/C&quot;pathRepo;${builds}\1cv8ddb.1CD;auto;debug;sync1ctogit;out;${builds}\out.txt;pathOut;${builds}\src\;maxVersions;1;&quot;" />
+          <arg value="/Execute&quot;${v83unpack}&quot;"/>
+          <arg value="/LogUI"/>
+          <arg value="/outoutSync.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+      <loadfile property="synclog" srcFile="outSync.txt" encoding="cp1251">
+      </loadfile>
+      <echo message="${synclog}" encoding="cp1251"/>
+      <echo message="ok"/>
+  </target>
+
+  <target name="t">
+    <loadfile property="synclog" srcFile="outSync.txt" encoding="cp1251">
+     </loadfile>
+      <echo message="${synclog}" encoding="cp1251"/>
+      <echo message="ok"/>
+  </target>
+
+  <target name="runTest">
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ib}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/DisableStartupMessages"/>
+          <arg value=" /C &quot;Тесты_Команда_Тестировать;${builds}/Tests;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;${builds}/out.txt;Тесты_Команда_КаталогОтчетов;${builds}/test-reports;&quot;&quot;"/>
+          <arg value="/Execute&quot;${testRunner}&quot;" />
+          <arg value="/outrunTest.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+
+  <target name="runTest1">
+    <echo file="test.txt" append="false">/C &quot;Тесты_Команда_Тестировать;${builds}/Tests&quot;
+    /Execute &quot;${testRunner}&quot;
+    /out runTest.txt
+    /DisableStartupMessages
+    </echo>
+
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ibService}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/DisableStartupMessages"/>
+          <arg value="/Execute&quot;${testRunner}&quot;" />
+          <!-- <arg value="/out runTest.txt"/> -->
+           <arg value=" /C&quot;Тесты_Команда_Тестировать;${builds}/Tests;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;${builds}/testReport;&quot;&quot;"/>
+
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+
+  <target name="init2">
+    <echo message = "ok"/>
+    <mkdir dir="${builds}/test-reports" />
+    <mkdir dir="${builds}/Tests" />
+    <echo message = "ok"/>
+  </target>
+</project>
