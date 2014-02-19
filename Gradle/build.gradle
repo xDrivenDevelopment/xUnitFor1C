@@ -7,8 +7,8 @@ task xUnitFor1C(type:Exec) {
 
 		//println '""Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\Тесты управляемое приложение\\selftests;ЗавершитьРаботуПослеТестирования""'
 
-   catalog="C:/Program Files (x86)/1cv82/"
-   version="8.2.19.73"
+   def catalog="C:/Program Files (x86)/1cv82/"
+   def version="8.2.19.73"
    executable(catalog+version+"/bin/1cv8.exe")
 
    //bin1cv8 = 'C:\\Program Files (x86)\\1cv82\\common\\1cestart.exe'
@@ -17,7 +17,7 @@ task xUnitFor1C(type:Exec) {
 
 	   //F:\xUnitFor1C_log.txt 
    doLast {
-        log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
+        def log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
 		//log.eachLine { println it}
       echoLog('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
    }
@@ -25,8 +25,8 @@ task xUnitFor1C(type:Exec) {
 
 // http://infostart.ru/ajax/comment_pub.php?t=102620&c=12
 task test4(type:Exec) {
-   catalog="C:/Program Files (x86)/1cv82/"
-   version="8.2.19.73"
+   def catalog="C:/Program Files (x86)/1cv82/"
+   def version="8.2.19.73"
    //version="8.2.18.82"
    executable(catalog+version+"/bin/1cv8.exe")
    args "/F", "Z:\\v.kazmin\\test\\msfo\\msfo", "/N", "autotest", "/Execute", "Z:\\Public\\Downloads\\MSFO\\test_4.epf", "/Out", "log.xml"
@@ -38,7 +38,7 @@ task test4(type:Exec) {
 void echoLog(String name) {
 
    def f = new File(name)
-   def parsedLogXml = (new XmlParser()).parseText(f.getText('utf8'))
+   def parsedLogXml = (new XmlParser()).parseText(f.getText('utf-8'))
    //def parsedLogXml = (new XmlParser()).parseText(f.getText('cp1251'))
    def succ = true
    parsedLogXml.testcase.each{ test ->
