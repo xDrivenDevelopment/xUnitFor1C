@@ -1,29 +1,25 @@
-task hello {
-    doLast {
-        println 'Hello world!'
-    }
-}
+	//Ïðèìåð äëÿ íàøåé òåñòîâîé áàçû
+	//"C:\Program Files (x86)\1cv82\common\1cestart.exe" /DisableStartupMessages /Execute \\ws-msk-a1934\Îáìåí\1CUnit\UnitTestRunner.epf /S "as-msk-a6122\im_test" /Out "E:\ÒåñòûÈÌ\log.txt"  /C "Òåñòû_Êîìàíäà_Òåñòèðîâàòü;E:\ÒåñòûÈÌ\Òåñòû;ÇàâåðøèòüÐàáîòóÏîñëåÒåñòèðîâàíèÿ" /LogUI
+	// èëè äëÿ 8.3
+	//"C:\Program Files (x86)\1cv8\8.3.3.721\bin\1cv8c.exe" /DisableStartupMessages /Execute E:\ÒåñòûÈÌ\UnitTestRunner.epf /S "as-msk-a6122:3541\im_test" /Out "E:\ÒåñòûÈÌ\Òåñòû\log.txt"  /C "Òåñòû_Êîìàíäà_Òåñòèðîâàòü;E:\ÒåñòûÈÌ\Òåñòû;ÇàâåðøèòüÐàáîòóÏîñëåÒåñòèðîâàíèÿ" /LogUI
 
 task xUnitFor1C(type:Exec) {
-//à¨¬¥à ¤«ï ­ è¥© â¥áâ®¢®© ¡ §ë
-//"C:\Program Files (x86)\1cv82\common\1cestart.exe" /DisableStartupMessages /Execute \\ws-msk-a1934\Ž¡¬¥­\1CUnit\UnitTestRunner.epf /S "as-msk-a6122\im_test" /Out "E:\’¥áâëˆŒ\log.txt"  /C "’¥áâë_Š®¬ ­¤ _’¥áâ¨à®¢ âì;E:\’¥áâëˆŒ\’¥áâë;‡ ¢¥àè¨âì ¡®âã®á«¥’¥áâ¨à®¢ ­¨ï" /LogUI
-// ¨«¨ ¤«ï 8.3
-//"C:\Program Files (x86)\1cv8\8.3.3.721\bin\1cv8c.exe" /DisableStartupMessages /Execute E:\’¥áâëˆŒ\UnitTestRunner.epf /S "as-msk-a6122:3541\im_test" /Out "E:\’¥áâëˆŒ\’¥áâë\log.txt"  /C "’¥áâë_Š®¬ ­¤ _’¥áâ¨à®¢ âì;E:\’¥áâëˆŒ\’¥áâë;‡ ¢¥àè¨âì ¡®âã®á«¥’¥áâ¨à®¢ ­¨ï" /LogUI
 
-   //catalog="C:/Program Files (x86)/1cv82/"
-   //version="8.2.19.73"
-   //version="8.2.18.82"
-   //executable(catalog+version+"/bin/1cv8.exe")
-println '""’¥áâë_Š®¬ ­¤ _’¥áâ¨à®¢ âì;C:\\Ž¡¬¥­\\1CUnit\\’¥áâë ã¯à ¢«ï¥¬®¥ ¯à¨«®¦¥­¨¥\\selftests;‡ ¢¥àè¨âì ¡®âã®á«¥’¥áâ¨à®¢ ­¨ï""'
+		//println '""Òåñòû_Êîìàíäà_Òåñòèðîâàòü;C:\\Îáìåí\\1CUnit\\Òåñòû óïðàâëÿåìîå ïðèëîæåíèå\\selftests;ÇàâåðøèòüÐàáîòóÏîñëåÒåñòèðîâàíèÿ""'
 
-   bin1cv8 = 'C:\\Program Files (x86)\\1cv82\\common\\1cestart.exe'
+   catalog="C:/Program Files (x86)/1cv82/"
+   version="8.2.19.73"
+   executable(catalog+version+"/bin/1cv8.exe")
 
-//   executable(bin1cv8)
-//   args  "/DisableStartupMessages", "/Execute", 'C:\\Ž¡¬¥­\\1CUnit\\UnitTestRunner.epf', "/F", 'W:\\Š®­ä¨£ãà æ¨¨\\ §à ¡®âª \\1CUnit\\’¥áâ®¢ ï § ', "/Out", 'F:\\xUnitFor1C_log.txt', "/C", ""’¥áâë_Š®¬ ­¤ _’¥áâ¨à®¢ âì;C:\\Ž¡¬¥­\\1CUnit\\’¥áâë ã¯à ¢«ï¥¬®¥ ¯à¨«®¦¥­¨¥\\selftests;‡ ¢¥àè¨âì ¡®âã®á«¥’¥áâ¨à®¢ ­¨ï"", "/LogUI"
-	   //args "/F", "Z:\\v.kazmin\\test\\msfo\\msfo", "/N", "autotest", "/Execute", "Z:\\Public\\Downloads\\MSFO\\test_4.epf", "/Out", "log.xml"
+   //bin1cv8 = 'C:\\Program Files (x86)\\1cv82\\common\\1cestart.exe'
+   //executable(bin1cv8)
+   args  "/DisableStartupMessages", "/Execute", '"C:\\Îáìåí\\1CUnit\\UnitTestRunner.epf"', "/F", '"W:\\Êîíôèãóðàöèè\\Ðàçðàáîòêà\\1CUnit\\ÒåñòîâàÿÁàçà"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Òåñòû_Êîìàíäà_Òåñòèðîâàòü;C:\\Îáìåí\\1CUnit\\984F~1\\SELFTE~1;ÇàâåðøèòüÐàáîòóÏîñëåÒåñòèðîâàíèÿ;Òåñòû_Êîìàíäà_ÔîðìàòÎò÷åòà;xml;out;C:\\Îáìåí\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
 
+	   //F:\xUnitFor1C_log.txt 
    doLast {
-//      echoLog('F:\\xUnitFor1C_log.txt') //echoLog("Log.xml")
+        log = file('C:\\Îáìåí\\1CUnit\\984F~1\\SELFTE~1\\ëîã_òåñòèðîâàíèÿ.xml')
+		//log.eachLine { println it}
+      echoLog('C:\\Îáìåí\\1CUnit\\984F~1\\SELFTE~1\\ëîã_òåñòèðîâàíèÿ.xml')
    }
 }
 
@@ -45,13 +41,14 @@ void echoLog(String name) {
    def parsedLogXml = (new XmlParser()).parseText(f.getText('utf8'))
    //def parsedLogXml = (new XmlParser()).parseText(f.getText('cp1251'))
    def succ = true
-   parsedLogXml.test.each{ test ->
-      println "Name : " +  test.@name + ", result : " + test.result.@value
-      if(test.result.@value!='true') {
-         succ = false
-         println test.message.text()
-         println test.error.text()
-      }
+   parsedLogXml.testcase.each{ test ->
+   //parsedLogXml.test.each{ test ->
+      println "classname:"  +  test.@classname + ", Name : " +  test.@name + ", result : " + test.result.@value
+      //if(test.result.@value!='true') {
+      //   succ = false
+      //   println test.message.text()
+      //   println test.error.text()
+      //}
    }
    
    if(succ!=true) {

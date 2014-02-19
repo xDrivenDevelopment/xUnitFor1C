@@ -163,3 +163,4 @@ pip-log.txt
 .DS_Store
 Gradle/.gradle/
 Gradle/Ant/.gradle/
+Тесты управляемое приложение/selftests/лог_тестирования.mxl

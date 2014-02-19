@@ -1,1 +1,1 @@
-gradle -q xUnitFor1C
+gradle -q xUnitFor1C --debug --info
