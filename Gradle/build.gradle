@@ -17,10 +17,49 @@ task xUnitFor1C(type:Exec) {
 
 	   //F:\xUnitFor1C_log.txt 
    doLast {
-        log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
+        //def log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
 		//log.eachLine { println it}
-      echoLog('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
+      verifyTestsLog('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
    }
+}
+
+void verifyTestsLog (xmlLogPath){
+    def f = new File(xmlLogPath)
+    //def parsedLogXml = (new XmlParser()).parseText(f.getText('utf-8'))
+    def xmlString = getUTF8FileTextWithoutBOM(f)
+
+    //void verifyTestsLog (xmlString){
+    def testFolders = new XmlParser().parseText(xmlString)
+    def success = testFolders.attribute("failures") == "0" //true
+
+    println "folder count:"  +  testFolders.attribute("tests") + ", time : " + testFolders.attribute("time")
+
+    testFolders.testsuite.each{ testFolder ->
+        println "folder name:"  +  testFolder.@name
+
+        testFolder.testsuite.each{ testsuite ->
+            println "\ttestsuite name:"  +  testsuite.@name
+
+            testsuite.testcase.each{ testcase ->
+                println "\t\ttestcase name:"  +  testcase.@name + ", status : " + testcase.@status + ", time : " + testcase.@time
+                //println "\t\ttestcase name:"  +  testcase.@name + ", classname : " + testcase.@classname + ", status : " + testcase.@status + ", time : " + testcase.@time
+            }
+        }
+    }
+
+    if(!success) {
+        assert false: "Error test"
+    }
+
+}
+
+String getUTF8FileTextWithoutBOM(file) {
+    def xmlString = file.getText('utf8')
+    def BOM = (char)65279
+    if (xmlString[0] == BOM) {
+        return xmlString.replace( ''+BOM, ' ').substring(1)
+    }
+    else { return xmlString }
 }
 
 // http://infostart.ru/ajax/comment_pub.php?t=102620&c=12
