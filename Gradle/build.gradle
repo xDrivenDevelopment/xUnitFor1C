@@ -57,7 +57,7 @@ String getUTF8FileTextWithoutBOM(file) {
     def xmlString = file.getText('utf8')
     def BOM = (char)65279
     if (xmlString[0] == BOM) {
-        return xmlString.replace( ''+BOM, ' ').substring(1)
+        return xmlString.substring(1)
     }
     else { return xmlString }
 }
