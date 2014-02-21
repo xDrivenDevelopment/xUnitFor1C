@@ -161,3 +161,13 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+Gradle/.gradle/1.11/taskArtifacts/cache.properties
+Gradle/.gradle/1.11/taskArtifacts/cache.properties.lock
+Gradle/.gradle/1.11/taskArtifacts/fileSnapshots.bin
+Gradle/.gradle/1.11/taskArtifacts/taskArtifacts.bin
+Gradle/Ant/.gradle/1.11/taskArtifacts/cache.properties
+Gradle/Ant/.gradle/1.11/taskArtifacts/cache.properties.lock
+Gradle/Ant/.gradle/1.11/taskArtifacts/fileSnapshots.bin
+Gradle/Ant/.gradle/1.11/taskArtifacts/taskArtifacts.bin
+Gradle/gradle-app.setting
+Тесты управляемое приложение/selftests/лог_тестирования.mxl
