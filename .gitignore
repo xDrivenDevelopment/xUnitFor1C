@@ -164,3 +164,4 @@ pip-log.txt
 Gradle/.gradle/
 Gradle/Ant/.gradle/
 Тесты управляемое приложение/selftests/лог_тестирования.mxl
+Gradle/gradle-app.setting

@@ -3,23 +3,53 @@
 	// или для 8.3
 	//"C:\Program Files (x86)\1cv8\8.3.3.721\bin\1cv8c.exe" /DisableStartupMessages /Execute E:\ТестыИМ\UnitTestRunner.epf /S "as-msk-a6122:3541\im_test" /Out "E:\ТестыИМ\Тесты\log.txt"  /C "Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования" /LogUI
 
-task xUnitFor1C(type:Exec) {
+task xUnitFor1C {
+	//task xUnitFor1C << {
+	//task xUnitFor1C(type:Exec) {
+	//    println System.properties['file.encoding']
+
+def Properties props = new Properties()
+	InputStream inputStream = new FileInputStream("./mygradle.properties")
+	InputStreamReader isr = new InputStreamReader(inputStream, "cp1251") //"UTF-8")
+	props.load(isr);
 
 		//println '""Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\Тесты управляемое приложение\\selftests;ЗавершитьРаботуПослеТестирования""'
 
-   def catalog="C:/Program Files (x86)/1cv82/"
-   def version="8.2.19.73"
-   executable(catalog+version+"/bin/1cv8.exe")
+//println props.catalog1C
+println props.xUnitRunner
+
+   //def catalog="C:/Program Files (x86)/1cv82/"
+   //def version="8.2.19.73"
 
    //bin1cv8 = 'C:\\Program Files (x86)\\1cv82\\common\\1cestart.exe'
    //executable(bin1cv8)
-   args  "/DisableStartupMessages", "/Execute", '"C:\\Обмен\\1CUnit\\UnitTestRunner.epf"', "/F", '"W:\\Конфигурации\\Разработка\\1CUnit\\ТестоваяБаза"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
+   //args  "/DisableStartupMessages", "/Execute", '"C:\\Обмен\\1CUnit\\UnitTestRunner.epf"', "/F", '"W:\\Конфигурации\\Разработка\\1CUnit\\ТестоваяБаза"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
 
-	   //F:\xUnitFor1C_log.txt 
+   //executable('"'+catalog1C+version1C+"/bin/1cv8.exe"+'"')
+   //args  "/DisableStartupMessages", "/Execute", xUnitRunner, "/F", mainBase1C, "/Out", xUnitLogFile, '/C', '"Тесты_Команда_Тестировать;'+testsFolder+';ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;'+xUnitLogFolder+';"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
+	def cmdLine = ""
+	props.with {
+		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "/DisableStartupMessages", "/Execute", xUnitRunner, "/F", mainBase1C, "/Out", xUnitLogFile, 
+		'/C', '"Тесты_Команда_Тестировать;'+testsFolder+';ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;'+xUnitLogFolder+';"', 
+		"/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"]
+		//println cmdLine
+	}
+
+	def proc = cmdLine.execute()
+	proc.waitFor()
+
+	//["executable", "first with space", "second"].execute()
+
+ //  args  "/DisableStartupMessages", "/Execute", xUnitRunner, "/F", '"F:\\1CUnitBase"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
+ //  args  "/DisableStartupMessages", "/Execute", '"C:\\Обмен\\1CUnit\\UnitTestRunner.epf"', "/F", '"F:\\1CUnitBase"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
+ //
+
+	//   //F:\xUnitFor1C_log.txt 
+
    doLast {
-        //def log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
-		//log.eachLine { println it}
-      verifyTestsLog('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
+	        //def log = file('C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
+			//log.eachLine { println it}
+      verifyTestsLog("${props.testsFolder}\\лог_тестирования.xml") //'C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
    }
 }
 
@@ -34,21 +64,21 @@ void verifyTestsLog (xmlLogPath){
 
     println "folder count:"  +  testFolders.attribute("tests") + ", time : " + testFolders.attribute("time")
 
-    testFolders.testsuite.each{ testFolder ->
-        println "folder name:"  +  testFolder.@name
-
-        testFolder.testsuite.each{ testsuite ->
-            println "\ttestsuite name:"  +  testsuite.@name
-
-            testsuite.testcase.each{ testcase ->
-                println "\t\ttestcase name:"  +  testcase.@name + ", status : " + testcase.@status + ", time : " + testcase.@time
-                //println "\t\ttestcase name:"  +  testcase.@name + ", classname : " + testcase.@classname + ", status : " + testcase.@status + ", time : " + testcase.@time
-            }
-        }
-    }
+		    //testFolders.testsuite.each{ testFolder ->
+		    //    println "folder name:"  +  testFolder.@name
+		//
+		    //    testFolder.testsuite.each{ testsuite ->
+		    //        println "\ttestsuite name:"  +  testsuite.@name
+		//
+		    //        testsuite.testcase.each{ testcase ->
+		    //            println "\t\ttestcase name:"  +  testcase.@name + ", status : " + testcase.@status + ", time : " + testcase.@time
+		    //            //println "\t\ttestcase name:"  +  testcase.@name + ", classname : " + testcase.@classname + ", status : " + testcase.@status + ", time : " + testcase.@time
+		    //        }
+		    //    }
+		    //}
 
     if(!success) {
-        assert false: "Error test"
+        assert false: "Есть упавшие тесты"
     }
 
 }
