@@ -1,8 +1,3 @@
-	//Пример для нашей тестовой базы
-	//"C:\Program Files (x86)\1cv82\common\1cestart.exe" /DisableStartupMessages /Execute \\ws-msk-a1934\Обмен\1CUnit\UnitTestRunner.epf /S "as-msk-a6122\im_test" /Out "E:\ТестыИМ\log.txt"  /C "Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования" /LogUI
-	// или для 8.3
-	//"C:\Program Files (x86)\1cv8\8.3.3.721\bin\1cv8c.exe" /DisableStartupMessages /Execute E:\ТестыИМ\UnitTestRunner.epf /S "as-msk-a6122:3541\im_test" /Out "E:\ТестыИМ\Тесты\log.txt"  /C "Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования" /LogUI
-
 def props
 
 task xUnitFor1C {
@@ -18,12 +13,9 @@ task xUnitFor1C {
 
 def checkXmlUnitReport(props) {
 	println "выполняю checkXmlUnitReport "
-	        //def log = file('F:\\лог_тестирования.xml')
-			//log.eachLine { println it}
-    verifyTestsLog("${props.testsFolder}\\лог_тестирования.xml") //'C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестирования.xml')
-}
 
-//xUnitFor1C_82.finalizedBy checkXmlUnitReport
+    verifyTestsLog("${props.testsFolder}\\лог_тестирования.xml")
+}
 
 def xUnitFor1C (propsDir){
 
@@ -35,19 +27,14 @@ def xUnitFor1C (propsDir){
 	def cmdLine = ""
 	props.with {
 
-		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "enterprise", startMode, "/DisableStartupMessages", "/Execute", AbsPath(xUnitRunner), "/F", AbsPath(mainBase1C), "/Out", xUnitLogFile, 
-		'/C', '"Тесты_Команда_Тестировать;'+AbsPath(testsFolder)+';ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;'+AbsPath(xUnitLogFolder)+';"', "/LogUI", add1CStartOptions
-		] //, "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"]
+		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "enterprise", startMode, "/DisableStartupMessages", "/Execute", AbsPath(xUnitRunner), mainBase1CType, AbsPath(mainBase1C), "/Out", xUnitLogFile, 
+		'/C', '"Тесты_Команда_Тестировать;'+AbsPath(testsFolder)+';ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;'+AbsPath(xUnitLogFolder)+';"', 
+		"/LogUI", add1CStartOptions	]
 	}
 
 	def proc = cmdLine.execute()
 	proc.waitFor()
 
-	//["executable", "first with space", "second"].execute()
-
- //  args  "/DisableStartupMessages", "/Execute", xUnitRunner, "/F", '"F:\\1CUnitBase"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
- //  args  "/DisableStartupMessages", "/Execute", '"C:\\Обмен\\1CUnit\\UnitTestRunner.epf"', "/F", '"F:\\1CUnitBase"', "/Out", '"F:\\xUnitFor1C_log.txt"', '/C', '"Тесты_Команда_Тестировать;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1;ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;C:\\Обмен\\1CUnit\\984F~1\\SELFTE~1/testReport;"', "/LogUI", "/Debug", "/DebuggerURL", "tcp://127.0.0.1:1560"
- //
  	return props
 }
 
@@ -64,9 +51,8 @@ void verifyTestsLog (xmlLogPath){
     //def parsedLogXml = (new XmlParser()).parseText(f.getText('utf-8'))
     def xmlString = getUTF8FileTextWithoutBOM(f)
 
-    //void verifyTestsLog (xmlString){
     def testFolders = new XmlParser().parseText(xmlString)
-    def success = testFolders.attribute("failures") == "0" //true
+    def success = testFolders.attribute("failures") == "0"
 
     println "Количество тестов:"  +  testFolders.attribute("tests") + ", общее время выполнения: " + testFolders.attribute("time")
 
@@ -98,37 +84,4 @@ String getUTF8FileTextWithoutBOM(file) {
         return xmlString.substring(1)
     }
     else { return xmlString }
-}
-
-// http://infostart.ru/ajax/comment_pub.php?t=102620&c=12
-task test4 {
-   //def catalog="C:/Program Files (x86)/1cv82/"
-   //def version="8.2.19.73"
-   ////version="8.2.18.82"
-   //executable(catalog+version+"/bin/1cv8.exe")
-   //args "/F", "Z:\\v.kazmin\\test\\msfo\\msfo", "/N", "autotest", "/Execute", "Z:\\Public\\Downloads\\MSFO\\test_4.epf", "/Out", "log.xml"
-   //doLast {
-   //   echoLog("Log.xml")
-   //}
-}
-
-void echoLog(String name) {
-
-   def f = new File(name)
-   def parsedLogXml = (new XmlParser()).parseText(f.getText('utf-8'))
-   //def parsedLogXml = (new XmlParser()).parseText(f.getText('cp1251'))
-   def succ = true
-   parsedLogXml.testcase.each{ test ->
-   //parsedLogXml.test.each{ test ->
-      println "classname:"  +  test.@classname + ", Name : " +  test.@name + ", result : " + test.result.@value
-      //if(test.result.@value!='true') {
-      //   succ = false
-      //   println test.message.text()
-      //   println test.error.text()
-      //}
-   }
-   
-   if(succ!=true) {
-      assert false: "Error test"
-   }
 }
