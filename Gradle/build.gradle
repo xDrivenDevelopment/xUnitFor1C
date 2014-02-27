@@ -1,15 +1,15 @@
-def props
+def Properties props
 
-task PropertyFileDelete {
-	def propsFile = new File("${propsDir}/mygradle.properties")
+task PropertyFileDelete << {
+	def propsFile = new File("${projectDir}/mygradle.properties")
 	if (propsFile.exists()) propsFile.delete()
 }
 
-task xUnitFor1C (dependsOn: PropertyFileDelete) {
+task xUnitFor1C () {
 	//task xUnitFor1C << {
 	//task xUnitFor1C(type:Exec) {
 	doFirst {
-		props = xUnitFor1C("") //"./82")
+		props = xUnitFor1C(projectDir) //"./82")
 	}
    doLast {
    	checkXmlUnitReport(props)
@@ -24,10 +24,11 @@ def checkXmlUnitReport(props) {
 
 def xUnitFor1C (propsDir){
 
-	def Properties props = new Properties()
-	InputStream inputStream = new FileInputStream("${propsDir}/mygradle.properties")
-	InputStreamReader isr = new InputStreamReader(inputStream, "cp1251") //"UTF-8")
-	props.load(isr);
+	def Properties props = loadProperties(propsDir)
+		//def Properties props = new Properties()
+		//InputStream inputStream = new FileInputStream("${propsDir}/mygradle.properties")
+		//InputStreamReader isr = new InputStreamReader(inputStream, "cp1251") //"UTF-8")
+		//props.load(isr);
 
 	def cmdLine = ""
 	props.with {
@@ -41,6 +42,15 @@ def xUnitFor1C (propsDir){
 	proc.waitFor()
 
  	return props
+}
+
+def loadProperties(propsDir){
+
+	def Properties props = new Properties()
+	InputStream inputStream = new FileInputStream("${propsDir}/mygradle.properties")
+	InputStreamReader isr = new InputStreamReader(inputStream, "cp1251") //"UTF-8")
+	props.load(isr);
+	return props
 }
 
 String AbsPath(path) {
