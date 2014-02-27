@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>5</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM" plugin="multiple-scms@0.3">
+    <scms>
+      <hudson.plugins.git.GitSCM plugin="git@2.0.2">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>F:\1C2Git_repo\</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+            <relativeTargetDir>src</relativeTargetDir>
+          </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        </extensions>
+      </hudson.plugins.git.GitSCM>
+      <hudson.plugins.git.GitSCM plugin="git@2.0.2">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>F:\xUnitFor1C_repo\</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>feature/build_from_gradle</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+            <relativeTargetDir>xUnitFor1C</relativeTargetDir>
+          </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        </extensions>
+      </hudson.plugins.git.GitSCM>
+    </scms>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>@hourly</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.gradle.Gradle plugin="gradle@1.23">
+      <description></description>
+      <switches></switches>
+      <tasks>PropertyFileDelete</tasks>
+      <rootBuildScriptDir>${workspace}/xUnitFor1C/Gradle</rootBuildScriptDir>
+      <buildFile></buildFile>
+      <gradleName>(Default)</gradleName>
+      <useWrapper>false</useWrapper>
+      <makeExecutable>false</makeExecutable>
+      <fromRootBuildScriptDir>false</fromRootBuildScriptDir>
+      <useWorkspaceAsHome>true</useWorkspaceAsHome>
+    </hudson.plugins.gradle.Gradle>
+    <hudson.tasks.BatchFile>
+      <command>chcp 866
+xcopy /Y /J %WORKSPACE%\xUnitFor1C\Gradle\82\mygradle.properties %WORKSPACE%\xUnitFor1C\Gradle\.
+rem echo f |xcopy /Y /J %WORKSPACE%\build\build.xml %WORKSPACE%\build.xml
+rem rem mkdir test-reports</command>
+    </hudson.tasks.BatchFile>
+    <hudson.plugins.gradle.Gradle plugin="gradle@1.23">
+      <description></description>
+      <switches></switches>
+      <tasks>xUnitFor1C</tasks>
+      <rootBuildScriptDir>${workspace}/xUnitFor1C/Gradle</rootBuildScriptDir>
+      <buildFile></buildFile>
+      <gradleName>(Default)</gradleName>
+      <useWrapper>false</useWrapper>
+      <makeExecutable>false</makeExecutable>
+      <fromRootBuildScriptDir>false</fromRootBuildScriptDir>
+      <useWorkspaceAsHome>true</useWorkspaceAsHome>
+    </hudson.plugins.gradle.Gradle>
+    <hudson.tasks.BatchFile>
+      <command>rem java -Xmx1048m -jar d:\install\checkstyle-5.6\checkstyle-5.6-all.jar -c d:\WORK\repository\repo\git\antbuild\1C_checks.xml -f xml -o %WORKSPACE%\checkstyle-result.xml -r %WORKSPACE%\src\Document
+
+rem java -Xmx1048m -jar d:\install\checkstyle-5.6\checkstyle-5.6-all.jar -c d:\WORK\repository\repo\git\antbuild\1C_checks.xml -f xml -o %WORKSPACE%\checkstyle-result-catalog.xml -r %WORKSPACE%\src\Catalog</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver>
+      <testResults>**/лог_тестирования.xml</testResults>
+      <keepLongStdio>true</keepLongStdio>
+      <testDataPublishers/>
+    </hudson.tasks.junit.JUnitResultArchiver>
+  </publishers>
+  <buildWrappers/>
+</project>
