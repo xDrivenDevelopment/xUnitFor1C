@@ -5,7 +5,7 @@
 
 def props
 
-task xUnitFor1C_82 {
+task xUnitFor1C {
 	//task xUnitFor1C << {
 	//task xUnitFor1C(type:Exec) {
 	doFirst {
@@ -17,45 +17,13 @@ task xUnitFor1C_82 {
 }
 
 def checkXmlUnitReport(props) {
-   //doLast {
-println "выполн€ю checkXmlUnitReport "
+	println "выполн€ю checkXmlUnitReport "
 	        //def log = file('F:\\лог_тестировани€.xml')
 			//log.eachLine { println it}
-      verifyTestsLog("${props.testsFolder}\\лог_тестировани€.xml") //'C:\\ќбмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестировани€.xml')
-   //}
-}
-
-task xUnitFor1C_82_Managed {
-	doFirst {
-		props = xUnitFor1C("./82_RunModeManagedApplication")
-	}
-   doLast {
-   	checkXmlUnitReport(props)
-   }
-}
-
-task xUnitFor1C_83 {
-	doFirst {
-		props = xUnitFor1C("./83")
-	}
-   doLast {
-   	checkXmlUnitReport(props)
-   }
-}
-
-task xUnitFor1C_83_Managed {
-	doFirst {
-		props = xUnitFor1C("./82_RunModeManagedApplication")
-	}
-   doLast {
-   	checkXmlUnitReport(props)
-   }
+    verifyTestsLog("${props.testsFolder}\\лог_тестировани€.xml") //'C:\\ќбмен\\1CUnit\\984F~1\\SELFTE~1\\лог_тестировани€.xml')
 }
 
 //xUnitFor1C_82.finalizedBy checkXmlUnitReport
-//xUnitFor1C_82_Managed.finalizedBy checkXmlUnitReport
-//xUnitFor1C_83.finalizedBy checkXmlUnitReport
-//xUnitFor1C_83_Managed.finalizedBy checkXmlUnitReport
 
 def xUnitFor1C (propsDir){
 
