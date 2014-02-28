@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<commandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<commandVisibility>
+		<command>Catalog.ПростойСправочник.StandardCommand.OpenList</command>
+		<visibility>
+			<xr:common>true</xr:common>
+		</visibility>
+	</commandVisibility>
+	<commandVisibility>
+		<command>DataProcessor.ПоказатьГУИД.StandardCommand.Open</command>
+		<visibility>
+			<xr:common>true</xr:common>
+		</visibility>
+	</commandVisibility>
+	<commandPlacement>
+		<command>Catalog.ПростойСправочник.StandardCommand.OpenList</command>
+		<commandGroup>NavigationPanelOrdinary</commandGroup>
+		<placement>Manual</placement>
+	</commandPlacement>
+	<commandPlacement>
+		<command>DataProcessor.ПоказатьГУИД.StandardCommand.Open</command>
+		<commandGroup>ActionsPanelTools</commandGroup>
+		<placement>Manual</placement>
+	</commandPlacement>
+</commandInterface>
