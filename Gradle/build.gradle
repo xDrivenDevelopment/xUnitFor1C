@@ -16,6 +16,44 @@ task xUnitFor1C () {
    }
 }
 
+task compileConfigFile << {
+	//Строка = "pathToCF;"+ПутьКФайлуКонфигурации+";pathOut;"+ПутьККаталогуДляВыгрузки+";compile;"+ОпцияРабочийКаталог;	
+	props = loadProperties(projectDir)
+
+	def cmdLine = ""
+	props.with {
+
+		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "enterprise", startMode, "/DisableStartupMessages", "/Execute", AbsPath(v83unpack), "/N${user1C}", "/N${password1C}", mainBase1CType, AbsPath(mainBase1C), "/Out", "outCompile.txt", 
+		//'/C', '"'+"compile;pathToCF;${builds}\bin\1cv8.cf;pathOut;${builds}\src\;" + '"', 
+		'/C', "compile;pathToCF;${builds}\bin\1cv8.cf;pathOut;${builds}\src\;", 
+		"/LogUI", add1CStartOptions	]
+	}
+
+	def proc = cmdLine.execute()
+	proc.waitFor()
+/*
+  <target name="decompile">
+      <exec executable="${1cbin}">
+          <arg value="ENTERPRISE"/>
+          <arg value="${ibService}"/>
+          <arg value="/N${iblogin}"/>
+          <arg value="/P${ibpassword}"/>
+          <arg value="/C&quot;pathToCF;${builds}\bin\1cv8.cf;auto;decompile;out;${builds}\out.txt;pathOut;${builds}\src\;&quot;" />
+          <arg value="/Execute&quot;${v83unpack}&quot;"/>
+          <arg value="/outoutDecompile.txt"/>
+      </exec>
+      <loadfile property="checkerror" srcFile="${builds}/out.txt" encoding="cp1251">
+          <filterchain>
+              <tokenfilter>
+                  <containsregex pattern="^[^0-9\-]+(0)$"/>
+              </tokenfilter>
+          </filterchain>
+      </loadfile>
+      <fail unless="checkerror"/>
+  </target>
+*/
+}
+
 def checkXmlUnitReport(props) {
 	println "выполняю checkXmlUnitReport "
 
@@ -33,7 +71,7 @@ def xUnitFor1C (propsDir){
 	def cmdLine = ""
 	props.with {
 
-		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "enterprise", startMode, "/DisableStartupMessages", "/Execute", AbsPath(xUnitRunner), mainBase1CType, AbsPath(mainBase1C), "/Out", xUnitLogFile, 
+		cmdLine = ['"'+catalog1C+version1C+"/bin/1cv8.exe"+'"', "enterprise", startMode, "/DisableStartupMessages", "/N${props.user1C}", "/N${props.password1C}", "/Execute", AbsPath(xUnitRunner), mainBase1CType, AbsPath(mainBase1C), "/Out", xUnitLogFile, 
 		'/C', '"Тесты_Команда_Тестировать;'+AbsPath(testsFolder)+';ЗавершитьРаботуПослеТестирования;Тесты_Команда_ФорматОтчета;xml;out;'+AbsPath(xUnitLogFolder)+';"', 
 		"/LogUI", add1CStartOptions	]
 	}
@@ -46,7 +84,7 @@ def xUnitFor1C (propsDir){
 
 def loadProperties(propsDir){
 
-	def Properties props = new Properties()
+	props = new Properties()
 	InputStream inputStream = new FileInputStream("${propsDir}/mygradle.properties")
 	InputStreamReader isr = new InputStreamReader(inputStream, "cp1251") //"UTF-8")
 	props.load(isr);
