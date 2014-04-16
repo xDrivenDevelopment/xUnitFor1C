@@ -52,13 +52,39 @@ SelfScript.self['macrosВставить определения тестовых случаев xUnitFor1C'] = func
 	var procNames = getTestCases(parser)
 		logger.debug('procNames.length ' + procNames.length)
 	
-	var dataForInsertTestCaseDescriptions = getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc);
-	var line = dataForInsertTestCaseDescriptions.Line;
-	var arrayName = dataForInsertTestCaseDescriptions.ArrayName;
-	if(line != -1)
-		insertTestCaseDescIntoText(tw, line, procNames, arrayName);
-
+	var data = getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc);
+	var line = data.EndLine;
+	if(line != -1){
+		var beginLine = data.BeginLine
+		var arrayName = data.ArrayName
+		deleteExistTestCaseDesc(tw, beginLine, line, procNames, arrayName)
+		
+		prgText = tw.text()
+		parser = snegopat.parseSources(prgText) // т.к. изменили текст, заново парсим
+		data = getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc);
+		line = data.EndLine;
+		if(line != -1){
+			insertTestCaseDescIntoText(tw, line, procNames, arrayName);
+		}
+	}
+	else
+		logger.debug('Не удалось получить позицию для вставки описания тестовых случаев')
+		
 	return true;
+}
+
+function deleteExistTestCaseDesc(tw, beginLine, endLine, procNames, arrayName) {
+	var range = tw.Range(beginLine, 1, endLine)
+	var text = range.GetText()
+		//logger.debug('Текст функции '+TEST_CASE_DESC_FUNC_NAME + '\n'+text)
+	
+	for(i=0; i < procNames.length; i++) {
+		var reTestCaseDesc = new RegExp( '^\\s*'+arrayName+'\\.Добавить\\(\\s*"'+procNames[i]+'"\\s*\\)\\s*;\\s*$', "igm");
+			logger.debug('Регулярное выражение шаблона замены '+reTestCaseDesc.source)
+		text = text.replace(reTestCaseDesc,"");
+	}
+		//logger.debug('Новый текст функции '+TEST_CASE_DESC_FUNC_NAME + '\n'+text)
+	range.SetText(text)
 }
 
 function insertTestCaseDescIntoText(tw, line, procNames, arrayName){
@@ -74,8 +100,9 @@ function insertTestCaseDescIntoText(tw, line, procNames, arrayName){
 }
 
 function getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc){
-	var resLine = -1;
+	var resEndLine = -1;
 	var resArrayName = ''
+	var resBeginLine = -1
 	
 	strForStream = addLeftString(indexTestCaseDescFunc, "0", 6-(""+indexTestCaseDescFunc).length)
 
@@ -100,12 +127,16 @@ function getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc){
 		if (reArrayKeywordName.test(arrayKeywordName) && testCaseArrayName.toLowerCase() == returnValueName.toLowerCase() 
 			&& reTestCaseDescriptionsFuncName.test(testCaseDescriptionsFuncName)) {
 			
+	        var lex = parser.lexem(parser.posToLexem(resArray.index))
+		       	logger.debug('Получили данные по началу функции "'+TEST_CASE_DESC_FUNC_NAME+';" , строка ' + lex.line)
+			resBeginLine = lex.line
+			
 			resArrayName = testCaseArrayName
 				logger.debug('Возвращаю наименование массива имен тестовых случаев "' + testCaseArrayName+'"')
 				
 	        var lex = parser.lexem(parser.posToLexem(resArray.lastIndex))
-	       	logger.debug('Получили данные по строке "Возврат '+testCaseArrayName+';" , строка ' + lex.line)
-			resLine = lex.line
+		       	logger.debug('Получили данные по строке "Возврат '+testCaseArrayName+';" , строка ' + lex.line)
+			resEndLine = lex.line
 		}
 		else {
 			logger.error('Должна быть строка "'+TEST_CASE_DESC_FUNC_NAME+'". А получили "' + testCaseDescriptionsFuncName+'"')
@@ -118,7 +149,7 @@ function getLinePosForInsertTestCaseDescriptions(parser, indexTestCaseDescFunc){
 		if(resArray)
 			logger.error('Количество элементов в массиве разбора лексем (resArray.length) должно быть больше или равно 6, а получили "' + resArray.length+'"')
 	}
-	return {Line: resLine, ArrayName: resArrayName };
+	return { BeginLine: resBeginLine, EndLine: resEndLine, ArrayName: resArrayName };
 }
 
 function addLeftString(src, str, count) {
