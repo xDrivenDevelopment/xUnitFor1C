@@ -10,7 +10,7 @@
 2e398c8a-da05-4e85-9d97-c9680b935568.0-->und\2e398c8a-da05-4e85-9d97-c9680b935568.0
 451b28be-4cf6-4356-8c46-ad5cbc0deed0-->und\451b28be-4cf6-4356-8c46-ad5cbc0deed0
 451b28be-4cf6-4356-8c46-ad5cbc0deed0.0-->und\451b28be-4cf6-4356-8c46-ad5cbc0deed0.0
-4b3c529a-00d8-4aee-95a4-f20938cdebdd.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыГенератораДанных1CUnit.epf.und\4b3c529a-00d8-4aee-95a4-f20938cdebdd.0\info
+4b3c529a-00d8-4aee-95a4-f20938cdebdd.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыГенератораДанных1CUnit.epf630.und\4b3c529a-00d8-4aee-95a4-f20938cdebdd.0\info
 4b3c529a-00d8-4aee-95a4-f20938cdebdd.0\text-->ObjectModule.txt
 60c6634b-14aa-466f-a884-82ed4cb98d0f-->und\60c6634b-14aa-466f-a884-82ed4cb98d0f
 60c6634b-14aa-466f-a884-82ed4cb98d0f.0-->und\60c6634b-14aa-466f-a884-82ed4cb98d0f.0
@@ -30,6 +30,8 @@ copyinfo-->und\copyinfo
 d28a1211-a8c4-425c-87f2-c429f96d426f-->und\d28a1211-a8c4-425c-87f2-c429f96d426f
 d28a1211-a8c4-425c-87f2-c429f96d426f.0-->und\d28a1211-a8c4-425c-87f2-c429f96d426f.0
 d51f673a-a707-44d6-9610-d58ad958de44-->und\d51f673a-a707-44d6-9610-d58ad958de44
+d764edfb-6285-4f77-ba58-4f8321a489a4-->und\d764edfb-6285-4f77-ba58-4f8321a489a4
+d764edfb-6285-4f77-ba58-4f8321a489a4.0-->und\d764edfb-6285-4f77-ba58-4f8321a489a4.0
 d7807508-2ab6-4c4d-bc1c-d30f8932565f-->und\d7807508-2ab6-4c4d-bc1c-d30f8932565f
 d7807508-2ab6-4c4d-bc1c-d30f8932565f.0-->und\d7807508-2ab6-4c4d-bc1c-d30f8932565f.0
 e893fd06-6ba8-4dd4-93be-d0810d679876-->und\e893fd06-6ba8-4dd4-93be-d0810d679876
