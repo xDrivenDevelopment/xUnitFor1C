@@ -3,7 +3,13 @@
 6344d70f-6d22-465c-b456-63013e6bc378.0\info-->C:\Users\sosna\AppData\Local\Temp\UILogToScript.epf.und\6344d70f-6d22-465c-b456-63013e6bc378.0\info
 6344d70f-6d22-465c-b456-63013e6bc378.0\text-->ObjectModule.txt
 6344d70f-6d22-465c-b456-63013e6bc378.1-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\6344d70f-6d22-465c-b456-63013e6bc378.1
+6810777b-4151-4eba-b50d-4a2a08b5be5a-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\6810777b-4151-4eba-b50d-4a2a08b5be5a
+6810777b-4151-4eba-b50d-4a2a08b5be5a.0-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\6810777b-4151-4eba-b50d-4a2a08b5be5a.0
+78a98c6c-f45e-4d5b-a7b4-61049a25f420-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\78a98c6c-f45e-4d5b-a7b4-61049a25f420
+78a98c6c-f45e-4d5b-a7b4-61049a25f420.0-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\78a98c6c-f45e-4d5b-a7b4-61049a25f420.0
 9e7b2a13-3bf6-401a-be4a-0dbf0d48a43b-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\9e7b2a13-3bf6-401a-be4a-0dbf0d48a43b
+b6e7785c-aad2-4c34-8c75-d98a7963dbaf-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\b6e7785c-aad2-4c34-8c75-d98a7963dbaf
+b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0
 copyinfo-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\copyinfo
 root-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\root
 version-->D:\WORK\repository\repo\git\xUnitFor1C\src\ГУИ_Тесты_8_3\UILogToScript\und\version
