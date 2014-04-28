@@ -4,7 +4,7 @@
 275badc4-e53d-4fbd-887f-622fad71959c.0-->und\275badc4-e53d-4fbd-887f-622fad71959c.0
 3807983a-d0f1-4e96-912a-ffda06732ded-->und\3807983a-d0f1-4e96-912a-ffda06732ded
 3807983a-d0f1-4e96-912a-ffda06732ded.0-->und\3807983a-d0f1-4e96-912a-ffda06732ded.0
-9eb30d94-85ce-4406-a5a1-c2fe00b9550a.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\тесты_ГенерацияМакетаДанных_На_БазеРеальныхДанных.epf810.und\9eb30d94-85ce-4406-a5a1-c2fe00b9550a.0\info
+9eb30d94-85ce-4406-a5a1-c2fe00b9550a.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\тесты_ГенерацияМакетаДанных_На_БазеРеальныхДанных.epf.und\9eb30d94-85ce-4406-a5a1-c2fe00b9550a.0\info
 9eb30d94-85ce-4406-a5a1-c2fe00b9550a.0\text-->ObjectModule.txt
 a547a707-255f-4af8-b1ab-a356ed29fe26-->und\a547a707-255f-4af8-b1ab-a356ed29fe26
 b109821f-c1a9-4117-835b-c4d421b89748-->und\b109821f-c1a9-4117-835b-c4d421b89748
