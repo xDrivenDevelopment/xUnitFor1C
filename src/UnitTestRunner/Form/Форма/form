@@ -1,7 +1,7 @@
 ﻿{27,
 {16,
 {
-{1,0},32,4294967295},
+{1,0},34,4294967295},
 {09ccdc77-ea1a-4a6d-ab1c-3435eada2433,
 {1,
 {
@@ -152,7 +152,7 @@
 },0,1,
 {0,11,0},0,0,0,0,0,0,5,0,0},
 {14,"ПанельТесты",4294967295,0,0,0},
-{9,
+{10,
 {ea83fe3a-ac3c-4cce-8045-3dddf35b28b1,5,
 {5,
 {"Pattern",
@@ -212,7 +212,7 @@
 {-20},1},
 {6,2,0,
 {-20},1},0,2,0,
-{6,
+{7,
 {737535a4-21e6-4971-8513-3e3173a9fedd,
 {8,
 {8,
@@ -265,7 +265,7 @@
 {"ru","Кол-во"}
 },
 {1,0},
-{1,0},63.9999999999999,5,-1,-1,-1,12590592,
+{1,0},64,5,-1,-1,-1,12590592,
 {3,0,
 {0},"",-1,-1,1,0},
 {3,0,
@@ -293,7 +293,7 @@
 {6,3,0,1},
 {6,3,0,1},
 {6,3,0,1},1,0,0,4,0,"КоличествоТестов",
-{},9,1,
+{},10,1,
 {1,0},
 {"Pattern",
 {"S"}
@@ -318,7 +318,7 @@ XFhJtSKWz30vMgcItzCmDw==},0}
 {"ru","Тест"}
 },
 {1,0},
-{1,0},301.9999999999996,1,-1,-1,-1,12590595,
+{1,0},302,1,-1,-1,-1,12590595,
 {3,0,
 {0},"",-1,-1,1,0},
 {3,0,
@@ -346,7 +346,7 @@ XFhJtSKWz30vMgcItzCmDw==},0}
 {6,3,0,1},
 {6,3,0,1},
 {6,3,0,1},1,0,0,4,0,"Имя",
-{},43,0,
+{},44,0,
 {1,0},
 {"Pattern",
 {"S"}
@@ -405,11 +405,11 @@ XFhJtSKWz30vMgcItzCmDw==},0}
 {"N",10,0,0}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNdY87DsIwDIZhrdRLZE6kOOkjvgRi4QAFujKgblVO
-xsBNuAJXILbboLZqE8Xy78f/9XM88Pd9vUfUZTGqczcM/fOhODkpDVanE8sikiI3
-aUCZ1xWFXF3njfZpGGJ6uOopGOf2+re5TLRrwcFfYRIDgVyIlFKYiB2IuDiiyX8l
-Q2ZTFxVzVCp32RndChjVDNCFyWqvlGeXVPPWmZ/psWubyt+dAezRVHXvTAjojQv2
-ekPAusOW+qoNqhVYXjdtZA8Qb3GMPw==},0}
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNdU87DsIwDIUVqZfInEhxkrbxJRALByjQlQF1q3Iy
+Bm7CFbgCsd2P2qqJFes9x37P3+OBz+/96VEXp15dmq5rX0/F4Kw0WJ1vKk6JGInM
+ASGvA6WpusaV9rkZUn646ikZ5/b+b7F01GvCwcywEwORVMgpQRgcOxBycYWTvbIg
+e1NXlaas8tZ67mQVK8aoZoACBqm90tS7dDVOHf2ze2zqKviHM4AtmlC2zsSI3rho
+b3cELBus6V/YWLWkOowbJrIGiLYopj8=},0}
 },
 {-1},
 {-1},
@@ -521,6 +521,59 @@ XFhJtSKWz30vMgcItzCmDw==},0}
 {-1},
 {-1}
 },"Состояние","","",0}
+},
+{737535a4-21e6-4971-8513-3e3173a9fedd,
+{8,
+{8,
+{16,
+{1,1,
+{"ru","Имеет тесты"}
+},
+{1,0},
+{1,0},1e2,6,-1,-1,-1,12589568,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},16,16,d2314b5d-8da4-4e0f-822b-45e7500eae09,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},
+{6,3,0,1},
+{6,3,0,1},1,0,0,4,0,"ИмеетТесты",
+{},15,0,
+{1,0},
+{"Pattern",
+{"B"}
+},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
+{
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNdU47DsIwDIW1Ui+ROZHiJG3jlROwcIACXRlQtyon
+Y+AWXIMrUNv90FaNLTt+/rz3OR74fV/vDnWedepct23zfCguTirlWaKvOFgNVHkd
+KNmxu65L7XU/mvrAXU/JOLc3v61lo1oDDmaElRiIxNIbo6DlhgMG/+OcyYJIUxeV
+pqzUYohJrOiingFyGJj2WtPuUtR4dZTP4rGuyuDvzgA2aELROBMjeuOivd4QsKix
+ormwkWpFLJ8bLjIHCLcwph8=},0}
+},
+{-1},
+{-1},
+{-1}
+},"ИмеетТесты","","",0}
 }
 },0,0,0,0}
 },
@@ -670,7 +723,7 @@ wMDNDaFBfJA4RoBjS4nAWJBzrmboY+dnCAZJAyMFrHlvK0MRUP0jYgwAUXJALIok
 {0,10,1},
 {0,6,1},0,2,
 {0,10,3},
-{0,6,3},0,0,0,0,1,5,0,0},
+{0,6,3},0,0,0,0,1,6,0,0},
 {14,"ПолеКартинкиЗеленый",4294967295,0,0,0},
 {0}
 },
@@ -748,7 +801,7 @@ gGggHyyObhW2MADGgtyDVRp98mLMwQwgeWCsgDQrhN0oAqp/RIwBIEoOiEWRhF8D
 {0,11,1},
 {0,7,1},0,2,
 {0,11,3},
-{0,7,3},0,0,0,0,2,6,0,0},
+{0,7,3},0,0,0,0,2,7,0,0},
 {14,"ПолеКартинкиЖелтый",4294967295,0,0,0},
 {0}
 },
@@ -826,7 +879,7 @@ mARFwDSIDxLHsAtbSgSGutwWF/0+cXbWYFgsvPz5e63PnotFQP4jYgwAUXJALIok
 {0,12,1},
 {0,8,1},0,2,
 {0,12,3},
-{0,8,3},0,0,0,0,3,7,0,0},
+{0,8,3},0,0,0,0,3,8,0,0},
 {14,"ПолеКартинкиКрасный",4294967295,0,0,0},
 {0}
 },
@@ -904,7 +957,7 @@ SUVORK5CYII=}
 {0,13,1},
 {0,9,1},0,2,
 {0,13,3},
-{0,9,3},0,0,0,0,4,8,0,0},
+{0,9,3},0,0,0,0,4,9,0,0},
 {14,"ПолеКартинкиСерый",4294967295,0,0,0},
 {0}
 },
@@ -939,7 +992,12 @@ SUVORK5CYII=}
 {1,0}
 },8,2,0,0,1,1,
 {5,d4746b64-45af-49b5-a280-c2206705887b,4,1,2,
-{6,9ce69739-9aa7-46da-83b7-f9adea8406bc,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,6c6e33f2-71f7-4a57-9ed6-79001d8699d7,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},6,
+{1,0},
+{1,0}
+},
+{6,04ec5db4-3e2b-49c8-bf10-9afeea3d6146,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаВыполнитьВыделенныйНажатие",
 {1,"КнопкаВыполнитьВыделенныйНажатие",
 {1,1,
@@ -955,7 +1013,13 @@ SUVORK5CYII=}
 {0},"",-1,-1,1,0},
 {0,0,0}
 }
-},1,
+},7,
+{1,1,
+{"#","Кнопка выполнить выделенный нажатие"}
+},
+{1,1,
+{"#","Кнопка выполнить выделенный нажатие"}
+},
 {3,3,
 {0},"",-1,-1,0,
 {
@@ -1037,16 +1101,14 @@ BT2vLGbWS92jcyHi0eKcnlGHth40DwGpirD4N/NAtpxz/fzryOKAkVV/L8x3DFYC
 SeG/CiRbW381XQJ+eB6R7JkecvQzOgL43wP8MwC/vaxojUiI8wAAAABJRU5ErkJg
 gg==}
 },0}
-},
-{6,ec519c4c-ba30-4e87-ab22-d54516598ddc,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,9ce69739-9aa7-46da-83b7-f9adea8406bc,
-{8,"ВыполнитьТест",0,1,
+},1,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,04ec5db4-3e2b-49c8-bf10-9afeea3d6146,
+{8,"ВыполнитьТест",0,2,
 {1,2,
 {"#","Выполнить тест"},
 {"ru","Выполнить тест"}
-},1,d4746b64-45af-49b5-a280-c2206705887b,1,1e2,0,3,1,0,0,0,0},ec519c4c-ba30-4e87-ab22-d54516598ddc,
-{8,"Разделитель",0,1,
+},1,d4746b64-45af-49b5-a280-c2206705887b,1,1e2,0,3,1,0,0,0,0},6c6e33f2-71f7-4a57-9ed6-79001d8699d7,
+{8,"Разделитель",0,2,
 {1,1,
 {"#","Действие"}
 },0,d4746b64-45af-49b5-a280-c2206705887b,2,1e2,2,0,1,0,0,0,0},
@@ -1082,7 +1144,7 @@ gg==}
 {2,-1,6,0}
 },2,
 {0,36,1},
-{0,10,1},0,0,0,0,0,0,5,9,0,0},
+{0,10,1},0,0,0,0,0,0,5,10,0,0},
 {14,"КоманднаяПанельКонтекстноеМенюПоляТестов",4294967295,0,0,0},
 {0}
 },
@@ -1335,6 +1397,80 @@ AAAAAAAA////////////////////////////////////////////////////////
 {0,30,1},0,1,
 {0,30,3},0,0,0,0,8,4,0,0},
 {14,"ПолеКартинкиТестовыйСлучай",4294967295,0,0,0},
+{0}
+},
+{151ef23e-6bb2-4681-83d0-35bc2217230c,33,
+{1,
+{
+{10,1,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},0,
+{3,3,
+{-22}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,3,
+{-7}
+},
+{3,3,
+{-21}
+},
+{3,0,
+{0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
+{1,0}
+},15,0,0,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAl0lEQVR42mNgQAI3
+D234v6Mn8//i8uD/07Jd/3dEW/zft3zafwZiwdaOlP8/7h77//L0xv+3ds37f3Rh
+8/+6IH3iDbiwec7/Ta2J//uTHf+3RZoBNRv83710MvEGHD1/7X9qI0QDiAbxydIM
+A0Qbgk0z0YbgC3miYgVfyBMVK/hCfqTFCqEQJxgjhEKcYIwQCnGKYwQXAACvVTho
+3ItgPQAAAABJRU5ErkJggg==}
+},0},
+{0,0,0},1,1,0,0,
+{1,0}
+},
+{0}
+},
+{8,129,316,164,346,0,
+{0,
+{2,-1,6,0},
+{2,-1,6,0}
+},
+{0,
+{2,33,0,30},
+{2,-1,6,0}
+},
+{0,
+{2,-1,6,0},
+{2,-1,6,0}
+},
+{0,
+{2,33,2,35},
+{2,-1,6,0}
+},
+{0,
+{2,-1,6,0},
+{2,-1,6,0}
+},
+{0,
+{2,-1,6,0},
+{2,-1,6,0}
+},1,
+{0,33,1},0,1,
+{0,33,3},0,0,0,0,9,5,0,0},
+{14,"ПолеКартинкиПодсистема",4294967295,0,0,0},
 {0}
 }
 }
@@ -1606,13 +1742,69 @@ QmCC}
 },10,
 {1,2,
 {"#","Загрузить тесты"},
-{"ru","Загрузить наборы"}
+{"ru","Загрузить тесты"}
 },1,1,0,0,0,
-{3,1,
-{0,785362cb-3756-48ed-87d2-292ded17054a},"",-1,-1,1,0},
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+g
+vaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAEtUlEQVRIx6WUy48UVRTGf+fe6p6e
+7ume6aCMEXygIgmgISaSGI0ZSYfEpRt2/gUmxrhwYVy410R36pawksBKNCajji9C
+lEgCBGGAGZkB5kU/pt9dVfceF9XdM82486RqUfXdOud85ztfyec/984/+4h9Ze+U
+IZsWANqhcrfmWSjHv6mK/T94AARnf7nOjYVlNutNACYLExx4Zi8v7H8y7VXtmZ8W
+mb+zwma9tQ1/giMH9weo2jM/XWF+cZl6o4VKMIILwPsnr+vxQ3l6sWIEljYa/H5t
+jfXvP34U8C++/UX5+OHCEF9+0OT8fJ3Vbz6wwNTBE5+Wjx0sQDCONTLET713VAKA
+fC7Da4emcVgCcfxwscmYUYA0sJafGB/iaQsXbmxw6Z82wGNAKpexHHvpadSktvA7
+XQAM/TAieO+oVat47xExAGuzs3NugAMI4L3HdRsAKSBKZScJrB3igyiVZmRYQNB+
+cocxBpvJM0gOYE3yqaqj1aih6gEiYE3EDHEZVFAFyAT9J9qtFs45xsYsufwUSJeH
+w3tHdXMnw99PHOKFxZM82LXI0bEZvrr/GWdvneN1jiSnfByheKy1FItFjDHsjGR8
+zu1kKEZB4JPND7nausR3N8+BJp0PM6UDy1SxiO3PcnuoehqbNZxzBMGA4VYTIvCI
+3U0QQKqVxiIDMbrDU7lcDmN2Ji+VZuy7c4dx8+eZun2K3VLmlYvv8NGFI1uHJBE+
+3QlQ71CjxDZmdnYuYWCC1H+OpVSascC0MwHWGoq3v8RUbxBfPjtyzojQqjexAiYw
+xNmoP6HhmsqO5CRbMg2kbGAo5nOY7DhYAzYYaSLVSSXCZzy5qSza12TEB6PbMrrn
+xTGfMBzPgrEQBCMMBTDGoMUIsTLSrgE4eX6Zucsr/FVRVpsxX/+5yulf54d7bmz/
+k/FxMAasxSdppoGUArnCBIrSv0YLDEp+u+S4tlRh7noNTV4mTh7ok8mCGLxY6i49
+ZBhlIowxuFiS5JrcI06OnNKrV3DOoVhCyW45WQR8CJkMXj21OI1LGoiANY/S0w4u
+FFQV1eGYMqa/6KxstoiimFpoiFMTgxFsRW8NL5bq2hIOwSa9JgwV7sZLuFBYCe8j
+TghckHgQQF3MessROksmX8TpTu198x7VWg/nHRalYMMhQ1W4E97ChYKLFdsJHnKy
+Kq1IiFNT9JzBK/htSnkH1coDXKeH9SFTQYjZJqV6oRJVibuGWnkTYjPqZKdC3Wfp
+xkKl7XEONPkbUirN2GpocO0yNuxSDFoYHz+01rDRXYdymkq3ivOMOjnGstFWuqHn
+QVtxXlHd5mTnsd0NiraDaW+Ac6Pzc8JqeQ3fM5SjCmE6HnWyj2I6kdANlYWKJ5e2
+WNna83oPiqaN6bahfBNJT9DydsgwXcnSCyNiBwt6h3yqgInHthVoN6oblQaPjkGt
+rUjUJp+Oa0AING5FxfVmrQqpaWiWacYB83bveqk0Y4DJsZXna5vVgD2TT1ELG6Tr
+j5PtHKhuWezNU4XJglxxcbQHBBHu7apcfPk5c6UBdN+K53LT+/b9KBq+KKqE3l69
+v7z6xrfBqzEgfxeqE7XJ4h8a1/aCgEzcbXeuH+b0RvNf+XOfI5UewfYAAAAldEVY
+dGRhdGU6Y3JlYXRlADIwMTMtMDUtMjlUMDk6NDc6NDItMDU6MDBTDo/DAAAAJXRF
+WHRkYXRlOm1vZGlmeQAyMDEzLTA1LTI4VDA2OjE3OjMwLTA1OjAwR0bHqQAAAABJ
+RU5ErkJggg==}
+},0},
 {0,0,0},0,2,
-{5,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,2,1,2,
-{6,4ee388f7-6213-47a1-8249-e7bf698c3494,1,e1692cc2-605b-4535-84dd-28440238746c,
+{5,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,7,1,5,
+{6,ae5156d1-5f81-4695-ba74-e6bd8e535839,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КнопкаЗагрузитьТестыИзКонфигурации_ИмяТеста",
+{1,"КнопкаЗагрузитьТестыИзКонфигурации_ИмяТеста",
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации имя теста"}
+},
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации имя теста"}
+},
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации имя теста"}
+},
+{3,0,
+{0},"",-1,-1,1,0},
+{0,0,0}
+}
+},6,
+{1,1,
+{"ru","Загрузить тесты из конфигурации (Тест_*)"}
+},
+{1,1,
+{"ru","Загрузить тесты из конфигурации (Тест_*)"}
+}
+},
+{6,b6b1a103-ee7b-472a-ae8b-fe00f883df3e,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаЗагрузитьТестыНажатие",
 {1,"КнопкаЗагрузитьТестыНажатие",
 {1,1,
@@ -1636,7 +1828,9 @@ QmCC}
 {"#","Загружает все тесты из выбранного каталога"}
 }
 },
-{6,614143b0-be2e-4008-b54b-548d64a15fdf,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,39f6153f-4917-4a7e-a08f-5e24a620c772,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,b6948269-c678-4610-afd9-8626ee2533d4,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаЗагрузитьТестыЗагрузитьТестКейс",
 {1,"КнопкаЗагрузитьТестыЗагрузитьТестКейс",
 {1,1,
@@ -1659,17 +1853,51 @@ QmCC}
 {1,1,
 {"#","Загрузить один тестовый скрипт (тест-кейс)"}
 }
+},
+{6,0e7c0669-e39f-4f9d-960e-17a3029c0d65,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КнопкаЗагрузитьТестыИзКонфигурации",
+{1,"КнопкаЗагрузитьТестыИзКонфигурации",
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации"}
+},
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации"}
+},
+{1,1,
+{"ru","Кнопка загрузить тесты из конфигурации"}
+},
+{3,0,
+{0},"",-1,-1,1,0},
+{0,0,0}
+}
+},6,
+{1,1,
+{"ru","Загрузить тесты из конфигурации"}
+},
+{1,1,
+{"ru","Загрузить тесты из конфигурации"}
+}
 },1,
-{5,31946946-0a9b-40a2-95cf-82f200778341,0,0,2,4ee388f7-6213-47a1-8249-e7bf698c3494,
+{5,31946946-0a9b-40a2-95cf-82f200778341,0,0,5,0e7c0669-e39f-4f9d-960e-17a3029c0d65,
+{8,"ЗагрузитьТестыИзКонфигурации",0,3,
+{1,1,
+{"ru","Загрузить тесты из конфигурации"}
+},1,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,7,1e2,0,0,1,0,1,0,0},ae5156d1-5f81-4695-ba74-e6bd8e535839,
+{8,"ЗагрузитьТестыИзКонфигурации_ИмяТеста",0,2,
+{1,1,
+{"ru","Загрузить тесты из конфигурации (Тест_*)"}
+},1,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,4,1e2,0,0,1,0,1,0,0},39f6153f-4917-4a7e-a08f-5e24a620c772,
+{8,"Разделитель",0,2,
+{1,0},0,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,5,1e2,2,0,1,0,1,0,0},b6b1a103-ee7b-472a-ae8b-fe00f883df3e,
 {8,"ЗагрузитьВсеТесты",0,1,
 {1,2,
 {"#","Загрузить все тесты из каталога"},
-{"ru","Загрузить наборы"}
-},1,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,1,1e2,0,0,1,0,0,0,0},614143b0-be2e-4008-b54b-548d64a15fdf,
+{"ru","Загрузить тесты из каталога"}
+},1,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,1,1e2,0,0,1,0,0,0,0},b6948269-c678-4610-afd9-8626ee2533d4,
 {8,"ЗагрузитьТестКейс",0,1,
 {1,2,
 {"#","Загрузить один тестовый скрипт"},
-{"ru","Загрузить отдельный набор"}
+{"ru","Загрузить отдельный тест из файла"}
 },1,4a024427-3a7c-4cdb-b06d-ea9b500fdeda,2,1e2,0,0,1,0,0,0,0},
 {-1,0,
 {0}
@@ -1682,13 +1910,13 @@ QmCC}
 {3,"КнопкаЗагрузитьТестыНажатие",
 {1,"КнопкаЗагрузитьТестыНажатие",
 {1,1,
-{"#","Кнопка загрузить тесты нажатие"}
+{"ru","Кнопка загрузить тесты нажатие"}
 },
 {1,1,
-{"#","Кнопка загрузить тесты нажатие"}
+{"ru","Кнопка загрузить тесты нажатие"}
 },
 {1,1,
-{"#","Кнопка загрузить тесты нажатие"}
+{"ru","Кнопка загрузить тесты нажатие"}
 },
 {3,0,
 {0},"",-1,-1,1,0},
@@ -1877,7 +2105,7 @@ AAAASUVORK5CYII=}
 },0},
 {0,0,0},0,2,
 {5,41c23139-b710-4b93-a93e-1a3fe9843cfe,3,1,3,
-{6,96abf3ae-a379-43db-8a61-287e73a77365,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,8f538278-7b57-433a-a606-dfed28aaf13d,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаПерезагрузитьНажатие",
 {1,"КнопкаПерезагрузитьНажатие",
 {1,1,
@@ -1933,7 +2161,9 @@ fpcIxAUgkUoIHsoxHlpxsReNeI9EIrDkX2QLIpCML+Wkf5z+LcAAUD/gDNueXkgA
 AAAASUVORK5CYII=}
 },0}
 },
-{6,d0cb01bd-0a41-4fed-8c8c-7db1874d8b23,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,ebb3efcf-7496-4040-93fa-563ec9f4fe85,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,f08be6e3-28ec-4142-9fa6-34a93a51639e,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаПерезагрузитьПерезагрузитьБраузерТестирования",
 {1,"КнопкаПерезагрузитьПерезагрузитьБраузерТестирования",
 {1,1,
@@ -1949,21 +2179,19 @@ AAAASUVORK5CYII=}
 {0},"",-1,-1,1,0},
 {0,0,0}
 }
-},0},
-{6,6b365af9-a05c-4591-aa0f-fa0eaaa0ba60,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
-{5,31946946-0a9b-40a2-95cf-82f200778341,0,0,3,96abf3ae-a379-43db-8a61-287e73a77365,
+},0},1,
+{5,31946946-0a9b-40a2-95cf-82f200778341,0,0,3,8f538278-7b57-433a-a606-dfed28aaf13d,
 {8,"ПерезагрузитьТесты",0,1,
 {1,1,
 {"ru","Перезагрузить тесты"}
-},1,41c23139-b710-4b93-a93e-1a3fe9843cfe,1,1e2,0,0,1,0,0,0,0},6b365af9-a05c-4591-aa0f-fa0eaaa0ba60,
+},1,41c23139-b710-4b93-a93e-1a3fe9843cfe,1,1e2,0,0,1,0,0,0,0},ebb3efcf-7496-4040-93fa-563ec9f4fe85,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие"}
-},0,41c23139-b710-4b93-a93e-1a3fe9843cfe,2,1e2,2,0,1,0,0,0,0},d0cb01bd-0a41-4fed-8c8c-7db1874d8b23,
+},0,41c23139-b710-4b93-a93e-1a3fe9843cfe,2,1e2,2,0,1,0,0,0,0},f08be6e3-28ec-4142-9fa6-34a93a51639e,
 {8,"ПерезагрузитьБраузерТестирования",0,1,
 {1,1,
-{"#","Перезагрузить браузер тестирования"}
+{"ru","Перезагрузить браузер тестирования"}
 },0,41c23139-b710-4b93-a93e-1a3fe9843cfe,3,1e2,0,0,1,0,0,0,0},
 {-1,0,
 {0}
@@ -2630,14 +2858,14 @@ jdPrfwG2yJrgafgYZAAAAABJRU5ErkJggg==}
 {0}
 }
 }
-},515,552,1,0,1,4,4,318},
+},515,552,1,0,1,4,4,362},
 {
 {1},16,
 {9,
 {
 {1},0,0,1,"ОбработкаОбъект",
 {"Pattern",
-{"#",72b14f73-b5ff-442f-9176-8db2f2886ef8}
+{"#",4cbf78bf-e1e0-4176-9824-401b1c346777}
 }
 },
 {
@@ -2693,7 +2921,7 @@ jdPrfwG2yJrgafgYZAAAAABJRU5ErkJggg==}
 {5,
 {2,
 {1},
-{0,83c6c41f-4d4f-4043-b1a5-49f52c10c9bb}
+{0,95906dae-05fa-473b-8142-ffa8559f0a4c}
 }
 },
 {11,
