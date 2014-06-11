@@ -1,6 +1,6 @@
 ﻿5719adc2-89f4-4925-a175-71797b810b75-->und\5719adc2-89f4-4925-a175-71797b810b75
 5719adc2-89f4-4925-a175-71797b810b75.0-->Form\Форма
-5cf3a206-3db3-4464-b64b-1efd81585d1e.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\UnitTestRunner.epf374.und\5cf3a206-3db3-4464-b64b-1efd81585d1e.0\info
+5cf3a206-3db3-4464-b64b-1efd81585d1e.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\UnitTestRunner.epf581.und\5cf3a206-3db3-4464-b64b-1efd81585d1e.0\info
 5cf3a206-3db3-4464-b64b-1efd81585d1e.0\text-->ObjectModule.txt
 a6c816ea-fd9e-48f9-82f1-549b68d76c06-->und\a6c816ea-fd9e-48f9-82f1-549b68d76c06
 a6c816ea-fd9e-48f9-82f1-549b68d76c06.0-->und\a6c816ea-fd9e-48f9-82f1-549b68d76c06.0
