@@ -1,0 +1,141 @@
+﻿{"#",e603c0f2-92fb-4d47-8f38-a44a381cf235,
+{1,
+{13,
+{0,"Запрос",
+{"Pattern"},"",0},
+{1,"ТекстЗапроса",
+{"Pattern"},"",0},
+{2,"ПараметрыЗапроса",
+{"Pattern"},"",0},
+{3,"СпособВыгрузки",
+{"Pattern"},"",0},
+{4,"НовыйМенеджерВремменныхТаблиц",
+{"Pattern",
+{"B"}
+},"",0},
+{5,"КодОбработкиСтрокиРезультата",
+{"Pattern"},"",0},
+{6,"КодПередВыполнениемЗапроса",
+{"Pattern"},"",0},
+{7,"КодОбработкиРезультата",
+{"Pattern"},"",0},
+{8,"Настройка",
+{"Pattern"},"",0},
+{9,"ТипЗапроса",
+{"Pattern",
+{"S"}
+},"",0},
+{10,"Длительность",
+{"Pattern",
+{"S"},
+{"N"}
+},"",0},
+{11,"РазмерРезультата",
+{"Pattern",
+{"S"},
+{"N"}
+},"",0},
+{12,"СтрокаДанных",
+{"Pattern"},"",0}
+},
+{2,13,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,
+{1,1,
+{2,0,13,
+{"S","Генерация регистра сведений"},
+{"S","ВЫБРАТЬ
+	""РегистрСведений"" КАК ТипДляГенератораМакетаДанных_xUnitFor1C,
+	""РегистрСведений1"" КАК ВидДляГенератораМакетаДанных_xUnitFor1C,
+	""ЗаписьРегистраСведений"" КАК ПрефиксИмениПеременнойДляГенератораМакетаДанных_xUnitFor1C,
+	РегистрСведений1.ПростойСправочник,
+	РегистрСведений1.ПростойСправочник2,
+	РегистрСведений1.РесурсЧисло,
+	РегистрСведений1.РесурсБулево
+ИЗ
+	РегистрСведений.РегистрСведений1 КАК РегистрСведений1"},
+{"#",acf6192e-81ca-46ef-93a6-5a6968b78663,
+{8,
+{6,
+{0,"ИмяПараметра",
+{"Pattern",
+{"S",100,1}
+},"Имя параметра",19},
+{1,"ЭтоВыражение",
+{"Pattern"},"Тип",10},
+{2,"Выражение",
+{"Pattern",
+{"S"}
+},"Выражение",16},
+{3,"НеИспользоватьОграничениеТипа",
+{"Pattern",
+{"B"}
+},"НеИспользоватьОграничениеТипа",0},
+{4,"ТипЗначения",
+{"Pattern",
+{"#",f5c65050-3bbb-11d5-b988-0050bae0a95d}
+},"Допустимые типы значения",15},
+{5,"Значение",
+{"Pattern",
+{"#",0387f3a2-7df5-4804-948b-4580a51e4a15},
+{"#",0f725605-ea6e-420c-8968-a82dbfcd51cd},
+{"#",280f5f0e-9c8a-49cc-bf6d-4d296cc17a63},
+{"#",2fdc88ec-7c9b-43cd-8ba5-873f043bdd88},
+{"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3},
+{"#",51e7a0d2-530b-11d4-b98a-008048da3034},
+{"#",5a49abd5-936d-4f46-8499-9cb204efe378},
+{"#",5b2b819e-ebc7-4d0b-9af6-1d5e2c8cdb0c},
+{"B"},
+{"#",6733e851-ebd2-484a-acfc-6009b6d1ec2d},
+{"#",741ae838-6e42-4ac0-b6a4-17e5604b0669},
+{"#",82d8a678-2251-4db1-8db1-99d4bdf5a04d},
+{"#",872f7198-7083-4e3e-b57e-a2a9802c769e},
+{"S"},
+{"D"},
+{"#",acf6192e-81ca-46ef-93a6-5a6968b78663},
+{"L"},
+{"N",20,3,0},
+{"#",c8ec9b19-8c9a-4de5-8078-a3e5f0df8ef3},
+{"T"},
+{"#",e603c0f2-92fb-4d47-8f38-a44a381cf235},
+{"#",eb43f417-48a7-4d0f-8d23-4335291aae47},
+{"#",f5c65050-3bbb-11d5-b988-0050bae0a95d},
+{"#",fc01b5df-97fe-449b-83d4-218a090e681e}
+},"",0}
+},
+{2,6,0,0,1,1,2,2,3,3,4,4,5,5,
+{1,0},-1,-1}
+}
+},
+{"N",1},
+{"B",0},
+{"S",""},
+{"S",""},
+{"S","Путь_xUnitFor1C = ""C:\Projects\GitHub\xUnitFor1C\"";
+ПутьГенератораМакета = Путь_xUnitFor1C + ""ГенерацияМакетаДанных_На_БазеРеальныхДанных.epf"";
+
+СоздательМакетаДанныхНаОснованииЗапроса = ВнешниеОбработки.Создать(Путь_xUnitFor1C + ""externals\GenerateData\СозданиеМакетаДанныхНаОснованииЗапроса.epf"");
+Макет = СоздательМакетаДанныхНаОснованииЗапроса.СоздатьМакетДанныхНаОснованииЗапроса(мРезультатЗапроса, ПутьГенератораМакета);
+Макет.Показать();
+"},
+{"#",e199ca70-93cf-46ce-a54b-6edc88c3a296,
+{#base64:AQE1AAAAAAAAAO+7v3siIyIsM2M3MmZmNTYtN2UwNC00Mzg1LWJjMDMtOTJkNGJk
+NmMzNTFjLA0KezB9DQp9AAAAADYCAAAAAAAA77u/PD94bWwgdmVyc2lvbj0iMS4w
+IiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0aW5ncyB4bWxucz0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9uLXN5c3RlbS9zZXR0aW5ncyIgeG1s
+bnM6ZGNzY29yPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEtY29tcG9zaXRpb24t
+c3lzdGVtL2NvcmUiIHhtbG5zOnN0eWxlPSJodHRwOi8vdjguMWMucnUvOC4xL2Rh
+dGEvdWkvc3R5bGUiIHhtbG5zOnN5cz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRh
+L3VpL2ZvbnRzL3N5c3RlbSIgeG1sbnM6djg9Imh0dHA6Ly92OC4xYy5ydS84LjEv
+ZGF0YS9jb3JlIiB4bWxuczp2OHVpPSJodHRwOi8vdjguMWMucnUvOC4xL2RhdGEv
+dWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9y
+cy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2Nv
+bG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y
+TUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxT
+Y2hlbWEtaW5zdGFuY2UiLz4=}
+},
+{"S","Обычный"},
+{"N",1},
+{"N",2},
+{"U"},0}
+},12,0}
+}
+}

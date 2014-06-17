@@ -4,6 +4,8 @@ xUnit For 1C is a set of unit testing tools for 1C:Enterprise 8 platform (http:/
 
 xUnit для 1С - набор инструментов для выполнения юнит-тестирования (модульного тестирования) в 1С:Предприятии 8.
 
+[Посмотрите Wiki](https://github.com/xDrivenDevelopment/xUnitFor1C/wiki)
+
 ## Что к чему
 
 * *UnitTestRunner.epf* - браузер и исполнитель тестов для обычного приложения 1С:Предприятия 8
