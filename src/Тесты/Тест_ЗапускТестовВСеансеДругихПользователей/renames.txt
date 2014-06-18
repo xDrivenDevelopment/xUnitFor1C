@@ -1,0 +1,11 @@
+﻿4dbcb106-f4ad-4724-8643-20d6c299deff-->und\4dbcb106-f4ad-4724-8643-20d6c299deff
+4dbcb106-f4ad-4724-8643-20d6c299deff.0-->und\4dbcb106-f4ad-4724-8643-20d6c299deff.0
+89c4808c-ec9f-4439-988d-1e776846e7d8-->und\89c4808c-ec9f-4439-988d-1e776846e7d8
+89c4808c-ec9f-4439-988d-1e776846e7d8.0-->und\89c4808c-ec9f-4439-988d-1e776846e7d8.0
+bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\Тест_ЗапускТестовВСеансеДругихПользователей.epf.und\bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info
+bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\text-->ObjectModule.txt
+c0334e99-c3c6-4bc5-a429-136a15e54924-->und\c0334e99-c3c6-4bc5-a429-136a15e54924
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
