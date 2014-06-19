@@ -4,6 +4,7 @@ rem Тестирование переключения веток хранилища xUnitFor1C
 rem
 rem Требования: 
 rem 	1. Установленный Git. Путь к нему находиться в системном PATH.
+rem		также может быть установлен SourceTree cо встроенным Git.
 rem		2. Доступ к сайту GitHub - https://github.com/xDrivenDevelopment/xUnitFor1C
 rem 
 rem Пример вызова (переключения master <-> develop и обратно): 
@@ -18,6 +19,9 @@ if "%1"=="" ( set branch=develop
 	set branch=%1
 )
 	rem echo %branch%
+
+set git_cmd=git
+if EXIST "%LOCALAPPDATA%\Atlassian\SourceTree\git_local\cmd\git.exe" set git_cmd="%LOCALAPPDATA%\Atlassian\SourceTree\git_local\cmd\git.exe"
 
 set remoteRepo=https://github.com/xDrivenDevelopment/xUnitFor1C.git
 	rem set remoteRepo=C:\Projects\xUnitFor1C_t1\.git
@@ -39,60 +43,60 @@ if EXIST %repo% (
 
 md %repo%
 
-git -c diff.mnemonicprefix=false -c core.quotepath=false clone --recursive %remoteRepo% %repo%
+%git_cmd% -c diff.mnemonicprefix=false -c core.quotepath=false clone --recursive %remoteRepo% %repo%
 
 cd %repo%
-git checkout -b develop
+%git_cmd% checkout -b develop
 if errorlevel 1 (
 	echo Не удалось переключиться на ветку develop
 	exit 2
 	pause
 )
-git status
+%git_cmd% status
 
 if not %branch%==develop (
-	git checkout -b %branch%
+	%git_cmd% checkout -b %branch%
 	if errorlevel 1 (
 		echo Не удалось переключиться на ветку %branch%
 		exit 5
 		pause
 	)
-	git status
+	%git_cmd% status
 )
 
-git checkout master
+%git_cmd% checkout master
 if errorlevel 1 (
 	echo Не удалось переключиться на ветку master
 	exit 3
 	pause
 )
-git status
+%git_cmd% status
 
-git checkout  develop
+%git_cmd% checkout  develop
 if errorlevel 1 (
 	echo Не удалось повторно переключиться на ветку develop
 	exit 4 
 	pause
 )
-git status
+%git_cmd% status
 
 if not %branch%==develop (
-	git checkout %branch%
+	%git_cmd% checkout %branch%
 	if errorlevel 1 (
 		echo Не удалось повторно переключиться на ветку %branch%
 		exit 6
 		pause
 	)
-	git status
+	%git_cmd% status
 )
 
-git checkout master
+%git_cmd% checkout master
 if errorlevel 1 (
 	echo Не удалось повторно переключиться на ветку master
 	exit 7
 	pause
 )
-git status
+%git_cmd% status
 
 endlocal
 echo Все переключения завершились успешно
