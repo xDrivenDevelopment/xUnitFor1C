@@ -4,7 +4,6 @@ rem Тестирование переключения веток хранилища xUnitFor1C
 rem
 rem Требования: 
 rem 	1. Установленный Git. Путь к нему находиться в системном PATH.
-rem		также может быть установлен SourceTree cо встроенным Git.
 rem		2. Доступ к сайту GitHub - https://github.com/xDrivenDevelopment/xUnitFor1C
 rem 
 rem Пример вызова (переключения master <-> develop и обратно): 
@@ -45,58 +44,71 @@ md %repo%
 
 %git_cmd% -c diff.mnemonicprefix=false -c core.quotepath=false clone --recursive %remoteRepo% %repo%
 
+set old_branch=master
 cd %repo%
-%git_cmd% checkout -b develop
+%git_cmd% checkout -b develop origin/develop
 if errorlevel 1 (
-	echo Не удалось переключиться на ветку develop
-	exit 2
+	echo .
+	echo Не удалось переключиться на ветку develop из ветки %old_branch%
 	pause
+	exit 2
 )
 %git_cmd% status
+set old_branch=develop
 
 if not %branch%==develop (
-	%git_cmd% checkout -b %branch%
+	%git_cmd% checkout -b %branch% origin/%branch%
 	if errorlevel 1 (
-		echo Не удалось переключиться на ветку %branch%
-		exit 5
+		echo .
+		echo Не удалось переключиться на ветку %branch% из ветки %old_branch%
 		pause
+		exit 5
 	)
 	%git_cmd% status
+	set old_branch=%branch%
 )
 
 %git_cmd% checkout master
 if errorlevel 1 (
-	echo Не удалось переключиться на ветку master
-	exit 3
+	echo .
+	echo Не удалось переключиться на ветку master из ветки %old_branch%
 	pause
+	exit 3
 )
 %git_cmd% status
+set old_branch=master
 
 %git_cmd% checkout  develop
 if errorlevel 1 (
-	echo Не удалось повторно переключиться на ветку develop
-	exit 4 
+	echo .
+	echo Не удалось повторно переключиться на ветку develop из ветки %old_branch%
 	pause
+	exit 4 
 )
 %git_cmd% status
+set old_branch=develop
 
 if not %branch%==develop (
 	%git_cmd% checkout %branch%
 	if errorlevel 1 (
-		echo Не удалось повторно переключиться на ветку %branch%
-		exit 6
+		echo .
+		echo Не удалось повторно переключиться на ветку %branch% из ветки %old_branch%
 		pause
+		exit 6
 	)
 	%git_cmd% status
+	set old_branch=%branch%
 )
 
 %git_cmd% checkout master
 if errorlevel 1 (
-	echo Не удалось повторно переключиться на ветку master
-	exit 7
+	echo .
+	echo Не удалось повторно переключиться на ветку master из ветки %old_branch%
 	pause
+	exit 7
 )
 %git_cmd% status
+set old_branch=master
 
 endlocal
 echo Все переключения завершились успешно
