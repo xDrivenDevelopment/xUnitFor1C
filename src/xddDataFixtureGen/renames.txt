@@ -23,7 +23,7 @@
 7c35d887-173d-46d3-916d-d55057c9e526.0-->und\7c35d887-173d-46d3-916d-d55057c9e526.0
 c97fcb5f-9cd5-4681-8299-6e5f67c6ac9f-->und\c97fcb5f-9cd5-4681-8299-6e5f67c6ac9f
 c97fcb5f-9cd5-4681-8299-6e5f67c6ac9f.0-->und\c97fcb5f-9cd5-4681-8299-6e5f67c6ac9f.0
-ccc02e17-8032-42a5-a1b4-38a4d6ba9292.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ГенерацияМакетаДанных_На_БазеРеальныхДанных.epf421.und\ccc02e17-8032-42a5-a1b4-38a4d6ba9292.0\info
+ccc02e17-8032-42a5-a1b4-38a4d6ba9292.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddDataFixtureGen.epf.und\ccc02e17-8032-42a5-a1b4-38a4d6ba9292.0\info
 ccc02e17-8032-42a5-a1b4-38a4d6ba9292.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
 e8315a23-d06a-455d-bc33-19017fa0b0eb-->und\e8315a23-d06a-455d-bc33-19017fa0b0eb

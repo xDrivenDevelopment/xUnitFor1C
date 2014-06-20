@@ -8,7 +8,7 @@
 876bb6e3-99a5-40fd-98ab-32c8ad80dd52-->und\876bb6e3-99a5-40fd-98ab-32c8ad80dd52
 876bb6e3-99a5-40fd-98ab-32c8ad80dd52.0-->Form\ТестВыполненияДеструктора
 copyinfo-->und\copyinfo
-d054f62e-af11-4458-b21f-f566a1ddad63.0\info-->F:\Temp\Informator.epf.und\d054f62e-af11-4458-b21f-f566a1ddad63.0\info
+d054f62e-af11-4458-b21f-f566a1ddad63.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddInformator.epf.und\d054f62e-af11-4458-b21f-f566a1ddad63.0\info
 d054f62e-af11-4458-b21f-f566a1ddad63.0\text-->ObjectModule.txt
 d054f62e-af11-4458-b21f-f566a1ddad63.1-->und\d054f62e-af11-4458-b21f-f566a1ddad63.1
 e33bfc68-6347-4ba4-ad0a-9ff4064ff5cb-->und\e33bfc68-6347-4ba4-ad0a-9ff4064ff5cb
