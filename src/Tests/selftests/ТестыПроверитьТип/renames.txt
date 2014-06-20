@@ -1,0 +1,7 @@
+﻿74b001c8-6be4-4e47-8bc9-538820412842.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверитьТип.epf.und\74b001c8-6be4-4e47-8bc9-538820412842.0\info
+74b001c8-6be4-4e47-8bc9-538820412842.0\text-->ObjectModule.txt
+79484d08-04c6-46d8-8f77-43c6f3819dd9-->und\79484d08-04c6-46d8-8f77-43c6f3819dd9
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
