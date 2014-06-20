@@ -5,7 +5,7 @@
 be1492ab-bedd-4e13-8827-ed025cda688a-->und\be1492ab-bedd-4e13-8827-ed025cda688a
 be1492ab-bedd-4e13-8827-ed025cda688a.0-->Form\ПолучениеФорм
 copyinfo-->und\copyinfo
-df099fc3-03ed-44c9-a8dd-e95a1e8978ff.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\тесты_ОткрытиеФормКонфигурации.epf306.und\df099fc3-03ed-44c9-a8dd-e95a1e8978ff.0\info
+df099fc3-03ed-44c9-a8dd-e95a1e8978ff.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\тесты_ОткрытиеФормКонфигурации.epf596.und\df099fc3-03ed-44c9-a8dd-e95a1e8978ff.0\info
 df099fc3-03ed-44c9-a8dd-e95a1e8978ff.0\text-->ObjectModule.txt
 eb6420d9-ff9e-4c68-b025-2c1608cec69f-->und\eb6420d9-ff9e-4c68-b025-2c1608cec69f
 root-->und\root
