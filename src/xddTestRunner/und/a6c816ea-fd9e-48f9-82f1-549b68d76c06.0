@@ -3750,7 +3750,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 КонецПроцедуры
 
 // Пример строки запуска - ""Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования""
-//	""C:\Program Files (x86)\1cv82\8.2.18.96\bin\1cv8c.exe"" /DisableStartupMessages /Execute E:\ТестыИМ\UnitTestRunner.epf /S ""as-msk-a6122\im_test"" /Out ""E:\ТестыИМ\Тесты\log.txt""  /C ""Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования"" /LogUI
+//	""C:\Program Files (x86)\1cv82\8.2.18.96\bin\1cv8c.exe"" /DisableStartupMessages /Execute E:\ТестыИМ\xddTestRunner.epf /S ""as-msk-a6122\im_test"" /Out ""E:\ТестыИМ\Тесты\log.txt""  /C ""Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования"" /LogUI
 &НаКлиенте
 Функция ОбработатьПараметрыЗапуска()
 	путьКТестам = """";
