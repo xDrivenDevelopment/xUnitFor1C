@@ -1,4 +1,4 @@
-﻿25400b38-4862-4842-8893-66bfbd06f859.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\Тест_ЧтенияОднойЗаписиМетаданногоПоОтбору.epf.und\25400b38-4862-4842-8893-66bfbd06f859.0\info
+﻿25400b38-4862-4842-8893-66bfbd06f859.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\Тест_ПолучитьЭлементыМетаданногоПоОтбору.epf.und\25400b38-4862-4842-8893-66bfbd06f859.0\info
 25400b38-4862-4842-8893-66bfbd06f859.0\text-->ObjectModule.txt
 2f5b05a9-6a6a-428a-b8eb-fa2e029f4a23-->und\2f5b05a9-6a6a-428a-b8eb-fa2e029f4a23
 copyinfo-->und\copyinfo
