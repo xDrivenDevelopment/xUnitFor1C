@@ -1,0 +1,1585 @@
+﻿//Пример вызова (в отладчике, табло или своем коде)
+//	ВнешниеОбработки.Создать("T:\Информатор_82.epf").Изучить(Новый ТаблицаЗначений)
+// для исследования глобального контекста следующий вызов
+//	ВнешниеОбработки.Создать("T:\Информатор_82.epf").Изучить(Неопределено)
+//
+// Экспортные методы
+// 		булево = Изучить(Объект) - показ формы обработки с данными объекта
+// 		таблицаЗначений = ПолучитьТаблицуМетодов(Объект)
+// 		таблицаЗначений = ПолучитьТаблицуСвойств(Объект)
+// 		булево = МетодСуществует(Объект, наименованиеМетода)
+// 		булево = СвойствоСуществует(Объект, наименованиеСвойства)
+//
+// ВАЖНО: исключения зависших/циклических ссылок либо сбрасывать объект Информатора либо вызывать метод Сброс()
+// 
+
+
+Перем	СТРОКА_ОПИСАНИЕ_МЕТОДА_БЕЗ_ПАРАМЕТРОВ Экспорт;
+Перем	СТРОКА_МЕТОДЫ Экспорт;
+Перем	СТРОКА_СВОЙСТВА Экспорт;
+
+Перем	СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ; // Экспорт;
+
+Перем	ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ; // Экспорт;
+Перем	ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ;
+Перем	ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_МЕТОДОВ;
+Перем	ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА;
+Перем	ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_МЕТОДЫ;
+
+Перем	ИМЯ_КЛАССА_DynamicWrapperX;
+
+Перем	ScrptCtrl;
+Перем	Wrap;
+Перем	ТЗ;
+Перем	buf;
+Перем	ppv;
+
+Перем	WshShell; // Экспорт;
+Перем	ФайлРегистратораКомпонент; // Экспорт;
+Перем	ИсполнительСкрытыхКомандСистемы;
+Перем	ПапкаВнешнихКомпонент; // Экспорт;
+Перем	Флаг;
+
+Перем	юТест; // для тестирования в 1CUnit
+
+Функция Версия() Экспорт 
+	Возврат "1.16";
+КонецФункции
+
+#Если Клиент Тогда
+
+// основной метод для внешнего использования, например, в отладчике
+// если Объект = неопределено, то исследуется глобальный контекст
+Функция Изучить(Объект, Модально = Ложь) Экспорт
+	форма = ЭтотОбъект.ПолучитьФорму(,, Новый УникальныйИдентификатор);
+	
+	ИсследоватьОбъект(Объект);
+
+	форма.УстановитьЗаголовокПоОбъекту(Объект);
+		//форма.СпрятатьКолонкиВЗависимостиОтОбъекта(Объект);
+	Если Модально Тогда
+		форма.ОткрытьМодально();
+	Иначе
+		форма.Открыть();
+	КонецЕсли; 
+	
+	Возврат Истина;
+КонецФункции
+
+Функция ПолучитьТаблицуСвойств(Объект) Экспорт
+	Если НЕ ТипДоступенДляИсследования(Объект) Тогда
+		ВызватьИсключение "Объект недоступен для изучения";
+	КонецЕсли;
+	
+	ИсследоватьОбъект(Объект, ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА);
+	
+	резТаблица = Новый ТаблицаЗначений;
+	резТаблица.Колонки.Добавить("Наименование");
+	резТаблица.Колонки.Добавить("Тип");
+	резТаблица.Колонки.Добавить("Значение");
+	резТаблица.Колонки.Добавить("Индекс");
+	резТаблица.Колонки.Добавить("ИндексКонтекста");
+	
+	новСтрока = ДЗ.Строки[0];
+	Для каждого строка Из новСтрока.Строки Цикл
+		НоваяСтрока = резТаблица.Добавить(); 
+		ЗаполнитьЗначенияСвойств(НоваяСтрока, строка);
+		НоваяСтрока.Значение = строка.Объект;
+			//НоваяСтрока.Наименование = строка.Наименование;
+			//НоваяСтрока.Индекс = строка.Индекс;
+	КонецЦикла;
+
+	Сброс();
+	Возврат резТаблица;
+КонецФункции
+
+Функция ПолучитьТаблицуМетодов(Объект) Экспорт
+	Если НЕ ТипДоступенДляИсследования(Объект) Тогда
+		ВызватьИсключение "Объект недоступен для изучения";
+	КонецЕсли;
+	
+	ИсследоватьОбъект(Объект, ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_МЕТОДЫ);
+	
+	резТаблица = Новый ТаблицаЗначений;
+	резТаблица.Колонки.Добавить("Наименование");
+	резТаблица.Колонки.Добавить("КоличествоПараметров");
+	резТаблица.Колонки.Добавить("ЕстьВозвращаемоеЗначение");
+		//резТаблица.Колонки.Добавить("Тип");
+		//резТаблица.Колонки.Добавить("Значение");
+	резТаблица.Колонки.Добавить("Индекс");
+	резТаблица.Колонки.Добавить("ИндексКонтекста");
+
+	новСтрока = ДЗ.Строки[0];
+	Для каждого строка Из новСтрока.Строки Цикл
+		НоваяСтрока = резТаблица.Добавить(); 
+		ЗаполнитьЗначенияСвойств(НоваяСтрока, строка);
+			//НоваяСтрока.Наименование = строка.Наименование;
+			//НоваяСтрока.Значение = строка.Объект;
+			//НоваяСтрока.КоличествоПараметров = строка.КоличествоПараметров;
+			//НоваяСтрока.ЕстьВозвращаемоеЗначение = строка.ЕстьВозвращаемоеЗначение = Истина;
+			//НоваяСтрока.Индекс = строка.ИндексМетодаСвойства;
+	КонецЦикла;
+
+	Сброс();
+	Возврат резТаблица;
+КонецФункции
+
+Функция СвойствоСуществует(Объект, наименованиеСвойства) Экспорт
+	таблица = ПолучитьТаблицуСвойств(Объект);
+	строка = таблица.Найти(наименованиеСвойства, "Наименование");
+	Возврат строка <> Неопределено;
+КонецФункции
+
+Функция МетодСуществует(Объект, наименованиеМетода) Экспорт
+	таблица = ПолучитьТаблицуМетодов(Объект);
+	строка = таблица.Найти(наименованиеМетода, "Наименование");
+	Возврат строка <> Неопределено;
+КонецФункции
+
+Процедура GetIContext(текСтр, Объект)
+	Если ТипДоступенДляИсследования(Объект, -1) Тогда 
+		текСтр.IContext	= ScrptCtrl.Run("GetIContext", Объект);	
+		текСтр.VTable	= ScrptCtrl.Run("GetVT", Объект);		
+	КонецЕсли;
+КонецПроцедуры
+
+// вызывается из формы обработки
+Процедура ИсследоватьОбъект(Объект, парамФлагЗаполнения = Неопределено ) Экспорт
+	Если Объект = Неопределено Тогда // глобальный контекст
+			//Если ЭтоПлатформа_81() Тогда
+			//	ВызватьИсключение "Изучение глобального контекста для платформы 8.1 пока не реализовано!";
+			//КонецЕсли; 
+		
+		Объект = СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ;
+	//ElsIf	Объект = ЭтотОбъект.ПолучитьФорму() Then	
+	//	Возврат;		
+	КонецЕсли; 
+	
+	Перехват(ЭтоГлобальныйКонтекст(Объект));
+	Очистить(ДЗ.Строки);
+	ДЗ.Строки.Очистить();
+	
+	новСтрока 			 	= ДЗ.Строки.Добавить();
+	новСтрока.Наименование 	= "Значение";
+	новСтрока.Тип		 	= ТипЗнч(Объект);
+	новСтрока.Значение	 	= Объект;
+	новСтрока.Объект	 	= Объект;
+	GetIContext(новСтрока, Объект);
+	
+	Если парамФлагЗаполнения = Неопределено Тогда
+		парамФлагЗаполнения = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ;
+	КонецЕсли;
+	
+	ЗаполнитьСубДерево(Объект, новСтрока, парамФлагЗаполнения); //0
+КонецПроцедуры
+
+Функция Инит() //Экспорт 
+	ПапкаВнешнихКомпонент = Новый Файл(КаталогВременныхФайлов());
+	
+	WshShell = Новый COMОбъект("WScript.Shell");
+
+	Wrap = "НеИнициализирован";
+	Wrap = ПолучитьWinAPI();
+	
+	ДЗ.Колонки.Добавить("Наименование");
+	ДЗ.Колонки.Добавить("Тип");
+	ДЗ.Колонки.Добавить("Значение");
+	
+	ДЗ.Колонки.Добавить("Объект");
+	ДЗ.Колонки.Добавить("УжеЗаполняли");
+	ДЗ.Колонки.Добавить("ЕстьВозвращаемоеЗначение");
+	ДЗ.Колонки.Добавить("КоличествоПараметров");
+	
+	ДЗ.Колонки.Добавить("ИндексКонтекста");
+	ДЗ.Колонки.Добавить("Индекс"); //ИндексМетодаСвойства");
+	ДЗ.Колонки.Добавить("IContext");
+	ДЗ.Колонки.Добавить("VTable");
+КонецФункции
+
+// вызывать для сброса данных для исключения зависших ссылок
+Процедура Сброс() Экспорт
+	ДЗ.Строки.Очистить();
+КонецПроцедуры
+
+Процедура Перехват(ЭтоГлобальныйКонтекст) //Экспорт
+	If ТипЗнч(ScrptCtrl) <> Тип("Неопределено") Then Возврат; EndIf;	
+	
+	ТекстМодуля = Public_Consts();
+	ТекстМодуля = ТекстМодуля + Public_Vars();
+	ТекстМодуля = ТекстМодуля + Class_Service();
+	ТекстМодуля = ТекстМодуля + Funcs();
+	
+	ScrptCtrl          	= Новый COMОбъект("MSScriptControl.ScriptControl");
+	ScrptCtrl.Language 	= "vbscript";
+	ScrptCtrl.TimeOut	= -1;
+	
+	Попытка
+		ScrptCtrl.AddCode(ТекстМодуля);	
+	Исключение
+		Сообщить(ScrptCtrl.Error.Description);
+		Сообщить(ScrptCtrl.Error.Source);
+		Сообщить(ScrptCtrl.Error.Text);
+		Сообщить(ScrptCtrl.Error.Line);
+	КонецПопытки;
+	// заглушка для исключения проблем при загрузке тестов в xUnitFor1C
+	Если ЭтоГлобальныйКонтекст Тогда
+		ScrptCtrl.Eval("oServ.HookOn");
+		Сообщить(1);
+		ScrptCtrl.Eval("oServ.HookOff");
+	КонецЕсли;
+	
+	//Для вычисления значения функций
+	buf = ScrptCtrl.Eval("oServ.buf");
+	ppv = ScrptCtrl.Eval("oServ.ppv");	
+   	Wrap.RegisterAddr(buf, "ImplBase_call", "i=pllp", "r=l");	//ID 20
+КонецПроцедуры
+
+Функция ЭтоПлатформа_81()
+	Перем локальная;
+	этоПлатформа_81 = Истина;
+	Попытка
+		Выполнить("локальная = Метаданные.РежимСовместимости");		
+		этоПлатформа_81 = Ложь;
+	Исключение
+	КонецПопытки; 
+	Возврат этоПлатформа_81;
+КонецФункции
+
+Функция Public_Consts()
+	
+	ТекстМодуля = "	 
+		|Public Const S_OK						= &h0
+		|Public Const E_NOINTERFACE  			= &h80004002
+		|Public Const CP_ACP					= &h0
+		|
+		|Public Const HEAP_ZERO_MEMORY 			= &h00000008
+		|Public Const PAGE_EXECUTE_READWRITE	= &h40
+		|Public Const PAGE_EXECUTE_READ         = &h20
+		|
+		|Public Const VT_BSTR					= &h8
+		|Public Const VT_DISPATCH				= &h9
+		|
+		|'IID Интерфейсов
+		|Public Const IID_IContextExtImpBase 	= ""{FD7B6CC2-DC8E-11D2-B8D0-008048DA0335}""
+		|Public Const IID_IValueImplBase	 	= ""{FD7B6CC3-DC8E-11D2-B8D0-008048DA0335}""
+		|Public Const IID_GC					= ""{F7399BD5-100E-4D0A-A5CE-F97810ACFEE9}""
+		|
+		|Public Const platform_offset			= &h18	
+		|";
+		
+	СисИнфо 	= Новый СистемнаяИнформация;	
+	ВерсияDLL 	= СтрЗаменить(Лев(СисИнфо.ВерсияПриложения, 4), ".", "");
+	ТекстМодуля = ТекстМодуля + "	 	
+		|Public Const dllName					= ""core" + ВерсияDLL + """ 
+		|";
+		
+	
+	Возврат ТекстМодуля;
+КонецФункции
+
+Функция Public_Vars()
+	ТекстМодуля = "	 
+		|Public oServ	
+		|
+		|Public	Wrap
+		|Public curVers			'Версия сборки 8.X
+		|Public VersPlatform	'Версия 8.X
+		|
+		|Set Wrap = CreateObject("""+ИМЯ_КЛАССА_DynamicWrapperX+""")
+		|
+		|Public bsl_off_13
+		|";
+			//|Set Wrap = CreateObject(""DynamicWrapperX"")
+		
+	Возврат ТекстМодуля;	
+КонецФункции
+
+Функция Class_Service()
+	ТекстМодуля = "
+//{		|Class	Service
+		|Class	Service
+//{		|Vars
+		|	Private hHeap
+		|	Public	buf				'Буфер для вызова функций
+		|	Private	buf_thiscall	'Буфер для вызова функций
+		|
+		//|	Private res				'Память для результата VirtualProtect
+		|	Private	pGC				'Глоб.объект
+		|	Public	ppv				
+		|	Private pIID
+		|	Private swIID
+		|	Private handle
+		|
+		|	Public	numGK				'Кол-во ГК контекстов
+		|	Public	pArray			'Массив ГК
+		|
+		|	'Для передачи параметров
+		|	Public paramArr2		'Для печати
+		|	Public paramArr9		'Для вызова функций
+		|
+		|	Private pMes			'Контекст, с методом /Сообщить/
+		|	Private numMes			'Номер метода /Сообщить/
+		|
+		|	Private adrValue_str	'адрес ф-и	__thiscall core::Value::Value(wchar_t const *)
+		|	Private adrValue_void   'адрес ф-и	__thiscall core::Value::Value(void)
+		|
+		|	Private Ref
+		|	Private oldFunc
+		|	Private newFunc
+//}		|
+//{		|Release
+        |	Private Function Release(pObj)
+		|		vfunc pObj, (3 - 1) * 4
+		|       res	= Wrap.IUnknown_Release(pObj)
+		|	End Function
+//}		|
+//{		|FindCG_Message
+		|	Private Function FindCG_Message()
+		|		FindCG_Message = -1
+		|
+		|		'Найдем контекст, в котором есть метод ""Сообщить""
+		|		 j = 0
+		|		PutString(""Сообщить"")
+		|		Do While j < numGK + 1
+		|			pIContext = Wrap.NumGet(pArray, j * 4)
+		|	
+		|			vfunc pIContext, 4 * (16 - 1)
+		|			numMes = Wrap.ImplBase_findMethod(pIContext, ppv)
+		|			If numMes =>0 Then
+		|				FindCG_Message = pIContext
+		|				Exit Do
+		|			End If
+		|			 j =  j + 1
+		|		Loop
+		|       '=======================================================
+		|	End Function
+//}		|
+//{		|GetArrayGC	
+		|	Private Function GetArrayGC()
+		|		IIDFromString IID_GC
+		|
+		|		'ГО (1)
+		|		vfunc pGC, (15 - 1) * 4
+		|		pObj1 = Wrap.GetObjectFromIID(pGC, pIID)
+		|
+		|		'ГО (2)
+		|		vfunc pObj1, (13 - 1) * 4
+		|		res	= Wrap.GetObj(pObj1, ppv)
+		|		pObj2 	= Wrap.NumGet(ppv)
+		|
+		|		If VersPlatform = 82 Then
+		|			Select Case curVers
+		|				Case 13
+		|               	numfunc = 68
+		|				Case 14
+		|					numfunc = 69
+		|				Case 15
+		|					numfunc = 70
+		|				Case Else
+		|           		numfunc = 70
+		|			End Select
+		|		Else
+		|			numfunc = 71
+		|		End If
+		|
+		|		'ГО (3)
+		|		vfunc pObj2, (numfunc - 1) * 4
+		|		res1 = Wrap.GetObj(pObj2, ppv)	
+		|		pObj3 = Wrap.NumGet(ppv)
+		|	
+		|		'Массив
+		|		GetArrayGC = Wrap.NumGet(pObj3, &h10)
+		|
+		|		'Количество
+		|		numGK = (Wrap.NumGet(pObj3, &h14) - GetArrayGC) / 4
+		|		numGK = numGK - 1
+		|
+		|		Release pObj3
+		|		Release pObj2
+		|		Release pObj1
+		|		Release pGC
+		|	End Function
+//}		|
+//{		|Class_Initialize
+		|	Private Sub Class_Initialize
+		|		Wrap.Register ""Kernel32"",	""HeapAlloc"",	""i=lll"",	""r=l""
+	    |		Wrap.Register ""Kernel32"",	""GetProcessHeap"", ""r=l""
+	    |		Wrap.Register ""Kernel32"",	""HeapFree"", ""i=lll"",""r=l""
+		|		Wrap.Register ""Kernel32"",	""VirtualProtect"" , ""i=lllp"", ""r=l""
+		|		Wrap.Register ""Kernel32"", ""LoadLibrary"" , ""i=s"", ""r=h""
+		|		Wrap.Register ""Kernel32"", ""GetProcAddress"" , ""i=hs"", ""r=u""
+		|		Wrap.Register ""Kernel32"", ""MultiByteToWideChar"", ""i=llslpl"", ""r=l""
+		|		Wrap.Register ""Ole32""   , ""IIDFromString"", ""i=pp"", ""r=l""
+		|		Wrap.Register ""Version"", 	""GetFileVersionInfoSize"",	""i=sl"", ""r=l""
+		|		Wrap.Register ""Version"", 	""GetFileVersionInfo"",	""i=sllp"", ""r=l""
+		|		Wrap.Register ""Version"", 	""VerQueryValue"", ""i=pspp"", ""r=l""
+		|
+		|		hHeap		= Wrap.GetProcessHeap() 
+		|		curVers		= GetVersion()	
+		|
+		|		numGK		= 0
+		|		code_len 	= 10
+		|		
+		|		buf_thiscall= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, code_len)
+		|		ppv			= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, &h20)	'Под внутр. нужды и строки
+		|       pIID		= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, 32)
+		|		swIID		= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, 100)
+		|
+		|		paramArr2	= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, 16 * 2 + 4 * (2 + 1) + 4 * 3)	'На 2 параметра
+		|		paramArr9	= Wrap.HeapAlloc(hHeap, HEAP_ZERO_MEMORY, 16 * 9 + 4 * (9 + 1) + 4 * 3)	'На 9 параметров
+		|       '=======================================================
+		|		'Буфер для вызова функций интерфейса
+		|		Wrap.VirtualProtect buf_thiscall, code_len, PAGE_EXECUTE_READWRITE, ppv	
+		|
+		|		Wrap.NumPut &hB9, buf_thiscall, 0, ""b""	'mov ecx, ....   pObj
+		|
+		|		buf = buf_thiscall + 5
+		|		Wrap.NumPut	&hE9, 	buf, 0, ""b""			'jmp ...Addr
+		|       '=======================================================
+		|       'IUnknown
+		|		Wrap.RegisterAddr buf, ""IUnknown_QueryInterface"", ""i=ppp"", ""r=l""				'ID 1
+		|		Wrap.RegisterAddr buf, ""IUnknown_AddRef"", ""i=p"", ""r=l""						'ID 2
+		|		Wrap.RegisterAddr buf, ""IUnknown_Release"", ""i=p"", ""r=l""						'ID 3
+		|
+		|		'IContextExtImplBase
+		|		Wrap.RegisterAddr buf	, ""ImplBase_getName"", ""i=pll"", ""r=l""				'ID getPropName - 5, getMethodName - 10
+		|		Wrap.RegisterAddr buf	, ""ImplBase_getN"", ""i=p"", ""r=l""					'ID getNProps   - 4, getNMethods - 9
+		|		Wrap.RegisterAddr buf	, ""ImplBase_getNParams"", ""i=pl"", ""r=l""			'ID 11
+		|		Wrap.RegisterAddr buf	, ""ImplBase_hasRetVal"", ""i=pl"", ""r=l""				'ID 15
+		|		Wrap.RegisterAddr buf	, ""ImplBase_findMethod"", ""i=pp"", ""r=l""			'ID 16
+		|		Wrap.RegisterAddr buf	, ""ImplBase_getParamDefValue"", ""i=pllp"", ""r=l""	'ID 14
+		|		Wrap.RegisterAddr buf	, ""ImplBase_call"", ""i=pllp"", ""r=l""				'ID 20
+		|		Wrap.RegisterAddr buf_thiscall, ""ImplBase_call_thiscall"", ""i=pllp"", ""r=l""	'ID 20
+		|
+		|		'IValue
+		|		Wrap.RegisterAddr buf_thiscall, ""setIValue"", ""i=p"", ""r=l""						'ID 1
+		|		Wrap.RegisterAddr buf_thiscall, ""getIValue"", ""i=p"", ""r=l""						'ID 2
+		|		Wrap.RegisterAddr buf_thiscall, ""type0"", ""i=p"", ""r=l""							'ID 7
+		|
+		|		'ObjectTypeCore
+		|		Wrap.RegisterAddr buf, ""getTypeCode"", ""i=p"", ""r=l""							'ID 4
+		|       '=======================================================
+		|		handle = Wrap.LoadLibrary(dllName)
+		|		'Функция возвращает ГК
+		|		Addr1	= Wrap.GetProcAddress(handle, ""?current_process@core@@YAPAVSCOM_Process@1@XZ"")
+		|       
+		|		Wrap.RegisterAddr	Addr1, ""current_process"", ""r=l""							'core::current_process(void)
+		|
+		|		'Вот это Глобальный Контекст
+		|		pGC 	= Wrap.current_process()
+		|       '=======================================================
+		|		'CurProc
+		|		'Функция из ВТ объекта pGC 
+		|		'возвращает какой-то глобальный объект (1)
+		|		'в ВТ (1) есть ф-я, возвращающая другой ГО (2)
+		|		'в ВТ (2) есть ф-я, возвращающая другой ГО (3)
+		|		'(3) - содержит массив ГК IContextExtImplBase
+		|
+		|		Wrap.RegisterAddr buf, ""GetObjectFromIID"", ""i=pp"", ""r=l""			'ID 15
+		|       
+		|		'Функция, получения объектов 
+		|		Wrap.RegisterAddr buf, ""GetObj"", ""i=pp"", ""r=p""
+		|
+		|		'Получим указатель на глоб. массив ГК
+		|       pArray = GetArrayGC()
+		|
+		|		'Для вывода сообщений
+		|		pMes = FindCG_Message()
+		|       '=======================================================
+		|
+		|		adrValue_str	= Wrap.GetProcAddress(handle, ""??0Value@core@@QAE@PB_W@Z"")		'__thiscall core::Value::Value(wchar_t const *)
+		|       Wrap.RegisterAddr buf_thiscall, ""Value_str"", ""i=p"", ""r=l""
+		|
+		|		adrValue_void	= Wrap.GetProcAddress(handle, ""??0Value@core@@QAE@XZ"")			'__thiscall core::Value::Value(void)	
+		|       Wrap.RegisterAddr buf_thiscall, ""Value_void"", ""r=l""
+		|
+		|		'Обертка 1C-х объектов в IDispatch
+		|		Addr1	= Wrap.GetProcAddress(handle, ""?value_to_dispatch@core@@YA?AV?$InterfacePtr@UIDispatch@@@1@PAVIValue@1@PAVSCOM_ProcessData@1@@Z"")
+		|		Wrap.RegisterAddr	Addr1, ""value_to_dispatch"", ""i=ppl"", ""r=l""
+		|
+		|		Set Ref = GetRef(""IContextExtImplBase_call"")
+		|		newFunc	= Wrap.RegisterCallback(Ref, ""i=pllp"", ""r=l"")
+		|		Wrap.VirtualProtect newFunc - 6, 21, PAGE_EXECUTE_READWRITE, ppv	
+		|	End Sub
+//}		|
+//{		|Class_Terminate
+		|	Private Sub Class_Terminate
+		|		Wrap.HeapFree hHeap, 0, buf_thiscall
+		|		Wrap.HeapFree hHeap, 0,	ppv
+		|		Wrap.HeapFree hHeap, 0, pIID
+		|		Wrap.HeapFree hHeap, 0, swIID
+		|
+		|		Wrap.HeapFree hHeap, 0, paramArr2
+		|		Wrap.HeapFree hHeap, 0, paramArr9
+		|
+		|		Set Ref	 = Nothing
+		|		Set Wrap = Nothing
+		//|		MsgBox ""Class_Terminate2""
+		|	End Sub
+//}		|
+//{		|GetString
+		|	Private Function GetString(offset)
+		|		ppv1 = ppv + offset
+		|		ln 		= Wrap.NumGet(ppv1)
+		|		If ln > 15 Then
+		|   		GetString = Wrap.StrGet(Wrap.NumGet(ppv1, 4) + 8)
+		|		Else
+		|   		GetString = Wrap.StrGet(ppv1 + 4)
+		|		End If
+		|	End Function
+//}		|
+//{		|PutString
+		|	Private Function PutString(txt)
+		|		'Формируем структуру строки
+		|		ln = Len(txt)
+		|		If ln > 15 Then
+		|			Wrap.NumPut 16, ppv, 0						'Флаг, что строка длиннее 15 символов
+		|			Wrap.NumPut (ppv + 16), ppv, 4				'Указатель на начало строки
+		|           Wrap.NumPut (ppv + 24) + ln * 2, ppv, 8     'Указатель на 0, за концом строки
+		|           Wrap.NumPut 1, ppv, 12      				'Не знаю, что это
+		|
+		|			Wrap.NumPut 1, ppv, 16						'Это счетчик ссылок на строку
+		|			Wrap.NumPut 1, ppv, 20						'Не знаю, что это	
+		|		    res = Wrap.MultiByteToWideChar(CP_ACP, 0, txt, -1, ppv + 24, ln)	
+		|			Wrap.NumPut 0, ppv, 24 + ln * 2
+		|		Else
+		|       	Wrap.NumPut ln, ppv, 0
+		|			res = Wrap.MultiByteToWideChar(CP_ACP, 0, txt, -1, ppv + 4, ln)	
+		|		End If
+		|	End Function
+//}		|
+//{		|GetVersion
+        |	Private Function GetVersion()
+		|		sz = Wrap.GetFileVersionInfoSize(dllName, 0)	
+		|
+		|		pbuf		= Wrap.HeapAlloc(hHeap, 0, sz)
+		|		lplpBuffer  = Wrap.HeapAlloc(hHeap, 0, 4)
+		|		puLen 		= Wrap.HeapAlloc(hHeap, 0, 4)
+		|
+		|		res1 = Wrap.GetFileVersionInfo(dllName,0, sz, pbuf)
+		|		res1 = Wrap.VerQueryValue(pbuf, ""\"",	lplpBuffer, puLen)
+		|
+		|		VS_FIXEDFILEINFO = Wrap.NumGet(lplpBuffer)
+		|       'Младшая часть версии
+		|		lpart = Wrap.NumGet(VS_FIXEDFILEINFO, &h0C, ""t"")
+		|		'Старшая часть версии
+		|		hpart = Wrap.NumGet(VS_FIXEDFILEINFO, &h0E, ""t"")
+		|
+		//|		GetVersion = CSTR(hpart) & ""."" & CSTR(lpart)
+		|		GetVersion 		= hpart
+		|
+		|		VersPlatform 	= Wrap.NumGet(VS_FIXEDFILEINFO, &h0A, ""t"") * 10
+		|		VersPlatform 	= VersPlatform + Wrap.NumGet(VS_FIXEDFILEINFO, &h08, ""t"")
+		|
+		|		Wrap.HeapFree hHeap, 0, pbuf
+		|		Wrap.HeapFree hHeap, 0, lplpBuffer
+		|		Wrap.HeapFree hHeap, 0, puLen
+		|	End Function
+//}		|
+//{		|IIDFromString
+		|	Private Function IIDFromString(sIDD)	
+		|		IIDFromString = Wrap.MultiByteToWideChar(CP_ACP, 0, sIDD, -1, swIID, 100)
+		|		IIDFromString = Wrap.IIDFromString(swIID, pIID)
+		|	End Function
+//}		|
+//{		|QueryInterface
+		|	Private Function QueryInterface(pObj, sIDD)
+		|		QueryInterface 	= E_NOINTERFACE
+		|		If IIDFromString(sIDD) = S_OK Then
+		|			vfunc pObj, &h0
+		|			QueryInterface = Wrap.IUnknown_QueryInterface(pObj, pIID, ppv)
+		|		End If 
+		|	End Function
+//}		|
+//{		|GetInterface
+		|   Public Function GetInterface(pObj, sIID)
+		|		GetInterface = QueryInterface(pObj, sIID)
+		|		If GetInterface = S_OK Then
+		|			GetInterface = Wrap.NumGet(ppv)	
+		|		End If
+		|	End Function
+//}		|
+//{		|vfunc
+		|	Public Sub vfunc(pObj, offset)	
+		|		Addr = Wrap.NumGet(Wrap.NumGet(pObj), offset)	
+		|		Wrap.NumPut	Addr - (buf + 1 + 4), 	buf, 1
+		|	End Sub
+//}		|
+//{		|this_call
+		|	Public Sub this_call(ECX, Addr)
+		|		Wrap.NumPut ECX, 	buf_thiscall,1
+		|		Wrap.NumPut	Addr - (buf + 1 + 4),buf, 1
+		|	End Sub
+//}		|
+//{		|SetParamsCount
+		|	Private Function SetParamsCount(pParams, num, cnt)
+		|		'Указатели на начало и конец массива указателей на параметры
+		|
+		|		'Указатель на начало массива указателей на параметры
+		|		Wrap.NumPut (pParams + num * 16), pParams, num * 16 + (num + 1) * 4
+		|		
+		|		'Указатель на конец массива указателей на параметры
+		|		Wrap.NumPut (pParams + num * 16 + cnt * 4), pParams, num * 16 + (num + 1) * 4 + 4
+		|		Wrap.NumPut (pParams + num * 16 + cnt * 4), pParams, num * 16 + (num + 1) * 4 + 8
+		|   End Function
+//}		|
+//{     |PrepareParams	
+		|	Private Function PrepareParams(pParams, num)
+		|		'Подготовим параметры, 16 байт на параметр
+		|		bsl_off = bsl_off_13
+		|
+		|       For j = 0 To num - 1 
+		|			Wrap.NumPut bsl_off, pParams, j * 16
+		|		Next
+		|
+		|		'Указатели на параметры
+		|       For j = 0 To num - 1 
+		|			Wrap.NumPut (pParams + j * 16), pParams, num * 16 + j * 4
+		|		Next
+		|		
+		|		'Установим по-умолчанию 2 параметра
+		|		SetParamsCount pParams, num, 2
+		|	End Function
+//}		|
+//{     |SetParam
+		|	Private Function SetParam(pParams, num, paramType, paramValue, paramValueType)
+		|		Wrap.NumPut paramType, 		pParams, (num - 1) * 16 + 4
+		|		Wrap.NumPut paramValue, 	pParams, (num - 1) * 16 + 8
+		|		Wrap.NumPut paramValueType, pParams, (num - 1) * 16 + 12
+		|	End Function
+//}     |
+//{     |GetParam
+		|	Private Function GetParam(pParams, num)
+		|		GetParam = Wrap.NumGet(pParams, 8 + num * 16)
+		|	End Function
+//}     |
+//{		|getParamList
+        |	Public Function getParamList(pParams, num)
+        |		getParamList = pParams + num * 16 + (num + 1) * 4
+        |	End Function
+//}		|
+//{     |getType
+		|	Public Function	getType(pIValue)
+		|		Addr = Wrap.NumGet(Wrap.NumGet(pIValue), (7 - 1) * 4)
+		|		this_call pIValue, Addr
+		|		res  = Wrap.type0(ppv + 8)
+		|
+		|		pObjTypeCore = Wrap.NumGet(ppv + 8)
+		|       vfunc pObjTypeCore, (4 - 1) * 4
+		|		getType = Wrap.getTypeCode(pObjTypeCore)
+		//|		MsgBox getType
+		|	End Function
+//}     |
+//{     |getIValue
+		|	Private Function	getIValue(pValue)
+		|		Addr 		= Wrap.NumGet(Wrap.NumGet(pValue), (2 - 1) * 4)
+		|
+		|		this_call pValue, Addr
+		|		res  		= Wrap.getIValue(ppv + 8)
+		|		getIValue 	= Wrap.NumGet(ppv + 8)
+		|	End Function
+//}     |
+//{     |setIValue
+		|	Private Function	setIValue(pIValue, pValue)
+		|		Addr 		= Wrap.NumGet(Wrap.NumGet(pIValue), (1 - 1) * 4)
+		|
+		|		this_call pIValue, Addr
+		|		setIValue	= Wrap.setIValue(pValue)
+		|	End Function
+//}     |
+//{		|Message
+		|	Public Function Message(txt)
+		|		'1-й параметр, строка
+		|       '=======================================================	
+		|		this_call ppv, adrValue_str
+		|		res 	= Wrap.Value_str(txt)
+		|		IValue 	= getIValue(ppv)
+		|		res 	= SetParam (paramArr2, 1, 0, IValue, 4)
+		|
+		|		'2-й параметр, перечисление
+		|		'=======================================================		
+		|		this_call ppv, adrValue_void
+		|		res 	= Wrap.Value_void()
+		|
+		|		vfunc pMes, 4 * (14 - 1)
+		|		res 	= Wrap.ImplBase_getParamDefValue(pMes, numMes, 1, ppv)
+		|		IValue 	= getIValue(ppv)
+		|		res		= SetParam(paramArr2, 2, 0, IValue, 0)
+		|
+		|		SetParamsCount paramArr2, 2, 2
+		|       '=======================================================		
+		|		vtable 	= Wrap.NumGet(pMes)
+		|		Addr 	= Wrap.NumGet(vtable, 4 * (20 - 1))
+		|
+		|		this_call numMes, Addr
+		|		Wrap.ImplBase_call_thiscall pMes, numMes, 0, getParamList(paramArr2, 2)
+		|	End Function
+//}		|
+//{		|PrepareDefParams
+		|Public Function PrepareDefParams(pIContext, numFunc)	
+		|		PrepareDefParams = -1	
+		|
+		|		vfunc pIContext, 4 * (11 - 1)
+		|		NParams = Wrap.ImplBase_getNParams(pIContext, numFunc)
+		|				
+		|      	If (NParams = 0) OR (NParams > 9)  Then
+		|			Exit Function
+		|		End If
+		|
+		|		j = 0
+		|		Do While j < NParams
+		|			this_call ppv, adrValue_void
+		|			res 	= Wrap.Value_void()
+		|
+		|			vfunc pIContext, 4 * (14 - 1)
+		|			res 		= Wrap.ImplBase_getParamDefValue(pIContext, numFunc, j, ppv)
+		|			If res <> S_OK Then
+		|				PrepareDefParams = -1
+		|				Exit Do
+		|			End If
+		|			IValue 		= getIValue(ppv)
+		|			typeCode 	= getType(ppv)
+		|			res 		= SetParam(paramArr9, j + 1, 0, IValue, typeCode)
+		|			j 			= j + 1
+		|		Loop
+		|		If PrepareDefParams = -1 Then
+		|			Exit Function
+		|		End If
+		|
+		|		SetParamsCount paramArr9, 9, NParams
+		|
+		|		this_call ppv, adrValue_void
+		|		res 	= Wrap.Value_void()
+		|
+		|		vfunc	 pIContext, 4 * (20 - 1)
+		|   	PrepareDefParams = getParamList(paramArr9, 9)
+		|	End Function
+//}		|
+//{		|RetValueImplBase
+		|	Public Function RetValueImplBase()
+		|		pCont			= getIValue(ppv)
+		|		pValueImplBase 	= GetInterface(pCont, IID_IValueImplBase)
+		|
+		|		res		 		= Wrap.value_to_dispatch(ppv, pValueImplBase, 0)
+		|      	pDisp	 		= Wrap.NumGet(ppv)
+		|			
+		|		'Уменьшим счетчик ссылок (незаконно - не через Release), иначе повиснет ссылка и 1С не закроется
+		|		res 	 		= Wrap.NumGet(pDisp, 8)
+		|		res 	 		= Wrap.NumPut(res - 1, pDisp, 8)
+		|
+		|		Set RetValueImplBase = Wrap.GetObject(pDisp)
+		|	End Function
+//}		|
+//{		|HookOn
+        |	Public Function HookOn()
+		|		vtable = Wrap.NumGet(pMes)
+		|		Wrap.VirtualProtect vtable + (20 - 1) * 4, 4, PAGE_EXECUTE_READWRITE, ppv
+		|		oldFunc = Wrap.NumGet(vtable, (20 - 1) * 4)
+		|		Wrap.NumPut newFunc, vtable,(20 - 1) * 4 
+		|	End Function	
+//}     |
+//{		|HookOn
+        |	Public Function HookOff()
+		|		vtable = Wrap.NumGet(pMes)
+		|		Wrap.NumPut oldFunc, vtable,(20 - 1) * 4 
+		|		Wrap.VirtualProtect vtable + (20 - 1) * 4, 4, PAGE_EXECUTE_READ, ppv
+		|
+		|		PrepareParams paramArr2, 2
+		|		PrepareParams paramArr9, 9
+		|	End Function	
+//}     |
+		|End Class
+//}		|
+		|Set oServ = New Service 
+		|";
+	
+	Возврат ТекстМодуля;	
+КонецФункции
+
+Функция Funcs()
+	ТекстМодуля = "
+//{		|getN
+		|Public Function getN(pIContext, nfunc)
+		|	getN = 0
+		|	If pIContext <> 0 Then
+		|		oServ.vfunc pIContext, 4 * (nfunc - 1)	
+		|		getN = Wrap.ImplBase_getN(pIContext)
+		|	End If
+	    |End Function
+//}		|
+//{		|ImplBase_getN
+		|Public Function ImplBase_getN(Obj, nfunc)
+		|	ImplBase_getN = 0
+		|   If VarType(Obj) = VT_BSTR Then
+		|		For j = 0 To oServ.numGK
+		|       	pIContext 		= Wrap.NumGet(oServ.pArray, j * 4)    	
+		|			ImplBase_getN 	= ImplBase_getN + getN(pIContext, nfunc)
+		|		Next	
+		|	Else
+		|		pObj	  = Wrap.GetIDispatch(Obj)
+		|		pIContext = Wrap.NumGet(pObj, platform_offset)
+		|
+		//|		If pIContext <> 0 Then
+		//|			oServ.Message Hex(pIContext)
+		//|			oServ.Message Hex(Wrap.NumGet(pIContext))
+		//|		End If
+		|
+		|		ImplBase_getN 	= getN(pIContext, nfunc)
+		|	End if
+		|End Function
+//}		|
+//{		|ImplBase_getName
+		|Public Function ImplBase_getName(pIContext, num, nfunc)
+		|	ImplBase_getName = 0
+		|	If pIContext <> 0 Then
+		|		j = 1
+		|		Do While j > -1
+		|			oServ.vfunc pIContext, 4 * (nfunc - 1)	
+		|			pbstrName = Wrap.ImplBase_getName(pIContext, num, j)
+		|
+		|			If (pbstrName <> 0) Then
+		|				If Wrap.StrGet(pbstrName) <> """"  Then
+		|					ImplBase_getName = pbstrName	
+		|					Exit Do
+		|		    	End If
+		|			End If
+		|			j = j - 1
+		|       Loop
+		|	End If
+		|End Function
+//}		|
+//{		|valFill
+		|Public Function valFill(pIContext, num, valTable, nfunc, ContID)
+		|	For j = 0 To num - 1
+		|		pStr = ImplBase_getName(pIContext, j, nfunc)
+		|		If (pStr <> 0) Then
+		|			Set nRow 	= valTable.Add()
+		|			nRow.Name	= Wrap.StrGet(pStr)	
+		|
+		|			oServ.vfunc pIContext, 4 * (15 - 1)
+		|			nRow.Val	 = Wrap.ImplBase_hasRetVal(pIContext, j)
+		|
+		|			oServ.vfunc pIContext, 4 * (11 - 1)
+		|           nRow.NParams  = Wrap.ImplBase_getNParams(pIContext, j)
+		|			nRow.ID		  = j
+		|			nRow.ContID	  = ContID
+		|		End If
+		|	Next
+		|End Function
+//}		|
+//{		|Fill
+		|Public Function Fill(Obj, valTable, nfunc)
+		|	Fill = 0
+		|
+		|   If VarType(Obj) = VT_BSTR Then
+		|		For j = 0 To oServ.numGK
+		|       	pIContext 	= Wrap.NumGet(oServ.pArray, j * 4)    	
+		|			num 		= getN(pIContext, nfunc - 1)
+		|			Fill 		= Fill + num
+		|			valFill pIContext, num, valTable, nfunc, j
+		|		Next	
+		|	Else
+		|		pObj	  = Wrap.GetIDispatch(Obj)
+		|		pIContext = Wrap.NumGet(pObj, platform_offset)
+		|
+		|		Fill 	  = getN(pIContext, nfunc - 1)
+		|		valFill pIContext, Fill, valTable, nfunc, 0
+		|	End if
+		|End Function
+//}		|
+//{		|GetContext
+		|Public Function GetContext(Obj, numCont)
+		|	If VarType(Obj) = VT_BSTR Then
+		|		GetContext 	= Wrap.NumGet(oServ.pArray, numCont * 4)
+		|	Else
+		|		pObj	  = Wrap.GetIDispatch(Obj)
+		|		GetContext = Wrap.NumGet(pObj, platform_offset)
+		|	End If
+		|End Function
+//}		|
+//{		|PrepareDefParams
+		|Public Function PrepareDefParams(Obj, numFunc, numCont)
+		|	pIContext 			= GetContext(Obj, numCont)
+		|	PrepareDefParams 	= oServ.PrepareDefParams(pIContext, numFunc)
+		|End Function
+//}		|
+//{		|RetValueImplBase
+		|Public Function RetValueImplBase()
+		|	Set RetValueImplBase = oServ.RetValueImplBase()
+		|End Function
+//}		|
+//{		|GetIContext
+		|Public Function GetIContext(Obj) 
+		|	GetIContext = """"
+		|	pObj	    = GetContext(Obj, 0)
+		|	If 	pObj <> 0 Then	
+		|		GetIContext = Hex(pObj)
+		|	End If
+		|End Function
+//}		|
+//{		|GetVT
+		|Public Function GetVT(Obj) 
+		|	GetVT = """"
+		|	pObj  = GetContext(Obj, 0)
+		|	If 	pObj <> 0 Then
+		|		GetVT = Hex(Wrap.NumGet(pObj))
+		|	End If
+		|End Function
+//}		|
+//{     |IContextExtImplBase_call
+		|Public Function IContextExtImplBase_call(pIContext, numMeth, paramOut, ppArrayParIn)
+		|	If bsl_off_13 = 0 Then
+		|		pFirst 		= Wrap.NumGet(ppArrayParIn)
+		|		bsl_off_13 	= Wrap.NumGet(Wrap.NumGet(pFirst))
+		|	End If	
+		|End Function
+//}		|
+		|";
+
+	Возврат ТекстМодуля;
+КонецФункции
+
+Функция ТипДоступенДляИсследования(Объект, Уровень =  0)
+	Если (Объект = Неопределено) И (Уровень = 0) Тогда // глобальный контекст
+		Объект = СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ;
+	КонецЕсли; 
+	типОбъект = ТипЗнч(Объект);	
+	Если (Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ) Тогда
+		If (типОбъект = Тип("Число"))ИЛИ
+			(типОбъект = Тип("Строка")) ИЛИ 
+			(типОбъект = Тип("Дата")) ИЛИ 	
+			(типОбъект = Тип("Булево")) ИЛИ
+			(типОбъект = Тип("Неопределено")) ИЛИ
+			(типОбъект = Тип("ComОбъект")) 	Then
+			
+			Возврат Ложь;
+		EndIf;
+	КонецЕсли; 
+	Возврат Истина;
+КонецФункции
+
+Функция ЭтоГлобальныйКонтекст(Объект) Экспорт
+	Возврат Объект = СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ ИЛИ Объект = Неопределено;
+КонецФункции
+
+Функция ПолучитьОписание(Объект, ТЗ, Флаг, Уровень)
+	Рез = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ; //0
+	
+	Если НЕ ТипДоступенДляИсследования(Объект, Уровень) Тогда Возврат Рез; КонецЕсли;
+		//типОбъект = ТипЗнч(Объект);	
+		//Если (Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ) Тогда
+		//	If (типОбъект = Тип("Число"))ИЛИ
+		//		(типОбъект = Тип("Строка")) ИЛИ 
+		//		(типОбъект = Тип("Дата")) ИЛИ 	
+		//		(типОбъект = Тип("Булево")) ИЛИ
+		//		(типОбъект = Тип("Неопределено")) ИЛИ
+		//		(типОбъект = Тип("ComОбъект")) 	Then
+		//		
+		//		Возврат Рез;
+		//	EndIf;
+		//КонецЕсли; 
+	
+	If Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ Then //0
+		Рез = ScrptCtrl.Run("ImplBase_getN",Объект, 4);
+		Рез = Рез + ScrptCtrl.Run("ImplBase_getN", Объект, 9);
+		
+		//Адр = ScrptCtrl.CodeObject.ImplBase_pIContext(Объект);
+		//If (Адр <> "0") И (Адр <> "") Then
+		//	Сообщить(""+ Объект + " :" + Адр);
+		//EndIf; 
+		
+	ElsIf Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ Then //1
+		Рез = ScrptCtrl.Run("ImplBase_getN",Объект, 4);
+	ElsIf Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_МЕТОДОВ Then //2
+		Рез = ScrptCtrl.Run("ImplBase_getN", Объект, 9);
+	Else
+		ТЗ = Новый ТаблицаЗначений;
+		ТЗ.Колонки.Добавить("Name");
+		ТЗ.Колонки.Добавить("Type");
+		ТЗ.Колонки.Добавить("Val");
+		ТЗ.Колонки.Добавить("NParams");
+		ТЗ.Колонки.Добавить("ID");
+		ТЗ.Колонки.Добавить("ContID");
+		
+		If Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА Then //3
+			ScrptCtrl.Run("Fill", Объект, ТЗ, 5);
+		Else
+			ScrptCtrl.Run("Fill", Объект, ТЗ, 10);
+		EndIf; 
+		//Если (Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ) Тогда
+			ТЗ.Сортировать("Name");
+		//EndIf;	
+	EndIf; 
+	
+	Возврат Рез;
+КонецФункции
+
+Процедура ДобавитьВДерево(текСтрока, ТЗ, ТипТЗ, Объект)
+	Для каждого текСтр Из ТЗ Цикл
+		новСвойство = текСтрока.Строки.Добавить();		
+		новСвойство.Наименование		= текСтр.Name; //новСвойство.Наименование		= текСтр.Name + " (" + ?(Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ,"", "" + текСтр.ContID + ",") + текСтр.ID + ")";
+		
+		//контИД это порядковый номер контекста из массива Глобальных контекстов, 
+		// ИД номер свойства/метода
+		//контИД = 0 для не ГлК
+		новСвойство.ИндексКонтекста = ?(Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ, "", "" + текСтр.ContID);
+		новСвойство.Индекс 			= текСтр.ID;
+		
+		текОбъект = "";
+		If ТипТЗ = СТРОКА_СВОЙСТВА Then
+			Если Объект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ Тогда
+				Попытка
+					текОбъект 		= Вычислить("Объект."+текСтр.Name);//Объект[текСтр.Name];
+				Исключение
+				КонецПопытки; 
+			Иначе
+				текОбъект 				= Вычислить(текСтр.Name);
+			КонецЕсли; 
+				//текОбъект 		= Вычислить("Объект."+текСтр.Name);//Объект[текСтр.Name];
+			Значение  		= Строка(текОбъект);
+			новСвойство.Тип	= ТипЗнч(текОбъект);
+		Else	
+			новСвойство.КоличествоПараметров = текСтр.NParams;
+			If текСтр.Val = 0 Then //Процедура
+				Значение = "<?>"; 
+				новСвойство.ЕстьВозвращаемоеЗначение = Ложь;
+			Else
+				Значение = СТРОКА_ОПИСАНИЕ_МЕТОДА_БЕЗ_ПАРАМЕТРОВ;
+				новСвойство.ЕстьВозвращаемоеЗначение = Истина;
+			EndIf;	
+		EndIf;	
+		
+		новСвойство.Значение 	  	= Значение;
+		новСвойство.Объект			= текОбъект;
+		GetIContext(новСвойство, текОбъект);
+		
+		ЗаполнитьСубДерево(текОбъект, новСвойство, ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ); //0);
+	КонецЦикла;	
+КонецПроцедуры
+
+Процедура ЗаполнитьСубДерево(Объект, текСтрока, Флаг) Экспорт
+	Перем ТЗ;
+	
+	Рез = ПолучитьОписание(Объект, ТЗ, Флаг, текСтрока.Уровень());
+	If Флаг < ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА Then //3
+		If  Рез > 0 Then
+			новСтрока = текСтрока.Строки.Добавить();
+			If  (Флаг > ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ) Then //0
+				новСтрока.Наименование 	= ?(Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ, СТРОКА_СВОЙСТВА, СТРОКА_МЕТОДЫ); //1
+				новСтрока.Объект	= новСтрока.Наименование;
+				новСтрока.Строки.Добавить();
+			EndIf;	
+		EndIf;
+	ElsIf Флаг = ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА Then //3
+		ДобавитьВДерево(текСтрока, ТЗ, СТРОКА_СВОЙСТВА, Объект);
+	Else
+		ДобавитьВДерево(текСтрока, ТЗ, СТРОКА_МЕТОДЫ, Объект);
+	EndIf; 
+КонецПроцедуры	
+	
+Процедура Очистить(НаборСтрок) Экспорт
+	Для каждого текСтр Из НаборСтрок Цикл
+		текСтр.Объект 	= 0;
+		текСтр.Значение = 0;
+		Очистить(текСтр.Строки);
+	КонецЦикла; 
+КонецПроцедуры
+
+Процедура ОбработатьСобытие_ДЗ_ПередРазворачиванием(Элемент, Строка, Отказ) Экспорт
+	//Уже заполняли
+	If Строка.УжеЗаполняли = Истина Then Возврат; EndIf;  //1
+	
+	Объект = Строка.Объект;
+	Строка.Строки.Очистить();
+	If (Объект = СТРОКА_СВОЙСТВА) Then
+		ЗаполнитьСубДерево(Строка.Родитель.Объект, Строка, ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА); //3
+	ElsIf (Объект = СТРОКА_МЕТОДЫ) Then	
+		ЗаполнитьСубДерево(Строка.Родитель.Объект, Строка, ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_МЕТОДЫ); 	//4
+	Else
+		ЗаполнитьСубДерево(Объект, Строка, ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ); //1
+		ЗаполнитьСубДерево(Объект, Строка, ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_МЕТОДОВ); //2
+	EndIf; 
+	Строка.УжеЗаполняли = Истина; //1;
+КонецПроцедуры
+
+Функция ПолныйПутьОбъекта(ВыбраннаяСтрока)
+	If ВыбраннаяСтрока.Родитель = Неопределено Then
+		Возврат "<Объект>";	
+	Else
+		If (ВыбраннаяСтрока.Объект = СТРОКА_СВОЙСТВА) Then	
+	    	Возврат ПолныйПутьОбъекта(ВыбраннаяСтрока.Родитель);
+		ElsIf (ВыбраннаяСтрока.Объект = СТРОКА_МЕТОДЫ) Then	
+			Возврат ПолныйПутьОбъекта(ВыбраннаяСтрока.Родитель);
+		Else
+			тег = ?(ВыбраннаяСтрока.Родитель.Объект = СТРОКА_СВОЙСТВА, "" , "()");
+			Возврат ПолныйПутьОбъекта(ВыбраннаяСтрока.Родитель) + "." + ВыбраннаяСтрока.Наименование + тег;
+		EndIf;	
+	EndIf;	
+КонецФункции
+
+Процедура ОбработатьСобытие_ДЗ_Выбор(Элемент, ВыбраннаяСтрока, Колонка, СтандартнаяОбработка) Экспорт
+	If  (Колонка.Имя = "Наименование") И ((ВыбраннаяСтрока.Объект <> СТРОКА_СВОЙСТВА) И (ВыбраннаяСтрока.Объект <> СТРОКА_МЕТОДЫ)) Then
+		Сообщить(ПолныйПутьОбъекта(ВыбраннаяСтрока));
+	ElsIf  (Колонка.Имя = "vtable") ИЛИ (Колонка.Имя = "IContext") Then
+		Сообщить(Вычислить("ВыбраннаяСтрока." + Колонка.Имя));
+	ElsIf (ВыбраннаяСтрока.ЕстьВозвращаемоеЗначение = Истина) И (ВыбраннаяСтрока.Значение = СТРОКА_ОПИСАНИЕ_МЕТОДА_БЕЗ_ПАРАМЕТРОВ) Then //1
+		ВычислитьФункциюВСтроке(ВыбраннаяСтрока);
+	EndIf;	
+КонецПроцедуры
+
+Процедура вспВычислитьФункциюВСтроке(ВыбраннаяСтрока, текОбъект)
+	ВыбраннаяСтрока.Тип			= ТипЗнч(текОбъект);
+	ВыбраннаяСтрока.Значение	= Строка(текОбъект);
+	ВыбраннаяСтрока.Объект		= текОбъект;
+	
+	ЗаполнитьСубДерево(текОбъект, ВыбраннаяСтрока, ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ); //0
+КонецПроцедуры
+
+Процедура ВычислитьФункциюВСтроке(ВыбраннаяСтрока) Экспорт
+	текОбъект 	= ВыбраннаяСтрока.Родитель.Родитель.Объект;
+	param		= ScrptCtrl.Run("PrepareDefParams", текОбъект, ВыбраннаяСтрока.Индекс, ВыбраннаяСтрока.индексКонтекста);	
+	
+	If	param = -1 Then
+		Попытка
+			Если текОбъект <> СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ Тогда
+				текОбъект = Вычислить("текОбъект." + ВыбраннаяСтрока.Наименование + "()");
+			Иначе
+				текОбъект = Вычислить(ВыбраннаяСтрока.Наименование + "()");
+			КонецЕсли; 
+				//текОбъект 					= Вычислить("текОбъект." + ВыбраннаяСтрока.Наименование + "()");
+				
+			вспВычислитьФункциюВСтроке(ВыбраннаяСтрока, текОбъект);	
+			GetIContext(ВыбраннаяСтрока, текОбъект);
+		Исключение
+			Ошибка 	= ОписаниеОшибки();
+			Поз 	= Найти(Ошибка, "Недостаточно фактических параметров");
+			ВыбраннаяСтрока.Значение	= ?(Поз >0, Сред(Ошибка, Поз), Ошибка);
+		КонецПопытки;	
+	Else	
+		Попытка	
+			pIContext 	= ScrptCtrl.Run("GetContext", текОбъект, ВыбраннаяСтрока.индексКонтекста);
+			res 		= Wrap.ImplBase_call(pIContext, ВыбраннаяСтрока.Индекс, ppv, param);
+			текОбъект	= ScrptCtrl.Run("RetValueImplBase");
+			вспВычислитьФункциюВСтроке(ВыбраннаяСтрока, текОбъект);	
+			GetIContext(ВыбраннаяСтрока, текОбъект);
+		Исключение
+			Ошибка 	= ОписаниеОшибки();
+			Стр 	= "Произошла исключительная ситуация:";
+			Поз 	= ?(Найти(Ошибка, Стр) >0, Найти(Ошибка, Стр) + СтрДлина(Стр), 1);
+			
+			ВыбраннаяСтрока.Значение	= Сред(Ошибка, Поз);
+		КонецПопытки;	
+	EndIf;
+КонецПроцедуры
+
+#КонецЕсли
+
+// ================================== ================================== ==================================
+//
+// блок кода из "Инструменты разработчика"
+//
+// ================================== ================================== ==================================
+
+#Если Клиент Тогда
+
+// Получает новый экземпляр ком-объекта парсера.
+//
+// Параметры:
+//  Нет.
+//
+// Возвращаемое значение:
+//  Com-объект, Неопределено.
+//
+Функция ПолучитьWinAPI() //Экспорт
+
+	Если Wrap = "НеИнициализирован" Тогда
+		Wrap = ПолучитьCOMОбъектИзМакета(ИМЯ_КЛАССА_DynamicWrapperX, ИМЯ_КЛАССА_DynamicWrapperX);
+		Если Wrap <> Неопределено Тогда
+			Wrap.Register( "KERNEL32.DLL","Sleep","i=h","f=s");
+			//Wrap.Register( "KERNEL32.DLL","GetTickCount64","r=l","f=s"); // обычный DynamicWrapper на x86 подключает, а этот - нет
+			Wrap.Register( "KERNEL32.DLL","GetTickCount","r=l","f=s");
+			Wrap.Register( "KERNEL32.DLL","GetProcessId","i=l","r=l","f=s");
+			Wrap.Register( "KERNEL32.DLL","GetCurrentProcessId","r=l","f=s");
+			Wrap.Register( "WINMM.DLL", "timeGetTime",            "r=l", "f=s");
+			Wrap.Register( "WINMM.DLL", "timeBeginPeriod", "i=l", "r=l", "f=s");
+			Wrap.Register( "WINMM.DLL", "timeEndPeriod",   "i=l", "r=l", "f=s");
+		Иначе
+			// Под пользователем ОС без админских прав сразу после установки через regsvr32 /i компонента не создается почему то.
+			// Нужно перезапускать приложение.
+			Предупреждение("Установлена новая компонента. Сеанс будет перезапущен", 5);
+			ПрекратитьРаботуСистемы(Истина);
+		КонецЕсли;
+	КонецЕсли;
+	Возврат Wrap;
+
+КонецФункции // ПолучитьWinAPI()
+
+#КонецЕсли
+
+Функция ЗарегистрироватьПолучитьCOMОбъект(КлассКомпоненты, ПолноеИмяDll) //Экспорт
+	
+	// Сначала пробуем зарегистрировать для HKLM
+	КоманднаяСтрока = "regsvr32 /s """ + ПолноеИмяDll + """";
+	//КомандаСистемы(КоманднаяСтрока);
+	ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения(КоманднаяСтрока, , Истина);
+	Попытка
+		Компонента = Новый COMОбъект(КлассКомпоненты);
+	Исключение
+	КонецПопытки;
+	Если Компонента <> Неопределено Тогда 
+		Сообщить("Зарегистрирована COM-компонента " + КлассКомпоненты, СтатусСообщения.Информация);
+		Возврат Компонента;
+	КонецЕсли;
+	
+	// Теперь пробуем зарегистрировать для HKCU
+	КоманднаяСтрока = "regsvr32 /s /i""" + ПолноеИмяDll + """";
+	//КомандаСистемы(КоманднаяСтрока);
+	ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения(КоманднаяСтрока, , Истина);
+	Попытка
+		Компонента = Новый COMОбъект(КлассКомпоненты);
+	Исключение
+	КонецПопытки;
+	Если Компонента <> Неопределено Тогда 
+		Сообщить("Зарегистрирована COM-компонента " + КлассКомпоненты, СтатусСообщения.Информация);
+		Возврат Компонента;
+	КонецЕсли;
+	
+	Если ФайлРегистратораКомпонент = Неопределено Тогда
+		ФайлРегистратораКомпонент = Новый Файл(ПолучитьИмяВременногоФайла("exe"));
+		ПолучитьМакет("regsvrex").Записать(ФайлРегистратораКомпонент.ПолноеИмя);
+	КонецЕсли;
+	
+	// Теперь пробуем зарегистрировать для HKCU через сторонний регистратор
+	КоманднаяСтрока = """" + ФайлРегистратораКомпонент.ПолноеИмя + """ /c /s """ + ПолноеИмяDll + """";
+	//КомандаСистемы(КоманднаяСтрока);
+	ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения(КоманднаяСтрока, , Истина);
+	Попытка
+		Компонента = Новый COMОбъект(КлассКомпоненты);
+	Исключение
+	КонецПопытки;
+	Если Компонента <> Неопределено Тогда 
+		Сообщить("Зарегистрирована COM-компонента " + КлассКомпоненты, СтатусСообщения.Информация);
+		Возврат Компонента;
+	КонецЕсли;
+	
+	// Теперь пробуем зарегистрировать для HKCU через сторонний регистратор
+	КоманднаяСтрока = """" + ФайлРегистратораКомпонент.ПолноеИмя + """ /c /s /i """ + ПолноеИмяDll + """";
+	//КомандаСистемы(КоманднаяСтрока);
+	ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения(КоманднаяСтрока, , Истина);
+	Попытка
+		Компонента = Новый COMОбъект(КлассКомпоненты);
+	Исключение
+	КонецПопытки;
+	Если Компонента <> Неопределено Тогда 
+		Сообщить("Зарегистрирована COM-компонента " + КлассКомпоненты, СтатусСообщения.Информация);
+		Возврат Компонента;
+	КонецЕсли;
+	
+	Сообщить("Не удалось зарегистривать COM-компоненту " + КлассКомпоненты + ". Возможно требуются права администратора ОС",
+		СтатусСообщения.Внимание);
+	Возврат Неопределено;
+
+КонецФункции // ЗарегистрироватьПолучитьCOMОбъект
+
+// Возвращает нужный com-объект. Если компонента не зарегистрирована, то пытается ее сохранить из макета и зарегистрировать.
+//
+// Параметры:
+//  Нет.
+//
+// Возвращаемое значение:
+//  COM-объект, Неопределено.
+//
+Функция ПолучитьCOMОбъектИзМакета(ИмяКомпоненты, КлассКомпоненты, КаталогУстановки = "авто") //Экспорт
+
+	Попытка
+		Компонента = Новый COMОбъект(КлассКомпоненты);
+		
+		// -- Артур -- 14.09.2011 - вставка в код ИР
+		Если КлассКомпоненты = ИМЯ_КЛАССА_DynamicWrapperX Тогда
+			Попытка
+				л = Компонента.GetIDispatch(Компонента);
+				Возврат Компонента;
+			Исключение
+				//ВызватьИсключение "Зарегистрирована старая версия COM-объекта DynamicWrapperX";
+			КонецПопытки;
+		КонецЕсли; 
+			//Возврат Компонента;
+		// --завершение
+		
+	Исключение
+	КонецПопытки;
+
+	#Если Клиент Тогда
+	Если КаталогУстановки = "" Тогда
+		Ответ = Вопрос("Для работы данной функции необходимо зарегистрировать 
+			//|(необходимы права локального администратора)
+			|	COM-компоненту """ + ИмяКомпоненты + """. Выполнить регистрацию?",
+			РежимДиалогаВопрос.ОКОтмена, 30, КодВозвратаДиалога.Отмена);
+		Если Ответ = КодВозвратаДиалога.Отмена Тогда
+			Возврат Неопределено;
+		КонецЕсли;
+		ВыборФайла = Новый ДиалогВыбораФайла(РежимДиалогаВыбораФайла.ВыборКаталога);
+		ВыборФайла.Заголовок = "Укажите папку, куда установить компоненту.";
+		Если Не ВыборФайла.Выбрать() Тогда
+			Возврат Неопределено;
+		КонецЕсли;
+		КаталогУстановки = ВыборФайла.Каталог;
+	ИначеЕсли Нрег(КаталогУстановки) = Нрег("авто") Тогда
+		КаталогУстановки = ПапкаВнешнихКомпонент.ПолноеИмя;
+	КонецЕсли;
+	ФайлКомпоненты = Новый Файл(КаталогУстановки + "\" + ИмяКомпоненты + ".dll");
+	Если Не ФайлКомпоненты.Существует() Тогда 
+		ПолучитьМакет(ИмяКомпоненты).Записать(ФайлКомпоненты.ПолноеИмя);
+	КонецЕсли;
+	
+	Результат = ЗарегистрироватьПолучитьCOMОбъект(КлассКомпоненты, ФайлКомпоненты.ПолноеИмя);
+	#Иначе
+	Результат = Неопределено;
+	#КонецЕсли
+	Возврат Результат;
+
+КонецФункции // ПолучитьCOMОбъектИзМакета()
+
+// <Описание процедуры>
+//
+// Параметры:
+//  <Параметр1>  – <Тип.Вид> – <описание параметра>
+//                 <продолжение описания параметра>;
+//  ИмяФайлаРезультата – Краткое имя файла, в который будет выведен выходной поток, только в текущем каталоге.
+//
+Процедура ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения(Знач СтрокаЗапуска, ТекущийКаталог = "\.", ИспользоватьWSH = Ложь,
+	КраткоеИмяФайлаРезультата = "") //Экспорт 
+
+	#Если Клиент Тогда
+	// Баг платформы здесь будет работать. Во время работы данной строки окно продолжает принимать команды! 
+	// WSH не использовать при генерации внешних обработок
+	Если ИспользоватьWSH Тогда
+	#КонецЕсли
+		WshShell.CurrentDirectory = ТекущийКаталог;
+		СтрокаЗапуска = "cmd.exe /c """ + СтрокаЗапуска + """";
+		Если КраткоеИмяФайлаРезультата <> "" Тогда
+			СтрокаЗапуска = СтрокаЗапуска + " > " + КраткоеИмяФайлаРезультата;
+			СтрокаЗапуска = СтрокаЗапуска + " 2>&1"; //stderr
+		КонецЕсли;
+		Попытка
+			WshShell.Run(СтрокаЗапуска, 0, Истина);
+		Исключение
+			// Для x64 ОС
+			СтрокаЗапуска = "%windir%\Sysnative\" + СтрокаЗапуска;
+			WshShell.Run(СтрокаЗапуска, 0, Истина);
+		КонецПопытки;
+	#Если Клиент Тогда
+	Иначе
+		ПолучитьИсполнительСкрытыхКомандСистемы();
+		КонечнаяСтрока = ИсполнительСкрытыхКомандСистемы + " /nowindow /wait /silent /D=""" + ТекущийКаталог + """ " + СтрокаЗапуска;
+		ЗапуститьПриложение(КонечнаяСтрока, , Истина);
+	КонецЕсли;
+	#КонецЕсли
+	
+КонецПроцедуры // ЗапуститьСкрытоеПриложениеИДождатьсяЗавершения()
+
+Функция ПолучитьИсполнительСкрытыхКомандСистемы() //Экспорт
+	
+	Если ИсполнительСкрытыхКомандСистемы = Неопределено Тогда
+		ДвоичныеДанные = ПолучитьОбщийМакет("hstart");
+		ИсполнительСкрытыхКомандСистемы = ПолучитьИмяВременногоФайла("exe");
+		ДвоичныеДанные.Записать(ИсполнительСкрытыхКомандСистемы);
+		ИсполнительСкрытыхКомандСистемы = """" + ИсполнительСкрытыхКомандСистемы + """";
+	КонецЕсли;
+	Возврат ИсполнительСкрытыхКомандСистемы;
+	
+КонецФункции
+
+// ================================== ================================== ==================================
+//
+// окончание блока кода из "Инструменты разработчика"
+//
+// ================================== ================================== ==================================
+
+#Если Клиент Тогда
+
+// основная процедура для юнит-тестирования 1CUnit
+Функция ПолучитьСписокТестов(ЮнитТестирование) Экспорт
+	юТест = ЮнитТестирование;
+	
+	ВсеТесты = Новый Массив;
+
+	ВсеТесты.Добавить("Тесты_ВызовДеструктораОбъектов");
+	ВсеТесты.Добавить("Тесты_ПолучитьТаблицуСвойств");
+	ВсеТесты.Добавить("Тесты_ПолучитьТаблицуМетодов");
+	ВсеТесты.Добавить("Тесты_ПолучитьТаблицуСвойств_Глобальный");
+	ВсеТесты.Добавить("Тесты_ПолучитьТаблицуМетодов_Глобальный");
+	ВсеТесты.Добавить("Тесты_СвойствоСуществует");
+	ВсеТесты.Добавить("Тесты_МетодСуществует");
+	ВсеТесты.Добавить("Тесты_СвойствоСуществует_Глобальный");
+	ВсеТесты.Добавить("Тесты_МетодСуществует_Глобальный");
+
+	Возврат ВсеТесты;
+КонецФункции
+
+Процедура ПередЗапускомТеста() Экспорт
+КонецПроцедуры
+
+Процедура ПослеЗапускаТеста() Экспорт
+КонецПроцедуры
+
+Процедура Тесты_ВызовДеструктораОбъектов() Экспорт
+	лФорма = ЭтотОбъект.ПолучитьФорму("ТестВыполненияДеструктора", , "1");
+	лФорма.Реквизит = 1;
+	лФорма.Открыть();
+	
+	успешно = ЭтотОбъект.МетодСуществует(лФорма, "Метод1");
+	
+	//Сообщить("До закрытия");
+	лФорма.Закрыть();
+	//Сообщить("После закрытия");
+	//лФорма = Неопределено;
+	лФорма = ЭтотОбъект.ПолучитьФорму("ТестВыполненияДеструктора", , "1");
+	юТест.ПроверитьНеравенство(лФорма.Реквизит, 1, "лФорма.Реквизит, 1");
+	лФорма = Неопределено;
+	//лФорма.Открыть();
+	//Сообщить("После деструктора");
+КонецПроцедуры
+
+#КонецЕсли
+
+// ======================= ======================= ======================= ======================= 
+//
+// БЛОК ЮНИТ-ТЕСТОВ - сами тесты
+//
+// ======================= ======================= ======================= ======================= 
+
+Процедура Тесты_ПолучитьТаблицуСвойств() Экспорт
+	тестТЗ = Новый ТаблицаЗначений;
+	тестТЗ.Колонки.Добавить("Колонка1");
+	НоваяСтрока = тестТЗ.Добавить();
+	
+	таблицаСвойств = ЭтотОбъект.ПолучитьТаблицуСвойств(тестТЗ);
+		юТест.ПроверитьБольшеИлиРавно(таблицаСвойств.Колонки.Количество(), 5, "таблицаСвойств.Колонки.Количество()");
+		юТест.ПроверитьРавенство(таблицаСвойств.Количество(), 2, "таблицаСвойств.Количество()");
+		юТест.ПроверитьРавенство(таблицаСвойств[0].Наименование, "Индексы", "таблицаСвойств[0].Наименование");
+		юТест.ПроверитьРавенство(таблицаСвойств[1].Наименование, "Колонки", "таблицаСвойств[0].Наименование");
+КонецПроцедуры
+
+Процедура Тесты_ПолучитьТаблицуМетодов() Экспорт
+	тестТЗ = Новый ТаблицаЗначений;
+	тестТЗ.Колонки.Добавить("Колонка1");
+	НоваяСтрока = тестТЗ.Добавить();
+	
+	таблица = ЭтотОбъект.ПолучитьТаблицуМетодов(тестТЗ);
+		юТест.ПроверитьБольшеИлиРавно(таблица.Колонки.Количество(), 5, "таблица.Колонки.Количество()");
+		юТест.ПроверитьРавенство(таблица.Количество(), 19, "таблица.Количество()");
+		юТест.ПроверитьРавенство(таблица[0].Наименование, "Вставить", "таблица[0].Наименование");
+		юТест.ПроверитьИстину(таблица[0].ЕстьВозвращаемоеЗначение, "таблица[0].ЕстьВозвращаемоеЗначение");
+		юТест.ПроверитьРавенство(таблица[0].КоличествоПараметров, 1, "таблица[0].КоличествоПараметров");
+		
+		юТест.ПроверитьРавенство(таблица[4].Наименование, "ЗагрузитьКолонку", "таблица[4].Наименование");
+		юТест.ПроверитьЛожь(таблица[4].ЕстьВозвращаемоеЗначение, "таблица[4].ЕстьВозвращаемоеЗначение");
+		юТест.ПроверитьРавенство(таблица[4].КоличествоПараметров, 2, "таблица[4].КоличествоПараметров"); // ПАДАЕТ ЗДЕСЬ
+		
+		юТест.ПроверитьРавенство(таблица[18].Наименование, "Удалить", "таблица[Последняя].Наименование");
+		
+		Если Ложь Тогда
+			таблица = Новый ТаблицаЗначений;
+		КонецЕсли;
+	строка = таблица.Найти("Количество", "Наименование");
+		юТест.ПроверитьНеравенство(строка, Неопределено, "таблица.НайтиСтроки(Количество, Наименование)");
+		юТест.ПроверитьИстину(строка.ЕстьВозвращаемоеЗначение, "строка.ЕстьВозвращаемоеЗначение");
+		юТест.ПроверитьРавенство(строка.КоличествоПараметров, 0, "таблица[0].КоличествоПараметров");
+КонецПроцедуры
+
+Процедура Тесты_ПолучитьТаблицуСвойств_Глобальный() Экспорт
+	таблица = ЭтотОбъект.ПолучитьТаблицуСвойств(Неопределено);
+		юТест.ПроверитьБольшеИлиРавно(таблица.Колонки.Количество(), 5, "таблица.Колонки.Количество()");
+		юТест.ПроверитьБольшеИлиРавно(таблица.Количество(), 10, "таблица.Количество()");
+		
+	строка = таблица.Найти("SelectRecordType", "Наименование");
+		юТест.ПроверитьНеравенство(строка, Неопределено, "таблица.НайтиСтроки(Количество, Наименование)");
+		//юТест.ПроверитьРавенство(таблицаСвойств[0].Наименование, "Индексы", "таблицаСвойств[0].Наименование");
+		//юТест.ПроверитьРавенство(таблицаСвойств[1].Наименование, "Колонки", "таблицаСвойств[0].Наименование");
+КонецПроцедуры
+
+Процедура Тесты_ПолучитьТаблицуМетодов_Глобальный() Экспорт
+	таблица = ЭтотОбъект.ПолучитьТаблицуМетодов(Неопределено);
+		юТест.ПроверитьБольшеИлиРавно(таблица.Колонки.Количество(), 5, "таблица.Колонки.Количество()");
+		юТест.ПроверитьБольшеИлиРавно(таблица.Количество(), 30, "таблица.Количество()");
+			//юТест.ПроверитьРавенство(таблица[0].Наименование, "Вставить", "таблица[0].Наименование");
+			//юТест.ПроверитьИстину(таблица[0].ЕстьВозвращаемоеЗначение, "таблица[0].ЕстьВозвращаемоеЗначение");
+			//юТест.ПроверитьРавенство(таблица[0].КоличествоПараметров, 1, "таблица[0].КоличествоПараметров");
+			//юТест.ПроверитьРавенство(таблица[18].Наименование, "Удалить", "таблица[Последняя].Наименование");
+		
+		Если Ложь Тогда
+			таблица = Новый ТаблицаЗначений;
+		КонецЕсли;
+	строка = таблица.Найти("XMLЗначение", "Наименование");
+		юТест.ПроверитьНеравенство(строка, Неопределено, "таблица.НайтиСтроки(Количество, Наименование)");
+		юТест.ПроверитьИстину(строка.ЕстьВозвращаемоеЗначение, "строка.ЕстьВозвращаемоеЗначение");
+		юТест.ПроверитьРавенство(строка.КоличествоПараметров, 2, "таблица[0].КоличествоПараметров");
+КонецПроцедуры
+
+Процедура Тесты_СвойствоСуществует() Экспорт
+	тестТЗ = Новый ТаблицаЗначений;
+	тестТЗ.Колонки.Добавить("Колонка1");
+	НоваяСтрока = тестТЗ.Добавить();
+	
+	существует = ЭтотОбъект.СвойствоСуществует(тестТЗ, "Колонки");
+		юТест.ПроверитьИстину(существует, "существует Колонки");
+		
+	существует = ЭтотОбъект.СвойствоСуществует(тестТЗ, "Колонки1564");
+		юТест.ПроверитьЛожь(существует, "существует Колонки1564");
+КонецПроцедуры
+
+Процедура Тесты_МетодСуществует() Экспорт
+	тестТЗ = Новый ТаблицаЗначений;
+	тестТЗ.Колонки.Добавить("Колонка1");
+	НоваяСтрока = тестТЗ.Добавить();
+	
+	существует = ЭтотОбъект.МетодСуществует(тестТЗ, "Количество");
+		юТест.ПроверитьИстину(существует, "существует Количество");
+		
+	существует = ЭтотОбъект.МетодСуществует(тестТЗ, "Количество1564");
+		юТест.ПроверитьЛожь(существует, "существует Количество1564");
+КонецПроцедуры
+
+Процедура Тесты_СвойствоСуществует_Глобальный() Экспорт
+	существует = ЭтотОбъект.СвойствоСуществует(Неопределено, "SelectRecordType");
+		юТест.ПроверитьИстину(существует, "существует SelectRecordType");
+		
+	существует = ЭтотОбъект.СвойствоСуществует(Неопределено, "SelectRecordType1564");
+		юТест.ПроверитьЛожь(существует, "существует SelectRecordType1564");
+КонецПроцедуры
+
+Процедура Тесты_МетодСуществует_Глобальный() Экспорт
+	существует = ЭтотОбъект.МетодСуществует(Неопределено, "XMLЗначение");
+		юТест.ПроверитьИстину(существует, "существует XMLЗначение");
+		
+	существует = ЭтотОбъект.МетодСуществует(Неопределено, "XMLЗначение1564");
+		юТест.ПроверитьЛожь(существует, "существует XMLЗначение1564");
+КонецПроцедуры
+
+// ======================= ======================= ======================= ======================= 
+//
+// КОНЕЦ БЛОКА ЮНИТ-ТЕСТОВ
+//
+// ======================= ======================= ======================= ======================= 
+
+//#КонецЕсли
+
+//==================================
+ИМЯ_КЛАССА_DynamicWrapperX = "DynamicWrapperX";
+
+СТРОКА_ОПИСАНИЕ_МЕТОДА_БЕЗ_ПАРАМЕТРОВ = "<Двойной клик по ячейке>";
+СТРОКА_МЕТОДЫ = "Методы";
+СТРОКА_СВОЙСТВА = "Свойства";
+
+СТРОКА_ГЛОБАЛЬНЫЙ_КОНТЕКСТ = "ГлобальныйКонтекст";
+
+ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ_И_МЕТОДОВ = 0;
+ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_СВОЙСТВ = 1;
+ФЛАГ_ЗАПОЛНЕНИЯ_ПРОВЕРИТЬ_СУЩЕСТВОВАНИЕ_МЕТОДОВ = 2;
+ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_СВОЙСТВА = 3;
+ФЛАГ_ЗАПОЛНЕНИЯ_ЗАПОЛНИТЬ_МЕТОДЫ = 4;
+
+#Если Клиент Тогда
+Инит();
+#КонецЕсли
