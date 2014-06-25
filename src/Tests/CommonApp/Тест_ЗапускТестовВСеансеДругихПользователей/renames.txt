@@ -1,16 +1,12 @@
 ﻿06e23c48-436b-4984-8e4d-35bff49b795d-->und\06e23c48-436b-4984-8e4d-35bff49b795d
-06e23c48-436b-4984-8e4d-35bff49b795d.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\Тест_ЗапускТестовВСеансеДругихПользователей\Макеты\СозданиеОдногоПользователяИБ_УФ.mxl
 06e23c48-436b-4984-8e4d-35bff49b795d.0-->und\06e23c48-436b-4984-8e4d-35bff49b795d.0
 4dbcb106-f4ad-4724-8643-20d6c299deff-->und\4dbcb106-f4ad-4724-8643-20d6c299deff
-4dbcb106-f4ad-4724-8643-20d6c299deff.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\Тест_ЗапускТестовВСеансеДругихПользователей\Макеты\СозданиеНесколькихПользователейИБ.mxl
 4dbcb106-f4ad-4724-8643-20d6c299deff.0-->und\4dbcb106-f4ad-4724-8643-20d6c299deff.0
 89c4808c-ec9f-4439-988d-1e776846e7d8-->und\89c4808c-ec9f-4439-988d-1e776846e7d8
-89c4808c-ec9f-4439-988d-1e776846e7d8.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\Тест_ЗапускТестовВСеансеДругихПользователей\Макеты\СозданиеОдногоПользователяИБ.mxl
 89c4808c-ec9f-4439-988d-1e776846e7d8.0-->und\89c4808c-ec9f-4439-988d-1e776846e7d8.0
 960e9b3a-df7b-40be-8662-0a930791774d-->und\960e9b3a-df7b-40be-8662-0a930791774d
 960e9b3a-df7b-40be-8662-0a930791774d.0-->und\960e9b3a-df7b-40be-8662-0a930791774d.0
-960e9b3a-df7b-40be-8662-0a930791774d.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\Тест_ЗапускТестовВСеансеДругихПользователей\Макеты\СозданиеНесколькихПользователейИБ_УФ.mxl
-bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info-->C:\Users\1\AppData\Local\Temp\Тест_ЗапускТестовВСеансеДругихПользователей.epf229.und\bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info
+bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\Тест_ЗапускТестовВСеансеДругихПользователей.epf.und\bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\info
 bc48c7f8-c422-40cd-bccc-fcd2d13545c9.0\text-->ObjectModule.txt
 c0334e99-c3c6-4bc5-a429-136a15e54924-->und\c0334e99-c3c6-4bc5-a429-136a15e54924
 copyinfo-->und\copyinfo
