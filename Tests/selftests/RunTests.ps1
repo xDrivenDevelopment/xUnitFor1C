@@ -27,10 +27,12 @@ if ($args.count -gt 1) { $TestRunnerPath = args[1] }
 else { $TestRunnerPath = "C:\Projects\GitHub\xUnitFor1C\xddTestRunner.epf" }
 
 if ($args.count -gt 2) { $TestsPath = args[2] }
-#else { $TestsPath = "C:\Projects\GitHub\xUnitFor1C\Tests\CommonApp\ТестПримерТеста.epf" }
-else { $TestsPath = "C:\Projects\GitHub\xUnitFor1C\Tests\selftests" }
+else { $TestsPath = "C:\Projects\GitHub\xUnitFor1C\Tests\CommonApp\ТестПримерТеста.epf" }
+#else { $TestsPath = "C:\Projects\GitHub\xUnitFor1C\Tests\selftests" }
+#else { $TestsPath = "Метаданные.Подсистемы.Тестовая" }
 
 $bin1c = "${env:ProgramFiles(x86)}\1cv82\8.2.19.68\bin\1cv8.exe"
+#$bin1c = "${env:ProgramFiles(x86)}\1cv82\8.2.19.68\bin\1cv8c.exe"
 @'
 If (!(Test-Path $bin1c)) {
 	$bin1c = "$env:ProgramFiles\1cv77\BIN.SQL\1cv7s.exe"
