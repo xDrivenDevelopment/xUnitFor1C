@@ -1,0 +1,9 @@
+﻿727eda5f-558c-428b-86d2-3421c52f4c50.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестПримерТеста.epf.und\727eda5f-558c-428b-86d2-3421c52f4c50.0\info
+727eda5f-558c-428b-86d2-3421c52f4c50.0\text-->ObjectModule.txt
+98f37039-d79e-4d4f-8430-e26a4b5f9b4a-->und\98f37039-d79e-4d4f-8430-e26a4b5f9b4a
+98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0-->und\98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0
+copyinfo-->und\copyinfo
+f38c7465-2120-4aeb-87fc-1cd6a72e4559-->und\f38c7465-2120-4aeb-87fc-1cd6a72e4559
+root-->und\root
+version-->und\version
+versions-->und\versions
