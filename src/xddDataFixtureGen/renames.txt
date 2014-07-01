@@ -19,7 +19,7 @@
 73cd0f6f-a03c-4674-a7e0-ada3c16faea8-->und\73cd0f6f-a03c-4674-a7e0-ada3c16faea8
 73cd0f6f-a03c-4674-a7e0-ada3c16faea8.0-->Макеты\СозданиеДокументаСДвумяСтрокамиВТабличнойЧасти.mxl
 73cd0f6f-a03c-4674-a7e0-ada3c16faea8.0-->und\73cd0f6f-a03c-4674-a7e0-ada3c16faea8.0
-8bc789d4-3db3-427a-a496-0c6497037af6.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddDataFixtureGen.epf.und\8bc789d4-3db3-427a-a496-0c6497037af6.0\info
+8bc789d4-3db3-427a-a496-0c6497037af6.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddDataFixtureGen.epf583.und\8bc789d4-3db3-427a-a496-0c6497037af6.0\info
 8bc789d4-3db3-427a-a496-0c6497037af6.0\text-->ObjectModule.txt
 8f48f24b-b813-4e39-8b9d-a1ac9812e88f-->und\8f48f24b-b813-4e39-8b9d-a1ac9812e88f
 8f48f24b-b813-4e39-8b9d-a1ac9812e88f.0-->Макеты\СозданиеСправочникаСРеквизитомСсылка_РежимПоискаКод.mxl
