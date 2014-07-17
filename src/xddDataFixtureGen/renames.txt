@@ -22,7 +22,7 @@
 7d74edae-1c99-4157-8b8d-aa611edfd03b-->und\7d74edae-1c99-4157-8b8d-aa611edfd03b
 7d74edae-1c99-4157-8b8d-aa611edfd03b.0-->Макеты\СозданиеДвухЗаписейРегистраНакопления.mxl
 7d74edae-1c99-4157-8b8d-aa611edfd03b.0-->und\7d74edae-1c99-4157-8b8d-aa611edfd03b.0
-8bc789d4-3db3-427a-a496-0c6497037af6.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddDataFixtureGen.epf.und\8bc789d4-3db3-427a-a496-0c6497037af6.0\info
+8bc789d4-3db3-427a-a496-0c6497037af6.0\info-->C:\Users\1\AppData\Local\Temp\xddDataFixtureGen.epf.und\8bc789d4-3db3-427a-a496-0c6497037af6.0\info
 8bc789d4-3db3-427a-a496-0c6497037af6.0\text-->ObjectModule.txt
 8f48f24b-b813-4e39-8b9d-a1ac9812e88f-->und\8f48f24b-b813-4e39-8b9d-a1ac9812e88f
 8f48f24b-b813-4e39-8b9d-a1ac9812e88f.0-->und\8f48f24b-b813-4e39-8b9d-a1ac9812e88f.0
