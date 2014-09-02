@@ -18,7 +18,7 @@ e2d7fd9a-2c49-41c7-a485-1fed03baa4d1-->und\e2d7fd9a-2c49-41c7-a485-1fed03baa4d1
 e2d7fd9a-2c49-41c7-a485-1fed03baa4d1.0-->Form\УправляемаяФорма\Форма.txt
 e2d7fd9a-2c49-41c7-a485-1fed03baa4d1.0-->und\e2d7fd9a-2c49-41c7-a485-1fed03baa4d1.0
 e2d7fd9a-2c49-41c7-a485-1fed03baa4d1.0-->und\e2d7fd9a-2c49-41c7-a485-1fed03baa4d1.0
-e3f2a774-9938-4d95-910e-76062711b69e.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddTestRunner.epf226.und\e3f2a774-9938-4d95-910e-76062711b69e.0\info
+e3f2a774-9938-4d95-910e-76062711b69e.0\info-->und\e3f2a774-9938-4d95-910e-76062711b69e.0\info
 e3f2a774-9938-4d95-910e-76062711b69e.0\text-->ObjectModule.txt
 e3f2a774-9938-4d95-910e-76062711b69e.1-->und\e3f2a774-9938-4d95-910e-76062711b69e.1
 root-->und\root
