@@ -17,7 +17,7 @@ a68effcd-b4d3-488f-9742-e8a0c7d3c5ec.0-->und\a68effcd-b4d3-488f-9742-e8a0c7d3c5e
 a68effcd-b4d3-488f-9742-e8a0c7d3c5ec.0-->und\a68effcd-b4d3-488f-9742-e8a0c7d3c5ec.0
 ac9485da-b0c6-4b50-8394-d13e451a9c37-->und\ac9485da-b0c6-4b50-8394-d13e451a9c37
 ac9485da-b0c6-4b50-8394-d13e451a9c37.0-->Form\Форма
-aed63d09-7a60-4ff0-bfb0-1a462482db0b.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\xddTestRunner.epf785.und\aed63d09-7a60-4ff0-bfb0-1a462482db0b.0\info
+aed63d09-7a60-4ff0-bfb0-1a462482db0b.0\info-->und\aed63d09-7a60-4ff0-bfb0-1a462482db0b.0\info
 aed63d09-7a60-4ff0-bfb0-1a462482db0b.0\text-->ObjectModule.txt
 aed63d09-7a60-4ff0-bfb0-1a462482db0b.1-->und\aed63d09-7a60-4ff0-bfb0-1a462482db0b.1
 copyinfo-->und\copyinfo
