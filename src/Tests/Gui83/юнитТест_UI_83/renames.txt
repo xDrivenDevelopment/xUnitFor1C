@@ -6,6 +6,9 @@
 8401ee62-68b8-43ea-8738-0c08cbc8c901.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\юнитТест_UI_83\Form\Форма\Форма.txt
 8401ee62-68b8-43ea-8738-0c08cbc8c901.0-->und\8401ee62-68b8-43ea-8738-0c08cbc8c901.0
 8401ee62-68b8-43ea-8738-0c08cbc8c901.0-->und\8401ee62-68b8-43ea-8738-0c08cbc8c901.0
+94428d21-9dd3-40d7-84be-7cee6ba1b8eb-->und\94428d21-9dd3-40d7-84be-7cee6ba1b8eb
+94428d21-9dd3-40d7-84be-7cee6ba1b8eb.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\юнитТест_UI_83\Макеты\СозданиеОдногоПользователяИБ.mxl
+94428d21-9dd3-40d7-84be-7cee6ba1b8eb.0-->und\94428d21-9dd3-40d7-84be-7cee6ba1b8eb.0
 copyinfo-->und\copyinfo
 root-->und\root
 version-->und\version
