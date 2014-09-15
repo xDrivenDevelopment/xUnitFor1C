@@ -2525,7 +2525,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 &НаКлиенте
 Процедура ОПроекте(Команда)
-	ЗапуститьПриложение(""https://github.com/xUnitFor1C/xUnitFor1C"");
+	ЗапуститьПриложение(""https://github.com/xDrivenDevelopment/xUnitFor1C/wiki"");
 КонецПроцедуры
 
 &НаКлиенте
