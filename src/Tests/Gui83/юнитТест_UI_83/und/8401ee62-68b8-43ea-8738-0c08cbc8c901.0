@@ -271,23 +271,31 @@
 
 &НаКлиенте
 Процедура ЗавершитьВсеТестовыеПриложенияПринудительно()
-		юТест.ПроверитьЗаполненность(массивТестовыхПриложений.Количество(), ""массивТестовыхПриложений.Количество()"");
-
-	Scr = Новый COMОбъект(""MSScriptControl.ScriptControl"");
-	Scr.Language = ""vbscript"";
-	Scr.AddCode(""
-		|Option Explicit
-		|
-		|Dim objWMIService, objProcess, colProcess
-		|
-		|Set objWMIService = GetObject(""""winmgmts:{impersonationLevel=impersonate}!\\.\root\cimv2"""") 
-		|
-		|Set colProcess = objWMIService.ExecQuery(""""Select * from Win32_Process Where (CommandLine Like '%/TESTCLIENT%' And ExecutablePath Like '%1cv8c%')"""")
-		|
-		|For Each objProcess in colProcess
-		|	objProcess.Terminate()
-		|Next
-		|"");
+	
+	юТест.ПроверитьЗаполненность(массивТестовыхПриложений.Количество(), ""массивТестовыхПриложений.Количество()"");
+	
+	Если ЭтоLinux = Ложь Тогда
+		
+		Scr = Новый COMОбъект(""MSScriptControl.ScriptControl"");
+		Scr.Language = ""vbscript"";
+		Scr.AddCode(""
+			|Option Explicit
+			|
+			|Dim objWMIService, objProcess, colProcess
+			|
+			|Set objWMIService = GetObject(""""winmgmts:{impersonationLevel=impersonate}!\\.\root\cimv2"""") 
+			|
+			|Set colProcess = objWMIService.ExecQuery(""""Select * from Win32_Process Where (CommandLine Like '%/TESTCLIENT%' And ExecutablePath Like '%1cv8c%')"""")
+			|
+			|For Each objProcess in colProcess
+			|	objProcess.Terminate()
+			|Next
+			|"");
+	Иначе
+		СтрокаЗапуска = ""kill -9 `ps aux | grep -ie TESTCLIENT | grep -ie 1cv8c | awk {print $2}`"";
+		КомандаСистемы(СтрокаЗапуска);
+	КонецЕсли;
+	
 КонецПроцедуры
 
 &НаКлиенте
@@ -295,8 +303,21 @@
 		//Если Не ЗначениеЗаполнено(ИмяПользователя) Тогда
 		//	ИмяПользователя = ""Администратор"";
 		//КонецЕсли;	
+		
+	ЭтоLinux = Ложь;
+	СисИнфо = Новый СистемнаяИнформация;
+	ВерсияПриложения = СисИнфо.ВерсияПриложения;
 	
-	Результат = КаталогПрограммы() + ""1cv8c.exe ENTERPRISE "" +
+	Если Найти(Строка(СисИнфо.ТипПлатформы), ""Linux"")>0 Тогда 
+		ЭтоLinux = Истина;
+	КонецЕсли;
+	
+	СтрокаЗапуска1с = КаталогПрограммы() + ""1cv8c"";
+	Если ЭтоLinux = Ложь Тогда
+		СтрокаЗапуска1с = СтрокаЗапуска1с + "".exe"";
+	КонецЕсли;
+	
+	Результат = СтрокаЗапуска1с + "" ENTERPRISE "" +
 		""/IBConnectionString"""""" + СтрЗаменить(СтрокаСоединенияИнформационнойБазы(), """""""", """""""""""") + """""""" +
 		""/N"""""" + ИмяПользователя + """""""" + ""/P"""""" + Пароль + """""""" +  
 		"" /TESTCLIENT -TPort"" + XMLСтрока(Порт);
@@ -383,7 +404,7 @@
 
 #КонецЕсли 
 ",
-{4,4,
+{4,5,
 {9,
 {1},0,"Объект",
 {1,0},
@@ -495,6 +516,27 @@
 {"B",1},0}
 },
 {0,0},0},
+{0,0},
+{0,0}
+},
+{9,
+{5},0,"ЭтоLinux",
+{1,1,
+{"ru","Это linux"}
+},
+{"Pattern",
+{"B"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
 {0,0},
 {0,0}
 },0,0,
