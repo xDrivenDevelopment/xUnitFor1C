@@ -1,0 +1,15 @@
+﻿265234cb-5398-47b3-a8e1-d32d748b2c4c-->und\265234cb-5398-47b3-a8e1-d32d748b2c4c
+265234cb-5398-47b3-a8e1-d32d748b2c4c.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\Тест_НетМетодаПолучитьСписокТестовыхФорм(ДляCmdLine)\Form\Форма\Форма.txt
+265234cb-5398-47b3-a8e1-d32d748b2c4c.0-->und\265234cb-5398-47b3-a8e1-d32d748b2c4c.0
+265234cb-5398-47b3-a8e1-d32d748b2c4c.0-->und\265234cb-5398-47b3-a8e1-d32d748b2c4c.0
+42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3-->und\42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3
+42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\Тест_НетМетодаПолучитьСписокТестовыхФорм(ДляCmdLine)\Form\ДополнительнаяФорма\Форма.txt
+42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3.0-->und\42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3.0
+42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3.0-->und\42b9f4c2-1702-4ab5-96d2-1cb5e55a42f3.0
+7b66680b-e180-4230-a526-5aff4cc52aae.0\info-->und\7b66680b-e180-4230-a526-5aff4cc52aae.0\info
+7b66680b-e180-4230-a526-5aff4cc52aae.0\text-->ObjectModule.txt
+984dfd94-7d1f-404b-b526-3a286429e361-->und\984dfd94-7d1f-404b-b526-3a286429e361
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
