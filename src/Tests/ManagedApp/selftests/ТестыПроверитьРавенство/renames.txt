@@ -1,7 +1,9 @@
 ﻿07573e7b-0512-47c2-8d9b-ad23810dfa3a-->und\07573e7b-0512-47c2-8d9b-ad23810dfa3a
-164f86b3-6b0d-4640-ba21-1138c5c2fbfc.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверитьРавенство.epf.und\164f86b3-6b0d-4640-ba21-1138c5c2fbfc.0\info
+164f86b3-6b0d-4640-ba21-1138c5c2fbfc.0\info-->und\164f86b3-6b0d-4640-ba21-1138c5c2fbfc.0\info
 164f86b3-6b0d-4640-ba21-1138c5c2fbfc.0\text-->ObjectModule.txt
 6568a075-35b8-40cb-8926-5d250300828c-->und\6568a075-35b8-40cb-8926-5d250300828c
+6568a075-35b8-40cb-8926-5d250300828c.0-->Form\Форма\Форма.txt
+6568a075-35b8-40cb-8926-5d250300828c.0-->und\6568a075-35b8-40cb-8926-5d250300828c.0
 6568a075-35b8-40cb-8926-5d250300828c.0-->und\6568a075-35b8-40cb-8926-5d250300828c.0
 copyinfo-->und\copyinfo
 root-->und\root

@@ -1,8 +1,10 @@
 ﻿2c7403d9-12d3-4793-8638-68665c64c197-->und\2c7403d9-12d3-4793-8638-68665c64c197
-6c74a597-6dc6-44ac-97bd-b8871cccb0b2.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверитьБольше.epf.und\6c74a597-6dc6-44ac-97bd-b8871cccb0b2.0\info
+6c74a597-6dc6-44ac-97bd-b8871cccb0b2.0\info-->und\6c74a597-6dc6-44ac-97bd-b8871cccb0b2.0\info
 6c74a597-6dc6-44ac-97bd-b8871cccb0b2.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
 d49f80c0-c58e-4b48-8973-419ee4adcc08-->und\d49f80c0-c58e-4b48-8973-419ee4adcc08
+d49f80c0-c58e-4b48-8973-419ee4adcc08.0-->Form\Форма\Форма.txt
+d49f80c0-c58e-4b48-8973-419ee4adcc08.0-->und\d49f80c0-c58e-4b48-8973-419ee4adcc08.0
 d49f80c0-c58e-4b48-8973-419ee4adcc08.0-->und\d49f80c0-c58e-4b48-8973-419ee4adcc08.0
 root-->und\root
 version-->und\version

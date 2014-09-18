@@ -1,7 +1,9 @@
 ﻿1bf6058d-6b06-41fe-b3ec-d726dd328899-->und\1bf6058d-6b06-41fe-b3ec-d726dd328899
+1bf6058d-6b06-41fe-b3ec-d726dd328899.0-->Form\Форма\Форма.txt
+1bf6058d-6b06-41fe-b3ec-d726dd328899.0-->und\1bf6058d-6b06-41fe-b3ec-d726dd328899.0
 1bf6058d-6b06-41fe-b3ec-d726dd328899.0-->und\1bf6058d-6b06-41fe-b3ec-d726dd328899.0
 af30e85a-d1f6-44e2-b2c2-6c5961f06ba2-->und\af30e85a-d1f6-44e2-b2c2-6c5961f06ba2
-c06e2011-e1e8-42d8-8bc3-de699e96174c.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПриватныйТестовыйСлучай.epf.und\c06e2011-e1e8-42d8-8bc3-de699e96174c.0\info
+c06e2011-e1e8-42d8-8bc3-de699e96174c.0\info-->und\c06e2011-e1e8-42d8-8bc3-de699e96174c.0\info
 c06e2011-e1e8-42d8-8bc3-de699e96174c.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
 root-->und\root
