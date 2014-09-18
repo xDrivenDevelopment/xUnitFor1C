@@ -1,4 +1,4 @@
-﻿498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверитьВыполнить.epf.und\498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info
+﻿498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info-->und\498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info
 498e7f98-0af6-4b64-81e4-2c1e28c56195.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
 db8c43bc-6c10-462b-ae61-3c7c1d32345a-->und\db8c43bc-6c10-462b-ae61-3c7c1d32345a
