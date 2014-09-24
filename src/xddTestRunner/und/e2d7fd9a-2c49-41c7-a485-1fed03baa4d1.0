@@ -16,7 +16,64 @@
 },
 {6,3,0,1},
 {0,0,0},1,
-{0,0,1},5,cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{0,0,0},6,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{19,
+{138,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаЗагрузитьТестыПоУмолчанию",
+{1,1,
+{"ru","Загрузить тесты"}
+},1,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},
+{0,0,0},0,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+g
+vaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAEtUlEQVRIx6WUy48UVRTGf+fe6p6e
+7ume6aCMEXygIgmgISaSGI0ZSYfEpRt2/gUmxrhwYVy410R36pawksBKNCajji9C
+lEgCBGGAGZkB5kU/pt9dVfceF9XdM82486RqUfXdOud85ztfyec/984/+4h9Ze+U
+IZsWANqhcrfmWSjHv6mK/T94AARnf7nOjYVlNutNACYLExx4Zi8v7H8y7VXtmZ8W
+mb+zwma9tQ1/giMH9weo2jM/XWF+cZl6o4VKMIILwPsnr+vxQ3l6sWIEljYa/H5t
+jfXvP34U8C++/UX5+OHCEF9+0OT8fJ3Vbz6wwNTBE5+Wjx0sQDCONTLET713VAKA
+fC7Da4emcVgCcfxwscmYUYA0sJafGB/iaQsXbmxw6Z82wGNAKpexHHvpadSktvA7
+XQAM/TAieO+oVat47xExAGuzs3NugAMI4L3HdRsAKSBKZScJrB3igyiVZmRYQNB+
+cocxBpvJM0gOYE3yqaqj1aih6gEiYE3EDHEZVFAFyAT9J9qtFs45xsYsufwUSJeH
+w3tHdXMnw99PHOKFxZM82LXI0bEZvrr/GWdvneN1jiSnfByheKy1FItFjDHsjGR8
+zu1kKEZB4JPND7nausR3N8+BJp0PM6UDy1SxiO3PcnuoehqbNZxzBMGA4VYTIvCI
+3U0QQKqVxiIDMbrDU7lcDmN2Ji+VZuy7c4dx8+eZun2K3VLmlYvv8NGFI1uHJBE+
+3QlQ71CjxDZmdnYuYWCC1H+OpVSascC0MwHWGoq3v8RUbxBfPjtyzojQqjexAiYw
+xNmoP6HhmsqO5CRbMg2kbGAo5nOY7DhYAzYYaSLVSSXCZzy5qSza12TEB6PbMrrn
+xTGfMBzPgrEQBCMMBTDGoMUIsTLSrgE4eX6Zucsr/FVRVpsxX/+5yulf54d7bmz/
+k/FxMAasxSdppoGUArnCBIrSv0YLDEp+u+S4tlRh7noNTV4mTh7ok8mCGLxY6i49
+ZBhlIowxuFiS5JrcI06OnNKrV3DOoVhCyW45WQR8CJkMXj21OI1LGoiANY/S0w4u
+FFQV1eGYMqa/6KxstoiimFpoiFMTgxFsRW8NL5bq2hIOwSa9JgwV7sZLuFBYCe8j
+TghckHgQQF3MessROksmX8TpTu198x7VWg/nHRalYMMhQ1W4E97ChYKLFdsJHnKy
+Kq1IiFNT9JzBK/htSnkH1coDXKeH9SFTQYjZJqV6oRJVibuGWnkTYjPqZKdC3Wfp
+xkKl7XEONPkbUirN2GpocO0yNuxSDFoYHz+01rDRXYdymkq3ivOMOjnGstFWuqHn
+QVtxXlHd5mTnsd0NiraDaW+Ac6Pzc8JqeQ3fM5SjCmE6HnWyj2I6kdANlYWKJ5e2
+WNna83oPiqaN6bahfBNJT9DydsgwXcnSCyNiBwt6h3yqgInHthVoN6oblQaPjkGt
+rUjUJp+Oa0AING5FxfVmrQqpaWiWacYB83bveqk0Y4DJsZXna5vVgD2TT1ELG6Tr
+j5PtHKhuWezNU4XJglxxcbQHBBHu7apcfPk5c6UBdN+K53LT+/b9KBq+KKqE3l69
+v7z6xrfBqzEgfxeqE7XJ4h8a1/aCgEzcbXeuH+b0RvNf+XOfI5UewfYAAAAldEVY
+dGRhdGU6Y3JlYXRlADIwMTMtMDUtMjlUMDk6NDc6NDItMDU6MDBTDo/DAAAAJXRF
+WHRkYXRlOm1vZGlmeQAyMDEzLTA1LTI4VDA2OjE3OjMwLTA1OjAwR0bHqQAAAABJ
+RU5ErkJggg==}
+},0},1,
+{"Pattern"},"",2},cd5394d0-7dda-4b56-8927-93ccbe967a01,
 {17,
 {131,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
 {0,
@@ -24,7 +81,7 @@
 {"B",1},0}
 },1,"ПодменюЗагрузитьТесты",
 {1,1,
-{"ru","Загрузить тесты"}
+{"ru","Загрузить ..."}
 },
 {1,1,
 {"ru","Подменю загрузить тесты"}
@@ -2233,6 +2290,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	ОбъектНаСервере = Объект();
 	ЭтаФорма.Заголовок = ОбъектНаСервере.ЗаголовокФормы();
 	
+	ЭтоВстроеннаяОбработка = ОбъектНаСервере.ЭтоВстроеннаяОбработка;
+	УстановитьПоУмолчаниюОбработчикКоманды_ЗагрузитьТесты();
+	
 	ЗапретИспользованияИнформатора = Истина;
 	
 	Если ЗначениеЗаполнено(Параметры.Пути) Тогда
@@ -2263,8 +2323,43 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецПроцедуры
 
+//&НаКлиенте
+&НаСервере
+Процедура УстановитьПоУмолчаниюОбработчикКоманды_ЗагрузитьТесты()
+	Перем Команда;
+	Если ЭтоВстроеннаяОбработка Тогда
+		Команда = Команды.КомандаЗагрузитьТестыИзКонфигурацииПоИмени;
+	Иначе
+		Команда = Команды.КомандаЗагрузитьТестовыйНабор;
+	КонецЕсли; 		
+	
+	лКоманднаяПанель = Элементы.Найти(""ФормаКоманднаяПанель"");
+	нашлиКоманднуюПанель = лКоманднаяПанель <> Неопределено;
+	Если нашлиКоманднуюПанель Тогда
+		нашлиКоманднуюПанель = лКоманднаяПанель.Вид = ВидГруппыФормы.КоманднаяПанель;
+	КонецЕсли;
+	
+	лВладелецФормы = ?(нашлиКоманднуюПанель, лКоманднаяПанель, ЭтаФорма);
+	
+	ИсходнаяКнопка = Элементы.ФормаЗагрузитьТестыПоУмолчанию;
+
+	НоваяКнопкаПоУмолчанию = ЭтаФорма.Элементы.Вставить(ИсходнаяКнопка.Имя+""_"", Тип(""КнопкаФормы""), лВладелецФормы, ИсходнаяКнопка);
+	ЗаполнитьЗначенияСвойств(НоваяКнопкаПоУмолчанию, Элементы.ФормаЗагрузитьТестыПоУмолчанию);
+	НоваяКнопкаПоУмолчанию.ИмяКоманды = Команда.Имя;
+	НоваяКнопкаПоУмолчанию.Отображение  = ОтображениеКнопки.КартинкаИТекст;
+	
+	Для каждого Элемент Из Элементы Цикл
+		Если ТипЗнч(Элемент) = Тип(""КнопкаФормы"") и Элемент.ИмяКоманды = Команда.Имя Тогда
+			Элемент.Картинка = ИсходнаяКнопка.Картинка;
+		КонецЕсли; 
+	КонецЦикла; 
+	ИсходнаяКнопка.Видимость = Ложь;	
+КонецПроцедуры
+
 &НаКлиенте
 Процедура ПриОткрытии(Отказ)
+	//УстановитьПоУмолчаниюОбработчикКоманды_ЗагрузитьТесты();
+	
 	СоздатьСоответствиеСтатусовДляTeamCity();
 	
 	Если ОбработатьПараметрыЗапуска(ПараметрЗапуска) Тогда
@@ -4530,7 +4625,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 //}
 
 ",
-{4,18,
+{4,19,
 {9,
 {1},0,"Объект",
 {1,0},
@@ -4954,6 +5049,27 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 },
 {"Pattern",
 {"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{19},0,"ЭтоВстроеннаяОбработка",
+{1,1,
+{"ru","Это встроенная обработка"}
+},
+{"Pattern",
+{"B"}
 },
 {0,
 {0,
