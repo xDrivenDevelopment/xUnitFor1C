@@ -1,6 +1,8 @@
-﻿727eda5f-558c-428b-86d2-3421c52f4c50.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестПримерСломаногоТеста.epf.und\727eda5f-558c-428b-86d2-3421c52f4c50.0\info
+﻿727eda5f-558c-428b-86d2-3421c52f4c50.0\info-->und\727eda5f-558c-428b-86d2-3421c52f4c50.0\info
 727eda5f-558c-428b-86d2-3421c52f4c50.0\text-->ObjectModule.txt
 ada02760-1fa7-4a08-aad3-fe9359a8d782-->und\ada02760-1fa7-4a08-aad3-fe9359a8d782
+ada02760-1fa7-4a08-aad3-fe9359a8d782.0-->Form\Форма\Форма.txt
+ada02760-1fa7-4a08-aad3-fe9359a8d782.0-->und\ada02760-1fa7-4a08-aad3-fe9359a8d782.0
 ada02760-1fa7-4a08-aad3-fe9359a8d782.0-->und\ada02760-1fa7-4a08-aad3-fe9359a8d782.0
 copyinfo-->und\copyinfo
 f38c7465-2120-4aeb-87fc-1cd6a72e4559-->und\f38c7465-2120-4aeb-87fc-1cd6a72e4559
