@@ -1,7 +1,7 @@
-﻿498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверитьВыполнить.epf.und\498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info
+﻿498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info-->und\498e7f98-0af6-4b64-81e4-2c1e28c56195.0\info
 498e7f98-0af6-4b64-81e4-2c1e28c56195.0\text-->ObjectModule.txt
 64d5f759-0d93-4d3c-9a38-2c95d18f7c27-->und\64d5f759-0d93-4d3c-9a38-2c95d18f7c27
-64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\ManagedApp\selftests\ТестыПроверитьВыполнить\Form\Форма\Форма.txt
+64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0-->Form\Форма\Форма.txt
 64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0-->und\64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0
 64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0-->und\64d5f759-0d93-4d3c-9a38-2c95d18f7c27.0
 copyinfo-->und\copyinfo

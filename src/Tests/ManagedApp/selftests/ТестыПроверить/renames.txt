@@ -1,6 +1,8 @@
 ﻿03cb84ff-3bbd-4295-92cc-cf14b07cccaf-->und\03cb84ff-3bbd-4295-92cc-cf14b07cccaf
+03cb84ff-3bbd-4295-92cc-cf14b07cccaf.0-->Form\Форма\Форма.txt
 03cb84ff-3bbd-4295-92cc-cf14b07cccaf.0-->und\03cb84ff-3bbd-4295-92cc-cf14b07cccaf.0
-7b66680b-e180-4230-a526-5aff4cc52aae.0\info-->C:\Users\aayuhanov\AppData\Local\Temp\ТестыПроверить.epf.und\7b66680b-e180-4230-a526-5aff4cc52aae.0\info
+03cb84ff-3bbd-4295-92cc-cf14b07cccaf.0-->und\03cb84ff-3bbd-4295-92cc-cf14b07cccaf.0
+7b66680b-e180-4230-a526-5aff4cc52aae.0\info-->und\7b66680b-e180-4230-a526-5aff4cc52aae.0\info
 7b66680b-e180-4230-a526-5aff4cc52aae.0\text-->ObjectModule.txt
 984dfd94-7d1f-404b-b526-3a286429e361-->und\984dfd94-7d1f-404b-b526-3a286429e361
 copyinfo-->und\copyinfo
