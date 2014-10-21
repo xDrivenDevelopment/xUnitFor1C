@@ -1,7 +1,7 @@
 ﻿copyinfo-->und\copyinfo
 d4b2b060-6fed-4f01-86f9-4a4b6be56520-->und\d4b2b060-6fed-4f01-86f9-4a4b6be56520
 ea4f0a24-1e0c-4dfc-b36c-9860001e62a0-->und\ea4f0a24-1e0c-4dfc-b36c-9860001e62a0
-ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0-->Form\Форма\Форма.txt
+ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\ManagedApp\ТестНаКлиенте\Form\Форма\Форма.txt
 ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0-->und\ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0
 ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0-->und\ea4f0a24-1e0c-4dfc-b36c-9860001e62a0.0
 root-->und\root
