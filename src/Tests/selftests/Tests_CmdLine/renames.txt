@@ -1,8 +1,7 @@
 ﻿6043c9e4-9d43-466f-9389-73d9a4d45c8f-->und\6043c9e4-9d43-466f-9389-73d9a4d45c8f
 6871575a-6b09-4388-a583-288ac222e77c-->und\6871575a-6b09-4388-a583-288ac222e77c
-6871575a-6b09-4388-a583-288ac222e77c.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\selftests\Tests_CmdLine\Макеты\ЛогТимСити_ПримерСломанногоТеста.txt
+6871575a-6b09-4388-a583-288ac222e77c.0-->C:\Users\Designer\Dropbox\Github - xUnitFor1C\src\Tests\selftests\Tests_CmdLine\Макеты\ЛогТимСити_ПримерСломанногоТеста\ЛогТимСити_ПримерСломанногоТеста.txt
 6871575a-6b09-4388-a583-288ac222e77c.0-->und\6871575a-6b09-4388-a583-288ac222e77c.0
-864a8a9a-a51f-4879-9673-64f8d6ed8eae.0\864a8a9a-a51f-4879-9673-64f8d6ed8eae.0-->ObjectModule.txt
 copyinfo-->und\copyinfo
 root-->und\root
 version-->und\version
