@@ -1,8 +1,8 @@
 ﻿0b790809-ec18-47a5-9ea4-f803fe85b870-->und\0b790809-ec18-47a5-9ea4-f803fe85b870
-0b790809-ec18-47a5-9ea4-f803fe85b870.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\ШаблонТеста_ВнешняяОбработка.txt
+0b790809-ec18-47a5-9ea4-f803fe85b870.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\ШаблонТеста_ВнешняяОбработка.txt
 0b790809-ec18-47a5-9ea4-f803fe85b870.0-->und\0b790809-ec18-47a5-9ea4-f803fe85b870.0
 33910070-6792-45db-b776-a887080ffe7a-->und\33910070-6792-45db-b776-a887080ffe7a
-33910070-6792-45db-b776-a887080ffe7a.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\UILogToScript\Form\ОсновнаяФорма\Форма.txt
+33910070-6792-45db-b776-a887080ffe7a.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\Gui83\UILogToScript\Form\ОсновнаяФорма\Форма.txt
 33910070-6792-45db-b776-a887080ffe7a.0-->und\33910070-6792-45db-b776-a887080ffe7a.0
 33910070-6792-45db-b776-a887080ffe7a.0-->und\33910070-6792-45db-b776-a887080ffe7a.0
 6344d70f-6d22-465c-b456-63013e6bc378.0\info-->und\6344d70f-6d22-465c-b456-63013e6bc378.0\info
@@ -10,10 +10,10 @@
 6344d70f-6d22-465c-b456-63013e6bc378.1-->und\6344d70f-6d22-465c-b456-63013e6bc378.1
 6810777b-4151-4eba-b50d-4a2a08b5be5a-->und\6810777b-4151-4eba-b50d-4a2a08b5be5a
 6810777b-4151-4eba-b50d-4a2a08b5be5a.0-->und\6810777b-4151-4eba-b50d-4a2a08b5be5a.0
-6810777b-4151-4eba-b50d-4a2a08b5be5a.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\UnpackV8.txt
+6810777b-4151-4eba-b50d-4a2a08b5be5a.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\UnpackV8.txt
 9e7b2a13-3bf6-401a-be4a-0dbf0d48a43b-->und\9e7b2a13-3bf6-401a-be4a-0dbf0d48a43b
 b6e7785c-aad2-4c34-8c75-d98a7963dbaf-->und\b6e7785c-aad2-4c34-8c75-d98a7963dbaf
-b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\zlib1.txt
+b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\Gui83\UILogToScript\Макеты\zlib1.txt
 b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0-->und\b6e7785c-aad2-4c34-8c75-d98a7963dbaf.0
 copyinfo-->und\copyinfo
 root-->und\root
