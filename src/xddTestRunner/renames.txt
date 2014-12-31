@@ -3,8 +3,7 @@
 0e8a9c1b-ba5e-48a0-b942-71359f28781f.0-->und\0e8a9c1b-ba5e-48a0-b942-71359f28781f.0
 0e8a9c1b-ba5e-48a0-b942-71359f28781f.0-->und\0e8a9c1b-ba5e-48a0-b942-71359f28781f.0
 132836b0-fcfc-4683-94b7-33001cb9ad7a-->und\132836b0-fcfc-4683-94b7-33001cb9ad7a
-542e6f41-53d4-480a-8f9f-d17d022bac4b.0\info-->und\542e6f41-53d4-480a-8f9f-d17d022bac4b.0\info
-542e6f41-53d4-480a-8f9f-d17d022bac4b.0\text-->ObjectModule.txt
+542e6f41-53d4-480a-8f9f-d17d022bac4b.0\542e6f41-53d4-480a-8f9f-d17d022bac4b.0-->ObjectModule.txt
 542e6f41-53d4-480a-8f9f-d17d022bac4b.1-->und\542e6f41-53d4-480a-8f9f-d17d022bac4b.1
 5483e53e-c944-404d-bf9a-db0544fe50b2-->und\5483e53e-c944-404d-bf9a-db0544fe50b2
 5483e53e-c944-404d-bf9a-db0544fe50b2.0-->Макеты\ОтчетТестирования.mxl
