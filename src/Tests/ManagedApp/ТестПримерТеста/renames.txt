@@ -1,7 +1,7 @@
 ﻿727eda5f-558c-428b-86d2-3421c52f4c50.0\info-->und\727eda5f-558c-428b-86d2-3421c52f4c50.0\info
 727eda5f-558c-428b-86d2-3421c52f4c50.0\text-->ObjectModule.txt
 98f37039-d79e-4d4f-8430-e26a4b5f9b4a-->und\98f37039-d79e-4d4f-8430-e26a4b5f9b4a
-98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0-->Form\Форма\Форма.txt
+98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0-->D:\work\repository\repo\git\xUnitFor1C\src\Tests\ManagedApp\ТестПримерТеста\Form\Форма\Форма.txt
 98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0-->und\98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0
 98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0-->und\98f37039-d79e-4d4f-8430-e26a4b5f9b4a.0
 copyinfo-->und\copyinfo
