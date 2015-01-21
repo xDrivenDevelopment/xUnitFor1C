@@ -1,0 +1,11 @@
+﻿7fee0032-60d2-407f-8cb4-61ed1c95ba08-->und\7fee0032-60d2-407f-8cb4-61ed1c95ba08
+81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\info-->und\81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\info
+81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\text-->ObjectModule.txt
+copyinfo-->und\copyinfo
+fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa-->und\fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa
+fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\ТестыПроверитьРавенствоТаблиц\Form\Форма\Форма.txt
+fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa.0-->und\fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa.0
+fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa.0-->und\fde46a88-2879-4ff4-b1eb-6a5e7c2cbafa.0
+root-->und\root
+version-->und\version
+versions-->und\versions
