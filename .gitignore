@@ -1,4 +1,4 @@
-#################
+﻿#################
 ## Eclipse
 #################
 
@@ -170,4 +170,4 @@ Gradle/Ant/.gradle/1.11/taskArtifacts/cache.properties.lock
 Gradle/Ant/.gradle/1.11/taskArtifacts/fileSnapshots.bin
 Gradle/Ant/.gradle/1.11/taskArtifacts/taskArtifacts.bin
 Gradle/gradle-app.setting
-Тесты управляемое приложение/selftests/лог_тестирования.mxl
+лог_тестирования.mxl
