@@ -13,7 +13,14 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   #config.vm.box = "hashicorp/precise32"
-  config.vm.box = "ubuntu/trusty64"
+  #config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/trusty32"
+  vmname="xunitfor1c"
+  if ENV['V8ERSION']
+    vmname=vmname+ENV['V8ERSION']
+  end
+
+  
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -24,6 +31,9 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest:5432, host:55432
+  config.vm.network "forwarded_port", guest:6080, host:6080
+
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -50,6 +60,8 @@ Vagrant.configure(2) do |config|
   #
   #   # Customize the amount of memory on the VM:
       vb.memory = "1024"
+      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.name = vmname
   end
   #
   # View the documentation for the provider you are using for more
@@ -62,13 +74,9 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
-  # documentation for more information about their specific syntax and use.
   config.vm.provision :shell, path: "bootstart.sh"
-  #config.vm.provision "shell", path: "runvnc.sh", run: "always" , privileged:"false"
-  #config.vm.provision :shell do |sh|
-  #  sh.privileged = false
-  #  sh.path = "runvnc.sh"
-  #end
+  config.vm.provision :shell, path: "addlicense.sh"
+  #config.vm.provision :shell, path: "postgres.sh"
+  #config.vm.provision :shell, path: "monitoringSql.sh"
+
 end

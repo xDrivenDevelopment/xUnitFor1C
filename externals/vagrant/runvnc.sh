@@ -9,5 +9,4 @@ vncserver
 sleep 3
 export DISPLAY=:1
 /usr/bin/lxsession &
-tint2 &
 
