@@ -1155,78 +1155,28 @@ bPcS2VIzbEMtr9Yo/6Tx8OuKe5cb6fdCAuTyv4fErcTi4mxwPaxGm6Y6kBOCQHH7
 {3,3,
 {0},"",-1,-1,0,
 {
-{#base64:iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAACXBIWXMAAAsTAAAL
-EwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj33
-3vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEs
-DIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIe
-EeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH
-/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAn
-f+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJ
-V2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4
-mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHg
-g/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl
-7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/A
-V/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5
-WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQ
-WHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAA
-RKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv
-1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4
-IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGy
-UT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPE
-bDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhM
-WE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPE
-NyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD
-5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2h
-tlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0
-dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHK
-CpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2ep
-O6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN
-2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIp
-G6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3n
-U9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36
-p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYP
-jGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLn
-m+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cR
-p7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0H
-DYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dn
-F2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofc
-n8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh
-7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
-gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
-DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
-ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
-F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
-NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
-MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
-1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
-sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
-fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
-ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
-zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
-+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
-dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
-Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
-52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
-nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
-zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
-BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
-l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
-0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
-YAAAOpgAABdvkl/FRgAAAqNJREFUeNrsl7tPFFEUxn9nln0oo2BAMRT4KIiFj8JQ
-kZgQLTC7DQH5CyyurbGztiO0S8FfgE6HsdEgJsYEpdAlYMaoPLKboMa4sovs7M4c
-i2GNCRCuhRV8zc35km/OvWfu+c6MqCoHGQ4HHIcFOOgFaNmNFBF838+jahSQmJzo
-7e29Y+MZIkJ2jHwYYSIFRyDhMPH4HtZ6nb2YR0MD2zuQxATXCndsDiUizOf68hqG
-RlURESSRmLg6/XpH/l0L4Pt+XsAccV0QAVWq1arxfR9g301kx8if7mg3I/23SbWk
-CBoBj15OmuzYDyu9zl7Kk+w0nLoFkgINYP2h4cVluPZuX/18ri9//ES7OXczSyKV
-JAzqfH4ybeZzfTvy79ECao66LtXNTSqVCtXNTVzXBdTYvIEowgz1j7L0bYrXxUmW
-vk0x1D9KFGGlR0ND1wiU38D35/F6eiTmbeRRZM4PZokKcwSvnhMV5jg/mEOjyFi1
-AEC93gAFQUC3Y0uoQrE6QzlYRSP4FcbxP03cYBmkAgmAII5t8wPO2keiykbcEsEW
-ztpH1NYDmkhnMvFpttvA2lkFfmx9oDUDGoE4ceyI7RMEZAOOdvDHA9houpGF3IHK
-T1raOohUcUSg8jPmbaZAsVjywkadVDJJOp0mlUwSNuoUiyXPJn+tjFdYgFQKWlvj
-tbAQ8zb6lS+hR3kRMsfiImSOQXkx5i2wXgs8/9MauG04JzrBbcP/tMZ6Ldihl91c
-WUR6ZmZmxru7u4ebXKlU8gYGBu6q6qqFC/dcv894uo3h5gWqlfGePcBavzx1YfzM
-qcRw8waufAm9s6PvrfXTN66Md6WTw80psF6re7mnb3fo9yoAQA9w8i/6K7BqO8b+
-h97m8P+aXw7/BQ4/hQ8LcKDxewBb9EqnwRVYlgAAAABJRU5ErkJggg==}
+{#base64:iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAD20lEQVRYhe1WXWxT
+ZRh+vtP29PSPQTahm0mZSopkgFkTRbeIFGPU1iwhGzPCHdFw5oUXxIQLr71bekmH
+wXjlTaE3JJsSlQLJRioLMjYoO8JSak47tkXbtac/5/Scz4uzLsW17IgYs8Xn5s15
+vu85eb437/e+H6GUYiODEPKP9Mwz8rFh8X8C/msDzwrK6Y9OVI69Jcong2ON1uWT
+749Vjr0pKqc/PFHPk0Y9gBACQRDCoJSnAIhOjni93iEjPYMQguAwwqoGXqMAQwAT
+g5HRz2FYT6/uDYOqPLDigJhGcHB6qNFeAKh+EhDpLu+4due2j9hsAnt2NFB/eFoq
+ec0veG5WEw96rZHx52tr5kYGBEEIE4C3OZ0AIQClkCSJFwQBANaY+CuCwwi7W7fy
+A70fgzWzkKsyLoyf44PDWUN6enVfGJY2HtuPAoQFqAw8Os/j2n7g4O2Geo0hU0xy
+zsfsfeW6lrjTlf/06JjrzPlA5dTxMfrHI7f5xc7rVWHuDbJty1S9rskVoLzd6YRU
+LKJQKEAqFuF0OgFQfj3zAKBp4I/0DiKxFMEN8RwSSxEc6R2EpsGQHlTlsWMAyE0C
+v1/Ro3tA55uAPTsagI0TSCrZxXTtuwFZcZc+68tQWXFbv/nRV51LdemV8V2gXte0
+ByhKFaAAAQHoyrdBUAqIUgw5OYWisoCcnIIoxfC3Jq6cBEgBMMl6lJPrSsyhSEDW
+TPPKvfuvcvt3J0w7PdeUrS0zC8ffu7nMOObZry8F1mie9EMrx+mnWbkGRsEQIFv+
+FQ4OoBpAGP2bMTyyCUDygL0Vqz0A+ZX4ZNjPXAhk+g9lbJnFKapqmqaqFrVcbm//
+9ntfQ6+NSFFMR9WqAtZigdVqBWuxQK0qEMV01Ij9Sg7R6RmAZQGHQ4/TMzpvRP9w
+QY0idxfgXHoSOBeQu6vz62DW3xPWNDaTX8ya8ktZM60ovxUlLZMa/CDcaH+zKeCJ
+xWKhjo6O/hqXTqejfr//FKU0tZ4JQojn7S8Qsragv1ZAlRyiP30Jw/pk5OXQzu2m
+/loFPlxQo52D99bo61+Cs/6ecCUvHXB17pioLC/3lPLFdkUjmdfiU92X93h/sTvs
+8dcnbz3WRJuOQQAeAM/V0YsAUkbH2L+hb5S8WgImD/i+MsuVw9RkuVhSlEM2hzPe
+PREfqiWlUJKvSIrc19bW9kP3RHw1CQ0TsJFQS8DPe16aZzjHxbKsHHa0bHnskLP+
+nnApm3unUFYuS7IcfPdBcvUdsGleguDYUL6w3Mc5uEv1hweA3bGJIcrZRlmofa3b
+XMP1a5umAp4Wm6cCnhJ/AvYj0tAAyujrAAAAAElFTkSuQmCC}
 },0},0,0,0,
 {1,0},
 {3,4,
@@ -2756,6 +2706,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ЗапретИспользованияИнформатора = Истина;
 	
+	БылаОшибкаПриПредыдущейЗагрузке = ОбъектНаСервере.СохраненнаяНастройка_БылаОшибкаПриПредыдущейЗагрузке();
+	ОбъектНаСервере.УстановитьНастройку_БылаОшибкаПриПредыдущейЗагрузке(Истина);
+	
 	ВосстановитьНастройки();
 	
 	Если ЗначениеЗаполнено(Параметры.Пути) Тогда
@@ -2794,8 +2747,17 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	Если ЗначениеЗаполнено(Пути) Тогда
 		
-		ОбновитьНадписьПути();
+		Если БылаОшибкаПриПредыдущейЗагрузке Тогда
+			Текст = ""Возникла ошибка при предыдущей загрузке тестов. Хотите отменить загрузку тестов?"";
+			Ответ = Вопрос(Текст, РежимДиалогаВопрос.ДаНет, 0);
+			Если Ответ = КодВозвратаДиалога.Да Тогда
+				Пути.Очистить();
+			КонецЕсли;
+
+		КонецЕсли;
 		
+		ОбновитьНадписьПути();
+
 		Попытка
 			LoadAllTests();
 		Исключение
@@ -2803,9 +2765,11 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			ТекстСообщения = НСтр(""ru='ОШИБКА загрузки тестов: %ТекстОшибки%'; en='Error loading testcases: %ТекстОшибки%'"");
 			ТекстСообщения = СтрЗаменить(ТекстСообщения, ""%ТекстОшибки%"", ТекстОшибки); 
 			ВывестиСообщение(ТекстСообщения);
-		КонецПопытки;
-		
+			
+		КонецПопытки;		
+
 	КонецЕсли;
+	СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер();
 	
 	Элементы.КомандаВключитьРежимОтладки.Пометка = Объект.РежимОтладки;
 	
@@ -4187,14 +4151,14 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 // количествоСозданныхОбъектов учитывает только созданные элементы справочников, документы и пользователей ИБ. Записи регистров сведений не считаются!
 &НаКлиенте
-Функция СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, количествоСозданныхОбъектов = 0) Экспорт
-	Данные = СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, количествоСозданныхОбъектов);
+Функция СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения = Неопределено, ИмяКолонкиЗамещения = Неопределено) Экспорт
+	Данные = СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения);
 	Возврат Данные;
 КонецФункции
 
 &НаСервере
-Функция СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, количествоСозданныхОбъектов = 0) Экспорт
-	Данные = Объект().СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, количествоСозданныхОбъектов);
+Функция СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения) //Экспорт
+	Данные = Объект().СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения);
 	Возврат Неопределено; //Данные;
 КонецФункции
 //}
@@ -4960,6 +4924,8 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ХранилищеОбщихНастроек.Сохранить(""xUnitFor1C"",, Настройки);
 	
+	СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер();
+	
 КонецПроцедуры
 
 &НаСервере
@@ -4997,6 +4963,11 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	Элементы.КомандаСлучайныйПорядокВыполнения.Пометка = Объект.СлучайныйПорядокВыполнения;
 	Элементы.КомандаВключитьРежимОтладки.Пометка = Объект.РежимОтладки;
 	
+КонецПроцедуры
+
+&НаСервере
+Процедура СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер()
+	Объект().УстановитьНастройку_БылаОшибкаПриПредыдущейЗагрузке(Ложь);
 КонецПроцедуры
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -5236,8 +5207,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 //}
 
-кэшТестовыхОбработок = Новый Соответствие;",
-{4,25,
+кэшТестовыхОбработок = Новый Соответствие;
+",
+{4,26,
 {9,
 {1},0,"Объект",
 {1,0},
@@ -5832,6 +5804,27 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {"ru","Статусы результата тестирования"}
 },
 {"Pattern"},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{3},0,"БылаОшибкаПриПредыдущейЗагрузке",
+{1,1,
+{"ru","Была ошибка при предыдущей загрузке"}
+},
+{"Pattern",
+{"B"}
+},
 {0,
 {0,
 {"B",1},0}
