@@ -1,0 +1,15 @@
+V8ERSION=8_3_6_1848
+V8USER=
+V8PASSW=
+
+mkdir -p ../../distr
+cd ../../distr
+
+wget --http-user=$V8USER -v --http-passwd=$V8PASSW --continue  http://downloads.v8.1c.ru/get/Info/Platform/$V8ERSION/deb.tar.gz
+wget --http-user=$V8USER -v --http-passwd=$V8PASSW --continue  http://downloads.v8.1c.ru/get/Info/Platform/$V8ERSION/client.deb32.tar.gz
+
+
+tar xvf ./client.deb32.tar.gz
+tar xvf ./deb.tar.gz
+
+vagrant up

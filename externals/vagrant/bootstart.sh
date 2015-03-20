@@ -40,11 +40,15 @@ sudo unzip -q -o /opt/novnc.zip -d /opt/
 
 
 wget --continue -O /tmp/consul.zip https://dl.bintray.com/mitchellh/consul/0.5.0_linux_386.zip
-cd /bin && unzip /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip
+
+cd /bin && unzip -q -o /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip
+
 wget --continue -O /tmp/webui.zip https://dl.bintray.com/mitchellh/consul/0.5.0_web_ui.zip
-mkdir /etc/consul/ui && cd /etc/consul/ui && unzip /tmp/webui.zip && rm /tmp/webui.zip && mv dist/* . && rm -rf dist
+
+mkdir /etc/consul/ui && cd /etc/consul/ui && unzip -q -o /tmp/webui.zip && rm /tmp/webui.zip && mv dist/* . && rm -rf dist
 
 sudo apt-get install dnsmasq -y -q
+
 echo "server=/consul./127.0.0.1#8600" > /etc/dnsmasq.d/10-consul
 echo "server=/33.168.192.in-addr.arpa/127.0.0.1#8600" > /etc/dnsmasq.d/11-consularpa
 
