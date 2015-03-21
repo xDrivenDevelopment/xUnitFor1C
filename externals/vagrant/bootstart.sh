@@ -35,17 +35,21 @@ sed -i "s/#SRV1CV8_DEBUG=/SRV1CV8_DEBUG=x1/" /etc/init.d/srv1cv83
 echo "=========install noVNC"
 # https://github.com/kanaka/noVNC/archive/v0.5.1.zip
 cd /opt
-wget --continue -O novnc.zip https://github.com/kanaka/noVNC/archive/v0.5.1.zip 
+wget -q --continue -O novnc.zip https://github.com/kanaka/noVNC/archive/v0.5.1.zip 
 sudo unzip -q -o /opt/novnc.zip -d /opt/
 
 
-wget --continue -O /tmp/consul.zip https://dl.bintray.com/mitchellh/consul/0.5.0_linux_386.zip
+wget -q --continue -O /tmp/consul.zip https://dl.bintray.com/mitchellh/consul/0.5.0_linux_386.zip
 
-cd /bin && unzip -q -o /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip
+cd /bin && unzip -q -o /tmp/consul.zip 
+chmod +x /bin/consul && rm /tmp/consul.zip
 
-wget --continue -O /tmp/webui.zip https://dl.bintray.com/mitchellh/consul/0.5.0_web_ui.zip
+wget -q --continue -O /tmp/webui.zip https://dl.bintray.com/mitchellh/consul/0.5.0_web_ui.zip
 
-mkdir /etc/consul/ui && cd /etc/consul/ui && unzip -q -o /tmp/webui.zip && rm /tmp/webui.zip && mv dist/* . && rm -rf dist
+mkdir -p /etc/consul/ui && cd /etc/consul/ui 
+unzip -q -o /tmp/webui.zip && rm /tmp/webui.zip 
+
+mv dist/* . && rm -rf dist
 
 sudo apt-get install dnsmasq -y -q
 
@@ -55,4 +59,8 @@ echo "server=/33.168.192.in-addr.arpa/127.0.0.1#8600" > /etc/dnsmasq.d/11-consul
 sudo service dnsmasq restart
 # sudo service postgresql start
 sudo service srv1cv83 restart
+
+sudo service srv1cv83 status
+
+sudo service srv1cv83 info
 

@@ -76,6 +76,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, path: "bootstart.sh"
   config.vm.provision :shell, path: "addlicense.sh"
+  #config.vm.provision :shell, path: "runvnc.sh"
   #config.vm.provision :shell, path: "postgres.sh"
   #config.vm.provision :shell, path: "monitoringSql.sh"
 
