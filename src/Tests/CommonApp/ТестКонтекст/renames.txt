@@ -1,9 +1,9 @@
 ﻿40064018-7955-4f93-897c-58b8ccf911e2.0\info-->und\40064018-7955-4f93-897c-58b8ccf911e2.0\info
 40064018-7955-4f93-897c-58b8ccf911e2.0\text-->ObjectModule.txt
-525d4c28-9db2-49e5-965b-5b0593f1529a-->und\525d4c28-9db2-49e5-965b-5b0593f1529a
-525d4c28-9db2-49e5-965b-5b0593f1529a.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\ТестКонтекст\Form\УФ\Форма.txt
-525d4c28-9db2-49e5-965b-5b0593f1529a.0-->und\525d4c28-9db2-49e5-965b-5b0593f1529a.0
-525d4c28-9db2-49e5-965b-5b0593f1529a.0-->und\525d4c28-9db2-49e5-965b-5b0593f1529a.0
+423a7f8c-8cfa-44ae-8faa-f590ac678599-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599
+423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\ТестКонтекст\Form\УФ\Форма.txt
+423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599.0
+423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599.0
 copyinfo-->und\copyinfo
 ef676c3e-40ff-43e3-b1fe-e848dd3acaa8-->und\ef676c3e-40ff-43e3-b1fe-e848dd3acaa8
 root-->und\root
