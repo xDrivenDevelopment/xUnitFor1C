@@ -873,88 +873,37 @@ mam9GBrFhUODvdLr6e3HWk6+w5qhvEgBKvO9i8RNJZOZbt2wavZXrx5516k1ryzW
 {3,3,
 {0},"",-1,-1,0,
 {
-{#base64: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
-7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
-gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
-DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
-ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
-F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
-NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
-MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
-1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
-sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
-fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
-ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
-zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
-+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
-dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
-Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
-52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
-nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
-zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
-BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
-l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
-0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
-YAAAOpgAABdvkl/FRgAABGlJREFUeNrUlX9MlVUYxz/Ped/L5WeCoq35azRClCTB
-cm2VSCJzzZumLVwYq4mLmXPLVfM6WVuotEhXVu6mrdqMmK4/sGtzOAOxXFsNFRzV
-yKE4HEaE/PDy4977vqc/7gUT0KRhW9/t7H33nHOefb/nfJ/noLXmbo+tK+al1FS8
-U711xbyUic79n5CvLn+7Wvd9r4/sLZxwEdLgWVppB/0rtW0BIMpADPO8iEoH4SZI
-OCLC0NyDG6q4FdyutJSctXmepasXZtmD1xT+K/ap4y21VYdqi0q9jU1MAEw76F/5
-UNFnEAiGIobBmQ+fny+GqUVGCEAQpVBmxK+ijLm3S+x2paXk5OV5nlz1SJbl+1n0
-9QZbR90vi5dPzkKe8LhdaaNE+KoqdcC9CYD4M61yRwK0bUNgEH9TGVoLjulryCz6
-AlR4v0j4xMOHbprU7ytINUQtRKRuZEIR0UDx4kczSjjXWH76XKXatjndtgKXxTT9
-GjNJPbY8LjvgSx0lor/0NRLvkPiwAAC0D8woBINg+zHgGwQQJWjLpr+3L2wdTcT0
-PNCa3j7/orgYZ90YOYu11jvcrrTD2cniyX0mg8HeZqAX7HasgTqqvrqv5vSJjp3/
-ZCNfVaXmlUJiLnQMi+rKnKGd23cRtbogROns3sf1gpd2EGw7AmIg3Dh527ZoOlVP
-f1cvoBE0iEYZJsp0oMyIjvkvn5g68ga01jJko+ycWE/uKp0dsPo1Tr8cq5CaH2qN
-naXexm9HEu5YkqzNnoFhC3UsSdaJJy/IWOuG4maoMgdBFP3d/YgMVyotZ5qYOmsy
-09btA9sCdGgI4Iig3rM+cawbGPop9TY2uV1pRWIYnmVr7OyjX96a/BDix2shUQLB
-Hn47VY/vWs+NGS3MXvgACdOnEGh+D61t0CEBRvQM/CqVjm7/8ewNxXnaCuY7Yie7
-gBeAkmWbyy4BBwPXO72OpBfLqfq8SDnEc/rk7cn/qy6EKPraLqJMePjVCrCscLUa
-WJf3YWsFEhGyD4C2MaJn0/VLA5faB8q1FczPX/ucK2tRBsDBOR+8UfzRW68fBKj9
-8azr8NETlHobD7ldac+Wehs7mWAoEUVvWwv3zJgLvmbs1gNYrZ9gte4Hw4kynShH
-JMoRhXJEYjjvgchY/myup/D9c5WAKzU9g5KyPcxJEICSOQlCSdkeUtMzCFzvdIXt
-NOHkQwKU0H21lUkzkyDYhjjjUM44lDMW5YxGOSNvHjHT6Lt6kd+vdlQ1fJzTAzBg
-QcHGLazbthuAddt2U7BxCwPWOO0QLuBxWkjo7+wiOmkmDHQhRjyjXuC/wxlPZ91Z
-Wv4YqLh3alyoKwyGpp5av2X4OxQbD0YWcJT7XXzJiXpkG43ZvutG16v3LOsR7Dg7
-aKFtO+z0WwsQAS2qO3NTzazz+3N73mzK/Xpu5iLXpIQpo9a2t13hp++qvSc/LX2a
-uwQBFgDGOPcFgXqAJYXb87QVzAdcY6zzimGW1xwoOXTXBGit+T/jrwEAjRDXhl0K
-s5QAAAAASUVORK5CYII=}
+{#base64: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}
 },0},
 {3,4,
 {0}
@@ -3313,7 +3262,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		
 		ПутьКТесту = ЭлементСписка.Значение;
 		Если Найти(ВРег(ПутьКТесту), ""МЕТАДАННЫЕ."") = 1 Тогда
-			ЗагрузитьТестыКонфигурации(Объект.ДеревоТестов, ПутьКТесту);
+			ЗагрузитьТестыКонфигурацииСервер(ПутьКТесту);
 		Иначе
 			ОбъектФайл = Новый Файл(ПутьКТесту);
 			Если ОбъектФайл.Существует() Тогда
@@ -3438,86 +3387,12 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецПроцедуры
 
-
-&НаКлиенте
-Функция ЗагрузитьТестыКонфигурации(РодительскаяСтрока, Путь) Экспорт
+&НаСервере
+Функция ЗагрузитьТестыКонфигурацииСервер(Путь) Экспорт
 	
-	КоллекцияВстроенныхТестов = Новый Массив;
-	КоллекцияВстроенныхТестовСервер(КоллекцияВстроенныхТестов, Путь);
-	
-	Для каждого Элемент Из КоллекцияВстроенныхТестов Цикл
-		ЗагрузитьТесты(РодительскаяСтрока, Элемент);
-	КонецЦикла;
+	Объект().ЗагрузитьТестыКонфигурации(Объект.ДеревоТестов, Путь);
 	
 КонецФункции
-
-&НаСервере
-Функция КоллекцияВстроенныхТестовСервер(КоллекцияВстроенныхТестовСервер, Путь)
-	
-	ОсновнойОбъект = Объект();
-	
-	ДеревоВстроенныхТестов = Новый ДеревоЗначений;
-	ДеревоВстроенныхТестов.Колонки.Добавить(""Имя"");
-	ДеревоВстроенныхТестов.Колонки.Добавить(""ИмяБезРасширения"");
-	ДеревоВстроенныхТестов.Колонки.Добавить(""ПолноеИмя"");
-	ДеревоВстроенныхТестов.Колонки.Добавить(""ТипСтроки"");
-	
-	ОбъектМетаданных = ОсновнойОбъект.ПолучитьОбъектМетаданныхПоПути(Путь);
-	Если ОбъектМетаданных<>Неопределено Тогда
-		Если ВРег(Лев(ОбъектМетаданных.ПолноеИмя(),11)) = ""ПОДСИСТЕМА."" Тогда
-			ДобавитьИменаТестовПодсистемы(ДеревоВстроенныхТестов, ОбъектМетаданных);
-		Иначе
-			ДобавитьИмяВстроенногоТестовогоСлучая(ДеревоВстроенныхТестов, ОбъектМетаданных);
-		КонецЕсли;
-		
-		ВыгрузитьИменаТестовИзДереваВСписокЗначений(ДеревоВстроенныхТестов.Строки, КоллекцияВстроенныхТестовСервер);
-	КонецЕсли;
-	
-КонецФункции
-
-&НаСервере
-Функция ДобавитьИменаТестовПодсистемы(СтрокаДерева, МетаПодсистема) Экспорт
-	
-	СтрокаТеста = СтрокаДерева.Строки.Добавить();
-	СтрокаТеста.Имя = МетаПодсистема.Имя;
-	СтрокаТеста.ПолноеИмя = ""Метаданные."" + СтрЗаменить(МетаПодсистема.ПолноеИмя(), ""Подсистема."", ""Подсистемы."");
-	СтрокаТеста.ТипСтроки = ЗначенияТиповСтроки.КаталогТестов;
-	
-	Для каждого МетаПодчиненнаяПодсистема из МетаПодсистема.Подсистемы цикл
-		ДобавитьИменаТестовПодсистемы(СтрокаТеста, МетаПодчиненнаяПодсистема);
-	КонецЦикла;
-	
-	Для каждого МетаОбработка из МетаПодсистема.Состав цикл
-		ДобавитьИмяВстроенногоТестовогоСлучая(СтрокаТеста, МетаОбработка);
-	КонецЦикла;
-	
-КонецФункции
-
-&НаСервере
-Функция ДобавитьИмяВстроенногоТестовогоСлучая(СтрокаДерева, МетаОбработка)
-	НоваяСтрока = СтрокаДерева.Строки.Добавить();
-	НоваяСтрока.Имя = МетаОбработка.Имя;
-	НоваяСтрока.ИмяБезРасширения = МетаОбработка.Имя;
-	НоваяСтрока.ПолноеИмя = ""Метаданные."" + СтрЗаменить(МетаОбработка.ПолноеИмя(), ""Обработка."", ""Обработки."");
-	НоваяСтрока.ТипСтроки = ЗначенияТиповСтроки.ТестовыйСлучай;
-КонецФункции
-
-&НаСервере
-Процедура ВыгрузитьИменаТестовИзДереваВСписокЗначений(СтрокиДереваВстроенныхТестов, КоллекцияВстроенныхТестов)
-	Для каждого Строка Из СтрокиДереваВстроенныхТестов Цикл
-		НоваяКоллекция = Новый Массив;
-		ЭлементКоллекции = Новый Структура(""Имя,ИмяБезРасширения,ПолноеИмя,ТипСтроки,Строки"");
-		ЭлементКоллекции.Имя = Строка.Имя;
-		ЭлементКоллекции.ИмяБезРасширения = Строка.ИмяБезРасширения;
-		ЭлементКоллекции.ПолноеИмя = Строка.ПолноеИмя;
-		ЭлементКоллекции.ТипСтроки = Строка.ТипСтроки;
-		ЭлементКоллекции.Строки = НоваяКоллекция;
-		КоллекцияВстроенныхТестов.Добавить(ЭлементКоллекции);
-		Если Строка.Строки.Количество() > 0 Тогда
-			ВыгрузитьИменаТестовИзДереваВСписокЗначений(Строка.Строки, НоваяКоллекция);
-		КонецЕсли;
-	КонецЦикла;
-КонецПроцедуры
 
 
 &НаКлиенте
