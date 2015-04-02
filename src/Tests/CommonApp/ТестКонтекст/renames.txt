@@ -1,7 +1,7 @@
 ﻿40064018-7955-4f93-897c-58b8ccf911e2.0\info-->und\40064018-7955-4f93-897c-58b8ccf911e2.0\info
 40064018-7955-4f93-897c-58b8ccf911e2.0\text-->ObjectModule.txt
 423a7f8c-8cfa-44ae-8faa-f590ac678599-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599
-423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\CommonApp\ТестКонтекст\Form\УФ\Форма.txt
+423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->c:\home\projects\xUnitFor1C\src\Tests\CommonApp\ТестКонтекст\Form\УФ\Форма.txt
 423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599.0
 423a7f8c-8cfa-44ae-8faa-f590ac678599.0-->und\423a7f8c-8cfa-44ae-8faa-f590ac678599.0
 copyinfo-->und\copyinfo
