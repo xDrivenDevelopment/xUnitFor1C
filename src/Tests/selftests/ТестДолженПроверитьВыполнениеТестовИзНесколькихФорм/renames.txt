@@ -1,0 +1,15 @@
+﻿168f3b5c-d32c-11e4-f984-485d606103c6-->und\168f3b5c-d32c-11e4-f984-485d606103c6
+168f3b68-d32c-11e4-f984-485d606103c6.0\info-->und\168f3b68-d32c-11e4-f984-485d606103c6.0\info
+168f3b68-d32c-11e4-f984-485d606103c6.0\text-->ObjectModule.txt
+2eecb6d4-d32c-11e4-f984-485d606103c6-->und\2eecb6d4-d32c-11e4-f984-485d606103c6
+2eecb6d4-d32c-11e4-f984-485d606103c6.0-->E:\projects\1c\xUnitFor1C\src\Tests\selftests\ТестДолженПроверитьВыполнениеТестовИзНесколькихФорм\Form\Форма1\Форма.txt
+2eecb6d4-d32c-11e4-f984-485d606103c6.0-->und\2eecb6d4-d32c-11e4-f984-485d606103c6.0
+2eecb6d4-d32c-11e4-f984-485d606103c6.0-->und\2eecb6d4-d32c-11e4-f984-485d606103c6.0
+a09fe26a-d32c-11e4-f984-485d606103c6-->und\a09fe26a-d32c-11e4-f984-485d606103c6
+a09fe26a-d32c-11e4-f984-485d606103c6.0-->E:\projects\1c\xUnitFor1C\src\Tests\selftests\ТестДолженПроверитьВыполнениеТестовИзНесколькихФорм\Form\Форма2\Форма.txt
+a09fe26a-d32c-11e4-f984-485d606103c6.0-->und\a09fe26a-d32c-11e4-f984-485d606103c6.0
+a09fe26a-d32c-11e4-f984-485d606103c6.0-->und\a09fe26a-d32c-11e4-f984-485d606103c6.0
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

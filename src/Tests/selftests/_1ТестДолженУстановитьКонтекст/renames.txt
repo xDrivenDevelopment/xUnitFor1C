@@ -1,0 +1,9 @@
+﻿2e0e6ce4-462c-490f-b368-6c496f14ffeb-->und\2e0e6ce4-462c-490f-b368-6c496f14ffeb
+2fc77050-439d-4afb-a679-1bc7cdaced04-->und\2fc77050-439d-4afb-a679-1bc7cdaced04
+2fc77050-439d-4afb-a679-1bc7cdaced04.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\_1ТестДолженУстановитьКонтекст\Form\Форма\Форма.txt
+2fc77050-439d-4afb-a679-1bc7cdaced04.0-->und\2fc77050-439d-4afb-a679-1bc7cdaced04.0
+2fc77050-439d-4afb-a679-1bc7cdaced04.0-->und\2fc77050-439d-4afb-a679-1bc7cdaced04.0
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
