@@ -1,6 +1,6 @@
 ﻿6043c9e4-9d43-466f-9389-73d9a4d45c8f-->und\6043c9e4-9d43-466f-9389-73d9a4d45c8f
 6871575a-6b09-4388-a583-288ac222e77c-->und\6871575a-6b09-4388-a583-288ac222e77c
-6871575a-6b09-4388-a583-288ac222e77c.0-->e:\projects\1c\xUnitFor1C\src\Tests\selftests\Tests_CmdLine\Макеты\ЛогТимСити_ПримерСломанногоТеста.txt
+6871575a-6b09-4388-a583-288ac222e77c.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\Tests_CmdLine\Макеты\ЛогТимСити_ПримерСломанногоТеста.txt
 6871575a-6b09-4388-a583-288ac222e77c.0-->und\6871575a-6b09-4388-a583-288ac222e77c.0
 864a8a9a-a51f-4879-9673-64f8d6ed8eae.0\info-->und\864a8a9a-a51f-4879-9673-64f8d6ed8eae.0\info
 864a8a9a-a51f-4879-9673-64f8d6ed8eae.0\text-->ObjectModule.txt
