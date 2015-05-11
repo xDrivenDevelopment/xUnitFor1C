@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<dump create="true" type="0" prntscrn="true" location="/vagrant/build/log/dumps"/>
+	<log history="1" location="/vagrant/build/log/tsg">
+		<property name="all"/>
+		<event>
+			<ne property="name" value=""/>
+		</event>
+	</log>
+	<defaultlog location="/vagrant/build/log/logs"/>
+	<mem/>
+	<plansql/>
+</config>
