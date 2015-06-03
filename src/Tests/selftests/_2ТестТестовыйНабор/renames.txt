@@ -1,0 +1,11 @@
+﻿431d3cb8-4f4e-497b-8b44-5cdce1147e25-->und\431d3cb8-4f4e-497b-8b44-5cdce1147e25
+431d3cb8-4f4e-497b-8b44-5cdce1147e25.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\_2ТестТестовыйНабор\Form\Форма\Форма.txt
+431d3cb8-4f4e-497b-8b44-5cdce1147e25.0-->und\431d3cb8-4f4e-497b-8b44-5cdce1147e25.0
+431d3cb8-4f4e-497b-8b44-5cdce1147e25.0-->und\431d3cb8-4f4e-497b-8b44-5cdce1147e25.0
+727eda5f-558c-428b-86d2-3421c52f4c50.0\info-->und\727eda5f-558c-428b-86d2-3421c52f4c50.0\info
+727eda5f-558c-428b-86d2-3421c52f4c50.0\text-->ObjectModule.txt
+copyinfo-->und\copyinfo
+f38c7465-2120-4aeb-87fc-1cd6a72e4559-->und\f38c7465-2120-4aeb-87fc-1cd6a72e4559
+root-->und\root
+version-->und\version
+versions-->und\versions
