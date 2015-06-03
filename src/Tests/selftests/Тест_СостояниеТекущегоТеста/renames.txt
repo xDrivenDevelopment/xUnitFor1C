@@ -1,0 +1,9 @@
+﻿2c627ef4-f74e-4daa-b107-83c7aa582b73-->und\2c627ef4-f74e-4daa-b107-83c7aa582b73
+c72aee22-b7f3-4954-a7e9-b91ea942e839-->und\c72aee22-b7f3-4954-a7e9-b91ea942e839
+c72aee22-b7f3-4954-a7e9-b91ea942e839.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\selftests\Тест_СостояниеТекущегоТеста\Form\Форма\Форма.txt
+c72aee22-b7f3-4954-a7e9-b91ea942e839.0-->und\c72aee22-b7f3-4954-a7e9-b91ea942e839.0
+c72aee22-b7f3-4954-a7e9-b91ea942e839.0-->und\c72aee22-b7f3-4954-a7e9-b91ea942e839.0
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
