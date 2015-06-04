@@ -16,7 +16,7 @@
 },
 {6,3,0,1},
 {0,0,0},1,
-{0,0,0},6,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{0,0,0},8,a9f3b1ac-f51b-431e-b102-55a69acdecad,
 {19,
 {138,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
 {0,
@@ -580,6 +580,29 @@ iONyIssUhsGwXNDhOC5CQQWVilNNz+mPtCX1PjPC30QJIBL78wuckbbVgb20vO29
 mam9GBrFhUODvdLr6e3HWk6+w5qhvEgBKvO9i8RNJZOZbt2wavZXrx5516k1ryzW
 3BW3GkyJIgH1sX82kfz/Y/o5APw/CNRIkXZ3AAAAAElFTkSuQmCC}
 },0},1,
+{"Pattern"},"",2},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{19,
+{245,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаКомандаВыполнитьВыделенныеТесты",
+{1,0},1,
+{5,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,1,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
 {"Pattern"},"",2},cd5394d0-7dda-4b56-8927-93ccbe967a01,
 {17,
 {126,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
@@ -699,6 +722,29 @@ mam9GBrFhUODvdLr6e3HWk6+w5qhvEgBKvO9i8RNJZOZbt2wavZXrx5516k1ryzW
 {1,0},1,
 {15,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
 {0},2,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{19,
+{356,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаИзменитьФорму",
+{1,0},1,
+{0,198ea630-fda2-4cda-8a23-f999f4c67ee6},
+{0},3,0,0,0,2,2,0,0,0,
 {3,4,
 {0}
 },
@@ -850,88 +896,37 @@ mam9GBrFhUODvdLr6e3HWk6+w5qhvEgBKvO9i8RNJZOZbt2wavZXrx5516k1ryzW
 {3,3,
 {0},"",-1,-1,0,
 {
-{#base64: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
-7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
-gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
-DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
-ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
-F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
-NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
-MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
-1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
-sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
-fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
-ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
-zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
-+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
-dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
-Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
-52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
-nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
-zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
-BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
-l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
-0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
-YAAAOpgAABdvkl/FRgAABGlJREFUeNrUlX9MlVUYxz/Ped/L5WeCoq35azRClCTB
-cm2VSCJzzZumLVwYq4mLmXPLVfM6WVuotEhXVu6mrdqMmK4/sGtzOAOxXFsNFRzV
-yKE4HEaE/PDy4977vqc/7gUT0KRhW9/t7H33nHOefb/nfJ/noLXmbo+tK+al1FS8
-U711xbyUic79n5CvLn+7Wvd9r4/sLZxwEdLgWVppB/0rtW0BIMpADPO8iEoH4SZI
-OCLC0NyDG6q4FdyutJSctXmepasXZtmD1xT+K/ap4y21VYdqi0q9jU1MAEw76F/5
-UNFnEAiGIobBmQ+fny+GqUVGCEAQpVBmxK+ijLm3S+x2paXk5OV5nlz1SJbl+1n0
-9QZbR90vi5dPzkKe8LhdaaNE+KoqdcC9CYD4M61yRwK0bUNgEH9TGVoLjulryCz6
-AlR4v0j4xMOHbprU7ytINUQtRKRuZEIR0UDx4kczSjjXWH76XKXatjndtgKXxTT9
-GjNJPbY8LjvgSx0lor/0NRLvkPiwAAC0D8woBINg+zHgGwQQJWjLpr+3L2wdTcT0
-PNCa3j7/orgYZ90YOYu11jvcrrTD2cniyX0mg8HeZqAX7HasgTqqvrqv5vSJjp3/
-ZCNfVaXmlUJiLnQMi+rKnKGd23cRtbogROns3sf1gpd2EGw7AmIg3Dh527ZoOlVP
-f1cvoBE0iEYZJsp0oMyIjvkvn5g68ga01jJko+ycWE/uKp0dsPo1Tr8cq5CaH2qN
-naXexm9HEu5YkqzNnoFhC3UsSdaJJy/IWOuG4maoMgdBFP3d/YgMVyotZ5qYOmsy
-09btA9sCdGgI4Iig3rM+cawbGPop9TY2uV1pRWIYnmVr7OyjX96a/BDix2shUQLB
-Hn47VY/vWs+NGS3MXvgACdOnEGh+D61t0CEBRvQM/CqVjm7/8ewNxXnaCuY7Yie7
-gBeAkmWbyy4BBwPXO72OpBfLqfq8SDnEc/rk7cn/qy6EKPraLqJMePjVCrCscLUa
-WJf3YWsFEhGyD4C2MaJn0/VLA5faB8q1FczPX/ucK2tRBsDBOR+8UfzRW68fBKj9
-8azr8NETlHobD7ldac+Wehs7mWAoEUVvWwv3zJgLvmbs1gNYrZ9gte4Hw4kynShH
-JMoRhXJEYjjvgchY/myup/D9c5WAKzU9g5KyPcxJEICSOQlCSdkeUtMzCFzvdIXt
-NOHkQwKU0H21lUkzkyDYhjjjUM44lDMW5YxGOSNvHjHT6Lt6kd+vdlQ1fJzTAzBg
-QcHGLazbthuAddt2U7BxCwPWOO0QLuBxWkjo7+wiOmkmDHQhRjyjXuC/wxlPZ91Z
-Wv4YqLh3alyoKwyGpp5av2X4OxQbD0YWcJT7XXzJiXpkG43ZvutG16v3LOsR7Dg7
-aKFtO+z0WwsQAS2qO3NTzazz+3N73mzK/Xpu5iLXpIQpo9a2t13hp++qvSc/LX2a
-uwQBFgDGOPcFgXqAJYXb87QVzAdcY6zzimGW1xwoOXTXBGit+T/jrwEAjRDXhl0K
-s5QAAAAASUVORK5CYII=}
+{#base64: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}
 },0},
 {3,4,
 {0}
@@ -963,7 +958,7 @@ s5QAAAAASUVORK5CYII=}
 },
 {6,3,0,1},
 {0,0,0},1,
-{1,0},3,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{1,0},4,a9f3b1ac-f51b-431e-b102-55a69acdecad,
 {19,
 {39,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
 {0,
@@ -1101,6 +1096,29 @@ bPcS2VIzbEMtr9Yo/6Tx8OuKe5cb6fdCAuTyv4fErcTi4mxwPaxGm6Y6kBOCQHH7
 {0,0,0},0,
 {3,0,
 {0},"",-1,-1,1,0},1,
+{"Pattern"},"",2},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{19,
+{300,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовКонтекстноеМенюПоказатьОшибки",
+{1,0},1,
+{18,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{6,3,0,1},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
 {"Pattern"},"",2},1},1,
 {17,
 {3,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
@@ -1151,82 +1169,55 @@ bPcS2VIzbEMtr9Yo/6Tx8OuKe5cb6fdCAuTyv4fErcTi4mxwPaxGm6Y6kBOCQHH7
 },
 {6,3,0,1},
 {0,0,0},1,
-{7,0,0,1,1,
+{7,1,0,0,1,
 {3,3,
 {0},"",-1,-1,0,
 {
-{#base64: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
-7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
-gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
-DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
-ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
-F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
-NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
-MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
-1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
-sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
-fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
-ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
-zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
-+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
-dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
-Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
-52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
-nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
-zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
-BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
-l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
-0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
-YAAAOpgAABdvkl/FRgAAAqNJREFUeNrsl7tPFFEUxn9nln0oo2BAMRT4KIiFj8JQ
-kZgQLTC7DQH5CyyurbGztiO0S8FfgE6HsdEgJsYEpdAlYMaoPLKboMa4sovs7M4c
-i2GNCRCuhRV8zc35km/OvWfu+c6MqCoHGQ4HHIcFOOgFaNmNFBF838+jahSQmJzo
-7e29Y+MZIkJ2jHwYYSIFRyDhMPH4HtZ6nb2YR0MD2zuQxATXCndsDiUizOf68hqG
-RlURESSRmLg6/XpH/l0L4Pt+XsAccV0QAVWq1arxfR9g301kx8if7mg3I/23SbWk
-CBoBj15OmuzYDyu9zl7Kk+w0nLoFkgINYP2h4cVluPZuX/18ri9//ES7OXczSyKV
-JAzqfH4ybeZzfTvy79ECao66LtXNTSqVCtXNTVzXBdTYvIEowgz1j7L0bYrXxUmW
-vk0x1D9KFGGlR0ND1wiU38D35/F6eiTmbeRRZM4PZokKcwSvnhMV5jg/mEOjyFi1
-AEC93gAFQUC3Y0uoQrE6QzlYRSP4FcbxP03cYBmkAgmAII5t8wPO2keiykbcEsEW
-ztpH1NYDmkhnMvFpttvA2lkFfmx9oDUDGoE4ceyI7RMEZAOOdvDHA9houpGF3IHK
-T1raOohUcUSg8jPmbaZAsVjywkadVDJJOp0mlUwSNuoUiyXPJn+tjFdYgFQKWlvj
-tbAQ8zb6lS+hR3kRMsfiImSOQXkx5i2wXgs8/9MauG04JzrBbcP/tMZ6Ldihl91c
-WUR6ZmZmxru7u4ebXKlU8gYGBu6q6qqFC/dcv894uo3h5gWqlfGePcBavzx1YfzM
-qcRw8waufAm9s6PvrfXTN66Md6WTw80psF6re7mnb3fo9yoAQA9w8i/6K7BqO8b+
-h97m8P+aXw7/BQ4/hQ8LcKDxewBb9EqnwRVYlgAAAABJRU5ErkJggg==}
+{#base64:iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAAAXNSR0IArs4c6QAA
+AAlwSFlzAAALEwAACxMBAJqcGAAABCRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAA
+ADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhN
+UCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3
+LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpE
+ZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0i
+aHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5z
+OmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIgogICAgICAgICAg
+ICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAg
+ICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+LyI+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1
+dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOkNvbXByZXNzaW9uPjU8L3RpZmY6Q29t
+cHJlc3Npb24+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyPC90aWZmOlhS
+ZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9y
+aWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjwvdGlmZjpZ
+UmVzb2x1dGlvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjY0PC9l
+eGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT4x
+PC9leGlmOkNvbG9yU3BhY2U+CiAgICAgICAgIDxleGlmOlBpeGVsWURpbWVuc2lv
+bj4xNjwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxkYzpzdWJqZWN0
+PgogICAgICAgICAgICA8cmRmOkJhZy8+CiAgICAgICAgIDwvZGM6c3ViamVjdD4K
+ICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMTUtMDMtMjBUMjI6MDM6MDI8L3ht
+cDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPlBpeGVsbWF0
+b3IgMy4zLjE8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRp
+b24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CjiAOxsAAAPbSURBVFgJ7VZr
+aBRXFD6zs7uzrzzsNpJEzKZNWdMnoohNpZhYSputlZaoiP6TPjb4yyIi+Ns/Iukv
+TZAWSn8aA0XqWilttDRNH1GIzcv1QTRsNmpTdnd2dmfuvHrO6MiyzK77q2CbC8O5
+59xzzj3fd8+9DMDKWGFghYH/CgPsyJ79yt6tKSW+PeGESYn3JpS9b6bYkd377XXO
+npTLZDI5CKYZN3HBcuK4oWg02l/uV0mPnYBBw4C4gQlcmMDlgqHEIag53rz8Cu6v
+xwEeVcDxQ9zWqarx2se9KfOFzjFjenIDBAJJYejbmF0fgYdCMep5PnJVnbm5RTgz
+tobWHAkg8LgQ9weD6IEz0wRJksi5JhIIfEu4Mb5zy0fgdXuBaQzOjn0B6eVMTSSY
+l18bBE84Dqt34f5e3J8B3BsG0JaRhGsVSaCT5zlX1HiuY9ycnXlZ8dcv1Z8ajikH
+9yUgc6/ZHVkzrSVvd0F9CMm5YJFTgYDrZjBUB3kEbSJ4DkkIIRlSXoRodJ1jjM00
+yd7jYB744BNI/vUdMF0GL++D6LPvwslvTsOFw86kl8abl14yYe0BgMwVAAPBu5CE
+xo0ACyeB656pur92cFeCU9Vms73jj+LcrU3ugNHCGULaHVk7wWZnYzxnXBO+vPi4
+M1ylG5fOVVWzuo+jerELLb3UococOYOUNApZdhcK6n1Lkk72mgebx9PPA/BIAEnS
+axjuz4djzHAvsbmbm4RX183ybZGfWGPjlDR9fTsLrVooBU/p3NVyCj6f1f72Najm
+W7pGdz4j34AghRtYP9JMOtlrG+jIiQCBMLo/egMA9Sc3j5Xef+psLN3XnQ6kH0wa
+um7g8DBR4lq+Ot9Vvr9jB6RSiyO6poLX4wFBECxJOtnLEzjpShZG/pwC8GLn0jNC
+knSyO/mX2+7c10cgOwPgq3tIAknULXu5s4M+1901aOhCOrec4cXljBtkbUGWjL/v
+7Hv/63L3SmfSNjo6OtDa2tpnBywuLo709PR8hvpd21ZFtr11FAaEBuijtqd3lMD/
+cAxqjp8/0zkQWc33WfcGExD49t1zT4wn8Cxf2Bxqb/5FEbNvKLlCC9O5tBxugLCq
+CGJG/vn1iclP7dorEUDrbfg12Y4oH+BXC3g75F+Pn9i84TTPlG3Ae84VVbU7EKj7
+bf34r/0WKTmpvaAZU6Jc/LAp3PQ92anQagTYQJ4a+fuLHUsuf/CcrKjbQvUNj0ES
+ACKhmM29nZfVHwuMvffOrXnrP8DxDXhqEJcVavq9A6KY2+EL+S/aJ2y7dF4a7+eE
+wHkB9B3PrKo7YdtX5P+dgX8Ax9moY3JcXXwAAAAASUVORK5CYII=}
 },0},0,0,0,
 {1,0},
 {3,4,
@@ -1293,7 +1284,7 @@ h97m8P+aXw7/BQ4/hQ8LcKDxewBb9EqnwRVYlgAAAABJRU5ErkJggg==}
 },
 {6,3,0,1},
 {0,0,0},1,
-{7,0,0,1,1,
+{7,1,0,0,1,
 {3,3,
 {0},"",-1,-1,0,
 {
@@ -2381,6 +2372,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 &НаКлиенте
 Перем СоответствиеСтатусовДляTeamCity;
 
+&НаКлиенте
+Перем кэшТестовыхОбработок;
+
 ////////////////////////////////////////////////////////////////////////////////
 // ИНТЕРФЕЙС АВТОМАТИЧЕСКИХ ТЕСТОВ
 
@@ -2697,13 +2691,13 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 КонецПроцедуры
 
 &НаКлиенте
-Процедура ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениям(ТабДок1, ТабДок2, ФлагУчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки = Истина, Знач ДопСообщениеОшибки = """") Экспорт
-	ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениямСервер(ТабДок1, ТабДок2, ФлагУчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки, ДопСообщениеОшибки);
+Процедура ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениям(ТабДок1, ТабДок2, УчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки = Ложь, УчитыватьТолькоВидимыеСтрокиИлиДопСообщениеОшибки = Ложь, Знач ДопСообщениеОшибки = """") Экспорт
+	ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениямСервер(ТабДок1, ТабДок2, УчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки, УчитыватьТолькоВидимыеСтрокиИлиДопСообщениеОшибки, ДопСообщениеОшибки);
 КонецПроцедуры
 
 &НаСервере
-Процедура ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениямСервер(ТабДок1, ТабДок2, ФлагУчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки = Истина, Знач ДопСообщениеОшибки = """") Экспорт
-	Объект().ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениям(ТабДок1, ТабДок2, ФлагУчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки, ДопСообщениеОшибки);
+Процедура ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениямСервер(ТабДок1, ТабДок2, УчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки = Ложь, УчитыватьТолькоВидимыеСтрокиИлиДопСообщениеОшибки = Ложь, Знач ДопСообщениеОшибки = """") Экспорт
+	Объект().ПроверитьРавенствоТабличныхДокументовТолькоПоЗначениям(ТабДок1, ТабДок2, УчитыватьТолькоВидимыеКолонкиИлиДопСообщениеОшибки, УчитыватьТолькоВидимыеСтрокиИлиДопСообщениеОшибки, ДопСообщениеОшибки);
 КонецПроцедуры
 
 &НаКлиенте
@@ -2725,6 +2719,52 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецПроцедуры
 
+&НаКлиенте
+Функция ПолучитьКонтекст(Знач ИдентификаторКонтекста = Неопределено) Экспорт
+	Перем Контекст;
+	
+	Если ИдентификаторКонтекста = Неопределено Тогда
+		ИдентификаторКонтекста = ИдентификаторПустогоКонтекста();
+	КонецЕсли;
+	
+	Если Не ЗначениеЗаполнено(Объект.Мир) Или Не Объект.Мир.Свойство(ИдентификаторКонтекста, Контекст) Тогда
+		ТекстОшибки = СтрЗаменить(НСтр(""ru = 'Отсутствует запрашиваемый контекст%1.'""), ""%1"", ?(ИдентификаторКонтекста = ИдентификаторПустогоКонтекста(), """", "" ("" + ИдентификаторКонтекста + "")""));
+		ВызватьИсключение ТекстОшибки;
+	КонецЕсли;
+	
+	Возврат Контекст;
+	
+КонецФункции
+
+&НаКлиенте
+Процедура УстановитьКонтекст(Контекст, Знач ИдентификаторКонтекста = Неопределено) Экспорт
+	
+	Если Не ЗначениеЗаполнено(Объект.Мир) Тогда
+		Объект.Мир = Новый Структура;
+	КонецЕсли;
+	
+	Если ИдентификаторКонтекста = Неопределено Тогда
+		ИдентификаторКонтекста = ИдентификаторПустогоКонтекста();
+	КонецЕсли;
+	
+	Объект.Мир.Вставить(ИдентификаторКонтекста, Контекст);
+	
+КонецПроцедуры
+
+// создается копия данных текущего теста - структура ""Имя, ПолныйПуть, СостояниеТеста""
+&НаКлиенте
+Функция ДанныеТекущегоТеста() Экспорт
+	Результат = СоздатьПустуюСтруктуруСостоянияТекущегоТеста();
+	
+	ДанныеТекущегоТеста = ПолучитьКонтекст(""xUnitFor1C_ДанныеТекущегоТеста"");
+	Если Не ЗначениеЗаполнено(ДанныеТекущегоТеста) Тогда
+		ВызватьИсключение ""Нельзя получить данные текущего теста вне режима тестирования"";
+	КонецЕсли;
+	
+	ЗаполнитьЗначенияСвойств(Результат, ДанныеТекущегоТеста);
+	Возврат Результат;
+КонецФункции
+
 // }
 
 //#КонецОбласти
@@ -2744,16 +2784,24 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	СистемнаяИнформация = Новый СистемнаяИнформация;
 	ВерсияПлатформы = Лев(СистемнаяИнформация.ВерсияПриложения, 3);
 	ЕстьПоддержкаНемодальныхФорм = (СравнитьВерсии(СистемнаяИнформация.ВерсияПриложения, ""8.3.3.641"") >= 0);
+	ЕстьПоддержкаАсинхронныхВызовов = (СравнитьВерсии(СистемнаяИнформация.ВерсияПриложения, ""8.3.5.1383"") >= 0)
+		И Вычислить(""Метаданные.РежимИспользованияСинхронныхВызововРасширенийИВнешнихКомпонент <> Метаданные.СвойстваОбъектов.РежимИспользованияСинхронныхВызововРасширенийИВнешнихКомпонент.Использовать"");
+	
+	ИнициализироватьНастройки();
 	
 	ОбъектНаСервере = Объект();
 	ЭтаФорма.Заголовок = ОбъектНаСервере.ЗаголовокФормы();
 	
 	ЭтоВстроеннаяОбработка = ОбъектНаСервере.ЭтоВстроеннаяОбработка;
+	Если Не ЭтоВстроеннаяОбработка Тогда
+		ИспользуемоеИмяФайла = ОбъектНаСервере.ИспользуемоеИмяФайла;
+	КонецЕсли;
 	УстановитьПоУмолчаниюОбработчикКоманды_ЗагрузитьТесты();
 	
 	ЗапретИспользованияИнформатора = Истина;
 	
-	ВосстановитьНастройки();
+	БылаОшибкаПриПредыдущейЗагрузке = ОбъектНаСервере.СохраненнаяНастройка_БылаОшибкаПриПредыдущейЗагрузке();
+	ОбъектНаСервере.УстановитьНастройку_БылаОшибкаПриПредыдущейЗагрузке(Истина);
 	
 	Если ЗначениеЗаполнено(Параметры.Пути) Тогда
 		Пути.ЗагрузитьЗначения(Параметры.Пути.ВыгрузитьЗначения());
@@ -2789,6 +2837,34 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		Возврат;
 	КонецЕсли;
 	
+	Ответ = КодВозвратаДиалога.Нет;
+	Если ЗначениеЗаполнено(Пути) Тогда
+		
+		Если БылаОшибкаПриПредыдущейЗагрузке Тогда
+			Текст = НСтр(""ru = 'Возникла ошибка при предыдущей загрузке тестов. Хотите отменить загрузку тестов?'"");
+			Если ЕстьПоддержкаНемодальныхФорм Тогда
+				Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ПриОткрытииПослеВопросаОбОтменеЗагрузкиТестов"""", ЭтаФорма)"");
+				Выполнить(""ПоказатьВопрос(Оповещение, Текст, РежимДиалогаВопрос.ДаНет)"");
+				Возврат;
+			Иначе
+				Ответ = Вопрос(Текст, РежимДиалогаВопрос.ДаНет, 0);
+			КонецЕсли;
+			
+		КонецЕсли;
+		
+	КонецЕсли;
+	
+	ПриОткрытииПослеВопросаОбОтменеЗагрузкиТестов(Ответ);
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ПриОткрытииПослеВопросаОбОтменеЗагрузкиТестов(Ответ, ДополнительныеПараметры = Неопределено) Экспорт
+	
+	Если Ответ = КодВозвратаДиалога.Да Тогда
+		Пути.Очистить();
+	КонецЕсли;
+	
 	Если ЗначениеЗаполнено(Пути) Тогда
 		
 		ОбновитьНадписьПути();
@@ -2800,11 +2876,12 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			ТекстСообщения = НСтр(""ru='ОШИБКА загрузки тестов: %ТекстОшибки%'; en='Error loading testcases: %ТекстОшибки%'"");
 			ТекстСообщения = СтрЗаменить(ТекстСообщения, ""%ТекстОшибки%"", ТекстОшибки); 
 			ВывестиСообщение(ТекстСообщения);
+			
 		КонецПопытки;
 		
 	КонецЕсли;
 	
-	Элементы.КомандаВключитьРежимОтладки.Пометка = Объект.РежимОтладки;
+	СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер();
 	
 КонецПроцедуры
 
@@ -2813,7 +2890,6 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 	//{ Соответствие Статуса сообщения 1с Статусу в Buildlog TeamCity
 	СоответствиеСтатусовДляTeamCity = Новый Соответствие;
-	СоответствиеСтатусовДляTeamCity.Вставить(Неопределено,""NORMAL"");
 	СоответствиеСтатусовДляTeamCity.Вставить(СтатусСообщения.БезСтатуса,""NORMAL"");
 	СоответствиеСтатусовДляTeamCity.Вставить(СтатусСообщения.Обычное,""NORMAL"");
 	СоответствиеСтатусовДляTeamCity.Вставить(СтатусСообщения.Информация,""NORMAL"");
@@ -2872,7 +2948,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 &НаКлиенте
 Процедура ПриЗакрытии()
 	
-	Если Не ЭтоЗапускИзКоманднойСтроки Тогда
+	Если Не ЭтоЗапускВПакетномРежиме Тогда
 		СохранитьНастройки();
 	КонецЕсли;
 	
@@ -2971,17 +3047,22 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 &НаКлиенте
 Процедура УдалитьПустыеСтрокиКаталогов(СтрокиДерева)
 	
+	УдаляемыеСтроки = Новый Массив;
+	
 	Для Каждого СтрокаДерева Из СтрокиДерева Цикл
 		Если СтрокаДерева.ТипСтроки = ЗначенияТиповСтроки.КаталогТестов Тогда
 			УдалитьПустыеСтрокиКаталогов(СтрокаДерева.ПолучитьЭлементы());
 			Если СтрокаДерева.ПолучитьЭлементы().Количество() = 0 Тогда
-				СтрокиДерева.Удалить(СтрокаДерева);
+				УдаляемыеСтроки.Добавить(СтрокаДерева);
 			КонецЕсли;
 		КонецЕсли;
 	КонецЦикла;
 	
+	Для Каждого СтрокаКУдалению Из УдаляемыеСтроки Цикл
+		СтрокиДерева.Удалить(СтрокаКУдалению);
+	КонецЦикла;
+	
 КонецПроцедуры
-
 
 &НаКлиенте
 Функция ПосчитатьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(РодительскаяСтрока)
@@ -2997,6 +3078,15 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	КонецЦикла;
 	Возврат количествоТестов;
 КонецФункции
+
+&НаСервере
+Процедура УпорядочитьСтрокиДереваТестов()
+	
+	Дерево = РеквизитФормыВЗначение(""Объект.ДеревоТестов"");
+	Объект().УпорядочитьСтрокиДереваТестов(Дерево);
+	ЗначениеВРеквизитФормы(Дерево, ""Объект.ДеревоТестов"");
+	
+КонецПроцедуры
 
 //#КонецОбласти
 
@@ -3019,48 +3109,60 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 &НаКлиенте
 Процедура КомандаЗагрузитьТестовыйНабор(Команда)
 	
+	ПараметрыВыбора = Новый Структура;
+	ПараметрыВыбора.Вставить(""ИмяИстории"", Элементы.ИсторияВыбораМест.Имя);
+	ПараметрыВыбора.Вставить(""РазвернутьСтроки"", Ложь);
+	
 	Режим = РежимДиалогаВыбораФайла.ВыборКаталога;
 	ДиалогОткрытияФайла = Новый ДиалогВыбораФайла(Режим);
 	ДиалогОткрытияФайла.ПолноеИмяФайла = """";
 	ДиалогОткрытияФайла.МножественныйВыбор = Ложь;
 	ДиалогОткрытияФайла.Заголовок = НСтр(""en='Choose a folder with testcases'; ru='Выберите каталог с тестовыми случаями'"");
-	Если ДиалогОткрытияФайла.Выбрать() Тогда
-		Пути.Очистить();
-		Пути.Добавить(ДиалогОткрытияФайла.Каталог);
-	Иначе
-		Возврат;
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ПослеВыбораФайлаТестов"""", ЭтаФорма, ПараметрыВыбора)"");
+		ДиалогОткрытияФайла.Показать(Оповещение);
+	ИначеЕсли ДиалогОткрытияФайла.Выбрать() Тогда
+		ВыбранныеФайлы = Новый Массив;
+		ВыбранныеФайлы.Добавить(ДиалогОткрытияФайла.Каталог);
+		ПослеВыбораФайлаТестов(ВыбранныеФайлы, ПараметрыВыбора);
 	КонецЕсли;
-	
-	ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораМест.Имя, Пути.ВыгрузитьЗначения());
-	
-	ОбновитьНадписьПути();
-	LoadAllTests();
 	
 КонецПроцедуры
 
 &НаКлиенте
 Процедура КомандаЗагрузитьТестовыеСлучаи(Команда)
 	
+	ПараметрыВыбора = Новый Структура;
+	ПараметрыВыбора.Вставить(""ИмяИстории"", Элементы.ИсторияВыбораФайлов.Имя);
+	ПараметрыВыбора.Вставить(""РазвернутьСтроки"", Истина);
+	
 	Режим = РежимДиалогаВыбораФайла.Открытие;
 	ДиалогОткрытияФайла = Новый ДиалогВыбораФайла(Режим);
 	ДиалогОткрытияФайла.МножественныйВыбор = Истина;
 	ДиалогОткрытияФайла.Фильтр = НСтр(""en='External processing form files (*.epf, *.erf)|*.epf; *.erf'; ru='Файлы внешних обработок (*.epf, *.erf)|*.epf; *.erf'"");
 	ДиалогОткрытияФайла.Заголовок = НСтр(""en='Choose an external processing form file'; ru='Выберите файл с внешней обработкой'"");
-	Если ДиалогОткрытияФайла.Выбрать() Тогда
-		Пути.Очистить();
-		Для каждого ПолноеИмяФайла Из ДиалогОткрытияФайла.ВыбранныеФайлы Цикл
-			Пути.Добавить(ПолноеИмяФайла);
-		КонецЦикла;
-	Иначе
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ПослеВыбораФайлаТестов"""", ЭтаФорма, ПараметрыВыбора)"");
+		ДиалогОткрытияФайла.Показать(Оповещение);
+	ИначеЕсли ДиалогОткрытияФайла.Выбрать() Тогда
+		ПослеВыбораФайлаТестов(ДиалогОткрытияФайла.ВыбранныеФайлы, ПараметрыВыбора);
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ПослеВыбораФайлаТестов(ВыбранныеФайлы, ПараметрыВыбора) Экспорт
+	
+	Если ВыбранныеФайлы = Неопределено Тогда
 		Возврат;
 	КонецЕсли;
 	
-	ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораФайлов.Имя, Пути.ВыгрузитьЗначения());
+	Пути.ЗагрузитьЗначения(ВыбранныеФайлы);
+	
+	ДобавитьВИсториюКонтекст(ПараметрыВыбора.ИмяИстории, Пути.ВыгрузитьЗначения());
 	
 	ОбновитьНадписьПути();
-	LoadAllTests();
-	
-	РазвернутьСтрокиДерева(Истина);
+	LoadAllTests(ПараметрыВыбора.РазвернутьСтроки);
 	
 КонецПроцедуры
 
@@ -3076,12 +3178,18 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			СтрокаДерева = СтрокаДерева.ПолучитьРодителя();
 		КонецЕсли;
 		
-		Если Пути.НайтиПоЗначению(СтрокаДерева.ПолныйПуть) = Неопределено Тогда
-			Пути.Добавить(СтрокаДерева.ПолныйПуть);
+		Путь = СтрокаДерева.ПолныйПуть;
+		Если Пути.НайтиПоЗначению(Путь) = Неопределено Тогда
+			Пути.Добавить(Путь);
+			Если СтрокаДерева.ТипСтроки = ЗначенияТиповСтроки.КаталогТестов Тогда
+				ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораМест.Имя, Путь);
+			ИначеЕсли СтрокаДерева.ТипСтроки = ЗначенияТиповСтроки.ТестовыйСлучай
+					И Не СтрокаДерева.ЭтоВнутренняяОбработка Тогда
+				ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораФайлов.Имя, Путь);
+			КонецЕсли;
 		КонецЕсли;
 		
 	КонецЦикла;
-	ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораФайлов.Имя, Пути.ВыгрузитьЗначения());
 	
 	ОбновитьНадписьПути();
 	LoadAllTests();
@@ -3114,7 +3222,17 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 &НаКлиенте
 Процедура ОПроекте(Команда)
-	ЗапуститьПриложение(""https://github.com/xDrivenDevelopment/xUnitFor1C/wiki"");
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОПроектеПослеЗапуска"""", ЭтаФорма)"");
+		Выполнить(""НачатьЗапускПриложения(Оповещение, """"https://github.com/xDrivenDevelopment/xUnitFor1C/wiki"""")"");
+	Иначе
+		ЗапуститьПриложение(""https://github.com/xDrivenDevelopment/xUnitFor1C/wiki"");
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОПроектеПослеЗапуска(КодВозврата, ДополнительныеПараметры)
+	Возврат;
 КонецПроцедуры
 
 &НаКлиенте
@@ -3167,12 +3285,13 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 &НаКлиенте
 Процедура ОткрытьФормуЗапускаТестов(НастройкиФормы = Неопределено)
 	
-	путьФайла = ИмяФайлаВнешнейОбработки_ПерезагрузитьФорму();
 	Если Не ЭтоВстроеннаяОбработка Тогда
-		ИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(путьФайла, """");
+		ИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(ИспользуемоеИмяФайла, Неопределено);
 	КонецЕсли;
 	
-	ОткрытьФорму(ЭтаФорма.ИмяФормы, НастройкиФормы,, Истина);
+	Форма = ПолучитьФорму(ЭтаФорма.ИмяФормы, НастройкиФормы,, Истина);
+	Форма.ИспользуемоеИмяФайла = ИспользуемоеИмяФайла;
+	Форма.Открыть();
 	
 КонецПроцедуры
 
@@ -3188,6 +3307,24 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ОбновитьНадписьПути();
 	LoadAllTests();
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ПоказатьОшибки(Команда)
+	
+	МассивИдентификаторовСтрок = Элементы.ДеревоТестов.ВыделенныеСтроки;
+	НовыйМассивИдентификаторовСтрок = ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок);
+	СписокОшибок = Новый СписокЗначений;
+	Для Каждого Идентификатор Из НовыйМассивИдентификаторовСтрок Цикл
+		ТестовыйСлучай = Объект.ДеревоТестов.НайтиПоИдентификатору(Идентификатор);
+		Для Каждого ЭлементСписка Из ТестовыйСлучай.СписокОшибок Цикл
+			СписокОшибок.Добавить(ЭлементСписка.Значение);
+		КонецЦикла;
+	КонецЦикла;
+	
+	ВсегоТестов = СписокОшибок.Количество();
+	ОбработатьОтчетТестирования(ТекущаяДата());
 	
 КонецПроцедуры
 
@@ -3207,7 +3344,20 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 &НаСервере
 Функция Объект() Экспорт
-	Возврат РеквизитФормыВЗначение(""Объект"");
+	ОбъектНаСервере = Неопределено;
+	Если ЭтоАдресВременногоХранилища(АдресОбъектаНаСервере) Тогда
+		КэшОбъекта = ПолучитьИзВременногоХранилища(АдресОбъектаНаСервере);
+		Если ТипЗнч(КэшОбъекта) = Тип(""Структура"") Тогда
+			КэшОбъекта.Свойство(""Объект"", ОбъектНаСервере);
+		КонецЕсли;
+	КонецЕсли;
+
+	Если ОбъектНаСервере = Неопределено Тогда
+		ОбъектНаСервере = РеквизитФормыВЗначение(""Объект"");
+		АдресОбъектаНаСервере = ПоместитьВоВременноеХранилище(Новый Структура(""Объект"", ОбъектНаСервере), УникальныйИдентификатор);
+	КонецЕсли;
+	
+	Возврат ОбъектНаСервере;
 КонецФункции
 
 &НаСервере
@@ -3224,34 +3374,41 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 // Параметры:
 //	Нет
 &НаКлиенте
-Процедура LoadAllTests() Экспорт
+Процедура LoadAllTests(РазвернутьСтроки = Ложь, ОповеститьПослеЗагрузки = Неопределено) Экспорт
 	ИнициализироватьИндикаторВыполнения();
 	
 	Объект.ДеревоТестов.ПолучитьЭлементы().Очистить();
+	ОчередьЗагрузки.Очистить();
 	
-	Для каждого ЭлементСписка Из Пути Цикл
+	ДополнительныеПараметры = Новый Структура;
+	ДополнительныеПараметры.Вставить(""Родитель"", Объект.ДеревоТестов);
+	ДополнительныеПараметры.Вставить(""РазвернутьСтроки"", РазвернутьСтроки);
+	Если ОповеститьПослеЗагрузки <> Неопределено Тогда
+		ДополнительныеПараметры.Вставить(""ОповеститьПослеЗагрузки"", ОповеститьПослеЗагрузки);
+	КонецЕсли;
+	
+	ВерхняяГраница = Пути.Количество() - 1;
+	Для Индекс = 0 По ВерхняяГраница Цикл
 		
 		ОбработкаПрерыванияПользователя();
 		
-		ПутьКТесту = ЭлементСписка.Значение;
+		ПутьКТесту = Пути[Индекс].Значение;
+		ДополнительныеПараметры.Вставить(""ПоследнийПуть"", Индекс = ВерхняяГраница);
 		Если Найти(ВРег(ПутьКТесту), ""МЕТАДАННЫЕ."") = 1 Тогда
-			ЗагрузитьТестыКонфигурации(Объект.ДеревоТестов, ПутьКТесту);
+			ЗагрузитьТестыКонфигурации(ПутьКТесту, ДополнительныеПараметры);
 		Иначе
-			ОбъектФайл = Новый Файл(ПутьКТесту);
-			Если ОбъектФайл.Существует() Тогда
-				ЗагрузитьТесты(Объект.ДеревоТестов, ОбъектФайл);
+			ДополнительныеПараметры.Вставить(""Путь"", ПутьКТесту);
+			ДополнительныеПараметры.Вставить(""СообщитьОбОтсутствииФайлов"", Истина);
+			Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+				Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ЗагрузитьТестыПослеПоискаФайлов"""", ЭтаФорма, ДополнительныеПараметры)"");
+				Выполнить(""НачатьПоискФайлов(Оповещение, ПутьКТесту);"");
 			Иначе
-				ТекстСообщения = НСтр(""en='File or directory does not exist """"%ПутьКТесту%""""'; ru='Файл или каталог не существует """"%ПутьКТесту%""""'"");
-				ТекстСообщения = СтрЗаменить(ТекстСообщения, ""%ПутьКТесту%"", ПутьКТесту);
-				ВывестиОшибку(ТекстСообщения);
+				НайденныеФайлы = НайтиФайлы(ПутьКТесту);
+				ЗагрузитьТестыПослеПоискаФайлов(НайденныеФайлы, ДополнительныеПараметры);
 			КонецЕсли;
 		КонецЕсли;
 		
 	КонецЦикла;
-	
-	УдалитьПустыеСтрокиКаталогов(Объект.ДеревоТестов.ПолучитьЭлементы());
-	ПосчитатьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(Объект.ДеревоТестов);
-	РазвернутьСтрокиДерева();
 	
 КонецПроцедуры
 
@@ -3282,71 +3439,139 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 //#КонецОбласти
 
 &НаКлиенте
-Процедура ЗагрузитьТесты(РодительскаяСтрока, ОбъектФайл)
+Процедура ЗагрузитьТесты(ОбъектФайл, ПараметрыЗагрузки)
 	
-	Перем ЭтоФайл, ЭтоКаталог;
+	ЭтоФайл = (ТипЗнч(ОбъектФайл) = Тип(""Файл""));
 	
-	ЭтоФайл = ТипЗнч(ОбъектФайл) = Тип(""Файл"");
+	ДополнительныеПараметры = СкопироватьСтруктуру(ПараметрыЗагрузки);
+	ДополнительныеПараметры.Вставить(""ОбъектФайл"", ОбъектФайл);
+	
 	Если ЭтоФайл Тогда
-		ЭтоКаталог = ОбъектФайл.ЭтоКаталог();
-		Если ОбъектФайл.ПолучитьНевидимость() и ОбъектФайл.Имя = "".git"" Тогда
-			Возврат;
+		Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+			Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ЗагрузитьТестыПослеПроверкиЭтоКаталог"""", ЭтаФорма, ДополнительныеПараметры)"");
+			ОбъектФайл.НачатьПроверкуЭтоКаталог(Оповещение);
+		Иначе
+			ЭтоКаталог = ОбъектФайл.ЭтоКаталог();
+			ЗагрузитьТестыПослеПроверкиЭтоКаталог(ЭтоКаталог, ДополнительныеПараметры);
 		КонецЕсли;
 	ИначеЕсли ТипЗнч(ОбъектФайл) = Тип(""Структура"") Тогда
 		ЭтоКаталог = ОбъектФайл.ТипСтроки = ЗначенияТиповСтроки.КаталогТестов;
 		ОбъектФайл.Вставить(""Расширение"", "".epf"");
+		ЗагрузитьТестыПослеПроверкиЭтоКаталог(ЭтоКаталог, ДополнительныеПараметры);
 	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗагрузитьТестыПослеПроверкиЭтоКаталог(ЭтоКаталог, ПараметрыЗагрузки) Экспорт
+	
+	РодительскаяСтрока = ПараметрыЗагрузки.Родитель;
+	ОбъектФайл = ПараметрыЗагрузки.ОбъектФайл;
+	ЭтоФайл = (ТипЗнч(ОбъектФайл) = Тип(""Файл""));
 	
 	GUID = Строка(Новый УникальныйИдентификатор);
 	Если ЭтоКаталог Тогда
-		
-		ПараметрыСтроки = ПолучитьПустуюСтруктуруПараметровСтроки();
-		ПараметрыСтроки.Вставить(""Имя"",                 ОбъектФайл.Имя);
-		ПараметрыСтроки.Вставить(""ИмяТестовогоСлучая"",  ОбъектФайл.Имя);
-		ПараметрыСтроки.Вставить(""_GUID"",               GUID);
-		ПараметрыСтроки.Вставить(""ТипСтроки"",           ЗначенияТиповСтроки.КаталогТестов);
-		ПараметрыСтроки.Вставить(""ПолныйПуть"",          ОбъектФайл.ПолноеИмя);
-		
-		СтрокаКаталога = ДобавитьСтрокуДереваТестов(РодительскаяСтрока, ПараметрыСтроки); //TODO Развернуть, нужно ли тут оповещение ОповеститьОСобытии(""TestLoaded"", СтрокаТеста);?
-		
-		Если ЭтоФайл Тогда
-			НайденныеФайлы = НайтиФайлы(ОбъектФайл.ПолноеИмя, ""*"", Ложь);
+		Если ОбъектФайл.Имя = "".git"" Тогда // ОбъектФайл.ПолучитьНевидимость() и 
+			ОчередьЗагрузки.Удалить(ОчередьЗагрузки.НайтиПоЗначению(ОбъектФайл.ПолноеИмя));
 		Иначе
-			НайденныеФайлы = ОбъектФайл.Строки;
-		КонецЕсли;
-		
-		Для каждого Файл из НайденныеФайлы Цикл
-			ОбработкаПрерыванияПользователя();
+			ПараметрыСтроки = ПолучитьПустуюСтруктуруПараметровСтроки();
+			ПараметрыСтроки.Вставить(""Имя"",                 ОбъектФайл.Имя);
+			ПараметрыСтроки.Вставить(""_GUID"",               GUID);
+			ПараметрыСтроки.Вставить(""ТипСтроки"",           ?(ЭтоФайл, ЗначенияТиповСтроки.КаталогТестов, ЗначенияТиповСтроки.Подсистема));
+			ПараметрыСтроки.Вставить(""ПолныйПуть"",          ОбъектФайл.ПолноеИмя);
 			
-			ЗагрузитьТесты(СтрокаКаталога, Файл);
+			СтрокаКаталога = ДобавитьСтрокуДереваТестов(РодительскаяСтрока, ПараметрыСтроки); //TODO Развернуть, нужно ли тут оповещение ОповеститьОСобытии(""TestLoaded"", СтрокаТеста);?
+			
+			ДополнительныеПараметры = СкопироватьСтруктуру(ПараметрыЗагрузки,, ""ОбъектФайл, Родитель, Путь, СообщитьОбОтсутствииФайлов"");
+			ДополнительныеПараметры.Вставить(""Родитель"", СтрокаКаталога);
+			ДополнительныеПараметры.Вставить(""СообщитьОбОтсутствииФайлов"", Ложь);
+			Если ЭтоФайл Тогда
+				Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+					Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ЗагрузитьТестыПослеПоискаФайлов"""", ЭтаФорма, ДополнительныеПараметры)"");
+					Выполнить(""НачатьПоискФайлов(Оповещение, ОбъектФайл.ПолноеИмя, """"*"""", Ложь);"");
+				Иначе
+					НайденныеФайлы = НайтиФайлы(ОбъектФайл.ПолноеИмя, ""*"", Ложь);
+					ЗагрузитьТестыПослеПоискаФайлов(НайденныеФайлы, ДополнительныеПараметры);
+				КонецЕсли;
+			Иначе
+				НайденныеФайлы = ОбъектФайл.Строки;
+				ЗагрузитьТестыПослеПоискаФайлов(НайденныеФайлы, ДополнительныеПараметры);
+			КонецЕсли;
+		КонецЕсли;
+	Иначе
+		Если ОбъектФайл.Расширение = "".epf"" ИЛИ ОбъектФайл.Расширение = "".erf"" Тогда
+			ДополнительныеПараметры = Новый Структура;
+			ДополнительныеПараметры.Вставить(""GUID"",              GUID);
+			ДополнительныеПараметры.Вставить(""Расширение"",        ОбъектФайл.Расширение);
+			ДополнительныеПараметры.Вставить(""ВнешнийФайл"",       ЭтоФайл);
+			ДополнительныеПараметры.Вставить(""ИмяБезРасширения"",  ОбъектФайл.ИмяБезРасширения);
+			ДополнительныеПараметры.Вставить(""РежимОтладки"",      Объект.РежимОтладки);
+			
+			Если ТипЗнч(РодительскаяСтрока) <> Тип(""ДанныеФормыДерево"") Тогда
+				ДополнительныеПараметры.Вставить(""Идентификатор"", РодительскаяСтрока.ПолучитьИдентификатор());
+			КонецЕсли;
+			
+			Если ЭтоФайл Тогда
+				Если ЕстьПоддержкаНемодальныхФорм Тогда
+					Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ВыполнитьПодключениеОбъектаНаКлиенте"""", ЭтаФорма, ДополнительныеПараметры)"");
+					Выполнить(""НачатьПомещениеФайла(Оповещение,, ОбъектФайл.ПолноеИмя, Ложь, УникальныйИдентификатор);"");
+				Иначе
+					АдресХранилища = """";
+					ПоместитьФайл(АдресХранилища, ОбъектФайл.ПолноеИмя, , Ложь, УникальныйИдентификатор);
+					ВыполнитьПодключениеОбъектаНаКлиенте(Неопределено, АдресХранилища, ОбъектФайл.ПолноеИмя, ДополнительныеПараметры);
+				КонецЕсли;
+			Иначе
+				ВыполнитьПодключениеОбъектаНаКлиенте(Неопределено, ОбъектФайл.Имя, ОбъектФайл.ПолноеИмя, ДополнительныеПараметры);
+			КонецЕсли;
+		КонецЕсли;
+		ОчередьЗагрузки.Удалить(ОчередьЗагрузки.НайтиПоЗначению(ОбъектФайл.ПолноеИмя));
+	КонецЕсли;
+	
+	ВыполнитьДействияПослеЗагрузкиТестов(ПараметрыЗагрузки);
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗагрузитьТестыПослеПоискаФайлов(НайденныеФайлы, ПараметрыЗагрузки) Экспорт
+	
+	Если НайденныеФайлы.Количество() = 0 Тогда
+		Если ПараметрыЗагрузки.СообщитьОбОтсутствииФайлов Тогда
+			ТекстСообщения = НСтр(""en='File or directory does not exist """"%Путь%""""'; ru='Файл или каталог не существует """"%Путь%""""'"");
+			ТекстСообщения = СтрЗаменить(ТекстСообщения, ""%Путь%"", ПараметрыЗагрузки.Путь);
+			ВывестиОшибку(ТекстСообщения);
+		КонецЕсли;
+		Если ТипЗнч(ПараметрыЗагрузки.Родитель) = Тип(""ДанныеФормыДерево"") Тогда
+			ВыполнитьДействияПослеЗагрузкиТестов(ПараметрыЗагрузки);
+		КонецЕсли;
+	Иначе
+		
+		Для Каждого Файл Из НайденныеФайлы Цикл
+			ОбработкаПрерыванияПользователя();
+			ОчередьЗагрузки.Добавить(Файл.ПолноеИмя);
+			ЗагрузитьТесты(Файл, ПараметрыЗагрузки);
 		КонецЦикла;
 		
-	ИначеЕсли ОбъектФайл.Расширение = "".epf"" ИЛИ ОбъектФайл.Расширение = "".erf"" Тогда
-		
-		ДополнительныеПараметры = Новый Структура;
-		ДополнительныеПараметры.Вставить(""GUID"",              GUID);
-		ДополнительныеПараметры.Вставить(""Расширение"",        ОбъектФайл.Расширение);
-		ДополнительныеПараметры.Вставить(""ВнешнийФайл"",       ЭтоФайл);
-		ДополнительныеПараметры.Вставить(""ИмяБезРасширения"",  ОбъектФайл.ИмяБезРасширения);
-		ДополнительныеПараметры.Вставить(""РежимОтладки"",      Объект.РежимОтладки);
-		
-		Если ТипЗнч(РодительскаяСтрока) <> Тип(""ДанныеФормыДерево"") Тогда
-			ДополнительныеПараметры.Вставить(""Идентификатор"", РодительскаяСтрока.ПолучитьИдентификатор());
+	КонецЕсли;
+	
+	Если ТипЗнч(ПараметрыЗагрузки.Родитель) = Тип(""ДанныеФормыЭлементДерева"") Тогда
+		ОчередьЗагрузки.Удалить(ОчередьЗагрузки.НайтиПоЗначению(ПараметрыЗагрузки.Родитель.ПолныйПуть));
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ВыполнитьДействияПослеЗагрузкиТестов(ПараметрыЗагрузки)
+	
+	Если ПараметрыЗагрузки.ПоследнийПуть И ОчередьЗагрузки.Количество() = 0 Тогда
+		УдалитьПустыеСтрокиКаталогов(Объект.ДеревоТестов.ПолучитьЭлементы());
+		Если Объект.ДеревоТестов.ПолучитьЭлементы().Количество() > 0 Тогда
+			УпорядочитьСтрокиДереваТестов();
+			ПосчитатьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(Объект.ДеревоТестов);
+			РазвернутьСтрокиДерева(ПараметрыЗагрузки.РазвернутьСтроки);
 		КонецЕсли;
-		
-		Если ЭтоФайл Тогда
-			Если ЕстьПоддержкаНемодальныхФорм Тогда
-				Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ВыполнитьПодключениеОбъектаНаКлиенте"""", ЭтаФорма, ДополнительныеПараметры)"");
-				Выполнить(""НачатьПомещениеФайла(Оповещение,, ОбъектФайл.ПолноеИмя, Ложь, УникальныйИдентификатор);"");
-			Иначе
-				АдресХранилища = """";
-				ПоместитьФайл(АдресХранилища, ОбъектФайл.ПолноеИмя, , Ложь, УникальныйИдентификатор);
-				ВыполнитьПодключениеОбъектаНаКлиенте(Неопределено, АдресХранилища, ОбъектФайл.ПолноеИмя, ДополнительныеПараметры);
-			КонецЕсли;
-		Иначе
-			ВыполнитьПодключениеОбъектаНаКлиенте(Неопределено, ОбъектФайл.Имя, ОбъектФайл.ПолноеИмя, ДополнительныеПараметры);
+		Если ПараметрыЗагрузки.Свойство(""ОповеститьПослеЗагрузки"") Тогда
+			Выполнить(""ВыполнитьОбработкуОповещения(ПараметрыЗагрузки.ОповеститьПослеЗагрузки);"");
 		КонецЕсли;
-		
 	КонецЕсли;
 	
 КонецПроцедуры
@@ -3360,16 +3585,14 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецПроцедуры
 
-
 &НаКлиенте
-Функция ЗагрузитьТестыКонфигурации(РодительскаяСтрока, Путь) Экспорт
+Функция ЗагрузитьТестыКонфигурации(Путь, ДополнительныеПараметры) Экспорт
 	
 	КоллекцияВстроенныхТестов = Новый Массив;
 	КоллекцияВстроенныхТестовСервер(КоллекцияВстроенныхТестов, Путь);
 	
-	Для каждого Элемент Из КоллекцияВстроенныхТестов Цикл
-		ЗагрузитьТесты(РодительскаяСтрока, Элемент);
-	КонецЦикла;
+	ДополнительныеПараметры.Вставить(""СообщитьОбОтсутствииФайлов"", Ложь);
+	ЗагрузитьТестыПослеПоискаФайлов(КоллекцияВстроенныхТестов, ДополнительныеПараметры);
 	
 КонецФункции
 
@@ -3402,7 +3625,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	СтрокаТеста = СтрокаДерева.Строки.Добавить();
 	СтрокаТеста.Имя = МетаПодсистема.Имя;
-	СтрокаТеста.ПолноеИмя = ""Метаданные."" + СтрЗаменить(МетаПодсистема.ПолноеИмя(), ""Подсистема."", ""Подсистемы."");
+	СтрокаТеста.ПолноеИмя = СтрЗаменить(""Метаданные."" + МетаПодсистема.ПолноеИмя(), "".Подсистема."", "".Подсистемы."");
 	СтрокаТеста.ТипСтроки = ЗначенияТиповСтроки.КаталогТестов;
 	
 	Для каждого МетаПодчиненнаяПодсистема из МетаПодсистема.Подсистемы цикл
@@ -3417,11 +3640,16 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 &НаСервере
 Функция ДобавитьИмяВстроенногоТестовогоСлучая(СтрокаДерева, МетаОбработка)
+	Если Метаданные.Обработки.Найти(МетаОбработка.Имя) = Неопределено Тогда
+		Возврат Ложь;
+	КонецЕсли;
+	
 	НоваяСтрока = СтрокаДерева.Строки.Добавить();
 	НоваяСтрока.Имя = МетаОбработка.Имя;
 	НоваяСтрока.ИмяБезРасширения = МетаОбработка.Имя;
-	НоваяСтрока.ПолноеИмя = ""Метаданные."" + СтрЗаменить(МетаОбработка.ПолноеИмя(), ""Обработка."", ""Обработки."");
+	НоваяСтрока.ПолноеИмя = СтрЗаменить(""Метаданные."" + МетаОбработка.ПолноеИмя(), "".Обработка."", "".Обработки."");
 	НоваяСтрока.ТипСтроки = ЗначенияТиповСтроки.ТестовыйСлучай;
+	Возврат Истина;
 КонецФункции
 
 &НаСервере
@@ -3495,12 +3723,6 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		ДополнительныеПараметры.Свойство(""РежимОтладки"", РежимОтладки);
 	КонецЕсли;
 	
-	Если ЭтоВнешнийФайл Тогда
-		ПолныйПуть = ВыбранноеИмяФайла;
-	Иначе
-		ПолныйПуть = АдресХранилища;
-	КонецЕсли;
-	
 	Если Расширение = "".epf"" Тогда
 		МенеджерВстроенногоОбъекта = Обработки;
 		МенеджерВнешнегоОбъекта = ВнешниеОбработки;
@@ -3550,11 +3772,11 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ПараметрыСтроки = ПолучитьПустуюСтруктуруПараметровСтроки();
 	ПараметрыСтроки.Вставить(""Имя"",	ИмяБезРасширения);
-	ПараметрыСтроки.Вставить(""ИмяТестовогоСлучая"", ИмяБезРасширения);
 	ПараметрыСтроки.Вставить(""_GUID"", GUID);
 	ПараметрыСтроки.Вставить(""ТипСтроки"", ЗначенияТиповСтроки.ТестовыйСлучай);
-	ПараметрыСтроки.Вставить(""ПолныйПуть"", ПолныйПуть);
+	ПараметрыСтроки.Вставить(""ПолныйПуть"", ВыбранноеИмяФайла);
 	ПараметрыСтроки.Вставить(""ЭтоВнутренняяОбработка"", НЕ ЭтоВнешнийФайл);
+	ПараметрыСтроки.Вставить(""ТестовыйСлучайОбъектМетаданныхИмя"", ВнешнийОбъект.Метаданные().Имя);
 	Если Идентификатор = Неопределено Тогда
 		НоваяСтрока = ДобавитьСтрокуДереваТестов(Объект.ДеревоТестов, ПараметрыСтроки); //TODO Развернуть, нужно ли тут оповещение ОповеститьОСобытии(""TestLoaded"", СтрокаТеста);?
 	Иначе
@@ -3589,26 +3811,47 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		МассивТестовыхМетодов = ВнешняяФорма.ПолучитьСписокТестов(ЮнитОбъект);
 	Исключение
 		
-		ПредставлениеОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
-		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ПредставлениеОшибки, ""ПолучитьСписокТестов"");
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ""ПолучитьСписокТестов"");
 		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
-			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестов для модуля объекта:
+			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестов из упр.формы: %2
 									 |  Ошибка получения списка тестовых случаев: %1'"");
-			ЮнитОбъект.ВывестиОшибку(СтрЗаменить(ТекстОшибки, ""%1"", ОписаниеОшибки()));
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%1"", ОписаниеОшибки());
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%2"", Родитель.ПолныйПуть);
+			ЮнитОбъект.ВывестиОшибку(ТекстОшибки);
 		КонецЕсли;
 		
 		Возврат;
 		
 	КонецПопытки;
 	
+	ИмяМетодаРазрешенСлучайныйПорядокВыполненияТестов = ""РазрешенСлучайныйПорядокВыполненияТестов"";
+	Попытка
+		РазрешенСлучайныйПорядокВыполнения = ВнешняяФорма.РазрешенСлучайныйПорядокВыполненияТестов();
+	Исключение
+		
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ИмяМетодаРазрешенСлучайныйПорядокВыполненияТестов);
+		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
+			ТекстОшибки = НСтр(""ru = 'Набор тестов из упр.формы не загружен: %3
+									 |  Ошибка вызова метода %1 из теста: %2'"");
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%1"", ИмяМетодаРазрешенСлучайныйПорядокВыполненияТестов);
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%2"", ОписаниеОшибки());
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%3"", Родитель.ПолныйПуть);
+			ЮнитОбъект.ВывестиОшибку(ТекстОшибки);
+			Возврат;
+		КонецЕсли;
+		РазрешенСлучайныйПорядокВыполнения = Истина;
+	КонецПопытки;
+
 	Для каждого ЭлементМассива Из МассивТестовыхМетодов Цикл
 		
 		ПараметрыСтроки = ПолучитьСтруктуруПараметровСтроки(
 			ЭлементМассива,
+			Родитель.Имя,
 			Родитель.ПолныйПуть,
 			ВнешнийОбъект.ИмяОбъекта,
 			ЗначениеМодульИлиФорма.Форма,
 			Родитель.ЭтоВнутренняяОбработка,
+			РазрешенСлучайныйПорядокВыполнения,
 			ВнешнийОбъект.ИмяФормы);
 		
 		СтрокаТеста = Родитель.ПолучитьЭлементы().Добавить();
@@ -3665,8 +3908,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		
 	Исключение
 		
-		ПредставлениеОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
-		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ПредставлениеОшибки, ""ПолучитьСписокТестовыхФорм"");
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ""ПолучитьСписокТестовыхФорм"");
 		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
 			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестовых форм объекта:
 									 |  Ошибка получения списка тестовых форм: %1'"");
@@ -3686,12 +3928,14 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		МассивТестовыхМетодов = ВнешнийОбъект.ПолучитьСписокТестов(ЮнитОбъект);
 	Исключение
 		
-		ПредставлениеОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
-		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ПредставлениеОшибки, ""ПолучитьСписокТестов"");
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ""ПолучитьСписокТестов"");
 		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
-			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестов для модуля объекта:
+			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестов для модуля объекта: %2
 									 |  Ошибка получения списка тестовых случаев: %1'"");
-			ЮнитОбъект.ВывестиОшибку(СтрЗаменить(ТекстОшибки, ""%1"", ОписаниеОшибки()));
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%1"", ОписаниеОшибки());
+			ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%2"", Родитель.ПолныйПуть);
+			ЮнитОбъект.ВывестиОшибку(ТекстОшибки);
+			
 			Родитель.Состояние = ЗначенияСостоянияТестов.Сломался;
 		КонецЕсли;
 		
@@ -3700,14 +3944,31 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	КонецПопытки;
 	
 	МетаданныеИмя = ВнешнийОбъект.Метаданные().Имя;
+	
+	ИмяМетодаРазрешенСлучайныйПорядокВыполненияТестов = ""РазрешенСлучайныйПорядокВыполненияТестов"";
+	Попытка
+		РазрешенСлучайныйПорядокВыполнения =  ЮнитОбъект.РазрешенСлучайныйПорядокВыполненияТестов(ВнешнийОбъект, МетаданныеИмя);
+	Исключение
+		ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестов для модуля объекта: %3
+								 |  Ошибка выполнения метода %1: %2'"");
+		ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%1"", ИмяМетодаРазрешенСлучайныйПорядокВыполненияТестов);
+		ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%2"", ОписаниеОшибки());
+		ТекстОшибки = СтрЗаменить(ТекстОшибки, ""%3"", Родитель.ПолныйПуть);
+		ЮнитОбъект.ВывестиОшибку(ТекстОшибки);
+		Родитель.Состояние = ЗначенияСостоянияТестов.Сломался;
+		РазрешенСлучайныйПорядокВыполнения = Истина;
+	КонецПопытки;
+	
 	Для каждого ЭлементМассива Из МассивТестовыхМетодов Цикл
 		
 		ПараметрыСтроки = ПолучитьСтруктуруПараметровСтроки(
 			ЭлементМассива,
-			МетаданныеИмя,
+			Родитель.Имя,
+			Родитель.ПолныйПуть,
 			МетаданныеИмя,
 			ЗначениеМодульИлиФорма.Модуль,
-			Родитель.ЭтоВнутренняяОбработка);
+			Родитель.ЭтоВнутренняяОбработка,
+			РазрешенСлучайныйПорядокВыполнения);
 		
 		СтрокаТеста = Родитель.ПолучитьЭлементы().Добавить();
 		ЗаполнитьЗначенияСвойств(СтрокаТеста, ПараметрыСтроки);
@@ -3752,8 +4013,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		МассивТестовыхФорм = ВнешнийОбъект.ПолучитьСписокТестовыхФорм();
 	Исключение
 		
-		ПредставлениеОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
-		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ПредставлениеОшибки, ""ПолучитьСписокТестовыхФорм"");
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ""ПолучитьСписокТестовыхФорм"");
 		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
 			ТекстОшибки = НСтр(""ru = 'Не удалось загрузить список тестовых форм объекта:
 									 |  Ошибка получения списка тестовых форм: %1'"");
@@ -3795,7 +4055,6 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	КонецЦикла;
 	
 КонецПроцедуры
-
 
 // Функция возвращает полное имя формы объекта
 //
@@ -3860,13 +4119,14 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	ПараметрыСтроки.Вставить(""ЕстьПараметрыТеста"");
 	ПараметрыСтроки.Вставить(""ТестовыйСлучайОбъектМетаданныхИмя"");
 	ПараметрыСтроки.Вставить(""ЭтоВнутренняяОбработка"");
+	//ПараметрыСтроки.Вставить(""РазрешенСлучайныйПорядокВыполнения"");
 	
 	Возврат ПараметрыСтроки;
 	
 КонецФункции
 
 &НаКлиентеНаСервереБезКонтекста
-Функция ПолучитьСтруктуруПараметровСтроки(ЭлементМассива, ПолныйПуть, МетаданныеИмя, МодульИлиФорма, ЭтоВнутренняяОбработка, ИмяОсновнойУправляемойФормы = """")
+Функция ПолучитьСтруктуруПараметровСтроки(ЭлементМассива, ИмяТестовогоНабора, ПолныйПуть, МетаданныеИмя, МодульИлиФорма, ЭтоВнутренняяОбработка, РазрешенСлучайныйПорядокВыполнения, ИмяОсновнойУправляемойФормы = """")
 	
 	ПараметрыСтроки = ПолучитьПустуюСтруктуруПараметровСтроки();
 	Если ТипЗнч(ЭлементМассива) = Тип(""Строка"") Тогда
@@ -3879,15 +4139,13 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		
 		ЗаданоСпециальноеПредставлениеТеста = ПараметрыСтроки.Имя <> ПараметрыСтроки.ИмяТестовогоСлучая;
 		
-		СписокЗначений = Новый СписокЗначений;
-		СписокЗначений.Добавить(ЭлементМассива);
-		ПараметрыСтроки.Вставить(""ПараметрыТеста"", СписокЗначений);
+		ПараметрыСтроки.Вставить(""ПараметрыТеста"", ЭлементМассива);
 		ПараметрыСтроки.Вставить(""ЕстьПараметрыТеста"", Истина);
 			
 		Если Не ЗаданоСпециальноеПредставлениеТеста Тогда
 			ОписаниеПараметра = ""<пусто>"";
 			Если ЭлементМассива.Свойство(""Параметр"") Тогда
-				ОписаниеПараметра = """" + ЭлементМассива.Параметр;
+				ОписаниеПараметра = Строка(ЭлементМассива.Параметр);
 			КонецЕсли;
 			ПараметрыСтроки.Вставить(""Имя"", ЭлементМассива.ИмяТеста +  ""( "" + ОписаниеПараметра + "" )"");
 		КонецЕсли;
@@ -3895,11 +4153,13 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ПараметрыСтроки.Вставить(""_GUID"", Строка(Новый УникальныйИдентификатор));
 	ПараметрыСтроки.Вставить(""ТипСтроки"", 2); // ЗначенияТиповСтроки.ТестовыйМетод
+	ПараметрыСтроки.Вставить(""ИмяТестовогоНабора"", ИмяТестовогоНабора);
 	ПараметрыСтроки.Вставить(""ПолныйПуть"", ПолныйПуть);
 	ПараметрыСтроки.Вставить(""МодульИлиФорма"", МодульИлиФорма);
 	ПараметрыСтроки.Вставить(""ТестовыйСлучайОбъектМетаданныхИмя"", МетаданныеИмя);
 	ПараметрыСтроки.Вставить(""ЭтоВнутренняяОбработка"", ЭтоВнутренняяОбработка);
 	ПараметрыСтроки.Вставить(""ИмяОсновнойУправляемойФормы"", ИмяОсновнойУправляемойФормы);
+	ПараметрыСтроки.Вставить(""РазрешенСлучайныйПорядокВыполнения"", РазрешенСлучайныйПорядокВыполнения);
 	
 	Возврат ПараметрыСтроки;
 	
@@ -3909,24 +4169,6 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 //#Область ОбработкаПараметровЗапуска
 
 // { Обработка параметров запуска
-
-&НаКлиенте
-Процедура ЗаписатьКодВозвратаВЛогФайл(ПутьКФайлуЛога, КодВозврата, КодРезультатаТестирования = Неопределено)
-	ФайлЛога = Новый Файл(ПутьКФайлуЛога);
-	КаталогЛога = Новый Файл(ФайлЛога.Путь);
-	Если НЕ КаталогЛога.Существует() Тогда
-		ВывестиСообщение(""Ожидали, что каталог лог-файла кода возврата будет существовать, а он не существует. <""+ФайлЛога.Путь+"">"");
-		Возврат;
-	КонецЕсли;
-	
-	Запись = Новый ЗаписьТекста(ПутьКФайлуЛога);
-	Запись.ЗаписатьСтроку(КодВозврата);
-	Если КодРезультатаТестирования <> Неопределено Тогда
-		Запись.ЗаписатьСтроку(КодРезультатаТестирования);
-	КонецЕсли;
-	Запись.Закрыть();
-	
-КонецПроцедуры
 
 // Пример строки запуска - ""Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования""
 //	""C:\Program Files (x86)\1cv82\8.2.18.96\bin\1cv8c.exe"" /DisableStartupMessages /Execute E:\ТестыИМ\xddTestRunner.epf /S ""server\ib"" /Out ""E:\ТестыИМ\Тесты\log.txt""  /C ""Тесты_Команда_Тестировать;E:\ТестыИМ\Тесты;ЗавершитьРаботуПослеТестирования"" /LogUI
@@ -3938,79 +4180,130 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		Возврат Ложь;
 	КонецЕсли;
 	
-	ЭтоЗапускИзКоманднойСтроки = Истина;
-	УстановитьЗначенияНастроекПоУмолчанию();
+	УстановитьЗначенияНастроекПоУмолчанию(ЭтаФорма);
 	
-	естьКоманда_ВыполнитьТестирование   = ПараметрыЗапуска.Выполнить;
-	естьКоманда_Загрузить               = ПараметрыЗапуска.Загрузить;
-	путьКТестам                         = ПараметрыЗапуска.ПутьТестов;
-	лЗавершитьРаботуПослеТестирования   = ПараметрыЗапуска.ОстановитьСистему;
-	
-	ПутьОтчетаТестирования  = ПараметрыЗапуска.ПутьОтчета;
-	ТипОтчетаОТестировании  = ПараметрыЗапуска.ФорматОтчета;
-	ПутьКФайлуЛога          = ПараметрыЗапуска.ПутьКодаВозврата;
-	
-	Объект.РегистрацияПрохожденияТестовВЖР = ПараметрыЗапуска.РегистрацияПрохожденияТестовВЖР;
-	Элементы.КомандаРегистрацияПрохожденияТестовВЖР.Пометка = Объект.РегистрацияПрохожденияТестовВЖР;
-	
-	Объект.РегистрацияОшибокТестовВЖР = ПараметрыЗапуска.РегистрацияОшибокТестовВЖР;
-	Элементы.КомандаРегистрацияОшибокТестовВЖР.Пометка = Объект.РегистрацияОшибокТестовВЖР;
-	
-	Объект.РежимОтладки = ПараметрыЗапуска.РежимОтладки;
-	Элементы.КомандаВключитьРежимОтладки.Пометка = Объект.РежимОтладки;
-	
-	Объект.СлучайныйПорядокВыполнения = ПараметрыЗапуска.СлучайныйПорядокВыполнения;
-	Элементы.КомандаСлучайныйПорядокВыполнения.Пометка = Объект.СлучайныйПорядокВыполнения;
-	
-	Объект.ВыводЛогаВФорматеTeamCity = ПараметрыЗапуска.ВыводЛогаВФорматеTeamCity;
-	
-	мЭтоВнутренняяОбработка = ПараметрыЗапуска.ВстроенныеТесты;
-	
-	Если ЗначениеЗаполнено(путьКТестам) Тогда
-		Пути.Добавить(путьКТестам);
+	ПутьКТестам = ПараметрыЗапуска.ПутьТестов;
+	Если ЗначениеЗаполнено(ПутьКТестам) Тогда
+		Пути.Добавить(ПутьКТестам);
 	КонецЕсли;
-	
-	Если Не естьКоманда_Загрузить Тогда
-		Возврат Ложь;
-	КонецЕсли;
-	
-	Если естьКоманда_ВыполнитьТестирование Тогда
-		Если НЕ мЭтоВнутренняяОбработка Тогда
-			ОписаниеОшибки = НСтр(""ru = 'ОШИБКА загрузки тестов: Ожидали, что каталог/файл тестов будет существовать, а он не существует.'"");
-			Если Не ПроверитьСуществованиеФайла(путьКТестам, ОписаниеОшибки, лЗавершитьРаботуПослеТестирования) Тогда
-				Возврат Истина;
-			КонецЕсли;
-		КонецЕсли;
-		
-		ФайлИлиКаталогОтчетовТестирования = Новый Файл(ПутьОтчетаТестирования);
-		ОписаниеОшибки =  НСтр(""ru = 'ОШИБКА загрузки тестов: Ожидали, что каталог отчетов тестирования будет существовать, а он не существует.'"");
-		Если Не ПроверитьСуществованиеФайла(ФайлИлиКаталогОтчетовТестирования.Путь, ОписаниеОшибки, лЗавершитьРаботуПослеТестирования) Тогда
-			Возврат Истина;
-		КонецЕсли;
-		
-	КонецЕсли;
-	
-	ЗаписатьКодВозвратаВЛогФайл(ПутьКФайлуЛога, ""1""); //По умолчанию считаем что ошибка. Перед завершением работы запишем 0.
 	
 	ОбновитьНадписьПути();
 	
-	Попытка
+	//ПутьОтчетаТестирования  = ПараметрыЗапуска.ПутьОтчета;
+	УстановитьТипОтчетаТестирования(ЭтаФорма, ПараметрыЗапуска.ФорматОтчета);
+	
+	Объект.РегистрацияПрохожденияТестовВЖР = ПараметрыЗапуска.РегистрацияПрохожденияТестовВЖР;
+	Объект.РегистрацияОшибокТестовВЖР      = ПараметрыЗапуска.РегистрацияОшибокТестовВЖР;
+	Объект.СлучайныйПорядокВыполнения      = ПараметрыЗапуска.СлучайныйПорядокВыполнения;
+	Объект.РежимОтладки                    = ПараметрыЗапуска.РежимОтладки;
+	
+	Объект.ВыводЛогаВФорматеTeamCity = ПараметрыЗапуска.ВыводЛогаВФорматеTeamCity;
+	
+	ПривестиИнерфейсВСоответствиеСНастройками(ЭтаФорма);
+	Если Не ПараметрыЗапуска.Загрузить Тогда
+		Возврат Ложь;
+	КонецЕсли;
+	
+	ЭтоЗапускВПакетномРежиме = Истина; // ПараметрыЗапуска.ОстановитьСистему;
+	
+	ОбработатьКомандыПакетногоРежима(ПараметрыЗапуска);
+	Возврат Истина;
+	
+КонецФункции
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежима(ПараметрыЗапуска)
+	
+	ПутьКФайлуЛога = ПараметрыЗапуска.ПутьКодаВозврата;
+	ЗаписатьКодВозвратаВЛогФайл(ПутьКФайлуЛога, ""1""); //По умолчанию считаем что ошибка. Перед завершением работы запишем 0.
+	
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОбработатьКомандыПакетногоРежимаПослеЗагрузкиТестов"""", ЭтотОбъект, ПараметрыЗапуска)"");
+		LoadAllTests(, Оповещение);
+	Иначе
 		LoadAllTests();
-	Исключение
-		
-		ТекстОшибки = ОписаниеОшибки();
-		ТекстСообщения = НСтр(""ru='ОШИБКА загрузки тестов: %ТекстОшибки%'; en='Error loading testcases: %ТекстОшибки%'"");
-		ТекстСообщения = СтрЗаменить(ТекстСообщения, ""%ТекстОшибки%"", ТекстОшибки); 
-		ВывестиСообщение(ТекстСообщения);
-		
+		ОбработатьКомандыПакетногоРежимаПослеЗагрузкиТестов(, ПараметрыЗапуска);
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежимаПослеЗагрузкиТестов(Результат, ПараметрыЗапуска) Экспорт
+	
+	лЗавершитьРаботуПослеТестирования   = ПараметрыЗапуска.ОстановитьСистему;
+	Если Объект.ДеревоТестов.ПолучитьЭлементы().Количество() = 0 Тогда
+		ОписаниеОшибки = СтрЗаменить(НСтр(""ru = 'ОШИБКА загрузки тестов: путь <%1>'; en = 'Error loading testcases: path <%1>'""), ""%1"", ПараметрыЗапуска.ПутьТестов);
+		ВывестиСообщение(ОписаниеОшибки);
+		ЗарегистрироватьОшибкуЗапускаТестированияСервер(ПараметрыЗапуска.ПутьТестов, ОписаниеОшибки);
 		Если лЗавершитьРаботуПослеТестирования Тогда
 			ЗавершитьРаботуСистемы(Ложь);
-			Возврат Ложь;
 		КонецЕсли;
-		
-	КонецПопытки;
+		Возврат;
+	КонецЕсли;
 	
-	Если естьКоманда_ВыполнитьТестирование Тогда
+	Если ПараметрыЗапуска.Выполнить Тогда
+		Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+			Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОбработатьКомандыПакетногоРежимаПослеИнициализацииФайлаОтчетаТестирования"""", ЭтотОбъект, ПараметрыЗапуска)"");
+			ФайлОтчетаТестирования = Вычислить(""Новый Файл"");
+			ФайлОтчетаТестирования.НачатьИнициализацию(Оповещение, ПараметрыЗапуска.ПутьОтчета);
+		Иначе
+			ФайлОтчетаТестирования = Новый Файл(ПараметрыЗапуска.ПутьОтчета);
+			ОбработатьКомандыПакетногоРежимаПослеИнициализацииФайлаОтчетаТестирования(ФайлОтчетаТестирования, ПараметрыЗапуска);
+		КонецЕсли;
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежимаПослеИнициализацииФайлаОтчетаТестирования(ФайлОтчетаТестирования, ПараметрыЗапуска) Экспорт
+	
+	ПараметрыЗапуска.Вставить(""ФайлОтчетаТестирования"", ФайлОтчетаТестирования);
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияСуществует"""", ЭтотОбъект, ПараметрыЗапуска)"");
+		ФайлОтчетаТестирования.НачатьПроверкуСуществования(Оповещение);
+	Иначе
+		ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияСуществует(ФайлОтчетаТестирования.Существует(), ПараметрыЗапуска);
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияСуществует(Существует, ПараметрыЗапуска) Экспорт
+	
+	ФайлОтчетаТестирования = ПараметрыЗапуска.ФайлОтчетаТестирования;
+	Если Не Существует Тогда
+		УстановитьПутьОтчетаТестирования(ФайлОтчетаТестирования.Путь, ФайлОтчетаТестирования.Имя);
+		ОбработатьКомандыПакетногоРежимаПослеОбработкиФайлаОтчетаТестирования(ПараметрыЗапуска);
+	Иначе
+		Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+			Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияЭтоКаталог"""", ЭтотОбъект, ПараметрыЗапуска)"");
+			ФайлОтчетаТестирования.НачатьПроверкуЭтоКаталог(Оповещение);
+		Иначе
+			ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияЭтоКаталог(ФайлОтчетаТестирования.ЭтоКаталог(), ПараметрыЗапуска);
+		КонецЕсли;
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежимаПослеПроверкиФайлОтчетаТестированияЭтоКаталог(ЭтоКаталог, ПараметрыЗапуска) Экспорт
+	
+	ФайлОтчетаТестирования = ПараметрыЗапуска.ФайлОтчетаТестирования;
+	Если ЭтоКаталог Тогда
+		УстановитьПутьОтчетаТестирования(ФайлОтчетаТестирования.ПолноеИмя);
+	Иначе
+		УстановитьПутьОтчетаТестирования(ФайлОтчетаТестирования.Путь, ФайлОтчетаТестирования.Имя);
+	КонецЕсли;
+	
+	ОбработатьКомандыПакетногоРежимаПослеОбработкиФайлаОтчетаТестирования(ПараметрыЗапуска);
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбработатьКомандыПакетногоРежимаПослеОбработкиФайлаОтчетаТестирования(ПараметрыЗапуска)
+	
+	лЗавершитьРаботуПослеТестирования = ПараметрыЗапуска.ОстановитьСистему;
+	Если ПараметрыЗапуска.Выполнить Тогда
 		
 		Попытка
 			КодРезультатаТестирования = RunAllTests();
@@ -4023,7 +4316,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			
 			Если лЗавершитьРаботуПослеТестирования Тогда
 				ЗавершитьРаботуСистемы(Ложь);
-				Возврат Ложь;
+				Возврат;
 			КонецЕсли;
 			
 		КонецПопытки;
@@ -4032,34 +4325,33 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	Если лЗавершитьРаботуПослеТестирования Тогда
 		
-		ЗаписатьКодВозвратаВЛогФайл(ПутьКФайлуЛога, ""0"", КодРезультатаТестирования);
+		ЗаписатьКодВозвратаВЛогФайл(ПараметрыЗапуска.ПутьКодаВозврата, ""0"", КодРезультатаТестирования);
 		ЗавершитьРаботуСистемы(Ложь);
 		
 	КонецЕсли;
 	
-	Возврат Истина;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗаписатьКодВозвратаВЛогФайл(ПутьКФайлуЛога, КодВозврата, КодРезультатаТестирования = Неопределено)
 	
-КонецФункции
+	Попытка
+		Запись = Новый ЗаписьТекста(ПутьКФайлуЛога);
+		Запись.ЗаписатьСтроку(КодВозврата);
+		Если КодРезультатаТестирования <> Неопределено Тогда
+			Запись.ЗаписатьСтроку(КодРезультатаТестирования);
+		КонецЕсли;
+		Запись.Закрыть();
+	Исключение
+		ТекстСообщения = НСтр(""ru = 'Ошибка записи лог-файла кода возврата: путь <%1>'"");
+		ВывестиСообщение(СтрЗаменить(ТекстСообщения, ""%1"", ПутьКФайлуЛога) + Символы.ПС + КраткоеПредставлениеОшибки(ИнформацияОбОшибке()));
+	КонецПопытки;
+	
+КонецПроцедуры
 
 &НаСервере
 Функция РазобратьПараметрыЗапускаСервер(СтрокаПараметровЗапуска)
 	Возврат Объект().РазобратьПараметрыЗапуска(СтрокаПараметровЗапуска);
-КонецФункции
-
-&НаКлиенте
-Функция ПроверитьСуществованиеФайла(ПутьФайла, Знач ОписаниеОшибки, ЗавершитьРаботуПослеТестирования)
-	Файл = Новый Файл(ПутьФайла);
-	Если НЕ Файл.Существует() Тогда
-		ОписаниеОшибки = ОписаниеОшибки + СтрЗаменить(НСтр(""ru = 'путь <%1>'""), ""%1"", ПутьФайла);
-		ВывестиСообщение(ОписаниеОшибки);
-		ЗарегистрироватьОшибкуЗапускаТестированияСервер(Файл.ПолноеИмя, ОписаниеОшибки);
-		
-		Если ЗавершитьРаботуПослеТестирования Тогда
-			ЗавершитьРаботуСистемы(Ложь);
-		КонецЕсли;
-		Возврат Ложь;
-	КонецЕсли;
-	Возврат Истина;
 КонецФункции
 
 &НаСервере
@@ -4155,7 +4447,8 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			ТекстСообщения = СтрЗаменить(ТекстСообщения,Символы.ВК,""|r"");
 			ТекстСообщения = СтрЗаменить(ТекстСообщения,Символы.ПС,""|n"");
 			
-			Сообщить(""##teamcity[message text='""+ТекстСообщения+""' errorDetails='' status='""+СоответствиеСтатусовДляTeamCity[Статус]+""']"");
+			СтатусДляTeamCity = ?(Статус = Неопределено, СтатусСообщения.Обычное, Статус);
+			Сообщить(""##teamcity[message text='""+ТекстСообщения+""' errorDetails='' status='""+СоответствиеСтатусовДляTeamCity[СтатусДляTeamCity]+""']"");
 		Иначе
 			Сообщить(ТекстСообщения, Статус);
 		КонецЕсли;
@@ -4182,24 +4475,35 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 // количествоСозданныхОбъектов учитывает только созданные элементы справочников, документы и пользователей ИБ. Записи регистров сведений не считаются!
 &НаКлиенте
-Функция СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, количествоСозданныхОбъектов = 0) Экспорт
-	Данные = СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, количествоСозданныхОбъектов);
+Функция СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения = Неопределено, ИмяКолонкиЗамещения = Неопределено) Экспорт
+	Данные = СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения);
 	Возврат Данные;
 КонецФункции
 
 &НаСервере
-Функция СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, количествоСозданныхОбъектов = 0) Экспорт
-	Данные = Объект().СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, количествоСозданныхОбъектов);
+Функция СоздатьДанныеПоТабличномуДокументуСервер(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения) //Экспорт
+	Данные = Объект().СоздатьДанныеПоТабличномуДокументу(ТабличныйДокумент, РежимыЗагрузкиИлиИмяКолонкиЗамещения, ИмяКолонкиЗамещения);
 	Возврат Неопределено; //Данные;
 КонецФункции
 //}
 
+// { работа с данными текущего теста
 
+&НаКлиенте
+Процедура УстановитьДанныеТекущегоТеста(ДанныеТекущегоТеста)
+	УстановитьКонтекст(ДанныеТекущегоТеста, ""xUnitFor1C_ДанныеТекущегоТеста"");
+КонецПроцедуры
 
+&НаКлиенте
+Функция СоздатьПустуюСтруктуруСостоянияТекущегоТеста()
+	Результат = Новый Структура;
+	Результат.Вставить(""Имя"", """");
+	Результат.Вставить(""ПолныйПуть"", """");
+	Результат.Вставить(""СостояниеТеста"", """");
+	Возврат Результат;
+КонецФункции
 
-
-
-
+// }
 
 // { работа с тестами
 
@@ -4224,19 +4528,6 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		КонецЕсли;
 	КонецЦикла;
 	Возврат """";
-КонецФункции
-
-&НаКлиенте
-Функция ПолучитьТестОбъект(ИдентификаторОбработки, имяОсновнойУправляемойФормы)
-	Попытка
-		Возврат ПолучитьФорму(""ВнешняяОбработка."" + ИдентификаторОбработки + "".Форма."" + имяОсновнойУправляемойФормы);
-	Исключение
-		Попытка
-			Возврат ПолучитьФорму(""Обработка."" + ИдентификаторОбработки + "".Форма."" + имяОсновнойУправляемойФормы);
-		Исключение
-			Возврат Неопределено;
-		КонецПопытки;
-	КонецПопытки;
 КонецФункции
 
 &НаКлиенте
@@ -4312,7 +4603,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 		ТекстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке()) ;
 		
 		// TODO если не использовать переменную ниже, а поставить вызов метода в условие, то будет глюк - внутрь условия не попадаем !
-		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ТекстОшибки, ""ПолучитьСписокТестов"");
+		ЕстьОшибка_МетодОбъектаНеОбнаружен = ЕстьОшибка_МетодОбъектаНеОбнаружен(ИнформацияОбОшибке().Описание, ""ПолучитьСписокТестов"");
 		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен Тогда
 			ТекстОшибки = НСтр(""ru = 'Тестовый случай не загружен: %1
 									 |  Ошибка получения списка тестовых случаев: %2'"");
@@ -4335,74 +4626,20 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 КонецФункции
 
 &НаКлиенте
-Процедура ВыполнитьВыделенныеТесты(ВызыватьИсключение = Ложь)
+Функция ПолучитьСтрокиДереваВСлучайномПорядке(МассивИдентификаторовСтрок) Экспорт
+	Отбор = Новый Структура(""РазрешенСлучайныйПорядокВыполнения"", Ложь);
+	МассивСтрокДерева = ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок, Отбор);
 	
-	ОчиститьСообщения();
+	Отбор = Новый Структура(""РазрешенСлучайныйПорядокВыполнения"", Истина);
+	МассивСтрокДереваДляСлучайногоВыполнения = ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок, Отбор);
 	
-	МассивИдентификаторовСтрок = Элементы.ДеревоТестов.ВыделенныеСтроки;
+	ПеремешанныеСтрокиДерева = ПеремешатьМассив(МассивСтрокДереваДляСлучайногоВыполнения);
+	Для каждого Элем Из ПеремешанныеСтрокиДерева Цикл
+		МассивСтрокДерева.Добавить(Элем);
+	КонецЦикла;
 	
-	_ВыполнитьВыбранныеТесты(МассивИдентификаторовСтрок, ВызыватьИсключение);
-	
-КонецПроцедуры
-
-&НаКлиенте
-Функция _ВыполнитьВыбранныеТесты(МассивИдентификаторовСтрок, ВызыватьИсключение = Ложь)
-	ПередВыполнениемТестовСервер();
-	
-	датаНачалаТестирования = ТекущаяДата();
-	
-	НовыйМассивИдентификаторовСтрок = Новый Массив;
-	ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок, НовыйМассивИдентификаторовСтрок);
-	
-	ИнициализироватьИндикаторВыполнения(НовыйМассивИдентификаторовСтрок.Количество());
-	
-	Если Объект.СлучайныйПорядокВыполнения Тогда
-		НовыйМассивИдентификаторовСтрок = ПеремешатьМассив(НовыйМассивИдентификаторовСтрок);
-	КонецЕсли;
-	
-	СостояниеРезультат = _ВыполнитьТесты(НовыйМассивИдентификаторовСтрок, ВызыватьИсключение);
-	
-	ОбновитьСостояниеВыбранныхСтрок(МассивИдентификаторовСтрок);
-	ОбновитьСостояниеРодителейВыбранныхСтрок(МассивИдентификаторовСтрок);
-	СвернутьУспешныеСтрокиДереваИРазвернутьНеуспешные(Объект.ДеревоТестов.ПолучитьЭлементы(), Истина);
-	
-	ОбработатьОтчетТестирования(датаНачалаТестирования);
-	
-	Возврат СостояниеРезультат;
+	Возврат МассивСтрокДерева;
 КонецФункции
-
-&НаКлиенте
-Процедура ОбработатьОтчетТестирования(датаНачалаТестирования)
-	Перем ТипОтчетаОТестировании;
-	ТипОтчетаОТестировании = ?(ПустаяСтрока(ЭтаФорма.ТипОтчетаОТестировании), ""mxl"", ЭтаФорма.ТипОтчетаОТестировании);
-	
-	табДок = ПолучитьОтчетТестирования(датаНачалаТестирования, ТипОтчетаОТестировании);
-	
-	имяФайлаТестирования = ""лог_тестирования"";
-	
-	файлФайлаТестирования = Новый Файл(ПутьОтчетаТестирования);
-	Если файлФайлаТестирования.Существует() И НЕ файлФайлаТестирования.ЭтоКаталог() Тогда 
-		имяФайлаТестирования = файлФайлаТестирования.ИмяБезРасширения;
-		ПутьОтчетаТестирования = файлФайлаТестирования.Путь;
-	ИначеЕсли НЕ файлФайлаТестирования.Существует() И НЕ ПустаяСтрока(файлФайлаТестирования.Расширение) Тогда 
-		имяФайлаТестирования = файлФайлаТестирования.ИмяБезРасширения;
-		ПутьОтчетаТестирования = файлФайлаТестирования.Путь;
-	КонецЕсли;
-	
-	ПутьОтчетаТестирования = ДополнитьСлешВПуть(ПутьОтчетаТестирования);
-	
-	Если табДок <> Неопределено Тогда
-		Если НЕ ПустаяСтрока(ПутьОтчетаТестирования) Тогда
-			ЗаписатьФайлОтчетТестирования(табДок, имяФайлаТестирования, ТипОтчетаОТестировании);
-		КонецЕсли;
-		
-		табДок.Показать(СтрЗаменить(НСтр(""ru = 'Отчет об автоматическом тестировании, xUnitFor1C v.%1'""), ""%1"", ВерсияСервер()));
-	Иначе // все тесты прошли
-		Если НЕ ПустаяСтрока(ПутьОтчетаТестирования) Тогда
-			УдалитьФайлыОтчетовТестирования(имяФайлаТестирования);
-		КонецЕсли;
-	КонецЕсли;
-КонецПроцедуры
 
 &НаКлиенте
 Функция ПолучитьМассивИдентификаторовСтрок(СтрокаДереваТестов)
@@ -4414,11 +4651,17 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 КонецФункции
 
 &НаКлиенте
-Процедура ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок, МассивДляДобавления)
+Функция ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок, Отбор = Неопределено, МассивДляДобавления = Неопределено)
+	Если МассивДляДобавления=Неопределено Тогда
+		МассивДляДобавления = Новый Массив;
+	КонецЕсли;
 	Для каждого Идентификатор из МассивИдентификаторовСтрок Цикл
 		СтрокаДереваТестов = Объект.ДеревоТестов.НайтиПоИдентификатору(Идентификатор);
 		
 		Если СтрокаДереваТестов.ТипСтроки = ЗначенияТиповСтроки.ТестовыйМетод Тогда
+			Если ЗначениеЗаполнено(Отбор) И Не СтрокаДереваУдовлетворяетОтбору(СтрокаДереваТестов, Отбор) Тогда
+				Продолжить;
+			КонецЕсли;
 			
 			Если МассивДляДобавления.Найти(Идентификатор) = Неопределено Тогда
 				МассивДляДобавления.Добавить(Идентификатор);
@@ -4426,12 +4669,27 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			
 		Иначе
 			НовыйМассив = ПолучитьМассивИдентификаторовСтрок(СтрокаДереваТестов);
-			ПолучитьТолькоТестовыеМетодыИзДерева(НовыйМассив, МассивДляДобавления);
+			ПолучитьТолькоТестовыеМетодыИзДерева(НовыйМассив, Отбор, МассивДляДобавления);
 			
 		КонецЕсли;
 		
 	КонецЦикла;
-КонецПроцедуры
+	Возврат МассивДляДобавления;
+КонецФункции
+
+&НаКлиенте
+Функция СтрокаДереваУдовлетворяетОтбору(СтрокаДерева, Отбор)
+	Нашли = Ложь;
+	Для каждого КлючЗначение Из Отбор Цикл
+		КлючОтбора = КлючЗначение.Ключ;
+		Если СтрокаДерева[КлючОтбора] <> Отбор[КлючОтбора] Тогда
+			Прервать;
+		КонецЕсли;
+		Нашли = Истина;
+	КонецЦикла;
+
+	Возврат Нашли;
+КонецФункции
 
 &НаКлиенте
 Функция ОбновитьСостояниеВыбранныхСтрок(ВыбранныеСтроки)
@@ -4498,39 +4756,51 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецФункции
 
+////////////////////////////////////////////////////////////////////////////////
+// ВЫПОЛНЕНИЕ ТЕСТОВ
+
 &НаКлиенте
-Процедура ЗаписатьФайлОтчетТестирования(табДок, имяФайлаТестирования, ТипОтчетаОТестировании)
-	Если ТипОтчетаОТестировании = ""xml"" Тогда
-		ЗаписьXML = Новый ЗаписьXML;
-		Попытка
-			ЗаписьXML.ОткрытьФайл(ПутьОтчетаТестирования + имяФайлаТестирования + "".""+ТипОтчетаОТестировании);
-			ЗаписьXML.ЗаписатьОбъявлениеXML();
-			ЗаписьXML.ЗаписатьБезОбработки(табДок.ПолучитьТекст());
-			ЗаписьXML.Закрыть();
-		Исключение
-		КонецПопытки;
-	Иначе
-		
-		Попытка
-			табДок.Записать(ПутьОтчетаТестирования + имяФайлаТестирования + ""."" + ТипОтчетаОТестировании, ТипФайлаТабличногоДокумента[ТипОтчетаОТестировании]);
-		Исключение
-		КонецПопытки;
-		
-	КонецЕсли;
+Процедура ВыполнитьВыделенныеТесты(ВызыватьИсключение = Ложь)
+	
+	ОчиститьСообщения();
+	
+	МассивИдентификаторовСтрок = Элементы.ДеревоТестов.ВыделенныеСтроки;
+	
+	_ВыполнитьВыбранныеТесты(МассивИдентификаторовСтрок, ВызыватьИсключение);
+	
 КонецПроцедуры
 
 &НаКлиенте
-Процедура УдалитьФайлыОтчетовТестирования(имяФайлаТестирования)
+Функция _ВыполнитьВыбранныеТесты(МассивИдентификаторовСтрок, ВызыватьИсключение = Ложь)
 	
-	Попытка
-		УдалитьФайлы(ПутьОтчетаТестирования + ""\"" + имяФайлаТестирования + "".xlsx"");
-	Исключение
-	КонецПопытки;
+	датаНачалаТестирования = ТекущаяДата();
 	
-	Попытка
-		УдалитьФайлы(ПутьОтчетаТестирования + ""\"" + имяФайлаТестирования + "".mxl"");
-	Исключение
-	КонецПопытки;
+	Если Объект.СлучайныйПорядокВыполнения Тогда
+		НовыйМассивИдентификаторовСтрок = ПолучитьСтрокиДереваВСлучайномПорядке(МассивИдентификаторовСтрок);
+	Иначе
+		НовыйМассивИдентификаторовСтрок = ПолучитьТолькоТестовыеМетодыИзДерева(МассивИдентификаторовСтрок);
+	КонецЕсли;
+	
+	ПередВыполнениемТестов(НовыйМассивИдентификаторовСтрок);
+	
+	ИнициализироватьИндикаторВыполнения(НовыйМассивИдентификаторовСтрок.Количество());
+	
+	СостояниеРезультат = _ВыполнитьТесты(НовыйМассивИдентификаторовСтрок, ВызыватьИсключение);
+	
+	ОбновитьСостояниеВыбранныхСтрок(МассивИдентификаторовСтрок);
+	ОбновитьСостояниеРодителейВыбранныхСтрок(МассивИдентификаторовСтрок);
+	СвернутьУспешныеСтрокиДереваИРазвернутьНеуспешные(Объект.ДеревоТестов.ПолучитьЭлементы(), Истина);
+	
+	ОбработатьОтчетТестирования(датаНачалаТестирования);
+	
+	Возврат СостояниеРезультат;
+КонецФункции
+
+&НаКлиенте
+Процедура СброситьКэшТестовыхОбработок()
+	
+	кэшТестовыхОбработок = Новый Соответствие;
+	УдалитьИзВременногоХранилища(АдресОбъектаНаСервере);
 	
 КонецПроцедуры
 
@@ -4552,20 +4822,28 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 &НаКлиенте
 Функция ВыполнитьТестВЗависимостиОтВидаТеста_МодульИлиФорма(СтрокаДереваТестов, СписокОшибок, ВызыватьИсключение = Ложь)
-	Если Объект.РегистрацияПрохожденияТестовВЖР Тогда
-		Родитель = СтрокаДереваТестов.ПолучитьРодителя();
-		ЗарегистрироватьНачалоПрохожденияТестаСервер(СтрокаДереваТестов.Имя, Родитель.ПолныйПуть);
+	
+	Родитель = СтрокаДереваТестов.ПолучитьРодителя();
+	Если Не Родитель.ЭтоВнутренняяОбработка Тогда
+		ТестОбъект = кэшТестовыхОбработок.Получить(Родитель.ПолныйПуть);
+		Если ТестОбъект = Неопределено Тогда
+			Попытка
+				лИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(Родитель.полныйПуть, Родитель.ТестовыйСлучайОбъектМетаданныхИмя, Объект.РежимОтладки);
+			Исключение
+				СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+				СтрокаДереваТестов.Состояние = СостояниеВыполнения;
+				Возврат СостояниеВыполнения;
+			КонецПопытки;
+			кэшТестовыхОбработок.Вставить(Родитель.полныйПуть, Истина);
+		КонецЕсли;
 	КонецЕсли;
 	
 	Если СтрокаДереваТестов.МодульИлиФорма = ЗначениеМодульИлиФорма.Форма Тогда
 		СостояниеРезультат = ВыполнитьТест(СтрокаДереваТестов, ВызыватьИсключение);
 	Иначе
 		
-		КоличествоОшибокДо = СписокОшибок.Количество();
-		
 		ОповеститьОСобытии(""TestStart"", СтрокаДереваТестов);
-		СтрокаДереваТестов.ВызыватьИсключение = ВызыватьИсключение;
-		СостояниеРезультат = ВыполнитьТестНаСервере(СтрокаДереваТестов.ПолучитьИдентификатор(), СписокОшибок);
+		СостояниеРезультат = ВыполнитьТестНаСервере(СтрокаДереваТестов.ПолучитьИдентификатор(), СписокОшибок, ВызыватьИсключение);
 		
 		Если СостояниеРезультат = ЗначенияСостоянияТестов.Сломался Тогда
 			ОповеститьОСобытии(""TestFailed"", СтрокаДереваТестов);
@@ -4588,169 +4866,205 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ИдентификаторСтроки = СтрокаДереваТестов.ПолучитьИдентификатор();
 	
-	ИмяТестовогоМетода = СтрокаДереваТестов.ИмяТестовогоСлучая; //Имя;
-	ПолноеИмяТестовогоМетода = СтрокаДереваТестов.Имя;
+	ТекущаяДата = ТекущаяДата();
+	ПолныйПуть = СтрокаДереваТестов.ПолныйПуть;
 	
-	Если ПустаяСтрока(СтрокаДереваТестов.ТестовыйСлучайОбъектМетаданныхИмя) Тогда
-		Возврат ЗначенияСостоянияТестов.НеВыполнялся;
+	Если Объект.РегистрацияПрохожденияТестовВЖР Тогда
+		ЗарегистрироватьНачалоПрохожденияТестаСервер(СтрокаДереваТестов.Имя, ПолныйПуть);
 	КонецЕсли;
 	
-	полныйПуть = СтрокаДереваТестов.ПолныйПуть;
+	СтрокаДереваТестов.СписокОшибок.Очистить();
 	
-	ТестовыйСлучайОбъектМетаданныхИмя = СтрокаДереваТестов.ТестовыйСлучайОбъектМетаданныхИмя;
 	Попытка
-		лИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(полныйПуть, ТестовыйСлучайОбъектМетаданныхИмя, Объект.РежимОтладки);
+		Тест = ПолучитьТестОбъект(СтрокаДереваТестов);
 	Исключение
-		СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(ПолноеИмяТестовогоМетода, СтрокаДереваТестов, ОписаниеОшибки(), ИнформацияОбОшибке());
-		Возврат СостояниеВыполнения;
+		Возврат ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
 	КонецПопытки;
 	
-	ТекущаяДата = ТекущаяДата();
+	Если ЭтоПервыйТестовыйМетодНабора(СтрокаДереваТестов) Тогда
+		Попытка
+			ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Тест, ""ПередЗапускомНабораТестов"");
+		Исключение
+			Возврат ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+		КонецПопытки;
+	КонецЕсли;
+	
+	УчестьЗапускТеста(СтрокаДереваТестов);
+	
+	СостояниеВыполнения = ВыполнитьМетодыТеста(Тест, СтрокаДереваТестов, ВызыватьИсключение);
+	СтрокаДереваТестов = Объект.ДеревоТестов.НайтиПоИдентификатору(ИдентификаторСтроки);
+	
+	Если ЭтоПоследнийТестовыйМетодНабора(СтрокаДереваТестов) Тогда
+		Попытка
+			ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Тест, ""ПослеЗапускаНабораТестов"");
+		Исключение
+			НовоеСостояние = ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+			ЗапомнитьСамоеХудшееСостояние(СостояниеВыполнения, НовоеСостояние);
+		КонецПопытки;
+	КонецЕсли;
+	
+	СтрокаДереваТестов.ВремяВыполнения = Число(ТекущаяДата() - ТекущаяДата);
+	Возврат СостояниеВыполнения;
+	
+КонецФункции
+
+&НаКлиенте
+Функция ВыполнитьМетодыТеста(Тест, СтрокаДереваТестов, ВызыватьИсключение)
+	
+	СостояниеВыполнения = ЗначенияСостоянияТестов.НеВыполнялся;
+	
+	ДанныеТекущегоТеста = СоздатьПустуюСтруктуруСостоянияТекущегоТеста();
+	ДанныеТекущегоТеста.Вставить(""Имя"", СтрокаДереваТестов.Имя);
+	ДанныеТекущегоТеста.Вставить(""ПолныйПуть"", СтрокаДереваТестов.ПолныйПуть);
+	ДанныеТекущегоТеста.Вставить(""СостояниеТеста"", СостояниеВыполнения);
+	УстановитьДанныеТекущегоТеста(ДанныеТекущегоТеста);
+	
+	параметрыТеста = СтрокаДереваТестов.ПараметрыТеста;
+	естьПараметры = СтрокаДереваТестов.ЕстьПараметрыТеста;
+
+		//TODO Если первый раз запуск setup оказался неуспешным, то при повторном прогоне без перезагрузки
+		// не выполнять, также не выполнять для следующих тестовых случаев.
 	Попытка
-		Тест = ПолучитьТестОбъект(ТестовыйСлучайОбъектМетаданныхИмя, СтрокаДереваТестов.ИмяОсновнойУправляемойФормы);
+		ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Тест, ""ПередЗапускомТеста"");
+	Исключение
+		Возврат ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+	КонецПопытки;
+	
+	ОповеститьОСобытии(""TestStart"", СтрокаДереваТестов);
+	
+	Попытка
+		
+		ВыполнитьТестовыйМетод(Тест, СтрокаДереваТестов, ВызыватьИсключение);
+		СостояниеВыполнения = ЗначенияСостоянияТестов.Прошел;
+		ОповеститьОСобытии(""TestPassed"", СтрокаДереваТестов);
+		
+	Исключение
+
+		СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+
+	КонецПопытки;
+	
+	ДанныеТекущегоТеста.Вставить(""СостояниеТеста"", СостояниеВыполнения);
+	УстановитьДанныеТекущегоТеста(ДанныеТекущегоТеста);		
+	
+	Попытка
+		ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Тест, ""ПослеЗапускаТеста"");
+	Исключение
+		НовоеСостояние = ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнформацияОбОшибке(), СписокОшибок, Объект.РегистрацияОшибокТестовВЖР);
+		ЗапомнитьСамоеХудшееСостояние(СостояниеВыполнения, НовоеСостояние);
+	КонецПопытки;
+
+	УстановитьДанныеТекущегоТеста(Неопределено);
+	
+	Возврат СостояниеВыполнения;
+	
+КонецФункции
+
+&НаКлиенте
+Процедура ВыполнитьТестовыйМетод(Тест, СтрокаДереваТестов, ВызыватьИсключение);
+	
+	ПредставлениеТестовогоСлучая = СтрокаДереваТестов.Имя;
+	ИмяТестовогоСлучая = СтрокаДереваТестов.ИмяТестовогоСлучая;
+	
+	СтрокаПараметров = """";
+	Если СтрокаДереваТестов.ЕстьПараметрыТеста Тогда
+		ПараметрТеста = Неопределено;
+		Если СтрокаДереваТестов.ПараметрыТеста.Свойство(""Параметр"", ПараметрТеста) Тогда
+			СтрокаПараметров = ""ПараметрТеста"";
+		КонецЕсли;
+	КонецЕсли;
+	
+	Если ВызыватьИсключение = Истина Тогда
+		ВызватьИсключение ""ПередЗапускомТеста "" + ПредставлениеТестовогоСлучая + "" обработка: "" + СтрокаДереваТестов.ПолныйПуть;
+	КонецЕсли;
+	
+	Попытка
+		ИcполняемыйКод = ""Тест."" + ИмяТестовогоСлучая + ""("" + СтрокаПараметров + "");"";
+		Выполнить(ИcполняемыйКод);
+	Исключение
+		
+		текстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
+		Если ЕстьОшибка_МетодОбъектаНеОбнаружен(текстОшибки, ИмяТестовогоСлучая) Тогда
+			Сообщение = НСтр(""ru = 'Отсутствует реализация тестового метода (%1).'"");
+			ПропуститьТест(СтрЗаменить(Сообщение, ""%1"", ИcполняемыйКод));
+		Иначе
+			ВызватьИсключение;
+		КонецЕсли;
+		
+	КонецПопытки;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Функция ПолучитьТестОбъект(СтрокаДереваТестов)
+	
+	ПолныйПуть = СтрокаДереваТестов.ПолныйПуть;
+	ИдентификаторКэша = ПолныйПуть + СтрокаДереваТестов.ИмяОсновнойУправляемойФормы;
+	Тест = кэшТестовыхОбработок.Получить(ИдентификаторКэша);
+	Если Тест = Неопределено Тогда
+		
+		ИдентификаторОбработки = СтрокаДереваТестов.ТестовыйСлучайОбъектМетаданныхИмя;
+		ИмяФормыТеста = СтрокаДереваТестов.ИмяОсновнойУправляемойФормы;
+		Если СтрокаДереваТестов.ЭтоВнутренняяОбработка Тогда
+			Тест = ПолучитьФорму(""Обработка."" + ИдентификаторОбработки + "".Форма."" + ИмяФормыТеста);
+		Иначе
+			Тест = ПолучитьФорму(""ВнешняяОбработка."" + ИдентификаторОбработки + "".Форма."" + ИмяФормыТеста);
+		КонецЕсли;
+		
 		массивТестов = ПолучитьТестовыеСлучаи(Тест, полныйПуть); // возможно, что тест сохранит у себя ссылку на браузер
 		Если Не ЗначениеЗаполнено(массивТестов) Тогда
 			ВызватьИсключение НСтр(""ru = 'Не удалось получить тестовые случаи'"");
 		КонецЕсли;
-	Исключение
-		СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(ПолноеИмяТестовогоМетода, СтрокаДереваТестов, ОписаниеОшибки(), ИнформацияОбОшибке());
 		
-		Тест = Неопределено; // для исключения циклических ссылок
+		кэшТестовыхОбработок.Вставить(ИдентификаторКэша, Тест);
 		
-		Возврат СостояниеВыполнения;
-		
-	КонецПопытки;
-	
-	СостояниеВыполнения = ЗначенияСостоянияТестов.НеВыполнялся;
-	
-	параметрыТеста = СтрокаДереваТестов.ПараметрыТеста;
-	естьПараметры = СтрокаДереваТестов.ЕстьПараметрыТеста;
-	
-	естьТранзакция = Ложь;
-	Если естьПараметры Тогда
-		естьТранзакция = ?(ТипЗнч(параметрыТеста) = Тип(""Структура""), параметрыТеста, параметрыТеста[0].Значение).Свойство(""Транзакция"", естьТранзакция)
-			или ТипЗнч(естьТранзакция) = Тип(""Булево"") и естьТранзакция;
-		Если естьТранзакция Тогда
-			#Если ТолстыйКлиентОбычноеПриложение ИЛИ ТолстыйКлиентУправляемоеПриложение Тогда
-				НачатьТранзакцию();
-			#КонецЕсли
-		КонецЕсли;
 	КонецЕсли;
 	
-		//TODO Если первый раз запуск setup оказался неуспешным, то при повторном прогоне без перезагрузки
-		// не выполнять, также не выполнять для следующих тестовых случаев.
-	лСостояниеВыполнения = ВыполнитьПроцедуруТестовогоСлучая(Тест, ""ПередЗапускомТеста"", ПолноеИмяТестовогоМетода, СтрокаДереваТестов);
-	Если лСостояниеВыполнения <> Неопределено Тогда
-		СостояниеВыполнения = лСостояниеВыполнения;
-	КонецЕсли;
-	Если СостояниеВыполнения = ЗначенияСостоянияТестов.Сломался Тогда
-		Возврат ЗначенияСостоянияТестов.Сломался;
-	КонецЕсли;
+	Возврат Тест;
 	
-	переданПараметрТеста = Ложь;
-	параметрТеста = """";
-	
-	Если естьПараметры Тогда
-		лПараметрыТеста = ?(ТипЗнч(параметрыТеста) = Тип(""Структура""), параметрыТеста, параметрыТеста[0].Значение);
-		переданПараметрТеста = лПараметрыТеста.Свойство(""Параметр"", параметрТеста);
-		
-		Если переданПараметрТеста Тогда
-			строкаПараметров = ""параметрТеста"";
-		КонецЕсли;
-	КонецЕсли;
-	
-	ОповеститьОСобытии(""TestStart"", СтрокаДереваТестов);
-	
-	Если ВызыватьИсключение = Истина Тогда //FIXME: добавить вывод полного пути к файлу, для дальнейшего его открытия. 
-		Если Объект.РежимОтладки = Ложь Тогда //Мы подключенны не в безопастном режиме, можем только выдать только исключение с полным путем к обработке,.
-			СтрокаДереваТестовОтладки = ИдентификаторСтроки;
-			ВызватьИсключение ПолныйПуть;
-		Иначе
-			ВызватьИсключение ""ПередЗапускомТеста "" + ИмяТестовогоМетода + "" файл:""+ПолныйПуть;
-		КонецЕсли;
-	КонецЕсли;
-	
-	Попытка
-		
-		ИсполняемыйКод = ""Тест."" + ИмяТестовогоМетода + ""("" + строкаПараметров + "");"";
-		Выполнить(ИсполняемыйКод);
-		
-		СостояниеВыполнения = ЗначенияСостоянияТестов.Прошел;
-		ОповеститьОСобытии(""TestPassed"", СтрокаДереваТестов);
-	Исключение
-		текстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке()) ; //Ошибка.Описание + "". "" + Ошибка.Причина.Описание + "". Номер строки: "" + Ошибка.НомерСтроки;
-		
-		Если ЕстьОшибка_МетодОбъектаНеОбнаружен(текстОшибки, ИмяТестовогоМетода) Тогда
-			Попытка
-				Сообщение = НСтр(""ru = 'Отсутствует реализация тестового метода (%1).'"");
-				ПропуститьТест(СтрЗаменить(Сообщение, ""%1"", ИсполняемыйКод));
-			Исключение
-				СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(ПолноеИмяТестовогоМетода, СтрокаДереваТестов, ОписаниеОшибки(), ИнформацияОбОшибке());
-			КонецПопытки;
-		Иначе
-			СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(ПолноеИмяТестовогоМетода, СтрокаДереваТестов, ОписаниеОшибки(), ИнформацияОбОшибке());
-		КонецЕсли;
-	КонецПопытки;
-	
-	лСостояниеВыполнения = ВыполнитьПроцедуруТестовогоСлучая(Тест, ""ПослеЗапускаТеста"", ПолноеИмяТестовогоМетода, СтрокаДереваТестов);
-	Если лСостояниеВыполнения <> Неопределено Тогда
-		СостояниеВыполнения = ЗапомнитьСамоеХудшееСостояние(СостояниеВыполнения, лСостояниеВыполнения); //СостояниеВыполнения = лСостояниеВыполнения;
-	КонецЕсли;
-	
-	Если естьТранзакция Тогда
-		#Если ТолстыйКлиентОбычноеПриложение ИЛИ ТолстыйКлиентУправляемоеПриложение Тогда
-			Если ТранзакцияАктивна() Тогда
-				ОтменитьТранзакцию();
-			КонецЕсли;
-		#КонецЕсли
-	КонецЕсли;
-	
-	Тест = Неопределено; // для исключения циклических ссылок
-	
-	СтрокаДереваТестов = Объект.ДеревоТестов.НайтиПоИдентификатору(ИдентификаторСтроки);
-	СтрокаДереваТестов.ВремяВыполнения = Число(ТекущаяДата()-ТекущаяДата);
-	Возврат СостояниеВыполнения;
 КонецФункции
 
-
 &НаСервере
-Функция ВыполнитьТестНаСервере(ИдентификаторСтрокиТестовогоМетода, СписокОшибокРез)
-	Возврат Объект().ВыполнитьТест(Объект.ДеревоТестов.НайтиПоИдентификатору(ИдентификаторСтрокиТестовогоМетода), СписокОшибокРез);
+Функция ВыполнитьТестНаСервере(ИдентификаторСтрокиТестовогоМетода, СписокОшибокРез, ВызыватьИсключение)
+	ОсновнойОбъект = Объект();
+	ОсновнойОбъект.Мир = Объект.Мир;
+	ОсновнойОбъект.СостояниеВыполненияНаборовТестов = Объект.СостояниеВыполненияНаборовТестов;
+	
+	рез = ОсновнойОбъект.ВыполнитьТест(Объект.ДеревоТестов.НайтиПоИдентификатору(ИдентификаторСтрокиТестовогоМетода), 
+		СписокОшибокРез, Объект.РегистрацияПрохожденияТестовВЖР, Объект.РегистрацияОшибокТестовВЖР, ВызыватьИсключение);
+	
+	Объект.Мир = ОсновнойОбъект.Мир;
+	Объект.СостояниеВыполненияНаборовТестов = ОсновнойОбъект.СостояниеВыполненияНаборовТестов;
+	Возврат рез;
 КонецФункции
 
 &НаКлиенте
-Функция ВыполнитьПроцедуруТестовогоСлучая(Тест, ИмяПроцедуры, ИмяТестовогоСлучая, СтрокаДереваТестов)
-	СостояниеВыполнения = Неопределено;
+Процедура ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Тест, ИмяПроцедуры)
 	
 	Попытка
 		Выполнить(""Тест."" + ИмяПроцедуры + ""();"");
 	Исключение
-		Ошибка = ИнформацияОбОшибке();
-		текстОшибки = ПодробноеПредставлениеОшибки(Ошибка) ;
-		
-		Если НЕ ЕстьОшибка_МетодОбъектаНеОбнаружен(текстОшибки, ИмяПроцедуры) Тогда
-			СостояниеВыполнения = ВывестиОшибкуВыполненияТеста(ИмяТестовогоСлучая, СтрокаДереваТестов, ОписаниеОшибки(), ИнформацияОбОшибке());
+		ТекстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке()) ;
+		Если Не ЕстьОшибка_МетодОбъектаНеОбнаружен(ТекстОшибки, ИмяПроцедуры) Тогда
+			ВызватьИсключение;
 		КонецЕсли;
 	КонецПопытки;
 	
-	Возврат СостояниеВыполнения;
-	
-КонецФункции
-
-&НаСервере
-Процедура ПередВыполнениемТестовСервер()
-	СписокОшибок = Новый СписокЗначений;
-	ВсегоТестов = 0;
 КонецПроцедуры
 
-// Возвращаем Неопределено, если все тесты прошли
-&НаСервере
-Функция ПолучитьОтчетТестирования(датаНачалаТестирования, ТипОтчета =  ""mxl"") Экспорт
-	Возврат Объект().ПолучитьОтчетТестирования(РеквизитФормыВЗначение(""Объект.ДеревоТестов""), датаНачалаТестирования, ТипОтчета, СписокОшибок, ВсегоТестов);
-КонецФункции
+&НаКлиенте
+Процедура ПередВыполнениемТестов(ЗапускаемыеТесты)
+	
+	СписокОшибок = Новый СписокЗначений;
+	ВсегоТестов = 0;
+	
+	СброситьКэшТестовыхОбработок();
+	ИнициализироватьСостояниеВыполненияНаборовТестов(ЗапускаемыеТесты);
+	
+КонецПроцедуры
 
 &НаКлиенте
-Функция ВывестиОшибкуВыполненияТеста(ПредставлениеТестовогоСлучая, СтрокаДереваТестов, СообщениеОбОшибке, ИнфоОшибки)
+Функция ВывестиОшибкуВыполненияТеста(СтрокаДереваТестов, ИнфоОшибки, СписокОшибок, РегистрироватьОшибкуВЖР)
 	
 	СостояниеВыполнения = ЗначенияСостоянияТестов.Сломался;
 	
@@ -4760,60 +5074,68 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	Если ЭтоПропущенныйТест(ТекстОшибки) Тогда
 		СостояниеВыполнения = ЗначенияСостоянияТестов.НеРеализован;
 		СтруктураОшибки.Вставить(""Статус"", СтатусыРезультатаТестирования.ТестПропущен);
-		текстОшибки = КраткоеПредставлениеОшибки(ИнфоОшибки);
+		стИнфоОшибки = Новый Структура;
+		стИнфоОшибки.Вставить(""Описание"", ТекстОшибки);
+	ИначеЕсли ЭтоОшибкаПроверки(ТекстОшибки) Тогда
+		СтруктураОшибки.Вставить(""Статус"", СтатусыРезультатаТестирования.ОшибкаПроверки);
 		стИнфоОшибки = Новый Структура;
 		стИнфоОшибки.Вставить(""Описание"", ТекстОшибки);
 	Иначе
-		Если ЭтоОшибкаПроверки(ТекстОшибки) Тогда
-			СтруктураОшибки.Вставить(""Статус"", СтатусыРезультатаТестирования.ОшибкаПроверки);
-			стИнфоОшибки = Новый Структура;
-			стИнфоОшибки.Вставить(""Описание"", ТекстОшибки);
-		Иначе
-			ТекстОшибки = ПодробноеПредставлениеОшибки(ИнфоОшибки);
-			СтруктураОшибки.Вставить(""Статус"", СтатусыРезультатаТестирования.НеизвестнаяОшибка);
-			стИнфоОшибки = Новый Структура(""ИмяМодуля,ИсходнаяСтрока,НомерСтроки,Описание"");
-			ЗаполнитьЗначенияСвойств(стИнфоОшибки, ИнфоОшибки);
-			стИнфоОшибки.Вставить(""Причина"", Неопределено);
-			
-			стИнфоОшибкиЦикл = стИнфоОшибки;
-			ИнфоОшибки = ИнфоОшибки.Причина;
-			Пока ИнфоОшибки <> Неопределено Цикл
-				стИнфоОшибкиЦикл.Причина = Новый Структура(""ИмяМодуля,ИсходнаяСтрока,НомерСтроки,Описание"");
-				стИнфоОшибкиЦикл = стИнфоОшибкиЦикл.Причина;
-				ЗаполнитьЗначенияСвойств(стИнфоОшибкиЦикл, ИнфоОшибки);
-				стИнфоОшибкиЦикл.Вставить(""Причина"",  Неопределено);
-				
-				ИнфоОшибки = ИнфоОшибки.Причина;
-			КонецЦикла;
-		КонецЕсли;
+		ТекстОшибки = ПодробноеПредставлениеОшибки(ИнфоОшибки);
+		СтруктураОшибки.Вставить(""Статус"", СтатусыРезультатаТестирования.НеизвестнаяОшибка);
+		стИнфоОшибки = СкопироватьИнформациюОбОшибке(ИнфоОшибки);
 	КонецЕсли;
 	
-	Родитель = Объект.ДеревоТестов.НайтиПоИдентификатору(СтрокаДереваТестов.ПолучитьИдентификатор()).ПолучитьРодителя();
-	СтруктураОшибки.Вставить(""ИмяТестовогоНабора"", Родитель.Имя);
-	СтруктураОшибки.Вставить(""ИмяТестовогоСлучая"", ПредставлениеТестовогоСлучая);
-	
-	СтруктураОшибки.Вставить(""Описание"", ТекстОшибки);
-	
-	СтруктураОшибки.Вставить(""СообщениеОбОшибке"",     СообщениеОбОшибке);
+	ПредставлениеТестовогоСлучая = СтрокаДереваТестов.Имя;
+	СтруктураОшибки.Вставить(""ИмяТестовогоНабора"",    СтрокаДереваТестов.ИмяТестовогоНабора);
+	СтруктураОшибки.Вставить(""ИмяТестовогоСлучая"",    ПредставлениеТестовогоСлучая);
+	СтруктураОшибки.Вставить(""Описание"",              ТекстОшибки);
 	СтруктураОшибки.Вставить(""ИнфоОшибки"",            стИнфоОшибки);
 	СтруктураОшибки.Вставить(""ЕстьПараметрыТеста"",    СтрокаДереваТестов.ЕстьПараметрыТеста);
 	СтруктураОшибки.Вставить(""ПараметрыТеста"",        СтрокаДереваТестов.ПараметрыТеста);
 	СтруктураОшибки.Вставить(""ПолныйПуть"",            СтрокаДереваТестов.ПолныйПуть);
 	СтруктураОшибки.Вставить(""УИДСтрокиДерева"",       СтрокаДереваТестов._guid);
 	
+	СтрокаДереваТестов.СписокОшибок.Добавить(СтруктураОшибки);
 	СписокОшибок.Добавить(СтруктураОшибки);
 	
 	НужныйТекстОшибки = ВывестиОшибку(СтруктураОшибки);
 	
-	ЗарегистрироватьОшибкуТестаСервер(НужныйТекстОшибки, ПредставлениеТестовогоСлучая, СтрокаДереваТестов.ПолныйПуть);
+	Если РегистрироватьОшибкуВЖР Тогда
+		ЗарегистрироватьОшибкуТестаСервер(НужныйТекстОшибки, ПредставлениеТестовогоСлучая, СтрокаДереваТестов.ПолныйПуть);
+	КонецЕсли;
 	
 	Если СостояниеВыполнения = ЗначенияСостоянияТестов.НеРеализован Тогда
 		ОповеститьОСобытии(""TestNotImplemented"", СтрокаДереваТестов);
 	Иначе
 		ОповеститьОСобытии(""TestFailed"", СтрокаДереваТестов);
 	КонецЕсли;
+
+	УстановитьДанныеТекущегоТеста(Неопределено);	
 	
 	Возврат СостояниеВыполнения;
+	
+КонецФункции
+
+&НаКлиенте
+Функция СкопироватьИнформациюОбОшибке(Знач ИнфоОшибки)
+	
+	стИнфоОшибки = Новый Структура(""ИмяМодуля, ИсходнаяСтрока, НомерСтроки, Описание"");
+	ЗаполнитьЗначенияСвойств(стИнфоОшибки, ИнфоОшибки);
+	стИнфоОшибки.Вставить(""Причина"", Неопределено);
+	
+	стИнфоОшибкиЦикл = стИнфоОшибки;
+	ИнфоОшибки = ИнфоОшибки.Причина;
+	Пока ИнфоОшибки <> Неопределено Цикл
+		стИнфоОшибкиЦикл.Причина = Новый Структура(""ИмяМодуля, ИсходнаяСтрока, НомерСтроки, Описание"");
+		стИнфоОшибкиЦикл = стИнфоОшибкиЦикл.Причина;
+		ЗаполнитьЗначенияСвойств(стИнфоОшибкиЦикл, ИнфоОшибки);
+		стИнфоОшибкиЦикл.Вставить(""Причина"", Неопределено);
+		
+		ИнфоОшибки = ИнфоОшибки.Причина;
+	КонецЦикла;
+	
+	Возврат стИнфоОшибки;
 	
 КонецФункции
 
@@ -4862,6 +5184,202 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 Процедура ЗарегистрироватьОшибкуТестаСервер(НужныйТекстОшибки, ИмяТестовогоСлучая, ПолныйПуть)
 	Объект().ЗарегистрироватьОшибкуТеста(НужныйТекстОшибки, ИмяТестовогоСлучая, ПолныйПуть);
 КонецПроцедуры
+
+&НаКлиенте
+Функция ИдентификаторПустогоКонтекста()
+	Возврат ""UF_xUnitFor1C_Empty"";
+КонецФункции
+
+////////////////////////////////////////////////////////////////////////////////
+// КОНТРОЛЬ СОСТОЯНИЯ ВЫПОЛНЕНИЯ НАБОРОВ ТЕСТОВ
+
+&НаКлиенте
+Процедура ИнициализироватьСостояниеВыполненияНаборовТестов(ЗапускаемыеТесты)
+	
+	Объект.СостояниеВыполненияНаборовТестов = Новый Структура;
+	
+	Для Каждого ИдентификаторТеста Из ЗапускаемыеТесты Цикл
+		
+		ТестовыйМетод = Объект.ДеревоТестов.НайтиПоИдентификатору(ИдентификаторТеста);
+		ЗарегистрироватьТестовыйМетодКЗапуску(ТестовыйМетод);
+		
+	КонецЦикла;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗарегистрироватьТестовыйМетодКЗапуску(ТестовыйМетод)
+	
+	Состояние = СостояниеВыполненияНабораТестовТестовогоМетода(Тестовыйметод);
+	Если Состояние = Неопределено Тогда
+		Состояние = ДобавитьСостояниеВыполненияНабораТестовТестовогоМетода(ТестовыйМетод);
+	КонецЕсли;
+	
+	Состояние.ТестыКЗапуску.Вставить(ИдентификаторПоУИД(ТестовыйМетод._GUID));
+	
+КонецПроцедуры
+
+&НаКлиенте
+Функция ДобавитьСостояниеВыполненияНабораТестовТестовогоМетода(ТестовыйМетод)
+	
+	Состояние = Новый Структура;
+	Состояние.Вставить(""ЭтоПервыйТестВНаборе"", Истина);
+	Состояние.Вставить(""ТестыКЗапуску"", Новый Структура);
+	
+	Объект.СостояниеВыполненияНаборовТестов.Вставить(ИдентификаторТестовогоНабора(ТестовыйМетод), Состояние);
+	Возврат Состояние;
+	
+КонецФункции
+
+&НаКлиенте
+Процедура УчестьЗапускТеста(ТестовыйМетод)
+	
+	Состояние = СостояниеВыполненияНабораТестовТестовогоМетода(Тестовыйметод);
+	Состояние.ТестыКЗапуску.Удалить(ИдентификаторПоУИД(ТестовыйМетод._GUID));
+	Состояние.ЭтоПервыйТестВНаборе = Ложь;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Функция ЭтоПервыйТестовыйМетодНабора(ТестовыйМетод)
+	
+	Состояние = СостояниеВыполненияНабораТестовТестовогоМетода(Тестовыйметод);
+	Возврат Состояние.ЭтоПервыйТестВНаборе;
+	
+КонецФункции
+
+&НаКлиенте
+Функция ЭтоПоследнийТестовыйМетодНабора(ТестовыйМетод)
+	
+	Состояние = СостояниеВыполненияНабораТестовТестовогоМетода(Тестовыйметод);
+	Возврат (Состояние.ТестыКЗапуску.Количество() = 0);
+	
+КонецФункции
+
+&НаКлиенте
+Функция СостояниеВыполненияНабораТестовТестовогоМетода(Тестовыйметод)
+	Перем Состояние;
+	
+	Объект.СостояниеВыполненияНаборовТестов.Свойство(ИдентификаторТестовогоНабора(ТестовыйМетод), Состояние);
+	Возврат Состояние;
+	
+КонецФункции
+
+&НаКлиенте
+Функция ИдентификаторТестовогоНабора(ТестовыйМетод)
+	
+	ТестовыйНабор = ТестовыйМетод.ПолучитьРодителя();
+	Возврат ИдентификаторПоУИД(ТестовыйНабор._GUID) + ТестовыйМетод.ИмяОсновнойУправляемойФормы;
+	
+КонецФункции
+
+&НаКлиентеНаСервереБезКонтекста
+Функция ИдентификаторПоУИД(УИД)
+	
+	Возврат ""_"" + СтрЗаменить(УИД, ""-"", ""_"");
+	
+КонецФункции
+
+////////////////////////////////////////////////////////////////////////////////
+// ФОРМИРОВАНИЕ ОТЧЕТА О ТЕСТИРОВАНИИ
+
+&НаКлиенте
+Процедура ОбработатьОтчетТестирования(датаНачалаТестирования)
+	
+	ОтчетТестирования = ПолучитьОтчетТестирования(датаНачалаТестирования, ТипОтчетаОТестировании);
+	
+	Если ОтчетТестирования <> Неопределено Тогда
+		ПоказатьОтчетТестирования(ОтчетТестирования);
+		Если Не ПустаяСтрока(ПутьОтчетаТестирования) Тогда
+			ЗаписатьФайлОтчетТестирования(ОтчетТестирования);
+		КонецЕсли;
+	Иначе // все тесты прошли
+		Если Не ПустаяСтрока(ПутьОтчетаТестирования) Тогда
+			УдалитьФайлыОтчетовТестирования();
+		КонецЕсли;
+	КонецЕсли;
+	
+КонецПроцедуры
+
+// Возвращаем Неопределено, если все тесты прошли
+&НаСервере
+Функция ПолучитьОтчетТестирования(Знач датаНачалаТестирования, Знач ТипОтчета = ""mxl"") Экспорт
+	Возврат Объект().ПолучитьОтчетТестирования(РеквизитФормыВЗначение(""Объект.ДеревоТестов""), датаНачалаТестирования, ТипОтчета, СписокОшибок, ВсегоТестов);
+КонецФункции
+
+&НаКлиенте
+Процедура ПоказатьОтчетТестирования(Отчет)
+	
+	ЗаголовокОкнаОтчета = СтрЗаменить(НСтр(""ru = 'Отчет об автоматическом тестировании, xUnitFor1C v.%1'""), ""%1"", ВерсияСервер());
+	
+	ТипКонтейнераОтчета = ТипЗнч(Отчет);
+	Если ТипКонтейнераОтчета = Тип(""ТабличныйДокумент"") Тогда
+		Отчет.Показать(ЗаголовокОкнаОтчета);
+	ИначеЕсли ТипКонтейнераОтчета = Тип(""ТекстовыйДокумент"") Тогда
+		Отчет.Показать(ЗаголовокОкнаОтчета);
+	Иначе
+		Текст = Новый ТекстовыйДокумент;
+		Текст.УстановитьТекст(Строка(Отчет));
+		Текст.Показать(ЗаголовокОкнаОтчета);
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗаписатьФайлОтчетТестирования(Отчет)
+	
+	Попытка
+		ТипКонтейнераОтчета = ТипЗнч(Отчет);
+		Если ТипКонтейнераОтчета = Тип(""ТекстовыйДокумент"") Тогда
+			Отчет.Записать(ПутьОтчетаТестирования);
+		ИначеЕсли ТипКонтейнераОтчета = Тип(""ТабличныйДокумент"") Тогда
+			Отчет.Записать(ПутьОтчетаТестирования, ТипФайлаТабличногоДокумента[ТипОтчетаОТестировании]);
+		Иначе
+			Текст = Новый ТекстовыйДокумент;
+			Текст.УстановитьТекст(Строка(Отчет));
+			Текст.Записать(ПутьОтчетаТестирования);
+		КонецЕсли;
+	Исключение
+	КонецПопытки;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура УдалитьФайлыОтчетовТестирования()
+	
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Выполнить(""НачатьУдалениеФайлов(, ПутьОтчетаТестирования)"");
+	Иначе
+		Попытка
+			УдалитьФайлы(ПутьОтчетаТестирования);
+		Исключение
+		КонецПопытки;
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста
+Процедура УстановитьТипОтчетаТестирования(Ю_Тест, ТипОтчета);
+	
+	Если ЗначениеЗаполнено(ТипОтчета) Тогда
+		Ю_Тест.ТипОтчетаОТестировании = ТипОтчета;
+	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура УстановитьПутьОтчетаТестирования(Путь, Имя = """");
+	
+	ПутьОтчетаТестирования = ДополнитьСлешВПуть(Путь) + ?(ЗначениеЗаполнено(Имя), Имя, ""лог_тестирования."" + РасширениеФайлаПоТипуОтчета(ТипОтчетаОТестировании));
+	
+КонецПроцедуры
+
+&НаКлиенте
+Функция РасширениеФайлаПоТипуОтчета(ТипОтчета)
+	
+	Возврат ТипОтчета;
+	
+КонецФункции
 
 ////////////////////////////////////////////////////////////////////////////////
 // ИСТОРИЯ ВЫБОРА ТЕСТОВ
@@ -4914,25 +5432,53 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецПроцедуры
 
+&НаСервере
+Процедура ВосстановитьИсторию(ИмяИстории, История)
+	
+	КоличествоПунктовИстории = История.Количество();
+	Для Индекс = 1 По КоличествоПунктовИстории Цикл
+		ДобавитьВИсториюКонтекст(ИмяИстории, История[КоличествоПунктовИстории - Индекс]);
+	КонецЦикла;
+	
+КонецПроцедуры
+
 ////////////////////////////////////////////////////////////////////////////////
 // НАСТРОЙКИ
 
-&НаКлиенте
-Процедура УстановитьЗначенияНастроекПоУмолчанию()
+&НаСервере
+Процедура ИнициализироватьНастройки()
 	
+	УстановитьЗначенияНастроекПоУмолчанию(ЭтаФорма);
+	ВосстановитьНастройки();
+	ПривестиИнерфейсВСоответствиеСНастройками(ЭтаФорма);
+	
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста
+Процедура УстановитьЗначенияНастроекПоУмолчанию(Ю_Тест)
+	
+	Ю_Тест.ДлинаИстории = 10;
+	
+	Объект = Ю_Тест.Объект;
 	Объект.РегистрацияПрохожденияТестовВЖР = Ложь;
 	Объект.РегистрацияОшибокТестовВЖР = Ложь;
 	Объект.РежимОтладки = Ложь;
 	Объект.СлучайныйПорядокВыполнения = Ложь;
 	
-	Пути.Очистить();
+	Ю_Тест.Пути.Очистить();
+	
+	УстановитьТипОтчетаТестирования(Ю_Тест, ""mxl"");
 	
 КонецПроцедуры
 
 &НаСервере
 Процедура СохранитьНастройки()
 	
-	Настройки = Новый Структура;
+	Настройки = ХранилищеОбщихНастроек.Загрузить(""xUnitFor1C"");
+	Если ТипЗнч(Настройки) <> Тип(""Структура"") Тогда
+		Настройки = Новый Структура;
+	КонецЕсли;
+	
 	Настройки.Вставить(""РегистрацияПрохожденияТестовВЖР"", Объект.РегистрацияПрохожденияТестовВЖР);
 	Настройки.Вставить(""РегистрацияОшибокТестовВЖР"", Объект.РегистрацияОшибокТестовВЖР);
 	Настройки.Вставить(""РежимОтладки"", Объект.РежимОтладки);
@@ -4946,12 +5492,12 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 	ХранилищеОбщихНастроек.Сохранить(""xUnitFor1C"",, Настройки);
 	
+	СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер();
+	
 КонецПроцедуры
 
 &НаСервере
 Процедура ВосстановитьНастройки()
-	
-	ДлинаИсторииПоУмолчанию = 10;
 	
 	Настройки = ХранилищеОбщихНастроек.Загрузить(""xUnitFor1C"");
 	Если ТипЗнч(Настройки) = Тип(""Структура"") Тогда
@@ -4965,24 +5511,35 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 			Пути.ЗагрузитьЗначения(Настройки.Пути);
 		КонецЕсли;
 		
-		Если Не Настройки.Свойство(""ДлинаИстории"", ДлинаИстории) Или Не ЗначениеЗаполнено(ДлинаИстории) Тогда
-			ДлинаИстории = ДлинаИсторииПоУмолчанию;
+		Если Настройки.Свойство(""ДлинаИстории"") И ЗначениеЗаполнено(Настройки.ДлинаИстории) Тогда
+			ДлинаИстории = Настройки.ДлинаИстории;
 		КонецЕсли;
 		Если Настройки.Свойство(""ИсторияВыбораМест"") Тогда
-			ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораМест.Имя, Настройки.ИсторияВыбораМест);
+			ВосстановитьИсторию(Элементы.ИсторияВыбораМест.Имя, Настройки.ИсторияВыбораМест);
 		КонецЕсли;
 		Если Настройки.Свойство(""ИсторияВыбораФайлов"") Тогда
-			ДобавитьВИсториюКонтекст(Элементы.ИсторияВыбораФайлов.Имя, Настройки.ИсторияВыбораФайлов);
+			ВосстановитьИсторию(Элементы.ИсторияВыбораФайлов.Имя, Настройки.ИсторияВыбораФайлов);
 		КонецЕсли;
-	Иначе
-		ДлинаИстории = ДлинаИсторииПоУмолчанию;
 	КонецЕсли;
+	
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста
+Процедура ПривестиИнерфейсВСоответствиеСНастройками(Ю_Тест)
+	
+	Элементы = Ю_Тест.Элементы;
+	Объект = Ю_Тест.Объект;
 	
 	Элементы.КомандаРегистрацияПрохожденияТестовВЖР.Пометка = Объект.РегистрацияПрохожденияТестовВЖР;
 	Элементы.КомандаРегистрацияОшибокТестовВЖР.Пометка = Объект.РегистрацияОшибокТестовВЖР;
 	Элементы.КомандаСлучайныйПорядокВыполнения.Пометка = Объект.СлучайныйПорядокВыполнения;
 	Элементы.КомандаВключитьРежимОтладки.Пометка = Объект.РежимОтладки;
 	
+КонецПроцедуры
+
+&НаСервере
+Процедура СброситьПризнак_БылаОшибкаПриПредыдущейЗагрузкеСервер()
+	Объект().УстановитьНастройку_БылаОшибкаПриПредыдущейЗагрузке(Ложь);
 КонецПроцедуры
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -5042,81 +5599,98 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 
 // }
 
-// { блок кода для переоткрытия формы
-
-&НаСервере
-Функция ИмяФайлаВнешнейОбработки_ПерезагрузитьФорму()
-	Если ЭтоВстроеннаяОбработка Тогда
-		Возврат МетаданныеИмяСервер();
-	КонецЕсли;
-	Возврат Объект().ИспользуемоеИмяФайла;
-КонецФункции
-
-//}
-
-
 
 // Экспорт нужен для тестов
 &НаКлиенте
-Функция  ОткрытьИнструмент(ИмяИнструмента) Экспорт
-	рез = Неопределено;
+Функция ОткрытьИнструмент(ИмяИнструмента) Экспорт
+	
 	Если Не ЭтоВстроеннаяОбработка Тогда
-		Файл = Новый Файл(ИспользуемоеИмяФайла());
-		Если НЕ Файл.Существует() Тогда
-			Сообщить(НСтр(""ru = 'Не удалось найти путь к xddTestRunner'""));
-			Сообщить(СтрЗаменить(НСтр(""ru = 'Не удалось открыть инструмент <%1>'""), ""%1"", ИмяИнструмента));
-			Возврат рез;
+		Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+			Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОткрытьИнструментПослеПоискаЗапускателяТестов"""", ЭтотОбъект, ИмяИнструмента)"");
+			Выполнить(""НачатьПоискФайлов(Оповещение, ИспользуемоеИмяФайла);"");
+		Иначе
+			НайденныеФайлы = НайтиФайлы(ИспользуемоеИмяФайла);
+			Возврат ОткрытьИнструментПослеПоискаЗапускателяТестов(НайденныеФайлы, ИмяИнструмента);
 		КонецЕсли;
-		ПутьВнешнихИнструментов = Файл.Путь;
-		
-		ПутьИнструмента = ПутьВнешнихИнструментов + ИмяИнструмента + "".epf"";
-		Файл = Новый Файл(ПутьИнструмента);
-		Если Не Файл.Существует() Тогда
-			Сообщить(СтрЗаменить(СтрЗаменить(НСтр(""ru = 'Инструмент <%1> не найден в каталоге <%2>'""), ""%1"", ИмяИнструмента), ""%2"", ПутьИнструмента));
-			Возврат рез;
-		КонецЕсли;
-		ИдентификаторИнструмента = Строка(Новый УникальныйИдентификатор());
-		
-		ИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(ПутьИнструмента, ИдентификаторИнструмента);
 	Иначе
 		ИмяОбработки = ИмяИнструмента;
-		ИдентификаторИнструмента = ИмяИнструмента;
-		Если НЕ ЕстьВстроеннаяОбработкаСервер(ИмяОбработки) Тогда
+		Если Не ЕстьВстроеннаяОбработкаСервер(ИмяОбработки) Тогда
 			Сообщить(СтрЗаменить(НСтр(""ru = 'Инструмент/встроенная обработка <%1> не найден в конфигурации'""), ""%1"", ИмяИнструмента));
-			Возврат рез;
+			Возврат Неопределено;
 		КонецЕсли;
+		Возврат ОткрытьИнструментПослеПолученияОбработки(ИмяОбработки, ИмяИнструмента);
 	КонецЕсли;
+	
+КонецФункции
+
+&НаКлиенте
+Функция ОткрытьИнструментПослеПоискаЗапускателяТестов(НайденныеФайлы, ИмяИнструмента) Экспорт
+	
+	Если НайденныеФайлы.Количество() = 0 Тогда
+		Сообщить(НСтр(""ru = 'Не удалось найти путь к xddTestRunner'""));
+		Сообщить(СтрЗаменить(НСтр(""ru = 'Не удалось открыть инструмент <%1>'""), ""%1"", ИмяИнструмента));
+		Возврат Неопределено;
+	КонецЕсли;
+	
+	ПутьВнешнихИнструментов = НайденныеФайлы[0].Путь;
+	
+	ПутьИнструмента = ПутьВнешнихИнструментов + ИмяИнструмента + "".epf"";
+	ДополнительныеПараметры = Новый Структура;
+	ДополнительныеПараметры.Вставить(""ИмяИнструмента"", ИмяИнструмента);
+	ДополнительныеПараметры.Вставить(""ПутьИнструмента"", ПутьИнструмента);
+	ДополнительныеПараметры.Вставить(""ПутьВнешнихИнструментов"", ПутьВнешнихИнструментов);
+	Если ЕстьПоддержкаАсинхронныхВызовов Тогда
+		Оповещение = Вычислить(""Новый ОписаниеОповещения(""""ОткрытьИнструментПослеПоискаИнструмента"""", ЭтотОбъект, ДополнительныеПараметры)"");
+		Выполнить(""НачатьПоискФайлов(Оповещение, ПутьИнструмента);"");
+	Иначе
+		НайденныеФайлы = НайтиФайлы(ИспользуемоеИмяФайла);
+		Возврат ОткрытьИнструментПослеПоискаИнструмента(НайденныеФайлы, ДополнительныеПараметры);
+	КонецЕсли;
+	
+КонецФункции
+
+&НаКлиенте
+Функция ОткрытьИнструментПослеПоискаИнструмента(НайденныеФайлы, ДополнительныеПараметры) Экспорт
+	
+	ИмяИнструмента = ДополнительныеПараметры.ИмяИнструмента;
+	ПутьИнструмента = ДополнительныеПараметры.ПутьИнструмента;
+	Если НайденныеФайлы.Количество() = 0 Тогда
+		Сообщить(СтрЗаменить(СтрЗаменить(НСтр(""ru = 'Инструмент <%1> не найден в каталоге <%2>'""), ""%1"", ИмяИнструмента), ""%2"", ПутьИнструмента));
+		Возврат Неопределено;
+	КонецЕсли;
+	
+	ИмяОбработки = ПодключитьНаСервереВнешнююОбработкуОтКлиента(ПутьИнструмента, Строка(Новый УникальныйИдентификатор()));
+	Возврат ОткрытьИнструментПослеПолученияОбработки(ИмяОбработки, ИмяИнструмента, ДополнительныеПараметры.ПутьВнешнихИнструментов);
+	
+КонецФункции
+
+&НаКлиенте
+Функция ОткрытьИнструментПослеПолученияОбработки(ИмяОбработки, ИмяИнструмента, ПутьВнешнихИнструментов = """")
 	
 	ИмяОсновнойУправляемойФормы = ПолучитьИмяОсновнойУправляемойФормы(ИмяОбработки);
 	Если ИмяОсновнойУправляемойФормы = """" Тогда
 		Сообщить(СтрЗаменить(НСтр(""ru = 'Инструмент <%1>: не удалось вычислить основную управляемую форму по метаданным!'""), ""%1"", ИмяИнструмента));
-		Возврат рез;
+		Возврат Неопределено;
 	КонецЕсли;
 	
-	ФормаИнструмента = ПолучитьТестОбъект(ИдентификаторИнструмента, имяОсновнойУправляемойФормы);
+	ИдентификаторИнструмента = ?(ЭтоВстроеннаяОбработка, ""Обработка"", ""ВнешняяОбработка"") + ""."" + ИмяОбработки;
+	ФормаИнструмента = ПолучитьФорму(ИдентификаторИнструмента + "".Форма."" + ИмяОсновнойУправляемойФормы);
 	Если ФормаИнструмента = Неопределено Тогда
 		Сообщить(СтрЗаменить(НСтр(""ru = 'Инструмент <%1>: не удалось получить основную управляемую форму!'""), ""%1"", ИмяИнструмента));
-		Возврат рез;
+		Возврат Неопределено;
 	КонецЕсли;
+	
+	Если Не ЭтоВстроеннаяОбработка Тогда
+		Попытка
+			ФормаИнструмента.ПутьОбработкиЗапускателяТестов = ПутьВнешнихИнструментов;
+		Исключение
+		КонецПопытки;
+	КонецЕсли;
+	
 	ОткрытьФорму(ФормаИнструмента);
 	Возврат ФормаИнструмента;
-КонецФункции
-
-
-&НаКлиенте
-Функция ИспользуемоеИмяФайла() Экспорт
-	Возврат ИспользуемоеИмяФайлаСервер();
-КонецФункции
-
-&НаСервере
-Функция ИспользуемоеИмяФайлаСервер()
-	ОсновнойОбъект = Объект();
-	НайденноеИмяФайла = Неопределено;
-	Выполнить(""НайденноеИмяФайла = ОсновнойОбъект.ИспользуемоеИмяФайла;"");
 	
-	Возврат НайденноеИмяФайла;
 КонецФункции
-
 
 &НаКлиенте
 Функция МетаданныеИмя() Экспорт
@@ -5220,10 +5794,33 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 	
 КонецФункции
 
-//}
+&НаКлиентеНаСервереБезКонтекста
+Функция СкопироватьСтруктуру(Знач Источник, Знач СписокПолей = """", Знач ИсключаемыеПоля = """")
+	
+	Если Не ПустаяСтрока(СписокПолей) Тогда
+		Приемник = Новый Структура(СписокПолей);
+		ЗаполнитьЗначенияСвойств(Приемник, Источник);
+	Иначе
+		Если ПустаяСтрока(ИсключаемыеПоля) Тогда
+			Исключить = Новый Структура;
+		Иначе
+			Исключить = Новый Структура(ИсключаемыеПоля);
+		КонецЕсли;
+		Приемник = Новый Структура;
+		Для Каждого КлючЗначение Из Источник Цикл
+			Если Не Исключить.Свойство(КлючЗначение.Ключ) Тогда
+				Приемник.Вставить(КлючЗначение.Ключ, КлючЗначение.Значение);
+			КонецЕсли;
+		КонецЦикла;
+	КонецЕсли;
+	
+	Возврат Приемник;
+	
+КонецФункции
 
+//}
 ",
-{4,25,
+{4,30,
 {9,
 {1},0,"Объект",
 {1,0},
@@ -5792,9 +6389,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {0,0}
 },
 {9,
-{26},0,"ЭтоЗапускИзКоманднойСтроки",
+{26},0,"ЭтоЗапускВПакетномРежиме",
 {1,1,
-{"ru","Это запуск из командной строки"}
+{"ru","Это запуск в пакетном режиме"}
 },
 {"Pattern",
 {"B"}
@@ -5830,12 +6427,117 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {0,0},0,0,0,0,
 {0,0},
 {0,0}
+},
+{9,
+{3},0,"БылаОшибкаПриПредыдущейЗагрузке",
+{1,1,
+{"ru","Была ошибка при предыдущей загрузке"}
+},
+{"Pattern",
+{"B"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{20},0,"АдресОбъектаНаСервере",
+{1,1,
+{"ru","Адрес объекта на сервере"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{28},0,"ИспользуемоеИмяФайла",
+{1,1,
+{"ru","Используемое имя файла"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{29},0,"ЕстьПоддержкаАсинхронныхВызовов",
+{1,1,
+{"ru","Есть поддержка асинхронных вызовов"}
+},
+{"Pattern",
+{"B"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{30},0,"ОчередьЗагрузки",
+{1,1,
+{"ru","Очередь загрузки"}
+},
+{"Pattern",
+{"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
 },1,
 {0,
 {2,
 {1},
 {0,74ab8988-f52c-40cb-9b09-66a817b93074}
-},17,
+},18,
 {5,1,0,"Имя",
 {1,1,
 {"ru","Имя"}
@@ -5966,9 +6668,7 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {0,0},0},
 {5,9,0,"ПараметрыТеста",
 {1,0},
-{"Pattern",
-{"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3}
-},
+{"Pattern"},
 {0,
 {0,
 {"B",1},0}
@@ -6074,9 +6774,9 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {"B",1},0}
 },
 {0,0},0},
-{5,16,0,"ИмеетТесты",
+{5,18,0,"РазрешенСлучайныйПорядокВыполнения",
 {1,1,
-{"ru","Имеет тесты"}
+{"ru","Разрешен случайный порядок выполнения"}
 },
 {"Pattern",
 {"B"}
@@ -6090,12 +6790,28 @@ ABGmMsc72DG0AAAAAElFTkSuQmCC}
 {"B",1},0}
 },
 {0,0},0},
-{5,17,0,"ВызыватьИсключение",
+{5,16,0,"ИмяТестовогоНабора",
 {1,1,
-{"ru","Вызывать исключение"}
+{"ru","Имя тестового набора"}
 },
 {"Pattern",
-{"B"}
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,17,0,"СписокОшибок",
+{1,1,
+{"ru","Список ошибок"}
+},
+{"Pattern",
+{"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3}
 },
 {0,
 {0,
@@ -6126,7 +6842,7 @@ L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 {"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3}
 },0}
 },
-{0,17,
+{0,18,
 {6,
 {1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаЗагрузитьТестовыйНабор",
 {1,1,
@@ -6198,7 +6914,7 @@ L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 {6,
 {5,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаВыполнитьВыделенныеТесты",
 {1,1,
-{"ru","Выполнить выделенные тесты"}
+{"ru","Выполнить выделенные (Ctrl+Enter)"}
 },
 {1,1,
 {"ru","Команда выполнить выделенные тесты"}
@@ -6208,8 +6924,8 @@ L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 {"B",1},0}
 },
 {0,0,0},
-{3,0,
-{0},"",-1,-1,1,0},"КомандаВыполнитьВыделенныеТесты",2,0,0,
+{3,1,
+{0,0ce78048-0196-4f80-a781-9829cdb7f43e},"",-1,-1,1,0},"КомандаВыполнитьВыделенныеТесты",2,0,0,
 {0,0}
 },
 {6,
@@ -6414,6 +7130,23 @@ L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 {0,0,0},
 {3,0,
 {0},"",-1,-1,1,0},"КомандаВыполнитьВыделенныеТестыСИсключением",3,0,0,
+{0,0}
+},
+{6,
+{18,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ПоказатьОшибки",
+{1,1,
+{"ru","Показать ошибки"}
+},
+{1,1,
+{"ru","Показать ошибки"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"ПоказатьОшибки",3,0,0,
 {0,0}
 }
 },
