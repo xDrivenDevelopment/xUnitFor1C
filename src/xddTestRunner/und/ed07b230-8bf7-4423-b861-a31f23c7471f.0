@@ -1,0 +1,2713 @@
+﻿{2,
+{36,0,0,0,0,1,0,0,00000000-0000-0000-0000-000000000000,0,
+{1,0},0,0,1,1,1,0,1,0,
+{2,3ccc650e-f631-4cae-8e33-3eaac610b5f9,"ПриОткрытии",9f2e5ddb-3492-4f5d-8f0d-416b8d1d5c5b,"ПриСозданииНаСервере"},
+{0},1,
+{19,
+{-1,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},9,"ФормаКоманднаяПанель",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{0,0,0},8,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{423,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаЗагрузитьТестыПоУмолчанию",
+{1,1,
+{"ru","Загрузить тесты"}
+},1,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},2,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+g
+vaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAEtUlEQVRIx6WUy48UVRTGf+fe6p6e
+7ume6aCMEXygIgmgISaSGI0ZSYfEpRt2/gUmxrhwYVy410R36pawksBKNCajji9C
+lEgCBGGAGZkB5kU/pt9dVfceF9XdM82486RqUfXdOud85ztfyec/984/+4h9Ze+U
+IZsWANqhcrfmWSjHv6mK/T94AARnf7nOjYVlNutNACYLExx4Zi8v7H8y7VXtmZ8W
+mb+zwma9tQ1/giMH9weo2jM/XWF+cZl6o4VKMIILwPsnr+vxQ3l6sWIEljYa/H5t
+jfXvP34U8C++/UX5+OHCEF9+0OT8fJ3Vbz6wwNTBE5+Wjx0sQDCONTLET713VAKA
+fC7Da4emcVgCcfxwscmYUYA0sJafGB/iaQsXbmxw6Z82wGNAKpexHHvpadSktvA7
+XQAM/TAieO+oVat47xExAGuzs3NugAMI4L3HdRsAKSBKZScJrB3igyiVZmRYQNB+
+cocxBpvJM0gOYE3yqaqj1aih6gEiYE3EDHEZVFAFyAT9J9qtFs45xsYsufwUSJeH
+w3tHdXMnw99PHOKFxZM82LXI0bEZvrr/GWdvneN1jiSnfByheKy1FItFjDHsjGR8
+zu1kKEZB4JPND7nausR3N8+BJp0PM6UDy1SxiO3PcnuoehqbNZxzBMGA4VYTIvCI
+3U0QQKqVxiIDMbrDU7lcDmN2Ji+VZuy7c4dx8+eZun2K3VLmlYvv8NGFI1uHJBE+
+3QlQ71CjxDZmdnYuYWCC1H+OpVSascC0MwHWGoq3v8RUbxBfPjtyzojQqjexAiYw
+xNmoP6HhmsqO5CRbMg2kbGAo5nOY7DhYAzYYaSLVSSXCZzy5qSza12TEB6PbMrrn
+xTGfMBzPgrEQBCMMBTDGoMUIsTLSrgE4eX6Zucsr/FVRVpsxX/+5yulf54d7bmz/
+k/FxMAasxSdppoGUArnCBIrSv0YLDEp+u+S4tlRh7noNTV4mTh7ok8mCGLxY6i49
+ZBhlIowxuFiS5JrcI06OnNKrV3DOoVhCyW45WQR8CJkMXj21OI1LGoiANY/S0w4u
+FFQV1eGYMqa/6KxstoiimFpoiFMTgxFsRW8NL5bq2hIOwSa9JgwV7sZLuFBYCe8j
+TghckHgQQF3MessROksmX8TpTu198x7VWg/nHRalYMMhQ1W4E97ChYKLFdsJHnKy
+Kq1IiFNT9JzBK/htSnkH1coDXKeH9SFTQYjZJqV6oRJVibuGWnkTYjPqZKdC3Wfp
+xkKl7XEONPkbUirN2GpocO0yNuxSDFoYHz+01rDRXYdymkq3ivOMOjnGstFWuqHn
+QVtxXlHd5mTnsd0NiraDaW+Ac6Pzc8JqeQ3fM5SjCmE6HnWyj2I6kdANlYWKJ5e2
+WNna83oPiqaN6bahfBNJT9DydsgwXcnSCyNiBwt6h3yqgInHthVoN6oblQaPjkGt
+rUjUJp+Oa0AING5FxfVmrQqpaWiWacYB83bveqk0Y4DJsZXna5vVgD2TT1ELG6Tr
+j5PtHKhuWezNU4XJglxxcbQHBBHu7apcfPk5c6UBdN+K53LT+/b9KBq+KKqE3l69
+v7z6xrfBqzEgfxeqE7XJ4h8a1/aCgEzcbXeuH+b0RvNf+XOfI5UewfYAAAAldEVY
+dGRhdGU6Y3JlYXRlADIwMTMtMDUtMjlUMDk6NDc6NDItMDU6MDBTDo/DAAAAJXRF
+WHRkYXRlOm1vZGlmeQAyMDEzLTA1LTI4VDA2OjE3OjMwLTA1OjAwR0bHqQAAAABJ
+RU5ErkJggg==}
+},0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{424,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаЗагрузитьТестыПоУмолчаниюExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{131,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},1,"ПодменюЗагрузитьТесты",
+{1,1,
+{"ru","Загрузить ..."}
+},
+{1,1,
+{"ru","Подменю загрузить тесты"}
+},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{6,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+g
+vaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAEtUlEQVRIx6WUy48UVRTGf+fe6p6e
+7ume6aCMEXygIgmgISaSGI0ZSYfEpRt2/gUmxrhwYVy410R36pawksBKNCajji9C
+lEgCBGGAGZkB5kU/pt9dVfceF9XdM82486RqUfXdOud85ztfyec/984/+4h9Ze+U
+IZsWANqhcrfmWSjHv6mK/T94AARnf7nOjYVlNutNACYLExx4Zi8v7H8y7VXtmZ8W
+mb+zwma9tQ1/giMH9weo2jM/XWF+cZl6o4VKMIILwPsnr+vxQ3l6sWIEljYa/H5t
+jfXvP34U8C++/UX5+OHCEF9+0OT8fJ3Vbz6wwNTBE5+Wjx0sQDCONTLET713VAKA
+fC7Da4emcVgCcfxwscmYUYA0sJafGB/iaQsXbmxw6Z82wGNAKpexHHvpadSktvA7
+XQAM/TAieO+oVat47xExAGuzs3NugAMI4L3HdRsAKSBKZScJrB3igyiVZmRYQNB+
+cocxBpvJM0gOYE3yqaqj1aih6gEiYE3EDHEZVFAFyAT9J9qtFs45xsYsufwUSJeH
+w3tHdXMnw99PHOKFxZM82LXI0bEZvrr/GWdvneN1jiSnfByheKy1FItFjDHsjGR8
+zu1kKEZB4JPND7nausR3N8+BJp0PM6UDy1SxiO3PcnuoehqbNZxzBMGA4VYTIvCI
+3U0QQKqVxiIDMbrDU7lcDmN2Ji+VZuy7c4dx8+eZun2K3VLmlYvv8NGFI1uHJBE+
+3QlQ71CjxDZmdnYuYWCC1H+OpVSascC0MwHWGoq3v8RUbxBfPjtyzojQqjexAiYw
+xNmoP6HhmsqO5CRbMg2kbGAo5nOY7DhYAzYYaSLVSSXCZzy5qSza12TEB6PbMrrn
+xTGfMBzPgrEQBCMMBTDGoMUIsTLSrgE4eX6Zucsr/FVRVpsxX/+5yulf54d7bmz/
+k/FxMAasxSdppoGUArnCBIrSv0YLDEp+u+S4tlRh7noNTV4mTh7ok8mCGLxY6i49
+ZBhlIowxuFiS5JrcI06OnNKrV3DOoVhCyW45WQR8CJkMXj21OI1LGoiANY/S0w4u
+FFQV1eGYMqa/6KxstoiimFpoiFMTgxFsRW8NL5bq2hIOwSa9JgwV7sZLuFBYCe8j
+TghckHgQQF3MessROksmX8TpTu198x7VWg/nHRalYMMhQ1W4E97ChYKLFdsJHnKy
+Kq1IiFNT9JzBK/htSnkH1coDXKeH9SFTQYjZJqV6oRJVibuGWnkTYjPqZKdC3Wfp
+xkKl7XEONPkbUirN2GpocO0yNuxSDFoYHz+01rDRXYdymkq3ivOMOjnGstFWuqHn
+QVtxXlHd5mTnsd0NiraDaW+Ac6Pzc8JqeQ3fM5SjCmE6HnWyj2I6kdANlYWKJ5e2
+WNna83oPiqaN6bahfBNJT9DydsgwXcnSCyNiBwt6h3yqgInHthVoN6oblQaPjkGt
+rUjUJp+Oa0AING5FxfVmrQqpaWiWacYB83bveqk0Y4DJsZXna5vVgD2TT1ELG6Tr
+j5PtHKhuWezNU4XJglxxcbQHBBHu7apcfPk5c6UBdN+K53LT+/b9KBq+KKqE3l69
+v7z6xrfBqzEgfxeqE7XJ4h8a1/aCgEzcbXeuH+b0RvNf+XOfI5UewfYAAAAldEVY
+dGRhdGU6Y3JlYXRlADIwMTMtMDUtMjlUMDk6NDc6NDItMDU6MDBTDo/DAAAAJXRF
+WHRkYXRlOm1vZGlmeQAyMDEzLTA1LTI4VDA2OjE3OjMwLTA1OjAwR0bHqQAAAABJ
+RU5ErkJggg==}
+},0},
+{0},2,3},2,cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{425,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},6,"ПлагиныЗагрузчики",
+{1,1,
+{"ru","Плагины загрузчики"}
+},
+{1,1,
+{"ru","Плагины загрузчики"}
+},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,
+{0},2},0,1,0,1,
+{8,
+{426,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ПлагиныЗагрузчикиРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{429,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},1,"ПодменюИсторияЗагрузкиТестов",
+{1,1,
+{"ru","Подменю история загрузки тестов"}
+},
+{1,1,
+{"ru","История загрузки тестов"}
+},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{6,
+{3,0,
+{0},"",-1,-1,1,0},
+{0},2,3},0,1,0,1,
+{8,
+{430,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ПодменюИсторияЗагрузкиТестовРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},1,0,1,
+{8,
+{358,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ПодменюЗагрузитьТестыExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{31,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаПерезагрузитьТесты",
+{1,0},1,
+{4,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64: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
+7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
+gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
+DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
+ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
+F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
+NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
+MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
+1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
+sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
+fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
+ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
+zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
++7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
+dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
+Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
+52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
+nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
+zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
+BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
+l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
+0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
+YAAAOpgAABdvkl/FRgAAAlFJREFUeNqkk11Ik2EUx3/Pu3duc35NRefSTMlNM52l
+IZIZgaUWtaAPDPGiiygiKoIKUsEu7CLEQJCIPq68ihK6KrsxSoz8QAJFA800rEQt
+bbqW27unC7NGjrzw3J0D/8M5/3N+QkrJuiK4gTUPso9CWROU3QKHCwBjxXUemOJJ
+DKVVggsBDbxe8CwR5XYTHZNNtNHOJrst+eS+anN9qAHU4EQfIewlu3OuObdZD/j8
+Y3qhkxwqliIrIYfS4skzP/yDPG/xnCeAb0UjpJQIRWBJ12XVNJe3FzgDKe6fw/jk
+NEKRIMA9r2E0KXT3mWcbq6cz0Pi2soIKYEog8fAF283cgqmU/vFeXr9k9F03Pd7v
+LGoS8/GLVOpg7n6N5zQac6oBAv4gI2LSOVjXHicfLxhk1W3GUNgStFmy6wbvEzKp
+VFRI3Qu7rkL85mWtkFISHityU/I5FRZO1PxnXn3s4d7Gnegn3+DT/BiAZGC05AoV
+tqy4Qs+019N5Z/Hh7Ij8wD9/IACStlJ0oln/Vo3EYC0ASxpEOjCfbdk+PDRRK+ta
+M2RkGq4/HgSfNtbOjtqmwjYlkGodqXrWsMGB2/1JmLKd1lKXs8gxNH2XvoGpF0vz
+DP69ghDLch1Rl1utw3sKLEn+pQjCw8PQ/BKhghLQ+Ood4Wnn7OyjBo65J+hYPYHE
+1/9qpisz78uRmRmYGMer6kAI8AfQBrro7H1C48IkHSFf+XfEll+i7VwbEiP70ZGP
+jkJU8oGYVRiEhElgSyumXlGxrMnRf2g0Abq1Goj14vxrAEGh9iL0BPs8AAAAAElF
+TkSuQmCC}
+},0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{371,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаПерезагрузитьТестыExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{30,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаВыполнитьВсеТесты",
+{1,0},1,
+{3,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAAL
+EwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj33
+3vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEs
+DIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIe
+EeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH
+/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAn
+f+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJ
+V2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4
+mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHg
+g/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl
+7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/A
+V/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5
+WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQ
+WHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAA
+RKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv
+1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4
+IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGy
+UT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPE
+bDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhM
+WE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPE
+NyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD
+5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2h
+tlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0
+dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHK
+CpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2ep
+O6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN
+2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIp
+G6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3n
+U9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36
+p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYP
+jGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLn
+m+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cR
+p7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0H
+DYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dn
+F2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofc
+n8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh
+7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJ
+gUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
+DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85
+ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7
+F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/R
+NtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9
+MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo
+1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5
+sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWF
+fevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTP
+ZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJ
+zs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ
++7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3v
+dy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtb
+Ylu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ7
+52PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7
+nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9
+zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9D
+BY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfy
+l5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT
+0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADq
+YAAAOpgAABdvkl/FRgAAAhJJREFUeNrUk01rE1EYhc+duZOZSYNtPqgVqmkVpNJF
+UQlqNtlpRdBuhIKgC/fiX/AnKCrVjQs34kLQahe1wYUJNUpqWkpUMLa2dtKkmXx0
+ksxkPu51IdiKdZWV5wc8vOe85xDOObqRgC7VNYACQDwx1j94rDW+tUFW9FX//Ei8
+PVndJGulQk9KIJRRiQPkb6vZbPYXwB9qnbp0NXw70ntQmXm1ODs8IiWiBw6r8+n1
+Zx+SjQeVVTUlwOfuBaIAwDj3O64rRwf6levXzl5c3yyh3jBwJj48GTttX84taLOZ
+ZP1uuaDOEc9nixQgAt8F8ATesT1umFtwbA8DoX2IBMMo61U0am1x7Hj0/MkYObfw
+ce3t+2T9XqUQeMkZNX+H6DHAtjlcl8N2PRimDtPSEOmjGD0yBAgWimVNmBiPJW7e
+Ovr0xIQ+RXus/TsXMALDtKC3dHRsFxwAFUTIbgcNQ8OPUg0BVcJ3/QvynyvljU9q
+2rOkxi4LBJbN0HYseIxDkRQYTYZ8sQgwhmCfH1rJLD1/Un2o5QJTxOnVRMp2MvAY
+iONyIssUhsGwXNDhOC5CQQWVilNNz+mPtCX1PjPC30QJIBL78wuckbbVgb20vO29
+mam9GBrFhUODvdLr6e3HWk6+w5qhvEgBKvO9i8RNJZOZbt2wavZXrx5516k1ryzW
+3BW3GkyJIgH1sX82kfz/Y/o5APw/CNRIkXZ3AAAAAElFTkSuQmCC}
+},0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{372,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаВыполнитьВсеТестыExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{245,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаКомандаВыполнитьВыделенныеТесты",
+{1,0},1,
+{5,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,1,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{373,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаКомандаВыполнитьВыделенныеТестыExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{126,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},1,"ГруппаВнешниеИнструменты",
+{1,1,
+{"ru","Внешние инструменты"}
+},
+{1,1,
+{"ru","Внешние инструменты"}
+},1,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{6,
+{3,0,
+{0},"",-1,-1,1,0},
+{0},2,3},3,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{71,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаГенераторМакетовДанных",
+{1,0},1,
+{7,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{375,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаГенераторМакетовДанныхExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{73,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаПоказатьГУИД",
+{1,0},1,
+{8,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{376,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаПоказатьГУИДExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{128,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},6,"ГруппаОПроекте",
+{1,1,
+{"ru","Группа о проекте"}
+},
+{1,1,
+{"ru","Группа о проекте"}
+},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,
+{0},2},1,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{70,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаОПроекте",
+{1,0},1,
+{6,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{378,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"КомандаОПроектеExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},1,0,1,
+{8,
+{377,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ГруппаОПроектеExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},1,0,1,
+{8,
+{374,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ГруппаВнешниеИнструментыExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{137,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаКомандаПерезагрузитьФорму",
+{1,0},1,
+{15,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},2,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{379,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаКомандаПерезагрузитьФормуExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{356,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаИзменитьФорму",
+{1,0},1,
+{0,198ea630-fda2-4cda-8a23-f999f4c67ee6},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{380,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ФормаИзменитьФормуExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},1,0,0},2,cd5394d0-7dda-4b56-8927-93ccbe967a01,
+{19,
+{124,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},5,"ГруппаДеревоТестов",
+{1,1,
+{"ru","Дерево тестов"}
+},
+{1,1,
+{"ru","Дерево тестов"}
+},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{17,0,0,0,0,
+{0},
+{1,0},
+{"Pattern"},"",
+{3,4,
+{0}
+},0,0,0,1,
+{1,0}
+},1,143c00f7-a42d-4cd7-9189-88e4467dc768,
+{44,
+{404,02023637-7868-4a5f-8576-835a76e0c9ba},0,2,1,
+{0,
+{0,
+{"B",1},0}
+},"ДеревоТестов",0,0,1,
+{1,0},
+{1,0},
+{1,
+{2}
+},0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,2,2,1,1,0,0,0,1,2,2,0,1,1,
+{1,
+{6}
+},
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAB3RJTUUH3wYEDSMN517+IgAAAAd0RVh0QXV0aG9yAKmuzEgAAAAM
+dEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRF
+WHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVY
+dERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3Vy
+Y2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAH
+tElEQVRYhdWYf1BU1xXHP/ftW3goJqxiSyrWoeIPRK1romNMDWLQOBm32rEpKilj
+irbWqG380RkcSUbRkBk1sbE6GHS0VbTpj4S4dlIyEY0OmjoRRItaYkTtZpYKYZdf
+7mN/3f6x/IZdRDEz+c7svD337ve+d88575zvXSGl5FEj05I4+vm0pbmF+YdW5FjL
+K/pzbSFE2/f/nCmQlRcKqa6+S0NjPfXOBqbOS2fW4pUiGP+b2H8oqI/6BpmWxNFz
+Fqfnzpw/Pbm+uiI305LY70FoxY1zJ3juxV9QV1tNneNrqu1fUfjXfb3y9hw8KvOv
+ONCbA7Zm0NB9ett8T/ZCM6x7OUM8LF+9si+lwO91z5d+HwBCMSAM6hUhlInQJXFE
+y4gQtM6NX14YdGOZlsTRKYtSc5N/Mj7J31zJvNT4pMdMxkcWhGGJ0/j4z3l8efMW
+rntN6M1uZixcBu+vDsm7ZrMTJ0AP19GEhi6daEYNXQa3K6ui+oWv+r3u+T9ccRA8
+3sBqBgMlf1gyQRhU2fH1DkAgFAVFDbsuFENCqE1lWhJHp6Sm5s5aMCXJ13RVyMbL
+fhnxA/Hs3MFJiBk9BqGpsEB6MlcBEFViC1o2gqEpdjrWEhd5Bw6K5Zt3y6U/fo5n
+zON6XWf6ZDNLXpjVp3tt2rGzX/iq9PvB04y7YjtSCozDFjJ5xRFQWp5biJaMJ5D0
+qkrZ3vSxBqE8iRAXuy4shJBA1rPTzNlcKs8vvlSgbFwz0e/z3BGq6paoccozcwcl
+e5rGdguCK2c90Q/geIDi0qvy0PGT5L2+WgAt192yuPSqvJ8grMotwqFFYNKiQNNA
+jQCvq9tVr3Hiul7EuFitX/gKALIJ1AiEcSDeux/hrtyF58u38VbuwvPFTuovbqHh
+4hYaLm6m2fZvkJKGe+6pQfaSJaXcOj26eUxyvPjeaxvM+Ny3gQbwX8an/43CIxdO
+FVmvb+utDDUVFsim+OhOXdI5OVa63v9Tp7Guzm9F3uurxaHjJykuvdprp7VXlrJ+
+SgwZCWC/XkracAcZo6Dy0jkyRkHacAf266U8HWUHwOXV+4UvSt/5kZz08la89g9B
+GBC0Z77f76PiTBkuZwMgEUgQEsWgoqhGFDWsZsKvPhna8UGEEFJKKSBQhpJTInPn
+LJDJHp9LEu4WHx0Tp85/atiWYy0/2dUJNTPjpVofeLCoEpuomRkvo0/f6Ja9Hccr
+zn4YVPncjyqSUnL0H0XyXL0JtKigmds1g+NiNLZueEUA3fhvGj/DszFQSrM2fx6S
+rwY6azMIBVedKyDrAp2W2yUVDP3+YL7z0l7w+wAZ+AjAGEZZbkZ0D8mU1folx1pe
+kWlJXCEMhtzZC/3JJ44Gd34r+lr7QymfvqiiHS+a0d2gu3VQY8ALWljPdszj5k49
+oCvftWA9viIbWhhs6oWvCkWAt54vzpTR5KhvX1EKRjw5CtOwIXhu7kJKP8hAAAwD
+YnErY6mpc3+cvDwrVfq8acbIwRbg50D27DXbbwGHPY21VmPc0nwKD61QjCK3+HRo
+5z8IQimfvqgizQDnSs6jOxzEjYpDQ8OBjik2AYftWputaSb0yBgiVC0ofwrgqqps
+40cWF8Ary/jvibNt/HXH3sY1cqhUEQr37JUoKjz16jHw+QikuAHfnb34pQIiLFB+
+AKQfw4AROK9d5tZdPV/6vGlpi35mSZpqBjg8ZvfvsvZs2XAY4NMLpZa/nPiEHGv5
+e5mWxJ/mWMtr+9P5AJMsy7q/MS0O7osq0n0wbvzTuIAIwIWOCQ2XF0wxCe12i7O7
+9oCOfHauIWrJDACcRTYMOetp/NzWib918av89p0tKEIoNNhv81hsAjTdxG/Lw2fb
+j8/2LhjCUdRwFKOGYoxAMWoYwh8DLZKvb5ax7PeXCgDL2Ilmsre/xRiTAMgeYxJk
+b3+LsRPNeBprLQCPwvmh0JMq6q0hl5wv4rz1KI6qa1Blx9Gog067XXUNnFXoPgAt
+KB/AefQsVcdvQGucgvBVoQjqqmzEPpUEXjsifBCiRRzR7RwgEcbB3Kuq5H9VNYWX
+96XUr/4sEP30lWsBOPLGOl7auJP0lWtbbnT/aG3AD4tQqiioNPVC3ITp6F4dVHB6
+Ay5y6k60yCcCtqrh9Oo84YV2z/bAP/AaTs3Uxo+EgN0DX0UIXLVOBsQNB92JMETR
+7QTcEeFR1F4s5Xa1fuy7QwcBUNNyBH8hY23btXWsL+jagCMyd9AUHy0H3qhpG3dO
+jpUDN73RjdtR8ZTt/w0jnQ0UHdsrWxVP+/xpyvYf5820aXLqvHRaN6uFQ1yM1vK3
+QaBMBK5al0TS0Ax07wEd+DWAeURUG78GSIiN6pGvSikaFFUdVLZvD9Lvb6n0wQMg
+BEih1GXsKv3gyrtzGDIk2lr+r7OWx01DAJg4Yy62iqsA3LV/BWAN5fRQGPj8AsGN
+BZ3Ggqmk3hRPsPnkRb9GU3S25R5o+61G5/zuyY6JMbXbXfi/hG72zrwDPfIFMAkw
+hHZFN3iBMoCZyzalSp83DbD08DurMKj5p/Ky3+vj+veN1r9LLln3yzuXi7songxm
+pwXKULD5lCWrHujkHQrOybGyY6KEOs8g5bf787D4Jp6x8Z8fyMaRQ2THMYd5mLz3
+9z/K/wMgKIMZSwrPDQAAAABJRU5ErkJggg==}
+},0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,0,0,
+{0},
+{0},1,
+{19,
+{405,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,0},1,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{22,
+{427,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовКонтекстноеМенюКомандаВыполнитьВыделенныеТесты",
+{1,0},1,
+{5,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},3,0,0,0,2,2,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{3,0,
+{0},"",-1,-1,1,0},1,
+{"Pattern"},"",2,0,1,
+{8,
+{428,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовКонтекстноеМенюКомандаВыполнитьВыделенныеТестыРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0},
+{"U"}
+},1,0,0},1,
+{19,
+{406,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},9,"ДеревоТестовКоманднаяПанель",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{0,0,0},0,1,0,0},5,77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{411,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},4,"ДеревоТестовСостояние",0,0,
+{1,0},
+{1,0},
+{2,
+{2},
+{2}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,2,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{7,0,0,1,1,
+{3,3,
+{0},"",-1,-1,0,
+{
+{#base64:iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAAAXNSR0IArs4c6QAA
+AAlwSFlzAAALEwAACxMBAJqcGAAABCRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAA
+ADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhN
+UCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3
+LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpE
+ZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0i
+aHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5z
+OmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIgogICAgICAgICAg
+ICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAg
+ICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+LyI+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1
+dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOkNvbXByZXNzaW9uPjU8L3RpZmY6Q29t
+cHJlc3Npb24+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyPC90aWZmOlhS
+ZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9y
+aWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjwvdGlmZjpZ
+UmVzb2x1dGlvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjY0PC9l
+eGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT4x
+PC9leGlmOkNvbG9yU3BhY2U+CiAgICAgICAgIDxleGlmOlBpeGVsWURpbWVuc2lv
+bj4xNjwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxkYzpzdWJqZWN0
+PgogICAgICAgICAgICA8cmRmOkJhZy8+CiAgICAgICAgIDwvZGM6c3ViamVjdD4K
+ICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMTUtMDMtMjBUMjI6MDM6MDI8L3ht
+cDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPlBpeGVsbWF0
+b3IgMy4zLjE8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRp
+b24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CjiAOxsAAAPbSURBVFgJ7VZr
+aBRXFD6zs7uzrzzsNpJEzKZNWdMnoohNpZhYSputlZaoiP6TPjb4yyIi+Ns/Iukv
+TZAWSn8aA0XqWilttDRNH1GIzcv1QTRsNmpTdnd2dmfuvHrO6MiyzK77q2CbC8O5
+59xzzj3fd8+9DMDKWGFghYH/CgPsyJ79yt6tKSW+PeGESYn3JpS9b6bYkd377XXO
+npTLZDI5CKYZN3HBcuK4oWg02l/uV0mPnYBBw4C4gQlcmMDlgqHEIag53rz8Cu6v
+xwEeVcDxQ9zWqarx2se9KfOFzjFjenIDBAJJYejbmF0fgYdCMep5PnJVnbm5RTgz
+tobWHAkg8LgQ9weD6IEz0wRJksi5JhIIfEu4Mb5zy0fgdXuBaQzOjn0B6eVMTSSY
+l18bBE84Dqt34f5e3J8B3BsG0JaRhGsVSaCT5zlX1HiuY9ycnXlZ8dcv1Z8ajikH
+9yUgc6/ZHVkzrSVvd0F9CMm5YJFTgYDrZjBUB3kEbSJ4DkkIIRlSXoRodJ1jjM00
+yd7jYB744BNI/vUdMF0GL++D6LPvwslvTsOFw86kl8abl14yYe0BgMwVAAPBu5CE
+xo0ACyeB656pur92cFeCU9Vms73jj+LcrU3ugNHCGULaHVk7wWZnYzxnXBO+vPi4
+M1ylG5fOVVWzuo+jerELLb3UococOYOUNApZdhcK6n1Lkk72mgebx9PPA/BIAEnS
+axjuz4djzHAvsbmbm4RX183ybZGfWGPjlDR9fTsLrVooBU/p3NVyCj6f1f72Najm
+W7pGdz4j34AghRtYP9JMOtlrG+jIiQCBMLo/egMA9Sc3j5Xef+psLN3XnQ6kH0wa
+um7g8DBR4lq+Ot9Vvr9jB6RSiyO6poLX4wFBECxJOtnLEzjpShZG/pwC8GLn0jNC
+knSyO/mX2+7c10cgOwPgq3tIAknULXu5s4M+1901aOhCOrec4cXljBtkbUGWjL/v
+7Hv/63L3SmfSNjo6OtDa2tpnBywuLo709PR8hvpd21ZFtr11FAaEBuijtqd3lMD/
+cAxqjp8/0zkQWc33WfcGExD49t1zT4wn8Cxf2Bxqb/5FEbNvKLlCC9O5tBxugLCq
+CGJG/vn1iclP7dorEUDrbfg12Y4oH+BXC3g75F+Pn9i84TTPlG3Ae84VVbU7EKj7
+bf34r/0WKTmpvaAZU6Jc/LAp3PQ92anQagTYQJ4a+fuLHUsuf/CcrKjbQvUNj0ES
+ACKhmM29nZfVHwuMvffOrXnrP8DxDXhqEJcVavq9A6KY2+EL+S/aJ2y7dF4a7+eE
+wHkB9B3PrKo7YdtX5P+dgX8Ax9moY3JcXXwAAAAASUVORK5CYII=}
+},0},0,0,0,
+{1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,0,
+{0},1,1,0,48312c09-257f-4b29-b280-284dd89efc1e},0,0,
+{0}
+},
+{0},1,
+{19,
+{412,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовСостояниеКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{413,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовСостояниеРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{414,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"ДеревоТестовИмя",1,0,
+{1,0},
+{1,0},
+{2,
+{2},
+{3}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,2,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{30,
+{1,0},0,0,2,2,1,2,2,2,2,2,2,2,2,2,
+{"U"},
+{"U"},"",0,
+{3,0,
+{0},"",-1,-1,1,0},0,0,2,3,00000000-0000-0000-0000-000000000000,
+{5004,0},
+{0,0},2,
+{1,0},
+{1,0},2,1,0,
+{"Pattern"},1,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},1,
+{3,0,0},0,
+{1,0},2,0,2,0},
+{0},1,
+{19,
+{415,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовИмяКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{416,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовИмяРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{408,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"ДеревоТестовКоличествоТестов",1,0,
+{1,1,
+{"ru","Кол-во"}
+},
+{1,0},
+{2,
+{2},
+{1}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,2,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{30,
+{1,0},0,0,2,2,1,2,2,2,2,2,2,2,2,2,
+{"U"},
+{"U"},"",0,
+{3,0,
+{0},"",-1,-1,1,0},0,0,2,3,00000000-0000-0000-0000-000000000000,
+{5004,0},
+{0,0},2,
+{1,0},
+{1,0},2,1,0,
+{"Pattern"},1,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},1,
+{3,0,0},0,
+{1,0},2,0,2,0},
+{0},1,
+{19,
+{409,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовКоличествоТестовКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{410,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовКоличествоТестовРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{417,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"ДеревоТестовВремяВыполнения",1,0,
+{1,0},
+{1,0},
+{2,
+{2},
+{4}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,2,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{30,
+{1,0},0,0,2,2,1,2,2,2,2,2,2,2,2,2,
+{"U"},
+{"U"},"",0,
+{3,0,
+{0},"",-1,-1,1,0},0,0,2,3,00000000-0000-0000-0000-000000000000,
+{5004,0},
+{0,0},2,
+{1,0},
+{1,0},2,1,0,
+{"Pattern"},1,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},1,
+{3,0,0},0,
+{1,0},2,0,2,0},
+{0},1,
+{19,
+{418,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовВремяВыполненияКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{419,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовВремяВыполненияРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{420,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"ДеревоТестовПуть",1,0,
+{1,0},
+{1,0},
+{2,
+{2},
+{5}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,2,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{30,
+{1,0},0,0,2,2,1,2,2,2,2,2,2,2,2,2,
+{"U"},
+{"U"},"",0,
+{3,0,
+{0},"",-1,-1,1,0},0,0,2,3,00000000-0000-0000-0000-000000000000,
+{5004,0},
+{0,0},2,
+{1,0},
+{1,0},2,1,0,
+{"Pattern"},1,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},1,
+{3,0,0},0,
+{1,0},2,0,2,0},
+{0},1,
+{19,
+{421,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ДеревоТестовПутьКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{422,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовПутьРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},2,2,1,0,
+{"Pattern"},"","",2,2,0,1,
+{8,
+{407,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ДеревоТестовРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},1,0,1,
+{8,
+{381,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ГруппаДеревоТестовExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{32,
+{129,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},9,"ИндикаторВыполнения",0,0,
+{1,0},
+{1,0},
+{1,
+{16}
+},
+{0},1,0,2,0,2,
+{1,0},
+{1,0},1,1,0,3,0,3,1,3,0,
+{3,0,
+{0},"",-1,-1,1,0},
+{3,0,
+{0},"",-1,-1,1,0},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{3,32,1,1,0,0,100,0,0,1,
+{3,4,
+{0}
+}
+},
+{0},1,
+{19,
+{130,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"ИндикаторВыполненияКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{8,
+{403,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"ИндикаторВыполненияExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},"","",1,
+{19,
+{0},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},7,"Navigator",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,0,1,0,1,
+{8,
+{0},0,0,0,0,"NavigatorExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0}
+},1,"",2,0},"&НаКлиенте
+Перем КэшФормПлагинов;
+
+// { События формы
+&НаСервере
+Процедура ПриСозданииНаСервере(Отказ, СтандартнаяОбработка)
+	ОбъектНаСервере = РеквизитФормыВЗначение(""Объект"");
+	ЭтаФорма.Заголовок = ОбъектНаСервере.ЗаголовокФормы();
+	ИспользуемоеИмяФайла = ОбъектНаСервере.ИспользуемоеИмяФайла;
+	
+	ОбновитьКомандыИсторииЗагрузкиТестов();
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ПриОткрытии()
+	ЗагрузитьПлагины();
+	
+	ИсторияЗагрузкиТестов = Объект.Настройки.ИсторияЗагрузкиТестов;
+	Если ИсторияЗагрузкиТестов.Количество() > 0 Тогда
+		ЭлементИстории = ИсторияЗагрузкиТестов[0];
+		ЗагрузитьТесты(ЭлементИстории.ИдентификаторЗагрузчика, ЭлементИстории.Путь);
+	КонецЕсли;
+КонецПроцедуры
+// } События формы
+
+// { Управляющие воздействия пользователя
+&НаКлиенте
+Процедура ЗагрузитьТестыПоУмолчанию(Команда)
+	ЗагрузчикПоУмолчанию = ЗагрузчикПоУмолчанию();
+	ИдентификаторЗагрузчикаПоУмолчанию = ЗагрузчикПоУмолчанию.ОписаниеПлагина(Объект.ТипыПлагинов).Идентификатор;
+	Подключаемый_ИнтерактивныйВызовЗагрузчика(Новый Структура(""Имя"", ИдентификаторЗагрузчикаПоУмолчанию));
+КонецПроцедуры
+
+&НаКлиенте
+Процедура КомандаВыполнитьВсеТесты(Команда)
+	Если ЗначениеЗаполнено(ЭтаФорма.ДеревоОтЗагрузчика) Тогда
+		РезультатыТестирования = ВыполнитьТесты(КэшФормПлагинов[ИдентификаторЗагрузчика], ЭтаФорма.ДеревоОтЗагрузчика);
+		ОбновитьДеревоТестовНаОснованииРезультатовТестирования(ДеревоТестов.ПолучитьЭлементы()[0], РезультатыТестирования);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура КомандаВыполнитьВыделенныеТесты(Команда)
+	Фильтр = Новый Массив;
+	ВыделенныеСтроки = Элементы.ДеревоТестов.ВыделенныеСтроки;
+	Для каждого ИдентификаторВыделеннойСтроки Из ВыделенныеСтроки Цикл
+		ВыделеннаяСтрока = ДеревоТестов.НайтиПоИдентификатору(ИдентификаторВыделеннойСтроки);
+		Фильтр.Добавить(Новый УникальныйИдентификатор(ВыделеннаяСтрока.Ключ));
+	КонецЦикла;
+	Если Фильтр.Количество() > 0 Тогда
+		РезультатыТестирования = ВыполнитьТесты(КэшФормПлагинов[ИдентификаторЗагрузчика], ЭтаФорма.ДеревоОтЗагрузчика, Фильтр);
+		ОбновитьДеревоТестовНаОснованииРезультатовТестирования(ДеревоТестов.ПолучитьЭлементы()[0], РезультатыТестирования);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура КомандаПерезагрузитьФорму(Команда)
+	Закрыть();
+	
+	АдресХранилища = """";
+	ПоместитьФайл(АдресХранилища, ЭтаФорма.ИспользуемоеИмяФайла, , Ложь);
+	ПодключитьФайлОбработкиНаСервере(АдресХранилища, Неопределено);
+	
+	НоваяФорма = ПолучитьФорму(ЭтаФорма.ИмяФормы,,,Истина);
+	НоваяФорма.ИспользуемоеИмяФайла = ЭтаФорма.ИспользуемоеИмяФайла;
+	НоваяФорма.Открыть();
+КонецПроцедуры
+// } Управляющие воздействия пользователя
+
+// { Плагины
+&НаКлиенте
+Процедура ЗагрузитьПлагины()
+	Объект.Плагины = Новый Структура;
+	КэшФормПлагинов = Новый Структура;
+	
+	Файл = Новый Файл(ЭтаФорма.ИспользуемоеИмяФайла);
+	КаталогПлагинов = Файл.Путь + ""\Plugins"";
+	НайденныеФайлы = НайтиФайлы(КаталогПлагинов, ""*.epf"", Ложь);
+	Для каждого ФайлОбработки Из НайденныеФайлы Цикл
+		АдресХранилища = """";
+		ПоместитьФайл(АдресХранилища, ФайлОбработки.ПолноеИмя, , Ложь, ЭтаФорма.УникальныйИдентификатор);
+		
+		ИмяПлагина = ФайлОбработки.ИмяБезРасширения;
+		ПодключитьФайлОбработкиНаСервере(АдресХранилища, ИмяПлагина);
+		ФормаПлагина = ПолучитьФорму(""ВнешняяОбработка."" + ИмяПлагина + "".Форма"", , ЭтаФорма);
+		
+		Попытка
+			ОписаниеПлагина = ФормаПлагина.ОписаниеПлагина(Объект.ТипыПлагинов);
+			Объект.Плагины.Вставить(ОписаниеПлагина.Идентификатор, ИмяПлагина);
+			КэшФормПлагинов.Вставить(ОписаниеПлагина.Идентификатор, ФормаПлагина);
+		Исключение
+			// TODO добавить поведение при отсутствии управляемой формы у плагина
+		КонецПопытки;
+	КонецЦикла;
+	
+	ДобавитьКомандыЗагрузчиковНаФорме();
+КонецПроцедуры
+
+&НаКлиенте
+Функция Плагин(Идентификатор) Экспорт
+	Возврат КэшФормПлагинов[Идентификатор];
+КонецФункции
+
+&НаСервере
+Процедура ДобавитьКомандыЗагрузчиковНаФорме()
+	ОписанияЗагрузчиков = ПолучитьОписанияЗагрузчиковНаСервере();
+	Для каждого Описание Из ОписанияЗагрузчиков Цикл
+		Команда = ЭтаФорма.Команды.Добавить(Описание.Идентификатор);
+		Команда.Действие = ""Подключаемый_ИнтерактивныйВызовЗагрузчика"";
+		ПунктМеню = ЭтаФорма.Элементы.Добавить(Команда.Имя, Тип(""КнопкаФормы""), ЭтаФорма.Элементы.ПлагиныЗагрузчики);
+		ПунктМеню.Заголовок = Описание.Представление;
+		ПунктМеню.ИмяКоманды = Команда.Имя;
+	КонецЦикла;
+КонецПроцедуры
+
+&НаСервере
+Функция ПолучитьОписанияЗагрузчиковНаСервере()
+	ОбъектНаСервере = РеквизитФормыВЗначение(""Объект"");
+	ВозможныеТипыПлагинов = ОбъектНаСервере.ТипыПлагинов;
+	ОписанияЗагрузчиков = ОбъектНаСервере.ПолучитьОписанияПлагиновПоТипу(ВозможныеТипыПлагинов.Загрузчик);
+	
+	Возврат ОписанияЗагрузчиков;
+КонецФункции
+
+&НаКлиенте
+Функция ЗагрузчикПоУмолчанию() Экспорт
+	Возврат Плагин(""ЗагрузчикКаталога"");
+КонецФункции
+// } Плагины
+
+// { Работа с деревом тестов
+&НаКлиенте
+Процедура Подключаемый_ИнтерактивныйВызовЗагрузчика(Команда)
+	ИдентификаторВыбранногоЗагрузчика = Команда.Имя;
+	Путь = КэшФормПлагинов[ИдентификаторВыбранногоЗагрузчика].ВыбратьПутьИнтерактивно();
+	Если ЗначениеЗаполнено(Путь) Тогда
+		ЗагрузитьТесты(ИдентификаторВыбранногоЗагрузчика, Путь);
+	КонецЕсли;
+КонецПроцедуры 
+
+&НаКлиенте
+Процедура ЗагрузитьТесты(ИдентификаторВыбранногоЗагрузчика, Путь)
+	ЭтаФорма.ИдентификаторЗагрузчика = ИдентификаторВыбранногоЗагрузчика;
+	ФормаЗагрузчика = КэшФормПлагинов[ИдентификаторВыбранногоЗагрузчика];
+	
+	ЭтаФорма.ДеревоОтЗагрузчика = ФормаЗагрузчика.Загрузить(ЭтаФорма, Путь);
+	
+	ЭлементыДереваТестов = ЭтаФорма.ДеревоТестов.ПолучитьЭлементы();
+	ЭлементыДереваТестов.Очистить();
+	ЗаполнитьДеревоТестов(ЭтаФорма.ДеревоТестов, ДеревоОтЗагрузчика);
+	
+	КоличествоТестовыхСлучаев = ЗаполнитьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(ЭтаФорма.ДеревоТестов);
+	РазвернутьСтрокиДерева(КоличествоТестовыхСлучаев < 30);
+	
+	СохранитьВИсториюЗагрузкиТестовНаСервере(ИдентификаторВыбранногоЗагрузчика, Путь);
+	ОбновитьКомандыИсторииЗагрузкиТестов();
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗаполнитьДеревоТестов(РодительскаяСтрокаДереваТестов, КонтейнерДереваТестовЗагрузчика)
+	СтрокаКонтейнера = РодительскаяСтрокаДереваТестов.ПолучитьЭлементы().Добавить();
+	СтрокаКонтейнера.Имя = КонтейнерДереваТестовЗагрузчика.Имя;
+	СтрокаКонтейнера.ИконкаУзла = КонтейнерДереваТестовЗагрузчика.ИконкаУзла;
+	СтрокаКонтейнера.Ключ = КонтейнерДереваТестовЗагрузчика.Ключ;
+	
+	ТипыУзловДереваТестов = ЭтаФорма.Плагин(""ПостроительДереваТестов"").Объект.ТипыУзловДереваТестов;
+	Для каждого ЭлементКоллекции Из КонтейнерДереваТестовЗагрузчика.Строки Цикл
+		Если ЭлементКоллекции.Тип = ТипыУзловДереваТестов.Контейнер Тогда
+			ЗаполнитьДеревоТестов(СтрокаКонтейнера, ЭлементКоллекции);
+		ИначеЕсли ЭлементКоллекции.Тип = ТипыУзловДереваТестов.Элемент Тогда
+			СтрокаЭлемента = СтрокаКонтейнера.ПолучитьЭлементы().Добавить();
+			СтрокаЭлемента.Имя = ЭлементКоллекции.ИмяМетода;
+			СтрокаЭлемента.Путь = ЭлементКоллекции.Путь;
+			СтрокаЭлемента.ИконкаУзла = ЭлементКоллекции.ИконкаУзла;
+			СтрокаЭлемента.Ключ = ЭлементКоллекции.Ключ;
+		КонецЕсли;
+	КонецЦикла;
+КонецПроцедуры
+
+&НаКлиенте
+Функция ЗаполнитьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(РодительскаяСтрока)
+	КоллекцияСтрок = РодительскаяСтрока.ПолучитьЭлементы();
+	Если КоллекцияСтрок.Количество() = 0 Тогда
+		Возврат 1;
+	КонецЕсли;
+	ОбщееКоличествоТестов = 0;
+	Для каждого СтрокаДерева из коллекцияСтрок Цикл
+		КоличествоТестовВСтроке = ЗаполнитьКоличествоТестовыхСлучаевПоВсемуДеревуТестов(СтрокаДерева);
+		СтрокаДерева.КоличествоТестов = КоличествоТестовВСтроке;
+		ОбщееКоличествоТестов = ОбщееКоличествоТестов + КоличествоТестовВСтроке;
+	КонецЦикла;
+	
+	Возврат ОбщееКоличествоТестов;
+КонецФункции
+
+&НаКлиенте
+Процедура РазвернутьСтрокиДерева(ВключаяПодчиненные = Ложь)
+	Для каждого СтрокаДерева из ДеревоТестов.ПолучитьЭлементы() Цикл
+		Идентификатор = СтрокаДерева.ПолучитьИдентификатор();
+		Элементы.ДеревоТестов.Развернуть(Идентификатор, ВключаяПодчиненные);
+	КонецЦикла;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ОбновитьДеревоТестовНаОснованииРезультатовТестирования(УзелДереваТестов, РезультатТестирования)
+	ТипыУзловДереваТестов = Плагин(""ПостроительДереваТестов"").Объект.ТипыУзловДереваТестов;
+	УзелДереваТестов.Состояние = РезультатТестирования.Состояние;
+	УзелДереваТестов.ВремяВыполнения = РезультатТестирования.ВремяВыполнения;
+	Если РезультатТестирования.Тип = ТипыУзловДереваТестов.Контейнер Тогда
+		Для каждого ДочернийРезультатТестирования Из РезультатТестирования.Строки Цикл
+			ДочернийУзелДереваТестов = НайтиСтрокуВДеревеТестовПоКлючу(УзелДереваТестов, ДочернийРезультатТестирования.Ключ);
+			ОбновитьДеревоТестовНаОснованииРезультатовТестирования(ДочернийУзелДереваТестов, ДочернийРезультатТестирования);
+		КонецЦикла;
+	ИначеЕсли РезультатТестирования.Тип = ТипыУзловДереваТестов.Элемент Тогда
+		Если РезультатТестирования.Свойство(""Сообщение"") И ЗначениеЗаполнено(РезультатТестирования.Сообщение) Тогда
+			Сообщить(РезультатТестирования.Сообщение, СтатусСообщения.ОченьВажное);
+		КонецЕсли;
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиенте
+Функция НайтиСтрокуВДеревеТестовПоКлючу(УзелДереваТестов, Ключ)
+	Результат = Неопределено;
+	Для каждого ЭлементКоллекции Из УзелДереваТестов.ПолучитьЭлементы() Цикл
+		Если ЭлементКоллекции.Ключ = Ключ Тогда
+			Результат = ЭлементКоллекции;
+			Прервать;
+		КонецЕсли;
+	КонецЦикла;
+	
+	Возврат Результат;
+КонецФункции
+// } Работа с деревом тестов
+
+// { Выполнение тестов
+&НаКлиенте
+Функция ВыполнитьТесты(Загрузчик, УзелДереваТестов, Фильтр = Неопределено) Экспорт
+	ТипыУзловДереваТестов = Плагин(""ПостроительДереваТестов"").Объект.ТипыУзловДереваТестов;
+	РезультатТестирования = Неопределено;
+	Если УзелДереваТестов.Тип = ТипыУзловДереваТестов.Контейнер Тогда
+		РезультатТестирования = СоздатьКонтейнерРезультатовТестированияНаСервере(УзелДереваТестов);
+		Для каждого ДочернийУзел Из УзелДереваТестов.Строки Цикл
+			Если Фильтр = Неопределено Или Фильтр.Найти(УзелДереваТестов.Ключ) <> Неопределено Тогда
+				ДочернийРезультат = ВыполнитьТесты(Загрузчик, ДочернийУзел);
+			Иначе
+				ДочернийРезультат = ВыполнитьТесты(Загрузчик, ДочернийУзел, Фильтр);
+			КонецЕсли;
+			Если ДочернийРезультат <> Неопределено Тогда
+				РезультатТестирования.Строки.Добавить(ДочернийРезультат);
+				РезультатТестирования.Состояние = ВыбратьХудшееСостояниеВыполненияТестов(РезультатТестирования.Состояние, ДочернийРезультат.Состояние);
+				РезультатТестирования.ВремяВыполнения = РезультатТестирования.ВремяВыполнения + ДочернийРезультат.ВремяВыполнения;
+			КонецЕсли;
+		КонецЦикла;
+		Если РезультатТестирования.Строки.Количество() = 0 Тогда
+			РезультатТестирования = Неопределено;
+		КонецЕсли;
+	ИначеЕсли УзелДереваТестов.Тип = ТипыУзловДереваТестов.Элемент Тогда
+		Если Фильтр = Неопределено Или Фильтр.Найти(УзелДереваТестов.Ключ) <> Неопределено Тогда
+			Контекст = Загрузчик.ПолучитьКонтекстПоПути(ЭтаФорма, УзелДереваТестов.Путь);
+			РезультатТестирования = ВыполнитьТестовыйМетод(Контекст, УзелДереваТестов);
+		КонецЕсли;
+	КонецЕсли;
+	
+	Возврат РезультатТестирования;
+КонецФункции
+
+&НаКлиенте
+Функция ВыбратьХудшееСостояниеВыполненияТестов(Состояние1, Состояние2)
+	Возврат Макс(Состояние1, Состояние2);
+КонецФункции
+
+&НаКлиенте
+Функция ВыполнитьТестовыйМетод(Контекст, ЭлементДереваТестов)
+	Перем РезультатТестирования;
+	
+	Если ТипЗнч(Контекст) = Тип(""Строка"") Тогда
+		РезультатТестирования = ВыполнитьТестовыйМетодНаСервере(Контекст, ЭлементДереваТестов);
+	Иначе
+		РезультатТестирования = ВыполнитьТестовыйМетодНаКлиенте(Контекст, ЭлементДереваТестов);
+	КонецЕсли;
+	
+	Возврат РезультатТестирования;
+КонецФункции
+
+&НаКлиенте
+Функция ВыполнитьТестовыйМетодНаКлиенте(Контекст, ЭлементДереваТестов) Экспорт
+	Контекст.Инициализация(ЭтаФорма);
+	
+	РезультатТестирования = СоздатьЭлементРезультатовТестированияНаСервере(ЭлементДереваТестов);
+	НачалоВыполнения = ТекущаяУниверсальнаяДатаВМиллисекундах();
+	Попытка
+		ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Контекст, ""ПередЗапускомТеста"");
+		ВыполнитьПроцедуруКонтекста(Контекст, ЭлементДереваТестов.ИмяМетода);
+		ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Контекст, ""ПослеЗапускаТеста"");
+		
+		РезультатТестирования.Состояние = Объект.СостоянияТестов.Пройден;
+	Исключение
+		ТекстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
+		Если ЕстьОшибка_МетодОбъектаНеОбнаружен(ТекстОшибки, ЭлементДереваТестов.ИмяМетода) Тогда
+			РезультатТестирования.Состояние = Объект.СостоянияТестов.НеРеализован;
+			Сообщение = НСтр(""ru = 'Отсутствует реализация тестового метода (%1).'"");
+			РезультатТестирования.Сообщение = СтрЗаменить(Сообщение, ""%1"", ЭлементДереваТестов.ИмяМетода);
+		Иначе
+			РезультатТестирования.Состояние = Объект.СостоянияТестов.Сломан;
+			РезультатТестирования.Сообщение = ТекстОшибки;
+		КонецЕсли;
+	КонецПопытки;
+	ОкончаниеВыполнения = ТекущаяУниверсальнаяДатаВМиллисекундах();
+	РезультатТестирования.ВремяВыполнения = (ОкончаниеВыполнения - НачалоВыполнения) / 1000;
+	
+	Возврат РезультатТестирования;
+КонецФункции
+
+&НаСервере
+Функция ВыполнитьТестовыйМетодНаСервере(ИдентификаторКонтекста, ЭлементДереваТестов)
+	ОбъектНаСервере = ЭтотОбъектНаСервере();
+	
+	Контекст = ВнешниеОбработки.Создать(ИдентификаторКонтекста);
+	Контекст.Инициализация(ОбъектНаСервере);
+	
+	РезультатТестирования = ОбъектНаСервере.ВыполнитьТестовыйМетод(Контекст, ЭлементДереваТестов);
+	
+	Возврат РезультатТестирования;
+КонецФункции
+
+&НаКлиенте
+Процедура ВыполнитьНеобязательнуюПроцедуруТестовогоСлучая(Контекст, ИмяПроцедуры)
+	Попытка
+		ВыполнитьПроцедуруКонтекста(Контекст, ИмяПроцедуры);
+	Исключение
+		ТекстОшибки = ПодробноеПредставлениеОшибки(ИнформацияОбОшибке());
+		Если Не ЕстьОшибка_МетодОбъектаНеОбнаружен(ТекстОшибки, ИмяПроцедуры) Тогда
+			ВызватьИсключение;
+		КонецЕсли;
+	КонецПопытки;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ВыполнитьПроцедуруКонтекста(Контекст, ПроцедураКонтекста)
+	ИcполняемыйКод = ""Контекст."" + ПроцедураКонтекста + ""();"";
+	Выполнить(ИcполняемыйКод);
+КонецПроцедуры
+
+&НаКлиенте
+Функция ЕстьОшибка_МетодОбъектаНеОбнаружен(ТекстОшибки, ИмяМетода)
+	Результат = Ложь;
+	Если Найти(текстОшибки, ""Метод объекта не обнаружен ("" + ИмяМетода + "")"") > 0 
+		ИЛИ Найти(текстОшибки, ""Object method not found ("" + ИмяМетода + "")"") > 0  Тогда
+		Результат = Истина;
+	КонецЕсли;
+	
+	Возврат Результат;
+КонецФункции
+// } Выполнение тестов
+
+// { Генерация результатов тестирования
+&НаСервере
+Функция СоздатьКонтейнерРезультатовТестированияНаСервере(КонтейнерДереваТестов)
+	Возврат ЭтотОбъектНаСервере().СоздатьКонтейнерРезультатовТестирования(КонтейнерДереваТестов);
+КонецФункции
+
+&НаСервере
+Функция СоздатьЭлементРезультатовТестированияНаСервере(ЭлементДереваТестов)
+	Возврат ЭтотОбъектНаСервере().СоздатьЭлементРезультатовТестирования(ЭлементДереваТестов);
+КонецФункции
+// } Генерация результатов тестирования
+
+// { История загрузки тестов
+&НаСервере
+Процедура СохранитьВИсториюЗагрузкиТестовНаСервере(ИдентификаторЗагрузчика, Путь)
+	ЭтотОбъектНаСервере = ЭтотОбъектНаСервере();
+	ЭтотОбъектНаСервере.СохранитьВИсториюЗагрузкиТестов(ИдентификаторЗагрузчика, Путь);
+	ЗначениеВРеквизитФормы(ЭтотОбъектНаСервере, ""Объект"");
+КонецПроцедуры
+
+&НаСервере
+Процедура ОбновитьКомандыИсторииЗагрузкиТестов()
+	ИсторияЗагрузкиТестов = Объект.Настройки.ИсторияЗагрузкиТестов;
+	ПодменюИсторияЗагрузкиТестов = Элементы.ПодменюИсторияЗагрузкиТестов;
+	Для Сч = 0 По ИсторияЗагрузкиТестов.Количество() - 1 Цикл
+		ИмяКоманды = ""История_"" + Сч;
+		НайденнаяКоманда = Команды.Найти(ИмяКоманды);
+		Если НайденнаяКоманда = Неопределено Тогда
+			НоваяКоманда = Команды.Добавить(ИмяКоманды);
+			НоваяКоманда.Действие = ""Подключаемый_ЗагрузитьТестыИзИстории"";
+			ПунктМеню = Элементы.Добавить(НоваяКоманда.Имя, Тип(""КнопкаФормы""), ПодменюИсторияЗагрузкиТестов);
+			ПунктМеню.ИмяКоманды = НоваяКоманда.Имя;
+		Иначе
+			ПунктМеню = Элементы.Найти(ИмяКоманды);
+		КонецЕсли;
+		ЭлементИстории = ИсторияЗагрузкиТестов[Сч];
+		ПунктМеню.Заголовок = ЭлементИстории.ИдентификаторЗагрузчика + "": "" + ЭлементИстории.Путь;
+	КонецЦикла;
+КонецПроцедуры
+
+&НаКлиенте
+Процедура Подключаемый_ЗагрузитьТестыИзИстории(Команда)
+	ИндексИстории = Число(Сред(Команда.Имя, Найти(Команда.Имя, ""_"") + 1));
+	ИсторияЗагрузкиТестов = Объект.Настройки.ИсторияЗагрузкиТестов;
+	ЭлементИстории = ИсторияЗагрузкиТестов[ИндексИстории];
+	ЗагрузитьТесты(ЭлементИстории.ИдентификаторЗагрузчика, ЭлементИстории.Путь);
+КонецПроцедуры
+// } История загрузки тестов
+
+// { Helpers
+&НаСервереБезКонтекста
+Процедура ПодключитьФайлОбработкиНаСервере(АдресХранилища, ИдентификаторОбработки) Экспорт
+	ВнешниеОбработки.Подключить(АдресХранилища, ИдентификаторОбработки, Ложь);
+КонецПроцедуры
+
+&НаСервере
+Функция ЭтотОбъектНаСервере()
+	Возврат РеквизитФормыВЗначение(""Объект"");
+КонецФункции
+// } Helpers
+",
+{4,6,
+{9,
+{1},0,"Объект",
+{1,0},
+{"Pattern",
+{"#",9176d5a2-441b-4c0a-b8b7-bf86d41bf1d9}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,4,
+{1,
+{0,07f739b4-709b-41bf-8096-032bddefd0f9}
+},
+{1,
+{0,092b3fc1-7ced-4d20-8a28-79b535f8a9c4}
+},
+{1,
+{0,a2724854-2f5c-4048-b7b2-02cbb9cb7fa3}
+},
+{1,
+{0,e46a4b91-3cc7-4188-b6f0-96c31aa42e19}
+}
+},1,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{16},0,"ИндикаторВыполнения",
+{1,1,
+{"ru","Индикатор выполнения"}
+},
+{"Pattern",
+{"N",10,0,0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{2},0,"ДеревоТестов",
+{1,1,
+{"ru","Дерево тестов"}
+},
+{"Pattern",
+{"#",e603c0f2-92fb-4d47-8f38-a44a381cf235}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,7,
+{5,1,0,"КоличествоТестов",
+{1,1,
+{"ru","Количество тестов"}
+},
+{"Pattern",
+{"N",10,0,1}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,2,0,"Состояние",
+{1,1,
+{"ru","Состояние"}
+},
+{"Pattern",
+{"N",1,0,1}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,3,0,"Имя",
+{1,1,
+{"ru","Имя"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,4,0,"ВремяВыполнения",
+{1,1,
+{"ru","Время выполнения"}
+},
+{"Pattern",
+{"N",10,3,1}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,5,0,"Путь",
+{1,1,
+{"ru","Путь"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,6,0,"ИконкаУзла",
+{1,1,
+{"ru","Иконка узла"}
+},
+{"Pattern",
+{"N",1,0,1}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,7,0,"Ключ",
+{1,1,
+{"ru","Ключ"}
+},
+{"Pattern",
+{"#",fc01b5df-97fe-449b-83d4-218a090e681e}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{0,0},
+{0,0}
+},
+{9,
+{3},0,"ИспользуемоеИмяФайла",
+{1,1,
+{"ru","Используемое имя файла"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{4},0,"ИдентификаторЗагрузчика",
+{1,1,
+{"ru","Идентификатор загрузчика"}
+},
+{"Pattern"},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},
+{9,
+{5},0,"ДеревоОтЗагрузчика",
+{1,1,
+{"ru","Дерево от загрузчика"}
+},
+{"Pattern"},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},0,0,
+{#base64:77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0
+aW5ncyB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9u
+LXN5c3RlbS9zZXR0aW5ncyIgeG1sbnM6ZGNzY29yPSJodHRwOi8vdjguMWMucnUv
+OC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL2NvcmUiIHhtbG5zOnN0eWxlPSJo
+dHRwOi8vdjguMWMucnUvOC4xL2RhdGEvdWkvc3R5bGUiIHhtbG5zOnN5cz0iaHR0
+cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2ZvbnRzL3N5c3RlbSIgeG1sbnM6djg9
+Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9jb3JlIiB4bWxuczp2OHVpPSJodHRw
+Oi8vdjguMWMucnUvOC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFj
+LnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0
+cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDov
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
+},
+{0,1,
+{0,"Пути",
+{"Pattern",
+{"#",4772b3b4-f4a3-49c0-a1a5-8cb5961511a3}
+},0}
+},
+{0,11,
+{6,
+{3,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаВыполнитьВсеТесты",
+{1,1,
+{"ru","Выполнить все тесты (F7)"}
+},
+{1,1,
+{"ru","Команда выполнить все тесты"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,118,0},
+{3,0,
+{0},"",-1,-1,1,0},"КомандаВыполнитьВсеТесты",2,0,0,
+{0,0}
+},
+{6,
+{4,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаПерезагрузитьВсеТесты",
+{1,1,
+{"ru","Перезагрузить"}
+},
+{1,1,
+{"ru","Команда перезагрузить все тесты"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,82,8},
+{3,0,
+{0},"",-1,-1,1,0},"КомандаПерезагрузитьВсеТесты",2,0,0,
+{0,0}
+},
+{6,
+{5,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаВыполнитьВыделенныеТесты",
+{1,1,
+{"ru","Выполнить выделенные (Ctrl+Enter)"}
+},
+{1,1,
+{"ru","Команда выполнить выделенные тесты"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,1,
+{0,0ce78048-0196-4f80-a781-9829cdb7f43e},"",-1,-1,1,0},"КомандаВыполнитьВыделенныеТесты",2,0,0,
+{0,0}
+},
+{6,
+{6,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ОПроекте",
+{1,1,
+{"ru","О проекте xUnitFor1C"}
+},
+{1,1,
+{"ru","О проекте xUnitFor1C"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,1,
+{0,3b2a508b-f36e-4e0b-9dc0-70b2b56276a9},"",-1,-1,1,0},"ОПроекте",2,0,0,
+{0,0}
+},
+{6,
+{7,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ГенераторМакетовДанных",
+{1,1,
+{"ru","Генератор макетов данных"}
+},
+{1,1,
+{"ru","Генератор макетов данных на базе реальных данных"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"ГенераторМакетовДанных",3,0,0,
+{0,0}
+},
+{6,
+{8,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ПоказатьГУИД",
+{1,1,
+{"ru","Показать ГУИД"}
+},
+{1,1,
+{"ru","Показать ГУИД"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"ПоказатьГУИД",3,0,0,
+{0,0}
+},
+{6,
+{11,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаЗагрузитьТолькоВыделенныеТесты",
+{1,1,
+{"ru","Загрузить только выделенные тесты"}
+},
+{1,1,
+{"ru","Команда загрузить только выделенные тесты"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"КомандаЗагрузитьТолькоВыделенныеТесты",3,0,0,
+{0,0}
+},
+{6,
+{15,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаПерезагрузитьФорму",
+{1,1,
+{"ru","Перезагрузить браузер тестирования"}
+},
+{1,1,
+{"ru","Команда перезагрузить форму"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"КомандаПерезагрузитьФорму",3,0,0,
+{0,0}
+},
+{6,
+{17,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"КомандаВыполнитьВыделенныеТестыСИсключением",
+{1,1,
+{"ru","Выполнить выделенные тесты с исключением"}
+},
+{1,1,
+{"ru","Выполнить выделенные тесты с исключением"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"КомандаВыполнитьВыделенныеТестыСИсключением",3,0,0,
+{0,0}
+},
+{6,
+{18,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ПоказатьОшибки",
+{1,1,
+{"ru","Показать ошибки"}
+},
+{1,1,
+{"ru","Показать ошибки"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"ПоказатьОшибки",3,0,0,
+{0,0}
+},
+{6,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"ЗагрузитьТестыПоУмолчанию",
+{1,1,
+{"ru","Загрузить тесты по умолчанию"}
+},
+{1,1,
+{"ru","Загрузить тесты по умолчанию"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{3,0,
+{0},"",-1,-1,1,0},"ЗагрузитьТестыПоУмолчанию",3,0,0,
+{0,0}
+}
+},
+{0,0},
+{0,0}
+}
