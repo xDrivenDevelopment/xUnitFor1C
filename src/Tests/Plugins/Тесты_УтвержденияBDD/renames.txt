@@ -1,5 +1,5 @@
 ﻿53e66096-e66b-4bde-869e-c750bc34751b-->und\53e66096-e66b-4bde-869e-c750bc34751b
-53e66096-e66b-4bde-869e-c750bc34751b.0-->Form\Форма\Форма.txt
+53e66096-e66b-4bde-869e-c750bc34751b.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_УтвержденияBDD\Form\Форма\Форма.txt
 53e66096-e66b-4bde-869e-c750bc34751b.0-->und\53e66096-e66b-4bde-869e-c750bc34751b.0
 53e66096-e66b-4bde-869e-c750bc34751b.0-->und\53e66096-e66b-4bde-869e-c750bc34751b.0
 9cb5b204-7281-47bd-aa1c-5f9a6a950513-->und\9cb5b204-7281-47bd-aa1c-5f9a6a950513
