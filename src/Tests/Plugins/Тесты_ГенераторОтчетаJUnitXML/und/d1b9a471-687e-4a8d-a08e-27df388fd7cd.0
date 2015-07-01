@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Контейнер" time="0.001" tests="3" failures="1" errors="0" skipped="1">
+	<testsuite name="Контейнер">
+		<testcase classname="C:\Projects\xUnitFor1C_plugins\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML.epf" name="УспешныйМетод" time="0" status="passed"/>
+		<testcase classname="C:\Projects\xUnitFor1C_plugins\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML.epf" name="ПадающийМетод" time="0.001" status="failure">
+			<failure message="{ВнешняяОбработка.Тесты_ГенераторОтчетаJUnitXML.МодульОбъекта(64)}: БАБАХ!!!
+	ВызватьИсключение &quot;БАБАХ!!!&quot;;"/>
+		</testcase>
+		<testcase classname="C:\Projects\xUnitFor1C_plugins\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML.epf" name="ОтсутствующийМетод" time="0" status="skipped">
+			<skipped/>
+		</testcase>
+	</testsuite>
+</testsuites>
