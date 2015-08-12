@@ -1,4 +1,7 @@
 ﻿421a27d5-c2f1-4844-86c0-c04fb5a1001f-->und\421a27d5-c2f1-4844-86c0-c04fb5a1001f
+794aea94-ea53-446d-8477-ce17f50c6825-->und\794aea94-ea53-446d-8477-ce17f50c6825
+794aea94-ea53-446d-8477-ce17f50c6825.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_ЗагрузчикФайла\Макеты\ТестовыйНаборСоСтрогимПорядкомВыполнения.txt
+794aea94-ea53-446d-8477-ce17f50c6825.0-->und\794aea94-ea53-446d-8477-ce17f50c6825.0
 7df6502f-da6a-49fb-9624-65420db40a03-->und\7df6502f-da6a-49fb-9624-65420db40a03
 7df6502f-da6a-49fb-9624-65420db40a03.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_ЗагрузчикФайла\Form\Форма\Форма.txt
 7df6502f-da6a-49fb-9624-65420db40a03.0-->und\7df6502f-da6a-49fb-9624-65420db40a03.0
