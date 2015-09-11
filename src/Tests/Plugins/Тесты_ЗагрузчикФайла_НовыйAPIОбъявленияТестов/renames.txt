@@ -1,4 +1,8 @@
-﻿4a17bf09-a240-4cec-b0b0-8d45028bd3c0.0\info-->und\4a17bf09-a240-4cec-b0b0-8d45028bd3c0.0\info
+﻿3ed246cc-b126-4dd4-b414-004043927717-->und\3ed246cc-b126-4dd4-b414-004043927717
+3ed246cc-b126-4dd4-b414-004043927717.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_ЗагрузчикФайла_НовыйAPIОбъявленияТестов\Form\Форма\Форма.txt
+3ed246cc-b126-4dd4-b414-004043927717.0-->und\3ed246cc-b126-4dd4-b414-004043927717.0
+3ed246cc-b126-4dd4-b414-004043927717.0-->und\3ed246cc-b126-4dd4-b414-004043927717.0
+4a17bf09-a240-4cec-b0b0-8d45028bd3c0.0\info-->und\4a17bf09-a240-4cec-b0b0-8d45028bd3c0.0\info
 4a17bf09-a240-4cec-b0b0-8d45028bd3c0.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
 e55ff8fe-4c3c-46ec-af12-821e21292f5e-->und\e55ff8fe-4c3c-46ec-af12-821e21292f5e
