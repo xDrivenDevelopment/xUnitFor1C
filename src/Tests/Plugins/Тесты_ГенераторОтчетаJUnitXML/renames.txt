@@ -1,7 +1,6 @@
 ﻿aa3398ee-6203-44e1-9810-a0737f241f75-->und\aa3398ee-6203-44e1-9810-a0737f241f75
 copyinfo-->und\copyinfo
 d1b9a471-687e-4a8d-a08e-27df388fd7cd-->und\d1b9a471-687e-4a8d-a08e-27df388fd7cd
-d1b9a471-687e-4a8d-a08e-27df388fd7cd.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML\Макеты\Эталон_ОтчетОТестировании.txt
 d1b9a471-687e-4a8d-a08e-27df388fd7cd.0-->und\d1b9a471-687e-4a8d-a08e-27df388fd7cd.0
 ea75be97-b437-4750-a79f-478ea2e60f75.0\info-->und\ea75be97-b437-4750-a79f-478ea2e60f75.0\info
 ea75be97-b437-4750-a79f-478ea2e60f75.0\text-->ObjectModule.txt
