@@ -6,6 +6,8 @@ a1ce7ef7-f372-4589-b899-7fbf88efa7bf-->und\a1ce7ef7-f372-4589-b899-7fbf88efa7bf
 a1ce7ef7-f372-4589-b899-7fbf88efa7bf.0-->Form\Форма
 copyinfo-->und\copyinfo
 ed07b230-8bf7-4423-b861-a31f23c7471f-->und\ed07b230-8bf7-4423-b861-a31f23c7471f
+ed07b230-8bf7-4423-b861-a31f23c7471f.0-->Form\УправляемаяФорма\Форма.txt
+ed07b230-8bf7-4423-b861-a31f23c7471f.0-->und\ed07b230-8bf7-4423-b861-a31f23c7471f.0
 ed07b230-8bf7-4423-b861-a31f23c7471f.0-->und\ed07b230-8bf7-4423-b861-a31f23c7471f.0
 root-->und\root
 version-->und\version
