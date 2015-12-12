@@ -6,11 +6,11 @@
 {0,
 {0,
 {0,0,6641570f-5fe8-41b8-9fdd-a7d1b233a01c},"xddTestsConvertIntoRebornFormat",
-{1,"ru","Xdd tests convert into reborn format"},""}
-},00000000-0000-0000-0000-000000000000,"",00000000-0000-0000-0000-000000000000},4,
+{1,"ru","Конвертация тестов xUnitFor1C в версию4 из формата версии 3"},""}
+},eefa7064-8a52-4268-a696-7bf0e82d0af8,"",1c85fafa-c8c3-4b1c-a5a5-06833393c6c5},4,
 {2bcef0d1-0981-11d6-b9b8-0050bae0a95d,0},
 {3daea016-69b7-4ed4-9453-127911372fe6,2,66035cac-eeb6-4708-9998-7f619b73e7f1,d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8},
-{d5b0e5ed-256d-401c-9c36-f630cafd8a62,0},
+{d5b0e5ed-256d-401c-9c36-f630cafd8a62,2,eefa7064-8a52-4268-a696-7bf0e82d0af8,1c85fafa-c8c3-4b1c-a5a5-06833393c6c5},
 {ec6bb5e5-b7a8-4d75-bec9-658107a699cf,0}
 }
 }

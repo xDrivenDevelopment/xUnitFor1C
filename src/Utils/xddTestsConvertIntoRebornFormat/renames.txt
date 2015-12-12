@@ -1,4 +1,8 @@
-﻿66035cac-eeb6-4708-9998-7f619b73e7f1-->und\66035cac-eeb6-4708-9998-7f619b73e7f1
+﻿1c85fafa-c8c3-4b1c-a5a5-06833393c6c5-->und\1c85fafa-c8c3-4b1c-a5a5-06833393c6c5
+1c85fafa-c8c3-4b1c-a5a5-06833393c6c5.0-->Form\УправляемаяФорма\Форма.txt
+1c85fafa-c8c3-4b1c-a5a5-06833393c6c5.0-->und\1c85fafa-c8c3-4b1c-a5a5-06833393c6c5.0
+1c85fafa-c8c3-4b1c-a5a5-06833393c6c5.0-->und\1c85fafa-c8c3-4b1c-a5a5-06833393c6c5.0
+66035cac-eeb6-4708-9998-7f619b73e7f1-->und\66035cac-eeb6-4708-9998-7f619b73e7f1
 66035cac-eeb6-4708-9998-7f619b73e7f1.0-->Макеты\ШаблонТеста.txt
 66035cac-eeb6-4708-9998-7f619b73e7f1.0-->und\66035cac-eeb6-4708-9998-7f619b73e7f1.0
 6641570f-5fe8-41b8-9fdd-a7d1b233a01c.0\info-->und\6641570f-5fe8-41b8-9fdd-a7d1b233a01c.0\info
@@ -8,6 +12,8 @@ d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8-->und\d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8
 d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8.0-->Макеты\v8unpack.txt
 d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8.0-->und\d41c4a3c-7890-4572-a6c9-1e1ad5f3d0a8.0
 eab4f8c5-602e-4d5a-bdfa-910323eb3c1f-->und\eab4f8c5-602e-4d5a-bdfa-910323eb3c1f
+eefa7064-8a52-4268-a696-7bf0e82d0af8-->und\eefa7064-8a52-4268-a696-7bf0e82d0af8
+eefa7064-8a52-4268-a696-7bf0e82d0af8.0-->Form\Форма
 root-->und\root
 version-->und\version
 versions-->und\versions
