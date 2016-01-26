@@ -1,11 +1,7 @@
-﻿53e66096-e66b-4bde-869e-c750bc34751b-->und\53e66096-e66b-4bde-869e-c750bc34751b
-53e66096-e66b-4bde-869e-c750bc34751b.0-->C:\Projects\xUnitFor1C_plugins\src\Tests\Plugins\Тесты_УтвержденияBDD\Form\Форма\Форма.txt
-53e66096-e66b-4bde-869e-c750bc34751b.0-->und\53e66096-e66b-4bde-869e-c750bc34751b.0
-53e66096-e66b-4bde-869e-c750bc34751b.0-->und\53e66096-e66b-4bde-869e-c750bc34751b.0
-9cb5b204-7281-47bd-aa1c-5f9a6a950513-->und\9cb5b204-7281-47bd-aa1c-5f9a6a950513
-b9fd794e-c598-414d-9858-603393d7d912.0\info-->und\b9fd794e-c598-414d-9858-603393d7d912.0\info
-b9fd794e-c598-414d-9858-603393d7d912.0\text-->ObjectModule.txt
+﻿8c072eb8-b08e-4ad1-b894-a47397772837.0\info-->und\8c072eb8-b08e-4ad1-b894-a47397772837.0\info
+8c072eb8-b08e-4ad1-b894-a47397772837.0\text-->ObjectModule.txt
 copyinfo-->und\copyinfo
+e19d7398-06c3-45b0-9445-432a918a5d6e-->und\e19d7398-06c3-45b0-9445-432a918a5d6e
 root-->und\root
 version-->und\version
 versions-->und\versions
