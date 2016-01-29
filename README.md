@@ -1,6 +1,6 @@
 # xUnitFor1C - Set of testing tools for 1C:Enterprise 8 platform
 
-[![Join the chat at https://gitter.im/xDrivenDevelopment/xUnitFor1C](https://badges.gitter.im/xDrivenDevelopment/xUnitFor1C.svg)](https://gitter.im/xDrivenDevelopment/xUnitFor1C?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/xDrivenDevelopment/xUnitFor1C](https://badges.gitter.im/xDrivenDevelopment/xUnitFor1C.svg)](https://gitter.im/xDrivenDevelopment/xUnitFor1C?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) Здесь вы можете задавать любые вопросы разработчикам и активным участникам
 
 xUnitFor1C is a set of testing tools for 1C:Enterprise 8 platform (http://v8.1c.ru).
 
