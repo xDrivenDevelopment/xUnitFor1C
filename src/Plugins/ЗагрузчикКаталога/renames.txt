@@ -1,5 +1,5 @@
 ﻿47df0590-78c7-4bb0-bf65-a5c6ef41a8d7.0\info-->und\47df0590-78c7-4bb0-bf65-a5c6ef41a8d7.0\info
-47df0590-78c7-4bb0-bf65-a5c6ef41a8d7.0\text-->ObjectModule.txt
+47df0590-78c7-4bb0-bf65-a5c6ef41a8d7.0\text-->ObjectModule.bsl
 b5f25876-92c4-4d3f-ac5d-d5ee489cf5d4-->und\b5f25876-92c4-4d3f-ac5d-d5ee489cf5d4
 b5f25876-92c4-4d3f-ac5d-d5ee489cf5d4.0-->und\b5f25876-92c4-4d3f-ac5d-d5ee489cf5d4.0
 copyinfo-->und\copyinfo

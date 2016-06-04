@@ -31,7 +31,7 @@
 aa6a8c8d-aaf9-45a8-8df1-0acd6747775e-->und\aa6a8c8d-aaf9-45a8-8df1-0acd6747775e
 aa6a8c8d-aaf9-45a8-8df1-0acd6747775e.0-->und\aa6a8c8d-aaf9-45a8-8df1-0acd6747775e.0
 aad28daf-f05d-42da-9bf6-51e89ff6a46b.0\info-->und\aad28daf-f05d-42da-9bf6-51e89ff6a46b.0\info
-aad28daf-f05d-42da-9bf6-51e89ff6a46b.0\text-->ObjectModule.txt
+aad28daf-f05d-42da-9bf6-51e89ff6a46b.0\text-->ObjectModule.bsl
 bc8ef2c0-98ae-4f7b-9b02-f680f8384843-->und\bc8ef2c0-98ae-4f7b-9b02-f680f8384843
 bc8ef2c0-98ae-4f7b-9b02-f680f8384843.0-->und\bc8ef2c0-98ae-4f7b-9b02-f680f8384843.0
 ca759f78-0cac-471b-972d-06c9844ad3a2-->und\ca759f78-0cac-471b-972d-06c9844ad3a2
