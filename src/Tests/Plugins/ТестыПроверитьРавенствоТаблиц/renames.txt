@@ -4,7 +4,7 @@
 6baf118e-696d-404d-9ad0-3b66c2730177.0-->und\6baf118e-696d-404d-9ad0-3b66c2730177.0
 7fee0032-60d2-407f-8cb4-61ed1c95ba08-->und\7fee0032-60d2-407f-8cb4-61ed1c95ba08
 81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\info-->und\81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\info
-81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\text-->ObjectModule.txt
+81c30b94-2b30-4e2d-b046-69aa3fc912ab.0\text-->ObjectModule.bsl
 copyinfo-->und\copyinfo
 e91aafdf-ef58-4ed3-b426-4baf984d368e-->und\e91aafdf-ef58-4ed3-b426-4baf984d368e
 e91aafdf-ef58-4ed3-b426-4baf984d368e.0-->und\e91aafdf-ef58-4ed3-b426-4baf984d368e.0

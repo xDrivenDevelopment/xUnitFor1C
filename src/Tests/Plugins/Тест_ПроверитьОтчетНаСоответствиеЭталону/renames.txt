@@ -5,7 +5,7 @@
 915c368c-cc97-4756-8944-36659b177d1e-->und\915c368c-cc97-4756-8944-36659b177d1e
 copyinfo-->und\copyinfo
 f2d2060c-a875-4798-8c3a-7e5b14081428.0\info-->und\f2d2060c-a875-4798-8c3a-7e5b14081428.0\info
-f2d2060c-a875-4798-8c3a-7e5b14081428.0\text-->ObjectModule.txt
+f2d2060c-a875-4798-8c3a-7e5b14081428.0\text-->ObjectModule.bsl
 root-->und\root
 version-->und\version
 versions-->und\versions

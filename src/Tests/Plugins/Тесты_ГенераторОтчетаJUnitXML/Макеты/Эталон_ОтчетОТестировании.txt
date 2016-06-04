@@ -9,7 +9,7 @@
 			<failure message="{ВнешняяОбработка.Тесты_ГенераторОтчетаJUnitXML.МодульОбъекта(108)}: Ошибка!!!
 	ВызватьИсключение &quot;Ошибка1!!!&quot;;"/>
 		</testcase>
-		<testcase classname="C:\Projects\xUnitFor1C\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML.epf" name="Отсутствующий метод" time="0" status="skipped">
+		<testcase classname="C:\Projects\xUnitFor1C\Tests\Plugins\Тесты_ГенераторОтчетаJUnitXML.epf" name="ОтсутствующийМетод" time="0" status="skipped">
 			<skipped/>
 		</testcase>
 	</testsuite>
