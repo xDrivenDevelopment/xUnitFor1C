@@ -4,7 +4,7 @@
 4e8e1a4a-a947-419b-95c8-58a411e3ffa4-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4
 4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0
 908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info-->und\908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info
-908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\text-->ObjectModule.txt
+908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\text-->ObjectModule.bsl
 copyinfo-->und\copyinfo
 root-->und\root
 version-->und\version
