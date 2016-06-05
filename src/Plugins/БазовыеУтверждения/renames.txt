@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 ﻿78128e85-5e96-46ef-8dd0-4ed41acd5d66-->und\78128e85-5e96-46ef-8dd0-4ed41acd5d66
 9a838e24-c931-4f07-878d-f649fc9bdff6-->und\9a838e24-c931-4f07-878d-f649fc9bdff6
 9a838e24-c931-4f07-878d-f649fc9bdff6.0-->und\9a838e24-c931-4f07-878d-f649fc9bdff6.0
 b178220e-3a20-4219-a9e9-f76102caa97d.0\info-->und\b178220e-3a20-4219-a9e9-f76102caa97d.0\info
 b178220e-3a20-4219-a9e9-f76102caa97d.0\text-->ObjectModule.bsl
+=======
+﻿11c5f751-bfaf-480a-92fe-7f30023f2e9a-->und\11c5f751-bfaf-480a-92fe-7f30023f2e9a
+4e8e1a4a-a947-419b-95c8-58a411e3ffa4-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4
+4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0
+908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info-->und\908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info
+908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\text-->ObjectModule.bsl
+>>>>>>> develop
 copyinfo-->und\copyinfo
 root-->und\root
 version-->und\version

@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ﻿592e981b-a4f0-4911-99a9-af348aa6be05.0\info-->und\592e981b-a4f0-4911-99a9-af348aa6be05.0\info
 592e981b-a4f0-4911-99a9-af348aa6be05.0\text-->ObjectModule.bsl
+=======
+﻿11c5f751-bfaf-480a-92fe-7f30023f2e9a-->und\11c5f751-bfaf-480a-92fe-7f30023f2e9a
+4e8e1a4a-a947-419b-95c8-58a411e3ffa4-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4
+4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0-->und\4e8e1a4a-a947-419b-95c8-58a411e3ffa4.0
+908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info-->und\908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\info
+908d0aaf-e4ec-4668-8d14-3e8075d222fd.0\text-->ObjectModule.bsl
+>>>>>>> develop
 copyinfo-->und\copyinfo
 d3fecd17-6c41-4c09-a311-3fe1530a25e5-->und\d3fecd17-6c41-4c09-a311-3fe1530a25e5
 f1ccf732-51e9-490e-8d83-d270254fa9a0-->und\f1ccf732-51e9-490e-8d83-d270254fa9a0
