@@ -1,0 +1,9 @@
+﻿094c5191-be17-426f-b1c1-9e1c5754f50f.0\info-->und\094c5191-be17-426f-b1c1-9e1c5754f50f.0\info
+094c5191-be17-426f-b1c1-9e1c5754f50f.0\text-->ObjectModule.bsl
+1a258ed0-a021-4e34-8243-f81e23f29d5c-->und\1a258ed0-a021-4e34-8243-f81e23f29d5c
+41bb1174-9c57-45fe-863a-7f2d582c60f3-->und\41bb1174-9c57-45fe-863a-7f2d582c60f3
+41bb1174-9c57-45fe-863a-7f2d582c60f3.0-->und\41bb1174-9c57-45fe-863a-7f2d582c60f3.0
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
