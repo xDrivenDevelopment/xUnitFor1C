@@ -1,2 +1,2 @@
-﻿Form\Форма\Форма.bsl-->8238ac9e-ca3e-44d2-853e-3523df0fbffd.0 (50, 99)
-Макеты\СхемаJUnit4.txt-->79c269be-88fe-4efc-bf6a-b3eda3d82ff2.0
+﻿Form\Форма\Форма.bsl-->ff5c29a3-5cf7-4bac-9b51-ab0228406ee4.0 (50, 94)
+Макеты\СхемаJUnit4.txt-->c379414b-194f-4848-a93c-122c34b00be0.0
