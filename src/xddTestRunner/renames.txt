@@ -1,6 +1,4 @@
-﻿11ad5c96-c434-4088-bf66-ddff06c57ed8.0\info-->und\11ad5c96-c434-4088-bf66-ddff06c57ed8.0\info
-11ad5c96-c434-4088-bf66-ddff06c57ed8.0\text-->ObjectModule.bsl
-11ad5c96-c434-4088-bf66-ddff06c57ed8.1-->und\11ad5c96-c434-4088-bf66-ddff06c57ed8.1
+﻿11ad5c96-c434-4088-bf66-ddff06c57ed8.1-->und\11ad5c96-c434-4088-bf66-ddff06c57ed8.1
 5070e3c3-f74b-4ecd-9756-1136a230eca2-->und\5070e3c3-f74b-4ecd-9756-1136a230eca2
 a1ce7ef7-f372-4589-b899-7fbf88efa7bf-->und\a1ce7ef7-f372-4589-b899-7fbf88efa7bf
 a1ce7ef7-f372-4589-b899-7fbf88efa7bf.0-->Form\Форма
