@@ -1,1307 +1,1282 @@
-﻿Перем СозданныеВОкнеИФормеПеременные;
-Перем Отступ;
+﻿Var CreatedInWindowAndFormVariables;
+Var Indent;
 
-Функция Версия() Экспорт
-	Возврат "4.0.0.6";
-КонецФункции
+Function Convert(TextToConvert) Export
 
-Функция ЗаголовокФормы() Экспорт
-	Возврат СокрЛП(Метаданные().Синоним) + ", версия " + Версия();;
-КонецФункции
+	Reader = New XMLReader();
+	Reader.SetString(TextToConvert);
 
-Функция Преобразовать(ТекстДляПреобразования) Экспорт
+	CreatedProcedures = New Array();
+	CreatedInWindowAndFormVariables = New Map();
 
-	Читатель = Новый ЧтениеXML();
-	Читатель.УстановитьСтроку(ТекстДляПреобразования);
+	Writer = New TextDocument;
 
-	СозданныеПроцедуры = Новый Массив();
-	СозданныеВОкнеИФормеПеременные = Новый Соответствие();
+	Reader.MoveToContent();
+	Indent = 0;
 
-	Писатель = Новый ТекстовыйДокумент();
+	// Converting the file
+	If Reader.NodeType = XMLNodeType.StartElement And
+		Reader.Name = "uilog" Then
 
-	Читатель.ПерейтиКСодержимому();
-	Отступ = 0;
+		ConvertIntoScenario(Reader, Writer);
 
-	// Преобразовываем файл
-	Если Читатель.ТипУзла = ТипУзлаXML.НачалоЭлемента И
-		Читатель.Имя = "uilog" Тогда
-
-		ПреобразоватьВСценарий(Читатель, Писатель);
-
-	КонецЕсли;
+	EndIf;
 	
-	Возврат Писатель.ПолучитьТекст();
+	Return Writer.GetText();
 
-КонецФункции
+EndFunction
 
 ////////////////////////////////////////////////////////////////////////////////
-// Вспомогательные процедуры и функции
-Процедура ДобавитьСтроку(Писатель, СтрокаДляВывода, ДобавлятьПереход = Ложь)
+// AUXILIARY PROCEDURES AND FUNCTIONS
+Procedure AddLine(Writer, OutputString, AddGoTo = False)
 
-	// Добавляем в начало строки необходимое количество пробелов
-	Результат = "";
-	Для Индекс = 1 To Отступ Цикл
-		Результат = Результат + "	";
-	КонецЦикла;
-	Результат = Результат + СтрокаДляВывода;
+	// Adding required number of spaces to the string from the left 
+	Result = "";
+	For Index = 1 To Indent Do
+		Result = Result + "	";
+	EndDo;
+	Result = Result + OutputString;
 
-	// Добавляем строку в конец
-	Писатель.ДобавитьСтроку(Результат);
-	Если ДобавлятьПереход Тогда
-		Писатель.ДобавитьСтроку("");
-	КонецЕсли;
+	// Adding the string to the end of the result
+	Writer.AddLine(Result);
+	If AddGoTo Then
+		Writer.AddLine("");
+	EndIf;
 
-КонецПроцедуры
+EndProcedure
 
-Процедура ВставитьСтроку(Писатель, НомерСтроки, СтрокаДляВывода)
+Procedure InsertLine(Writer, LineNumber, OutputString)
 
-	// Добавляем в начало строки необходимое количество пробелов
-	Результат = "";
-	Для Индекс = 1 To Отступ Цикл
-		Результат = Результат + "	";
-	КонецЦикла;
-	Результат = Результат + СтрокаДляВывода;
+	// Adding required number of spaces to the string from the left
+	Result = "";
+	For Index = 1 To Indent Do
+		Result = Result + "	";
+	EndDo;
+	Result = Result + OutputString;
 
-	// Вставляем строку в начало
-	Писатель.ВставитьСтроку(НомерСтроки, Результат);
+	// Adding the string to the result
+	Writer.InsertLine(LineNumber, Result);
 
-КонецПроцедуры
+EndProcedure
 
-Функция УдвоитьКавычки(СтрокаДляВывода)
+Function DoubleQuotationMarks(OutputString)
 
-	// Для правильного вывода в файл удваиваем кавычки
-	Возврат СтрЗаменить(СтрокаДляВывода, """", """""");
+	// Doubling quotation marks for correctness during export to a file.
+	Return StrReplace(OutputString, """", """""");
 
-КонецФункции
+EndFunction
 
-Функция ЗначенияПоискаДляЗаголовка(Заголовок, Имя)
-	
-	// Поиск "по заголовку" или "по имени и заголовку"
-	Если ПоискОбъектов = 0 Или ПоискОбъектов = 2 Тогда
-		Если Не Заголовок = Неопределено Тогда
-			Возврат """" + УдвоитьКавычки(Заголовок) + """";
-		КонецЕсли;
-		Если ПоискОбъектов = 2 и Имя = Неопределено Тогда
-			ВызватьИсключение НСтр("ru = 'У объекта должны быть заполнены заголовок или имя'");
-		КонецЕсли;
-		Возврат "";
-	// Поиск "по имени"
-	ИначеЕсли ПоискОбъектов = 1 Тогда
-		Если Имя = Неопределено Тогда
-			Возврат """" + УдвоитьКавычки(Заголовок) + """";
-		КонецЕсли;
-		Возврат "";
-	// Поиск по имени и заголовку
-	Иначе
-		ВызватьИсключение НСтр("ru = 'Неожиданный тип поиска объектов: '") + ПоискОбъектов;
-	КонецЕсли;
-	
-КонецФункции
+Function SearchValuesForTitle(Title, Name, Val SearchType)
 
-Функция ЗначенияПоискаДляИмени(Заголовок, Имя)
-	
-	// Поиск "по заголовку"
-	Если ПоискОбъектов = 0 Тогда
-		Возврат "";
-	// Поиск "по имени" или "по имени и заголовку"
-	ИначеЕсли ПоискОбъектов = 1 Или ПоискОбъектов = 2 Тогда
-		Если Не Имя = Неопределено Тогда
-			Возврат """" + Имя + """";
-		КонецЕсли;
-		Если ПоискОбъектов = 2 И Заголовок = Неопределено Тогда
-			ВызватьИсключение НСтр("ru = 'У объекта должны быть заполнены заголовок или имя'");
-		КонецЕсли;
-		Возврат "";
-	Иначе
-		ВызватьИсключение НСтр("ru = 'Неожиданный тип поиска объектов: '") + ПоискОбъектов;
-	КонецЕсли;
-	
-КонецФункции
+	// Search 'by title' or 'by name and title'
+	If SearchType = 0 Or SearchType = 2 Then
+		If Not Title = Undefined Then
+			Return """" + DoubleQuotationMarks(Title) + """";
+		EndIf;
+		If SearchType = 2 And Name = Undefined Then
+			Raise NStr("en = 'Specify the title or name of the object'; ru = 'У объекта должны быть заполнены заголовок или имя'");
+		EndIf;
+		Return "";
+	// Search 'by name'
+	ElsIf SearchType = 1 Then
+		If Name = Undefined Then
+			Return """" + DoubleQuotationMarks(Title) + """";
+		EndIf;
+		Return "";
+	// Search 'by name and title'
+	Else
+		Raise NStr("en = 'Unexpected object search type: '; ru = 'Неожиданный тип поиска объектов: '") + ObjectSearch;
+	EndIf;
 
-Функция ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ЗаголовокОбъекта)
+EndFunction
 
-	// Имя переменной начинается с имени типа
-	Если ТипОбъекта = "ClientApplicationWindow" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "ОкноПриложения", "ClientWindow");
-	ИначеЕсли ТипОбъекта = "Form" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Форма", "Form");
-	ИначеЕсли ТипОбъекта = "FormField" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Поле", "Field");
-	ИначеЕсли ТипОбъекта = "FormButton" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Кнопка", "Button");
-	ИначеЕсли ТипОбъекта = "FormGroup" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Группа", "Group");
-	ИначеЕсли ТипОбъекта = "FormTable" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Таблица", "Table");
-	ИначеЕсли ТипОбъекта = "FormDecoration" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "Декорация", "Decoration");
-	ИначеЕсли ТипОбъекта = "CommandInterface" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "КомандныйИнтерфейс", "CommandInterface");
-	ИначеЕсли ТипОбъекта = "CommandInterfaceGroup" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "ГруппаКомандногоИнтерфейса", "CommandInterfaceGroup");
-	ИначеЕсли ТипОбъекта = "CommandInterfaceButton" Тогда
-		ИмяПеременной = ? (ВариантВстроенногоЯзыка = "ru", "КнопкаКомандногоИнтерфейса", "CommandInterfaceButton");
-	Иначе
-		ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + ТипОбъекта;
-	КонецЕсли;
+Function SearchValuesForName(Title, Name, Val SearchType, TitleEmpty)
 
-	// Отсекаем всё, что не является буквами и цифрами
-	ПредыдущийСимволЭтоПробел = Истина;
-	ДлинаСтроки = СтрДлина(ЗаголовокОбъекта);
-	Для Индекс = 1 To ДлинаСтроки Цикл
+	If (SearchType = 0 And TitleEmpty) Then
+		SearchType = 1;
+	EndIf;
 
-		СледующийСимвол = Сред(ЗаголовокОбъекта,Индекс, 1);
-		Если ЭтоБуква(СледующийСимвол) Или ЭтоЦифра(СледующийСимвол) Тогда
-			ИмяПеременной = ИмяПеременной + ? (ПредыдущийСимволЭтоПробел, ВРег(СледующийСимвол), СледующийСимвол);
-			ПредыдущийСимволЭтоПробел = Ложь;
-		Иначе
-			ПредыдущийСимволЭтоПробел = Истина;
-		КонецЕсли;
-	КонецЦикла;
+	// Search 'by title'
+	If SearchType = 0 Then
+		Return "";
+	// Search 'by name' or 'by name and title'
+	ElsIf SearchType = 1 Or SearchType = 2 Then
+		If Not Name = Undefined Then
+			Return """" + Name + """";
+		EndIf;
+		If SearchType = 2 And Title = Undefined Then
+			Raise NStr("en = 'Specify the title or name of the object'; ru = 'У объекта должны быть заполнены заголовок или имя'");
+		EndIf;
+		Return "";
+	Else
+		Raise NStr("en = 'Unexpected object search type: '; ru = 'Неожиданный тип поиска объектов: '") + ObjectSearch;
+	EndIf;
 
-	Возврат ИмяПеременной;
+EndFunction
 
-КонецФункции
+Function ConvertTitleIntoVariableName(ObjectType, ObjectTitle)
 
-Функция ЭтоЦифра(Символ)
+	// Variable name starts with a type name
+	If ObjectType = "ClientApplicationWindow" Then
 
-	Код = КодСимвола (Символ);
-	Возврат Код >= 48 И Код <= 57;
+		VariableName = ? (ScriptVariant = "en", "ClientWindow", "ОкноПриложения");
+	ElsIf ObjectType = "Form" Then
+		VariableName = ? (ScriptVariant = "en", "Form", "Форма");
+	ElsIf ObjectType = "FormField" Then
+		VariableName = ? (ScriptVariant = "en", "Field", "Поле");
+	ElsIf ObjectType = "FormButton" Then
+		VariableName = ? (ScriptVariant = "en", "Button", "Кнопка");
+	ElsIf ObjectType = "FormGroup" Then
+		VariableName = ? (ScriptVariant = "en", "Group", "Группа");
+	ElsIf ObjectType = "FormTable" Then
+		VariableName = ? (ScriptVariant = "en", "Table", "Таблица");
+	ElsIf ObjectType = "FormDecoration" Then
+		VariableName = ? (ScriptVariant = "en", "Decoration", "Декорация");
+	ElsIf ObjectType = "CommandInterface" Then
+		VariableName = ? (ScriptVariant = "en", "CommandInterface", "КомандныйИнтерфейс");
+	ElsIf ObjectType = "CommandInterfaceGroup" Then
+		VariableName = ? (ScriptVariant = "en", "CommandInterfaceGroup", "ГруппаКомандногоИнтерфейса");
+	ElsIf ObjectType = "CommandInterfaceButton" Then
+		VariableName = ? (ScriptVariant = "en", "CommandInterfaceButton", "КнопкаКомандногоИнтерфейса");
+	Else
+		Raise NStr("en = 'Unknown node: '; ru = 'Неопознанный узел '") + ObjectType;
+	EndIf;
 
-КонецФункции
+	// Cutting characters except letters and digits
+	PreviousCharIsSpace = True;
+	StringLength = StrLen(ObjectTitle);
+	For Index = 1 To StringLength Do
+		NextChar = Mid(ObjectTitle,Index, 1);
+		If IsLetter(NextChar) Or IsDigit(NextChar) Then
+			VariableName = VariableName + ? (PreviousCharIsSpace, Upper(NextChar), NextChar);
+			PreviousCharIsSpace = False;
+		Else
+			PreviousCharIsSpace = True;
+		EndIf;
+	EndDo;
 
-Функция ЭтоБуква(Символ)
+	Return VariableName;
 
-	// Считаем, что для небуквенных символов коды не отличаются
-	Возврат КодСимвола(НРег(Символ)) <> КодСимвола(ВРег(Символ));
+EndFunction
 
-КонецФункции
+Function IsDigit(Char)
+
+	Code = CharCode(Char);
+	Return Code >= 48 And Code <= 57;
+
+EndFunction
+
+Function IsLetter(Char)
+
+	// All non-literal character codes are considered equal
+	Return CharCode(Lower(Char)) <> CharCode(Upper(Char));
+
+EndFunction
 
 ////////////////////////////////////////////////////////////////////////////////
-// Процедуры преобразования
-Процедура ПреобразоватьВСценарий(Читатель, Писатель)
+// Convert procedures
+Procedure ConvertIntoScenario(Reader, Writer)
 
-	Если ГененироватьКодПодключенияККлиенту Тогда
+	If GenerateClientConnectionScript Then
 
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "&НаКлиенте", "&AtClient"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Процедура ", "Procedure ") + ИмяОсновнойПроцедуры + "()", Истина);
+		AddLine(Writer, ? (ScriptVariant = "en", "&AtClient", "&НаКлиенте"));
+		AddLine(Writer, ? (ScriptVariant = "en", "Procedure ", "Процедура ") + MainProcedureName + "()", True);
 
-		Отступ = Отступ + 1;
+		Indent = Indent + 1;
 
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ТестовоеПриложение = Новый ТестируемоеПриложение();",
-																	"TestedApplication = New TestedApplication();"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ВремяОкончанияОжидания = ТекущаяДата() + 60;",
-																	"WaitingTime = CurrentDate() + 60;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Подключен = Ложь;",
-																	"Connected = Ложь;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ОписаниеОшибкиСоединения = """";",
-																	"ConnectingErrorDescription = """";"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Пока Не ТекущаяДата() >= ВремяОкончанияОжидания Цикл",
-																	"Пока Не CurrentDate() >= WaitingTime Do"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	Попытка",
-																	"	Try"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "		ТестовоеПриложение.УстановитьСоединение();",
-																	"		TestedApplication.Connect();"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "		Подключен = Истина;",
-																	"		Connected = Истина;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "		Прервать;",
-																	"		Break;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	Исключение",
-																	"	Except"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "		ОписаниеОшибкиСоединения = ОписаниеОшибки();",
-																	"		ConnectingErrorDescription = ErrorDescription();"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	КонецПопытки;",
-																	"	EndTry;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КонецЦикла;",
-																	"EndDo;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Если Не Подключен Тогда",
-																	"Если Не Connected Тогда"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	ТестовоеПриложение = Неопределено;",
-																	"	TestedApplication = Undefined;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	Сообщить(""Не смогли установить соединение! "" + Символы.ПС + ОписаниеОшибкиСоединения);",
-																	"	Message(""Couldn't establish connection! "" + Chars.LF + ConnectingErrorDescription);"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	Возврат;",
-																	"	Возврат;"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КонецЕсли;",
-																	"КонецЕсли;"), Истина);
+		AddLine(Writer, ? (ScriptVariant = "en", "TestApplication = New TestedApplication();", "ТестовоеПриложение = Новый ТестируемоеПриложение();"));
+		AddLine(Writer, ? (ScriptVariant = "en", "TimeOut = CurrentDate() + 60;", "ВремяОкончанияОжидания = ТекущаяДата() + 60;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "Connected = False;", "Подключен = Ложь;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "ConnectionErrorDescription = """";", "ОписаниеОшибкиСоединения = """";"));
+		AddLine(Writer, ? (ScriptVariant = "en", "While Not CurrentDate() >= TimeOut Do", "Пока Не ТекущаяДата() >= ВремяОкончанияОжидания Цикл"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	Try", "	Попытка"));
+		AddLine(Writer, ? (ScriptVariant = "en", "		TestApplication.Connect();", "		ТестовоеПриложение.УстановитьСоединение();"));
+		AddLine(Writer, ? (ScriptVariant = "en", "		Connected = True;", "		Подключен = Истина;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "		Break;", "		Прервать;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	Except", "	Исключение"));
+		AddLine(Writer, ? (ScriptVariant = "en", "		ConnectionErrorDescription = ErrorDescription();", "		ОписаниеОшибкиСоединения = ОписаниеОшибки();"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	EndTry;", "	КонецПопытки;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "EndDo;", "КонецЦикла;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "If Not Connected Then", "Если Не Подключен Тогда"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	TestApplication = Undefined;", "	ТестовоеПриложение = Неопределено;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	Message(""Connection cannot be established. "" + Chars.LF + ConnectionErrorDescription);", "	Сообщить(""Не смогли установить соединение! "" + Символы.ПС + ОписаниеОшибкиСоединения);"));
+		AddLine(Writer, ? (ScriptVariant = "en", "	Return;", "	Возврат;"));
+		AddLine(Writer, ? (ScriptVariant = "en", "EndIf;", "КонецЕсли;"), True);
 
-		Отступ = Отступ - 1;
+		Indent = Indent - 1;
 
-	Иначе
+	Else
 
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "&НаКлиенте", "&AtClient"));
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Процедура ", "Procedure ") + ИмяОсновнойПроцедуры + ? (ВариантВстроенногоЯзыка = "ru", "(ТестовоеПриложение)", "(TestedApplication)"), Истина);
+		AddLine(Writer, ? (ScriptVariant = "en", "&AtClient", "&НаКлиенте"));
+		AddLine(Writer, ? (ScriptVariant = "en", "Procedure ", "Процедура ") + MainProcedureName + ? (ScriptVariant = "en", "(TestApplication)", "(ТестовоеПриложение)"), True);
 
-	КонецЕсли;
+	EndIf;
 
-	Читатель.Прочитать();
+	Reader.Read();
 
-	ЛокальныйПисатель = Писатель;
-	Если РазделятьКодНаПроцедуры Тогда
-		ЛокальныйПисатель = Новый ТекстовыйДокумент();
-	КонецЕсли;
+	LocalWriter = Writer;
+	If SplitScriptIntoProcedures Then
+		LocalWriter = New TextDocument();
+	EndIf;
 
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
+	While Reader.NodeType <> XMLNodeType.EndElement Do
 
-		Если Читатель.Имя = "ClientApplicationWindow" Тогда
+		If Reader.Name = "ClientApplicationWindow" Then
 
-			ЛокальноеИмяПроцедуры = "";
-			ПреобразоватьОкно(Читатель, ЛокальныйПисатель, ЛокальноеИмяПроцедуры);
+			LocalProcedureName = "";
+			ConvertWindow(Reader, LocalWriter, LocalProcedureName);
 
-			Если РазделятьКодНаПроцедуры Тогда
+			If SplitScriptIntoProcedures Then
 
-				Отступ = Отступ + 1;
-				ДобавитьСтроку(Писатель, ЛокальноеИмяПроцедуры + ? (ВариантВстроенногоЯзыка = "ru", "(ТестовоеПриложение);", "(TestedApplication);"));
-				Отступ = Отступ - 1 ;
+				Indent = Indent + 1;
+				AddLine(Writer, LocalProcedureName + ? (ScriptVariant = "en", "(TestApplication);", "(ТестовоеПриложение);"));
+				Indent = Indent - 1 ;
 
-			КонецЕсли;
+			EndIf;
 
-		ИначеЕсли Читатель.Имя = "Form" Тогда
+		ElsIf Reader.Name = "Form" Then
 
-			ДобавитьСтроку(Писатель, "");
+			AddLine(Writer, "");
 
-			Отступ = Отступ + 1;
+			Indent = Indent + 1;
 
-			ОбрабатываемоеОкно = "";
-			СозданныеВОкнеИФормеПеременные.Вставить(ОбрабатываемоеОкно, Новый Соответствие());
-			ПреобразоватьФорму(Читатель, Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ТестовоеПриложение", "TestedApplication"));
+			WindowBeingProcessed = "";
+			CreatedInWindowAndFormVariables.Insert(WindowBeingProcessed, New Map());
+			ConvertForm(Reader, Writer, ? (ScriptVariant = "en", "TestApplication", "ТестовоеПриложение"));
 
-			Отступ = Отступ - 1;
+			Indent = Indent - 1;
 
-		Иначе
+		Else
 
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
 
-		КонецЕсли;
+		EndIf;
 
-	КонецЦикла;
+	EndDo;
 
-	Если РазделятьКодНаПроцедуры Тогда
-		ДобавитьСтроку(Писатель, "");
-	КонецЕсли;
-	ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КонецПроцедуры", "EndProcedure"));
+	If SplitScriptIntoProcedures Then
+		AddLine(Writer, "");
+	EndIf;
+	AddLine(Writer, ? (ScriptVariant = "en", "EndProcedure", "КонецПроцедуры"));
 
-	Если РазделятьКодНаПроцедуры Тогда
-		ДобавитьСтроку(Писатель, ЛокальныйПисатель.ПолучитьТекст());
-	КонецЕсли;
+	If SplitScriptIntoProcedures Then
+		AddLine(Writer, LocalWriter.GetText());
+	EndIf;
 
-КонецПроцедуры
+EndProcedure
 
-Процедура ПреобразоватьОкно(Читатель, Писатель, ЛокальноеИмяПроцедуры)
+Procedure ConvertWindow(Reader, Writer, LocalProcedureName)
 
-	ТипОбъекта = Читатель.Имя;
-	ЗаголовокОбъекта = "";
-	ЭтоГлавноеОкно = Ложь;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "caption" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "isMain" Тогда
-			ЭтоГлавноеОкно = Булево(Читатель.Значение);
-		КонецЕсли;
-	КонецЦикла;
+	ObjectType = Reader.Name;
+	ObjectTitle = "";
+	IsMainWindow = False;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "caption" Then
+			ObjectTitle = Reader.Value;
+		ElsIf Reader.Name = "isMain" Then
+			IsMainWindow = Boolean(Reader.Value);
+		EndIf;
+	EndDo;
 
-	ИмяПеременной = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЭтоГлавноеОкно, ? (ВариантВстроенногоЯзыка = "ru", "Основное", "Main"), ЗаголовокОбъекта));
+	VariableName = ConvertTitleIntoVariableName(ObjectType, ? (IsMainWindow, ? (ScriptVariant = "en", "Main", "Основное"), ObjectTitle));
 
-	ОбрабатываемоеОкно = ИмяПеременной;
+	WindowBeingProcessed = VariableName;
+
+	If SplitScriptIntoProcedures Then 
+		LineCountBeforeProcess = Writer.LineCount();
+	EndIf;
+
+	Indent = Indent + 1;
+
+	If CreatedInWindowAndFormVariables.Get(WindowBeingProcessed) = Undefined Then
+
+		CreatedInWindowAndFormVariables.Insert(WindowBeingProcessed, New Map());
+
+		If IsMainWindow Then
+			AddLine(Writer, "");
+			AddLine(Writer, VariableName + ? (ScriptVariant = "en", " = Undefined;", " = Неопределено;"));
+			AddLine(Writer, ? (ScriptVariant = "en", "ClientWindowsOfApplicationBeingTested = TestApplication.GetChildObjects();", "КлиентсткиеОкнаТестируемогоПриложения = ТестовоеПриложение.ПолучитьПодчиненныеОбъекты();"));
+			AddLine(Writer, ? (ScriptVariant = "en", "For Each WindowBeingTested In ClientWindowsOfApplicationBeingTested Do", "Для Каждого ТестируемоеОкно Из КлиентсткиеОкнаТестируемогоПриложения Цикл"));
+			AddLine(Writer, ? (ScriptVariant = "en", "	If WindowBeingTested.IsMain Then", "	Если ТестируемоеОкно.Основное Тогда"));
+			AddLine(Writer, "		" + VariableName + ? (ScriptVariant = "en", " = WindowBeingTested;", " = ТестируемоеОкно;"));
+			AddLine(Writer, ? (ScriptVariant = "en", "		Break;", "		Прервать;"));
+			AddLine(Writer, ? (ScriptVariant = "en", "	EndIf;", "	КонецЕсли;"));
+			AddLine(Writer, ? (ScriptVariant = "en", "EndDo;", "КонецЦикла;"));
+		Else
+
+			AddLine(Writer, VariableName + ? (ScriptVariant = "en", " = TestApplication.FindObject(Type(""TestedClientApplicationWindow""), """, " = ТестовоеПриложение.НайтиОбъект(Тип(""ТестируемоеОкноКлиентскогоПриложения""), """) + DoubleQuotationMarks(ObjectTitle) + """, , 30);");
+
+		EndIf;
+
+	EndIf;
+	WindowClosed = False;
+
+	Reader.Read();
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+
+		If Reader.Name = "Form" Then
+			ConvertForm(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "CommandInterface" Then
+			ConvertWindowCommandInterface(Reader, Writer, VariableName);
+		ElsIf Not ConvertCommand(Reader, Writer, VariableName) Then
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+
+	EndDo;
+
+	Indent = Indent - 1;
+	Reader.Read();
+
+	If WindowClosed Or SplitScriptIntoProcedures Then
+		CreatedInWindowAndFormVariables.Delete(WindowBeingProcessed);
+	EndIf;
+
+	If SplitScriptIntoProcedures Then
+
+		ProcedureCount = 0;
+		While True Do
+			LocalProcedureName = VariableName + LastProcessedControl + LastProcessedCommand + ? (ProcedureCount = 0, "", ProcedureCount);
+			Prologue = ? (ScriptVariant = "en", "Procedure ", "Процедура ") + LocalProcedureName + ? (ScriptVariant = "en", "(TestApplication)", "(ТестовоеПриложение)");
+			If CreatedProcedures.Find(Prologue) = Undefined Then
+				CreatedProcedures.Add(Prologue);
+				Break;
+			EndIf;
+			ProcedureCount = ProcedureCount + 1;
+		EndDo;
+
+		InsertLine(Writer, LineCountBeforeProcess, Prologue);
+					InsertLine(Writer, LineCountBeforeProcess, ? (ScriptVariant = "en", "&AtClient", "&НаКлиенте"));
+		InsertLine(Writer, LineCountBeforeProcess, "");
+
+		AddLine(Writer, ? (ScriptVariant = "en", "EndProcedure", "КонецПроцедуры"), True);
+
+	EndIf;
+
+EndProcedure
+
+Procedure ConvertWindowCommandInterface(Reader, Writer, ParentVariable)
+
+	ObjectType = Reader.Name;
+	ObjectTitle = "";
+
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
+
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ObjectTitle);
+	VariableName = ParentVariable + "CommandInterface";
+
+
+	WindowForms = CreatedInWindowAndFormVariables.Get(WindowBeingProcessed);
+	If WindowForms.Get(FormBeingProcessed) = Undefined Then
+
+		WindowForms.Insert(FormBeingProcessed, New Array());
 	
-	Если РазделятьКодНаПроцедуры Тогда 
-		КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-	КонецЕсли;
+		AddLine(Writer, VariableName + " = " + ParentVariable + ? (ScriptVariant = "en", ".GetCommandInterface();", ".ПолучитьКомандныйИнтерфейс();"));
 
-	Отступ = Отступ + 1;
+	EndIf;
 
-	Если СозданныеВОкнеИФормеПеременные.Получить(ОбрабатываемоеОкно) = Неопределено Тогда
+	Reader.Read();
 
-		СозданныеВОкнеИФормеПеременные.Вставить(ОбрабатываемоеОкно, Новый Соответствие());
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+		If Reader.Name = "CommandInterfaceButton" Then
+			ConvertCommandInterfaceButton(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "CommandInterfaceGroup" Then
+			ConvertCommandInterfaceGroup(Reader, Writer, VariableName);
+		ElsIf Not ConvertCommand(Reader, Writer, VariableName) Then
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
 
-		Если ЭтоГлавноеОкно Тогда
-			ДобавитьСтроку(Писатель, "");
-			ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", " = Неопределено;", " = Undefined;"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КлиентсткиеОкнаТестируемогоПриложения = ТестовоеПриложение.ПолучитьПодчиненныеОбъекты();",
-																		"TestedApplicationClienWindows = TestedApplication.GetChildObjects();"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "Для Каждого ТестируемоеОкно Из КлиентсткиеОкнаТестируемогоПриложения Цикл",
-																		"For Each TestedWindow In TestedApplicationClienWindows Do"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	Если ТестируемоеОкно.Основное Тогда",
-																		"	Если TestedWindow.IsMain Тогда"));
-			ДобавитьСтроку(Писатель, "		" + ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", " = ТестируемоеОкно;",
-																									" = TestedWindow;"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "		Прервать;", 
-																		"		Break;"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "	КонецЕсли;",
-																		"	КонецЕсли;"));
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КонецЦикла;",
-																		"EndDo;"));
-		Иначе
+	EndDo;
 
-			ДобавитьСтроку(Писатель, 
-						   ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", " = ТестовоеПриложение.НайтиОбъект(Тип(""ТестируемоеОкноКлиентскогоПриложения""), """, 
-						   													  " = TestedApplication.FindIbject(Type(""TestedClientApplicationWindow""), """) + УдвоитьКавычки(ЗаголовокОбъекта) + """, , 30);");
-		КонецЕсли;
+	Reader.Read();
 
-	КонецЕсли;
-	ОкноБылоЗакрыто = Ложь;
+EndProcedure
 
-	Читатель.Прочитать();
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
+Procedure ConvertCommandInterfaceButton(Reader, Writer, ParentVariable)
 
-		Если Читатель.Имя = "Form" Тогда
-			ПреобразоватьФорму(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "CommandInterface" Тогда
-			ПреобразоватьКомандныйИнтерфейсОкна(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Не ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
+	ObjectType = Reader.Name;
+	ObjectTitle = "";
 
-	КонецЦикла;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
 
-	Отступ = Отступ - 1;
-	Читатель.Прочитать();
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ObjectTitle);
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
 
-	Если ОкноБылоЗакрыто Или РазделятьКодНаПроцедуры Тогда
-		СозданныеВОкнеИФормеПеременные.Удалить(ОбрабатываемоеОкно);
-	КонецЕсли;
+	LineCountBeforeProcess = Writer.LineCount();
 
-	Если РазделятьКодНаПроцедуры Тогда
+	Reader.Read();
 
-		КоличествоПроцедур = 0;
-		Пока Истина Цикл
-			ЛокальноеИмяПроцедуры = ИмяПеременной + ПоследнийОбработанныйЭлементУправления + ПоследняяОбработаннаяКоманда + ? (КоличествоПроцедур = 0, "", КоличествоПроцедур);
-			Пролог = ? (ВариантВстроенногоЯзыка = "ru", "Процедура ", "Procedure ") + ЛокальноеИмяПроцедуры + ? (ВариантВстроенногоЯзыка = "ru", "(ТестовоеПриложение)", "(TestedApplication)");
-			Если СозданныеПроцедуры.Find(Пролог) = Неопределено Тогда
-				СозданныеПроцедуры.Add(Пролог);
-				Прервать;
-			КонецЕсли;
-			КоличествоПроцедур = КоличествоПроцедур + 1;
-		КонецЦикла;
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
 
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой, Пролог);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой, ? (ВариантВстроенногоЯзыка = "ru", "&НаКлиенте", "&AtClient"));
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой, "");
+		If ConvertCommand(Reader, Writer, VariableName) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
 
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "КонецПроцедуры", "EndProcedure"), Истина);
+	EndDo;
 
-	КонецЕсли;
+	If CommandConverted Or GetFullHierarchy Then
+		InsertLine(Writer, LineCountBeforeProcess + 1, VariableName + " = " + ParentVariable + ? (ScriptVariant = "en", ".FindObject(Type(""TestedCommandInterfaceButton""), """, ".НайтиОбъект(Тип(""ТестируемаяКнопкаКомандногоИнтерфейса""), """) + DoubleQuotationMarks(ObjectTitle) + """);");
+	EndIf;
 
-КонецПроцедуры
+	Reader.Read();
 
-Процедура ПреобразоватьКомандныйИнтерфейсОкна(Читатель, Писатель, РодительскаяПеременная)
+EndProcedure
 
-	ТипОбъекта = Читатель.Имя;
-	ЗаголовокОбъекта = "";
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
+Procedure ConvertCommandInterfaceGroup(Reader, Writer, ParentVariable)
 
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ЗаголовокОбъекта);
-	ИмяПеременной = РодительскаяПеременная + "КомандныйИнтерфейс";
+	ObjectType = Reader.Name;
+	ObjectTitle = "";
 
-	ФормыОкна = СозданныеВОкнеИФормеПеременные.Получить(ОбрабатываемоеОкно);
-	Если ФормыОкна.Получить(ОбрабатываемаяФорма) = Неопределено Тогда
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
 
-		ФормыОкна.Вставить(ОбрабатываемаяФорма, Новый Массив());
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ObjectTitle);
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
+
+	LineCountBeforeProcess = Writer.LineCount();
+
+	Reader.Read();
+
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+
+		If Reader.Name = "CommandInterfaceButton" Then
+			ConvertCommandInterfaceButton(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf Reader.Name = "CommandInterfaceGroup" Then
+			ConvertCommandInterfaceGroup(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+
+	EndDo;
+
+	If GetFullHierarchy Then
+		InsertLine(Writer, LineCountBeforeProcess + 1, VariableName + " = " + ParentVariable + ? (ScriptVariant = "en", ".FindObject(Type(""TestedCommandInterfaceGroup""), """, ".НайтиОбъект(Тип(""ТестируемаяГруппаКомандногоИнтерфейса""), """) + DoubleQuotationMarks(ObjectTitle) + """);");
+	EndIf;
+
+	Reader.Read();
+
+EndProcedure
+
+Procedure ConvertForm(Reader, Writer, ParentVariable)
+
+	ObjectType = Reader.Name;
+	ObjectTitle = "";
+
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
+
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ObjectTitle);
+	VariableName = ParentVariable + LastProcessedControl;
+	FormBeingProcessed = VariableName;
+
+	WindowForms = CreatedInWindowAndFormVariables.Get(WindowBeingProcessed);
+	If WindowForms.Get(FormBeingProcessed) = Undefined Then
+
+		WindowForms.Insert(FormBeingProcessed, New Array());
 	
-		ДобавитьСтроку(Писатель, ИмяПеременной + " = " + РодительскаяПеременная + ? (ВариантВстроенногоЯзыка = "ru", ".ПолучитьКомандныйИнтерфейс();", ".GetCommandInterface();"));
+		AddLine(Writer, VariableName + " = " + ParentVariable + ? (ScriptVariant = "en", ".FindObject(Type(""TestedForm""), """, ".НайтиОбъект(Тип(""ТестируемаяФорма""), """) + DoubleQuotationMarks(ObjectTitle) + """);");
 
-	КонецЕсли;
+	EndIf;
 
-	Читатель.Прочитать();
+	Reader.Read();
 
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-		Если Читатель.Имя = "CommandInterfaceButton" Тогда
-			ПреобразоватьКнопкуКомандногоИнтерфейса(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "CommandInterfaceGroup" Тогда
-			ПреобразоватьГруппуКомандногоИнтерфейса(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Не ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+		If Reader.Name = "FormField" Then
+			ConvertField(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "FormTable" Then
+			ConvertTable(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "FormDecoration" Then
+			ConvertDecoration(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "FormButton" Then
+			ConvertButton(Reader, Writer, VariableName);
+		ElsIf Reader.Name = "FormGroup" Then
+			ConvertGroup(Reader, Writer, VariableName);
+		ElsIf Not ConvertCommand(Reader, Writer, VariableName) Then
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
 
-	КонецЦикла;
+	EndDo;
 
-	Читатель.Прочитать();
+	Reader.Read();
 
-КонецПроцедуры
+EndProcedure
 
-Процедура ПреобразоватьКнопкуКомандногоИнтерфейса(Читатель, Писатель, РодительскаяПеременная)
+Procedure ConvertTable(Reader, Writer, ParentVariable)
 
-	ТипОбъекта = Читатель.Имя;
-	ЗаголовокОбъекта = "";
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
+	ObjectType = Reader.Name;
+	ObjectName = Undefined;
+	ObjectTitle = Undefined;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "name" Then
+			ObjectName = Reader.Value;
+		ElsIf Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
 
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ЗаголовокОбъекта);
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ? (ObjectTitle = Undefined, ObjectName, ObjectTitle));
 
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
 
-	Читатель.Прочитать();
+	LineCountBeforeProcess = Writer.LineCount();
+	Reader.Read();
 
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
 
-		Если ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
+		If Reader.Name = "FormField" Then
+			ConvertField(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
 
-	КонецЦикла;
+		ElsIf Reader.Name = "FormGroup" Then
+			ConvertGroup(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf ConvertCommand(Reader, Writer, VariableName, ObjectType) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
 
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной + " = " + РодительскаяПеременная + ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяКнопкаКомандногоИнтерфейса""), """, 
-					   																					   ".FindObject(Type(""TestedCommandInterfaceButton""), """) + УдвоитьКавычки(ЗаголовокОбъекта) + """);");
-	КонецЕсли;
+	EndDo;
 
-	Читатель.Прочитать();
+	If CommandConverted Or GetFullHierarchy Then
+		ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, "TestedFormTable", "ТестируемаяТаблицаФормы");
+	EndIf;
 
-КонецПроцедуры
+	Reader.Read();
 
-Процедура ПреобразоватьГруппуКомандногоИнтерфейса(Читатель, Писатель, РодительскаяПеременная)
+EndProcedure
 
-	ТипОбъекта = Читатель.Имя;
-	ЗаголовокОбъекта = "";
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
+Procedure ConvertField(Reader, Writer, ParentVariable)
 
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ЗаголовокОбъекта);
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
+	ObjectType = Reader.Name;
+	ObjectName = Undefined;
+	ObjectTitle = Undefined;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "name" Then
+			ObjectName = Reader.Value;
+		ElsIf Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
 
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ? (ObjectTitle = Undefined, ObjectName, ObjectTitle));
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
 
-	Читатель.Прочитать();
+	LineCountBeforeProcess = Writer.LineCount();
 
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
+	Reader.Read();
 
-		Если Читатель.Имя = "CommandInterfaceButton" Тогда
-			ПреобразоватьКнопкуКомандногоИнтерфейса(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "CommandInterfaceGroup" Тогда
-			ПреобразоватьГруппуКомандногоИнтерфейса(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
 
-	КонецЦикла;
+		If Reader.Name = "FormField" Then
+			ConvertField(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf ConvertCommand(Reader, Writer, VariableName) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node'; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
 
-	Если СтроитьПолнуюИерархию Тогда
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной + " = " + РодительскаяПеременная + ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяГруппаКомандногоИнтерфейса""), """, 
-					   																					   ".FindObject(Type(""TestedCommandInterfaceGroup""), """) + УдвоитьКавычки(ЗаголовокОбъекта) + """);");
-	КонецЕсли;
+	EndDo;
 
-	Читатель.Прочитать();
+	If CommandConverted Or GetFullHierarchy Then
+		ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, "TestedFormField", "ТестируемоеПолеФормы");
+	EndIf;
 
-КонецПроцедуры
+	Reader.Read();
 
-Процедура ПреобразоватьФорму(Читатель, Писатель, РодительскаяПеременная)
+EndProcedure
 
-	ТипОбъекта = Читатель.Имя;
-	ЗаголовокОбъекта = "";
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
+Procedure ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, TypeNameEn, TypeNameRu)
 
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ЗаголовокОбъекта);
-	ИмяПеременной = РодительскаяПеременная + ПоследнийОбработанныйЭлементУправления;
-	ОбрабатываемаяФорма = ИмяПеременной;
+	TitleValue = SearchValuesForTitle(ObjectTitle, ObjectName, ObjectSearch);
+	NameValue = SearchValuesForName(ObjectTitle, ObjectName, ObjectSearch, TitleValue = "");
+	InsertLine(Writer, LineCountBeforeProcess + 1,
+				VariableName +
+				" = " +
+				ParentVariable +
+				? (ScriptVariant = "en", ".FindObject(Type(""" + TypeNameEn + """), ", ".НайтиОбъект(Тип(""" + TypeNameRu + """), ") +
+				? (TitleValue <> "" Or NameValue <> "", TitleValue, "") +
+				? (NameValue <> "", ", " + NameValue, "") +
+				");");
 
-	ФормыОкна = СозданныеВОкнеИФормеПеременные.Получить(ОбрабатываемоеОкно);
-	Если ФормыОкна.Получить(ОбрабатываемаяФорма) = Неопределено Тогда
+EndProcedure
 
-		ФормыОкна.Вставить(ОбрабатываемаяФорма, Новый Массив());
+Procedure ConvertButton(Reader, Writer, ParentVariable)
+
+	ObjectType = Reader.Name;
+	ObjectName = Undefined;
+	ObjectTitle = Undefined;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "name" Then
+			ObjectName = Reader.Value;
+		ElsIf Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
+
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ? (ObjectTitle = Undefined, ObjectName, ObjectTitle));
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
+
+	LineCountBeforeProcess = Writer.LineCount();
+
+	Reader.Read();
+
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+
+		If ConvertCommand(Reader, Writer, VariableName) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+
+	EndDo;
+
+	If CommandConverted Or GetFullHierarchy Then
+		ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, "TestedFormButton", "ТестируемаяКнопкаФормы");
+	EndIf;
+
+	Reader.Read();
+
+EndProcedure
+
+Procedure ConvertDecoration(Reader, Writer, ParentVariable)
+
+	ObjectType = Reader.Name;
+	ObjectName = Undefined;
+	ObjectTitle = Undefined;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "name" Then
+			ObjectName = Reader.Value;
+		ElsIf Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
+
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ? (ObjectTitle = Undefined, ObjectName, ObjectTitle));
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
+
+	LineCountBeforeProcess = Writer.LineCount();
+
+	Reader.Read();
+
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+
+		If ConvertCommand(Reader, Writer, VariableName) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+
+	EndDo;
+
+	If CommandConverted Or GetFullHierarchy Then
+		ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, "TestedFormDecoration", "ТестируемаяДекорацияФормы");
+	EndIf;
+
+	Reader.Read();
+
+EndProcedure
+
+Procedure ConvertGroup(Reader, Writer, ParentVariable)
+
+	ObjectType = Reader.Name;
+	ObjectName = Undefined;
+	ObjectTitle = Undefined;
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "name" Then
+			ObjectName = Reader.Value;
+		ElsIf Reader.Name = "title" Then
+			ObjectTitle = Reader.Value;
+		EndIf;
+	EndDo;
+
+	LastProcessedControl = ConvertTitleIntoVariableName(ObjectType, ? (ObjectTitle = Undefined, ObjectName, ObjectTitle));
+	VariableName = ? (SplitScriptIntoProcedures, "", ParentVariable) + LastProcessedControl;
+
+	LineCountBeforeProcess = Writer.LineCount();
+
+	Reader.Read();
+
+	CommandConverted = False;
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+
+		If Reader.Name = "FormField" Then
+			ConvertField(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf Reader.Name = "FormTable" Then
+			ConvertTable(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf Reader.Name = "FormDecoration" Then
+			ConvertDecoration(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf Reader.Name = "FormButton" Then
+			ConvertButton(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf Reader.Name = "FormGroup" Then
+			ConvertGroup(Reader, Writer, ? (GetFullHierarchy, VariableName, ParentVariable));
+		ElsIf ConvertCommand(Reader, Writer, VariableName, ObjectType) Then
+			CommandConverted = True;
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+
+	EndDo;
+
+	If CommandConverted Or GetFullHierarchy Then
+		ConvertFieldInsertFindObjectLine(LineCountBeforeProcess, ObjectName, ObjectTitle, ParentVariable, VariableName, Writer, "TestedFormGroup", "ТестируемаяГруппаФормы");
+	EndIf;
+
+	Reader.Read();
+
+EndProcedure
+
+Function ConvertCommand(Reader, Writer, VariableName, ObjectType = "")
+
+	If Reader.Name = "activate" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Activate();", ".Активизировать();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Activate", "Активизировать");
+		Reader.Read();
+
+	ElsIf Reader.Name = "inputText" Then
+		OutputText = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "text" Then
+				OutputText = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".InputText(""", ".ВвестиТекст(""") + DoubleQuotationMarks(OutputText) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "InputText", "ВвестиТекст");
+		Reader.Read();
+
+	ElsIf Reader.Name = "click" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Click();", ".Нажать();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Click", "Нажать");
+		Reader.Read();
+
+	ElsIf Reader.Name = "clear" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Clear();", ".Очистить();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Clear", "Очистить");
+		Reader.Read();
+
+	ElsIf Reader.Name = "create" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Create();", ".Создать();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Create", "Создать");
+		Reader.Read();
+
+	ElsIf Reader.Name = "cancel" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".CancelEdit();", ".ОтменитьРедактирование();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "CancelEdit", "ОтменитьРедактирование");
+		Reader.Read();
+
+	ElsIf Reader.Name = "open" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Open();", ".Открыть();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Open", "Открыть");
+		Reader.Read();
+
+	ElsIf Reader.Name = "startChoosing" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".StartChoosing();", ".Выбрать();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "StartChoosing", "Выбрать");
+		Reader.Read();
+
+	ElsIf Reader.Name = "startChoosingFromChoiceList" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".StartChoosingFromChoiceList();", ".ВыбратьИзСпискаВыбора();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "StartChoosingFromChoiceList", "ВыбратьИзСпискаВыбора");
+		Reader.Read();
+
+	ElsIf Reader.Name = "executeChoiceFromChoiceList" Then
+		Presentation = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "presentation" Then
+				Presentation = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".WaitForDropDownListGeneration();", ".ОжидатьФормированияВыпадающегоСписка();"), True);
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".ExecuteChoiceFromChoiceList(""", ".ВыполнитьВыборИзСпискаВыбора(""") + DoubleQuotationMarks(Presentation) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "ExecuteChoiceFromChoiceList", "ВыполнитьВыборИзСпискаВыбора");
+		Reader.Read();
+
+	ElsIf Reader.Name = "openDropList" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".OpenDropList();", ".ОткрытьВыпадающийСписок();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "OpenDropList", "ОткрытьВыпадающийСписок");
+		Reader.Read();
+
+	ElsIf Reader.Name = "closeDropList" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".CloseDropList();", ".ЗакрытьВыпадающийСписок();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "CloseDropList", "ЗакрытьВыпадающийСписок");
+		Reader.Read();
+
+	ElsIf Reader.Name = "executeChoiceFromDropList" Then
+		Presentation = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "presentation" Then
+				Presentation = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".WaitForDropDownListGeneration();", ".ОжидатьФормированияВыпадающегоСписка();"), True);
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".ExecuteChoiceFromDropList(""", ".ВыполнитьВыборИзВыпадающегоСписка(""") + DoubleQuotationMarks(Presentation) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "ExecuteChoiceFromDropList", "ВыполнитьВыборИзВыпадающегоСписка");
+		Reader.Read();
+
+	ElsIf Reader.Name = "increaseValue" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".IncreaseValue();", ".УвеличитьЗначение();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "IncreaseValue", "УвеличитьЗначение");
+		Reader.Read();
+
+	ElsIf Reader.Name = "decreaseValue" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".DecreaseValue();", ".УменьшитьЗначение();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "DecreaseValue", "УменьшитьЗначение");
+		Reader.Read();
+
+	ElsIf Reader.Name = "setCheck" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SetCheck();", ".УстановитьОтметку();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SetCheck", "УстановитьОтметку");
+		Reader.Read();
+
+	ElsIf Reader.Name = "selectOption" Then
+		Presentation = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "presentation" Then
+				Presentation = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SelectOption(""", ".ВыбратьВариант(""") + DoubleQuotationMarks(Presentation) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SelectOption", "ВыбратьВариант");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoValue" Then
+		Presentation = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "value" Then
+				Presentation = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoValue(""", ".ПерейтиКЗначению(""") + DoubleQuotationMarks(Presentation) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoValue", "ПерейтиКЗначению");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoNextMonth" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoNextMonth();", ".ПерейтиНаМесяцВперед();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoNextMonth", "ПерейтиНаМесяцВперед");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoPreviousMonth" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoPreviousMonth();", ".ПерейтиНаМесяцНазад();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoPreviousMonth", "ПерейтиНаМесяцНазад");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoNextYear" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoNextYear();", ".ПерейтиНаГодВперед();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoNextYear", "ПерейтиНаГодВперед");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoPreviousYear" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoPreviousYear();", ".ПерейтиНаГодНазад();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoPreviousYear", "ПерейтиНаГодНазад");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoDate" Then
+		Presentation = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "date" Then
+				Presentation = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; 'ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoDate(XMLValue(Type(""Date""), """, ".ПерейтиКДате(XMLЗначение(Тип(""Дата""), """) + Presentation + """));", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GoToDate", "ПерейтиКДате");
+		Reader.Read();
+
+	ElsIf Reader.Name = "setCurrentArea" Then
+		Area = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "area" Then
+				Area = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SetCurrentArea(""", ".УстановитьТекущуюОбласть(""") + Area + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SetCurrentArea", "УстановитьТекущуюОбласть");
+		Reader.Read();
+
+	ElsIf Reader.Name = "beginEditingCurrentArea" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".BeginEditingCurrentArea();", ".НачатьРедактированиеТекущейОбласти();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "BeginEditingCurrentArea", "НачатьРедактированиеТекущейОбласти");
+		Reader.Read();
+
+	ElsIf Reader.Name = "finishEditingCurrentArea" Then
+		CancelFlag = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "cancel" Then
+				CancelFlag = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".EndEditingCurrentArea(", ".ЗавершитьРедактированиеТекущейОбласти(") + CancelFlag + ");", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "EndEditingCurrentArea", "ЗавершитьРедактированиеТекущейОбласти");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoNextItem" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoNextItem();", ".ПерейтиКСледующемуЭлементу();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoNextItem", "ПерейтиКСледующемуЭлементу");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoPreviousItem" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoPreviousItem();", ".ПерейтиКПредыдущемуЭлементу();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoPreviousItem", "ПерейтиКПредыдущемуЭлементу");
+		Reader.Read();
+
+	ElsIf Reader.Name = "goOneLevelUp" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GoOneLevelUp();", ".ПерейтиНаУровеньВверх();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GoOneLevelUp", "ПерейтиНаУровеньВверх");
+		Reader.Read();
+
+	ElsIf Reader.Name = "goOneLevelDown" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GoOneLevelDown();", ".ПерейтиНаУровеньВниз();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GoOneLevelDown", "ПерейтиНаУровеньВниз");
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoNextRow" Then
+		ConvertCommandPartGotoSpecificRow(Reader, VariableName, Writer, "GotoNextRow", "ПерейтиКСледующейСтроке");
+
+	ElsIf Reader.Name = "gotoPreviousRow" Then
+		ConvertCommandPartGotoSpecificRow(Reader, VariableName, Writer, "GotoPreviousRow", "ПерейтиКПредыдущейСтроке");
+
+	ElsIf Reader.Name = "gotoFirstRow" Then
+		ConvertCommandPartGotoSpecificRow(Reader, VariableName, Writer, "GotoFirstRow", "ПерейтиКПервойСтроке");
+
+	ElsIf Reader.Name = "gotoLastRow" Then
+		ConvertCommandPartGotoSpecificRow(Reader, VariableName, Writer, "GotoLastRow", "ПерейтиКПоследнейСтроке");
+
+	ElsIf Reader.Name = "gotoRow" Then
+		Direction = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "direction" Then
+				Direction = ? (ScriptVariant = "en", ? (Reader.Value = "up", "RowGotoDirection.Up", "RowGotoDirection.Down"), ? (Reader.Value = "up", "НаправлениеПереходаКСтроке.Вверх", "НаправлениеПереходаКСтроке.Вниз"));
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		Reader.Read();
+		ConvertCommandPartRowDescriptionPartInt(Reader, Writer);
+		AddLine(Writer,
+				VariableName + ? (ScriptVariant = "en", ".GotoRow(RowDescription", ".ПерейтиКСтроке(ОписаниеСтроки") + ? (Direction = "", "", ", " + Direction) + ");",
+				True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoRow", "ПерейтиКСтроке");
+
+	ElsIf Reader.Name = "setOrder" Then
+		ColumnTitle = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "columnTitle" Then
+				ColumnTitle = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SetOrder(""", ".УстановитьПорядок(""") + DoubleQuotationMarks(ColumnTitle) + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SetOrder", "УстановитьПорядок");
+		Reader.Read();
+
+	ElsIf Reader.Name = "choose" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Choose();", ".Выбрать();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Choose", "Выбрать");
+		Reader.Read();
+
+	ElsIf Reader.Name = "selectAllRows" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SelectAllRows();", ".ВыделитьВсеСтроки();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SelectAllRows", "ВыделитьВсеСтроки");
+		Reader.Read();
+
+	ElsIf Reader.Name = "changeRow" Then
+		AddLine(Writer, VariableName +? (ScriptVariant = "en", ".ChangeRow();", ".ИзменитьСтроку();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "ChangeRow", "ИзменитьСтроку");
+		Reader.Read();
+
+	ElsIf Reader.Name = "endEditRow" Then
+		CancelFlag = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "cancel" Then
+				CancelFlag = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".EndEditRow(", ".ЗакончитьРедактированиеСтроки(") + CancelFlag + ");", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "EndEditRow", "ЗакончитьРедактированиеСтроки");
+		Reader.Read();
+
+	ElsIf Reader.Name = "addRow" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".AddRow();", ".ДобавитьСтроку();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "AddRow", "ДобавитьСтроку");
+		Reader.Read();
+
+	ElsIf Reader.Name = "deleteRow" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".DeleteRow();", ".УдалитьСтроку();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "DeleteRow", "УдалитьСтроку");
+		Reader.Read();
+
+	ElsIf Reader.Name = "switchRowDeleteMark" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".SwitchRowDeleteMark();", ".ПереключитьПометкуУдаленияСтроки();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "SwitchRowDeleteMark", "ПереключитьПометкуУдаленияСтроки");
+		Reader.Read();
+
+	ElsIf Reader.Name = "expand" Then
+		If ObjectType = "FormGroup" Then
+			AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Expand();", ".Развернуть();"), True);
+			LastProcessedCommand = ? (ScriptVariant = "en", "Expand", "Развернуть");
+			Reader.Read();
+		Else
+			ConvertCommandPartRowDescription(Reader, VariableName, Writer, "Expand", "Развернуть");
+		Endif;
+		LastProcessedCommand = ? (ScriptVariant = "en", "Expand", "Развернуть");
+
+	ElsIf Reader.Name = "collapse" Then
+		If ObjectType = "FormGroup" Then
+			AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Collapse();", ".Свернуть();"), True);
+			LastProcessedCommand = ? (ScriptVariant = "en", "Collapse", "Свернуть");
+			Reader.Read();
+		Else
+			ConvertCommandPartRowDescription(Reader, VariableName, Writer, "Collapse", "Свернуть");
+		EndIf;
+		LastProcessedCommand = ? (ScriptVariant = "en", "Collapse", "Свернуть");
+
+	ElsIf Reader.Name = "close" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".Close();", ".Закрыть();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "Close", "Закрыть");
+		WindowClosed = True;
+		Reader.Read();
+
+	ElsIf Reader.Name = "chooseUserMessage" Then
+		MessageText = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "messageText" Then
+				MessageText = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".ChooseUserMessage(""", ".ВыбратьСообщениеПользователю(""") + MessageText + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "ChooseUserMessage", "ВыбратьСообщениеПользователю");
+		Reader.Read();
+
+	ElsIf Reader.Name = "closeUserMessagesPanel" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".CloseUserMessagesPanel();", ".ЗакрытьПанельСообщенийПользователю();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "CloseUserMessagesPanel", "ЗакрытьПанельСообщенийПользователю");
+		WindowClosed = True;
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoStartPage" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoStartPage();", ".ПерейтиКНачальнойСтранице();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoStartPage", "ПерейтиКНачальнойСтранице");
+		WindowClosed = True;
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoNextWindow" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoNextWindow();", ".ПерейтиКСледующемуОкну();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoNextWindow", "ПерейтиКСледующемуОкну");
+		WindowClosed = True;
+		Reader.Read();
+
+	ElsIf Reader.Name = "gotoPreviousWindow" Then
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".GotoPreviousWindow();", ".ПерейтиКПредыдущемуОкну();"), True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "GotoPreviousWindow", "ПерейтиКПредыдущемуОкну");
+		WindowClosed = True;
+		Reader.Read();
+
+	ElsIf Reader.Name = "executeCommand" Then
+		CommandRef = "";
+		While Reader.ReadAttribute() Do
+			If Reader.Name = "url" Then
+				CommandRef = Reader.Value;
+			Else
+				Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+			EndIf;
+		EndDo;
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", ".ExecuteCommand(""", ".ВыполнитьКоманду(""") + CommandRef + """);", True);
+		LastProcessedCommand = ? (ScriptVariant = "en", "ExecureCommand", "ВыполнитьКоманду");
+		Reader.Read();
+
+	Else
+		Return False;
+	EndIf;
 	
-		ДобавитьСтроку(Писатель, 
-					   ИмяПеременной + " = " + РодительскаяПеременная + ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяФорма""), """, 
-					   																					   ".FindObject(Type(""TestedForm""), """) + УдвоитьКавычки(ЗаголовокОбъекта) + """);");
-
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-		Если Читатель.Имя = "FormField" Тогда
-			ПреобразоватьПоле(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "FormTable" Тогда
-			ПреобразоватьТаблицу(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "FormDecoration" Тогда
-			ПреобразоватьДекорацию(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "FormButton" Тогда
-			ПреобразоватьКнопку(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Читатель.Имя = "FormGroup" Тогда
-			ПреобразоватьГруппу(Читатель, Писатель, ИмяПеременной);
-		ИначеЕсли Не ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Процедура ПреобразоватьТаблицу(Читатель, Писатель, РодительскаяПеременная)
-
-	ТипОбъекта = Читатель.Имя;
-	ИмяОбъекта = Неопределено;
-	ЗаголовокОбъекта = Неопределено;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "name" Тогда
-			ИмяОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
-
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЗаголовокОбъекта = Неопределено, ИмяОбъекта, ЗаголовокОбъекта));
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
-
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-
-	Читатель.Прочитать();
-
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-
-		Если Читатель.Имя = "FormField" Тогда
-			ПреобразоватьПоле(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "FormGroup" Тогда
-			ПреобразоватьГруппу(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ЗначениеЗаголовка = ЗначенияПоискаДляЗаголовка(ЗаголовокОбъекта, ИмяОбъекта);
-		ЗначениеИмени = ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной + " = " + РодительскаяПеременная + 
-					   ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяТаблицаФормы""), ", ".FindObject(Type(""TestedFormTable""), ") +
-					   ? (ЗначениеЗаголовка <> "" Или ЗначениеИмени <> "", ЗначениеЗаголовка, "") +
-					   ? (ЗначениеИмени <> "", ", " + ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта), "") +
-					   ");");
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Процедура ПреобразоватьПоле(Читатель, Писатель, РодительскаяПеременная)
-
-	ТипОбъекта = Читатель.Имя;
-	ИмяОбъекта = Неопределено;
-	ЗаголовокОбъекта = Неопределено;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "name" Тогда
-			ИмяОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
-
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЗаголовокОбъекта = Неопределено, ИмяОбъекта, ЗаголовокОбъекта));
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
-
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-
-	Читатель.Прочитать();
-
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-
-		Если Читатель.Имя = "FormField" Тогда
-			ПреобразоватьПоле(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ЗначениеЗаголовка = ЗначенияПоискаДляЗаголовка(ЗаголовокОбъекта, ИмяОбъекта);
-		ЗначениеИмени = ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной + 
-					   " = " + 
-					   РодительскаяПеременная + 
-					   ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемоеПолеФормы""), ", ".FindObject(Type(""TestedFormField""), ") + 
-					   ? (ЗначениеЗаголовка <> "" Или ЗначениеИмени <> "", ЗначениеЗаголовка, "") +
-					   ? (ЗначениеИмени <> "", ", " + ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта), "") +
-					   ");");
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Процедура ПреобразоватьКнопку(Читатель, Писатель, РодительскаяПеременная)
-
-	ТипОбъекта = Читатель.Имя;
-	ИмяОбъекта = Неопределено;
-	ЗаголовокОбъекта = Неопределено;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "name" Тогда
-			ИмяОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
-
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЗаголовокОбъекта = Неопределено, ИмяОбъекта, ЗаголовокОбъекта));
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
-
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-
-	Читатель.Прочитать();
-
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-
-		Если ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ЗначениеЗаголовка = ЗначенияПоискаДляЗаголовка(ЗаголовокОбъекта, ИмяОбъекта);
-		ЗначениеИмени = ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной +
-					   " = " +
-					   РодительскаяПеременная +
-					   ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяКнопкаФормы""), ", ".FindObject(Type(""TestedFormButton""), ") +
-					   ? (ЗначениеЗаголовка <> "" Или ЗначениеИмени <> "", ЗначениеЗаголовка, "") +
-					   ? (ЗначениеИмени <> "", ", " + ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта), "") +
-					   ");");
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Процедура ПреобразоватьДекорацию(Читатель, Писатель, РодительскаяПеременная)
-
-	ТипОбъекта = Читатель.Имя;
-	ИмяОбъекта = Неопределено;
-	ЗаголовокОбъекта = Неопределено;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "name" Тогда
-			ИмяОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
-
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЗаголовокОбъекта = Неопределено, ИмяОбъекта, ЗаголовокОбъекта));
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
-
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-
-	Читатель.Прочитать();
-
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-
-		Если ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ЗначениеЗаголовка = ЗначенияПоискаДляЗаголовка(ЗаголовокОбъекта, ИмяОбъекта);
-		ЗначениеИмени = ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной +
-					   " = " +
-					   РодительскаяПеременная +
-					   ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяДекорацияФормы""), ", ".FindObject(Type(""TestedFormDecoration""), ") +
-					   ? (ЗначениеЗаголовка <> "" Или ЗначениеИмени <> "", ЗначениеЗаголовка, "") +
-					   ? (ЗначениеИмени <> "", ", " + ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта), "") +
-					   ");");
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Процедура ПреобразоватьГруппу(Читатель, Писатель, РодительскаяПеременная)
-
-	ТипОбъекта = Читатель.Имя;
-	ИмяОбъекта = Неопределено;
-	ЗаголовокОбъекта = Неопределено;
-	Пока Читатель.ПрочитатьАтрибут() Цикл
-		Если Читатель.Имя = "name" Тогда
-			ИмяОбъекта = Читатель.Значение;
-		ИначеЕсли Читатель.Имя = "title" Тогда
-			ЗаголовокОбъекта = Читатель.Значение;
-		КонецЕсли;
-	КонецЦикла;
-
-	ПоследнийОбработанныйЭлементУправления = ПреобразоватьЗаголовокВИмяПеременной(ТипОбъекта, ? (ЗаголовокОбъекта = Неопределено, ИмяОбъекта, ЗаголовокОбъекта));
-	ИмяПеременной = ? (РазделятьКодНаПроцедуры, "", РодительскаяПеременная) + ПоследнийОбработанныйЭлементУправления;
-
-	КоличествоСтрокПередОбработкой = Писатель.КоличествоСтрок();
-
-	Читатель.Прочитать();
-
-	КомандаБылаПреобразована = Ложь;
-	Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-
-		Если Читатель.Имя = "FormField" Тогда
-			ПреобразоватьПоле(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "FormTable" Тогда
-			ПреобразоватьТаблицу(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "FormDecoration" Тогда
-			ПреобразоватьДекорацию(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "FormButton" Тогда
-			ПреобразоватьКнопку(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли Читатель.Имя = "FormGroup" Тогда
-			ПреобразоватьГруппу(Читатель, Писатель, ? (СтроитьПолнуюИерархию, ИмяПеременной, РодительскаяПеременная));
-		ИначеЕсли ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной) Тогда
-			КомандаБылаПреобразована = Истина;
-		Иначе
-			ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-		КонецЕсли;
-
-	КонецЦикла;
-
-	Если КомандаБылаПреобразована Или СтроитьПолнуюИерархию Тогда
-		ЗначениеЗаголовка = ЗначенияПоискаДляЗаголовка(ЗаголовокОбъекта, ИмяОбъекта);
-		ЗначениеИмени = ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта);
-		ВставитьСтроку(Писатель, КоличествоСтрокПередОбработкой + 1, 
-					   ИмяПеременной +
-					   " = " +
-					   РодительскаяПеременная +
-					   ? (ВариантВстроенногоЯзыка = "ru", ".НайтиОбъект(Тип(""ТестируемаяГруппаФормы""), ", ".FindObject(Type(""TestedFormGroup""), ") +
-					   ? (ЗначениеЗаголовка <> "" Или ЗначениеИмени <> "", ЗначениеЗаголовка, "") +
-					   ? (ЗначениеИмени <> "", ", " + ЗначенияПоискаДляИмени(ЗаголовокОбъекта, ИмяОбъекта), "") +
-					   ");");
-	КонецЕсли;
-
-	Читатель.Прочитать();
-
-КонецПроцедуры
-
-Функция ПреобразоватьКоманду(Читатель, Писатель, ИмяПеременной)
-
-	Если Читатель.Имя = "activate" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Активизировать();", ".Activate();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Активизировать", "Activate");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "inputText" Тогда
-		ТекстДляВывода = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "text" Тогда
-				ТекстДляВывода = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВвестиТекст(""", ".InputText(""") + УдвоитьКавычки(ТекстДляВывода) + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВвестиТекст", "InputText");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "click" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Нажать();", ".Click();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Нажать", "Click");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "clear" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Очистить();", ".Clear();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Очистить", "Clear");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "open" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Открыть();", ".Open();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Открыть", "Open");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "startChoosing" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Выбрать();", ".StartChoosing();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Выбрать", "StartChoosing");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "startChoosingFromChoiceList" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВыбратьИзСпискаВыбора();", ".StartChoosingFromChoiceList();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВыбратьИзСпискаВыбора", "StartChoosingFromChoiceList");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "executeChoiceFromChoiceList" Тогда
-		Представление = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "presentation" Тогда
-				Представление = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ОжидатьФормированияВыпадающегоСписка();", ".WaitForDropDownListGeneration();"), Истина);
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВыполнитьВыборИзСпискаВыбора(""", ".ExecuteChoiceFromChoiceList(""") + УдвоитьКавычки(Представление) + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВыполнитьВыборИзСпискаВыбора", "ВыполнитьВыборИзСпискаВыбора");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "increaseValue" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".УвеличитьЗначение();", ".IncreaseValue();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "УвеличитьЗначение", "IncreaseValue");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "decreaseValue" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".УменьшитьЗначение();", ".DecreaseValue();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "УменьшитьЗначение", "DecreaseValue");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "setCheck" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".УстановитьОтметку();", ".SetCheck();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "УстановитьОтметку", "SetCheck");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "selectOption" Тогда
-		Представление = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "presentation" Тогда
-				Представление = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВыбратьВариант(""", ".SelectOption(""") + УдвоитьКавычки(Представление) + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВыбратьВариант", "SelectOption");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoNextMonth" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаМесяцВперед();", ".GotoNextMonth();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаМесяцВперед", "GotoNextMonth");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoPreviousMonth" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаМесяцНазад();", ".GotoPreviousMonth();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаМесяцНазад", "GotoPreviousMonth");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoNextYear" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаГодВперед();", ".GotoNextYear();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаГодВперед", "GotoNextYear");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoPreviousYear" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаГодНазад();", ".GotoPreviousYear();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаГодНазад", "GotoPreviousYear");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoDate" Тогда
-		Представление = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "date" Тогда
-				Представление = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКДате(XMLЗначение(Тип(""Дата""), """, ".GotoDate(XMLValue(Type(""Date""), """) + Представление + """));", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКДате", "GotoDate");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "setCurrentArea" Тогда
-		Область = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "area" Тогда
-				Область = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".УстановитьТекущуюОбласть(""", ".SetCurrentArea(""") + Область + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "УстановитьТекущуюОбласть", "SetCurrentArea");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "beginEditingCurrentArea" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".НачатьРедактированиеТекущейОбласти();", ".BeginEditingCurrentArea();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "НачатьРедактированиеТекущейОбласти", "BeginEditingCurrentArea");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "finishEditingCurrentArea" Тогда
-		ФлагОтмены = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "cancel" Тогда
-				ФлагОтмены = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ЗавершитьРедактированиеТекущейОбласти(", ".EndEditingCurrentArea(") + ФлагОтмены + ");", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ЗавершитьРедактированиеТекущейОбласти", "EndEditingCurrentArea");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoNextItem" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКСледующемуЭлементу();", ".GotoNextItem();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКСледующемуЭлементу", "GotoNextItem");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoPreviousItem" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКПредыдущемуЭлементу();", ".GotoPreviousItem();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКПредыдущемуЭлементу", "GotoPreviousItem");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "goOneLevelUp" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаУровеньВверх();", ".GoOneLevelUp();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаУровеньВверх", "GoOneLevelUp");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "goOneLevelDown" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиНаУровеньВниз();", ".GoOneLevelDown();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиНаУровеньВниз", "GoOneLevelDown");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoNextRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКСледующейСтроке();", ".GotoNextRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКСледующейСтроке", "GotoNextRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoPreviousRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКПредыдущейСтроке();", ".GotoPreviousRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКПредыдущейСтроке", "GotoPreviousRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoFirstRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКПервойСтроке();", ".GotoFirstRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКПервойСтроке", "GotoFirstRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoLastRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ПерейтиКПоследнейСтроке();", ".GotoLastRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКПоследнейСтроке", "GotoLastRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "gotoRow" Тогда
-		
-		Направление = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "direction" Тогда
-				Направление = ? (ВариантВстроенногоЯзыка = "ru", 
-										? (Читатель.Значение = "up", "НаправлениеПереходаКСтроке.Вверх", "НаправлениеПереходаКСтроке.Вниз"),
-										? (Читатель.Значение = "up", "RowGotoDirection.Up", "RowGotoDirection.Down"));
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-
-		Читатель.Прочитать();
-
-		ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ОписаниеСтроки = Новый Соответствие();", "RowDescription = New Map();"));
-
-		Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-			
-			Если Читатель.Имя = "Field" Тогда
-
-				ЗаголовокСтолбца = "";
-				ТекстЯчейки = "";
-				Пока Читатель.ПрочитатьАтрибут() Цикл
-					Если Читатель.Имя = "title" Тогда
-						ЗаголовокСтолбца = Читатель.Значение;
-					ИначеЕсли Читатель.Имя = "cellText" Тогда
-						ТекстЯчейки = Читатель.Значение;
-					Иначе
-						ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-					КонецЕсли;
-				КонецЦикла;
-				ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", 
-											"ОписаниеСтроки.Вставить(""", 
-											"RowDescription.Insert(""") + 
-											ЗаголовокСтолбца + """, """ + УдвоитьКавычки(ТекстЯчейки) + """);");
-				Читатель.Прочитать();
-
-			Иначе
-
-				ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-
-			КонецЕсли;
-
-			Читатель.Прочитать();
-
-		КонецЦикла;
-
-		ДобавитьСтроку(Писатель, 
-						ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", 
-											".ПерейтиКСтроке(ОписаниеСтроки" + ? (Направление = "", "", ", " + Направление)+ ");", 
-											".GotoRow(RowDescription" + ? (Направление = "", "", ", " + Направление) + ");"),
-						Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ПерейтиКСтроке", "GotoRow");
-
-	ИначеЕсли Читатель.Имя = "choose" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Выбрать();", ".Choose();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Выбрать", "Choose");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "changeRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ИзменитьСтроку();", ".ChangeRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ИзменитьСтроку", "ChangeRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "endEditRow" Тогда
-		ФлагОтмены = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "cancel" Тогда
-				ФлагОтмены = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ЗакончитьРедактированиеСтроки(", ".EndEditRow(") + ФлагОтмены + ");", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ЗакончитьРедактированиеСтроки", "EndEditRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "addRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ДобавитьСтроку();", ".AddRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ДобавитьСтроку", "AddRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "deleteRow" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".УдалитьСтроку();", ".DeleteRow();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "УдалитьСтроку", "DeleteRow");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "expand" Тогда
-
-		Читатель.Прочитать();
-
-		Если Читатель.ТипУзла = ТипУзлаXML.НачалоЭлемента И Читатель.Имя = "Field" Тогда
-
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ОписаниеСтроки = Новый Соответствие();", "RowDescription = New Map();"));
-
-			Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-				
-				Если Читатель.Имя = "Field" Тогда
-
-					ЗаголовокСтолбца = "";
-					ТекстЯчейки = "";
-					Пока Читатель.ПрочитатьАтрибут() Цикл
-						Если Читатель.Имя = "title" Тогда
-							ЗаголовокСтолбца = Читатель.Значение;
-						ИначеЕсли Читатель.Имя = "cellText" Тогда
-							ТекстЯчейки = Читатель.Значение;
-						Иначе
-							ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-						КонецЕсли;
-					КонецЦикла;
-					ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", 
-												"ОписаниеСтроки.Вставить(""", 
-												"RowDescription.Insert(""") + 
-												ЗаголовокСтолбца + """, """ + УдвоитьКавычки(ТекстЯчейки) + """);");
-					Читатель.Прочитать();
-
-				Иначе
-
-					ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-
-				КонецЕсли;
-
-				Читатель.Прочитать();
-
-			КонецЦикла;
-
-			ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Развернуть(ОписаниеСтроки);", ".Expand(RowDescription);"), Истина);
-
-		Иначе
-
-			ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Развернуть();", ".Expand();"), Истина);
-
-		КонецЕсли;
-
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Развернуть", "Expand");
-
-	ИначеЕсли Читатель.Имя = "collapse" Тогда
-
-		Читатель.Прочитать();
-
-		Если Читатель.ТипУзла = ТипУзлаXML.НачалоЭлемента И Читатель.Имя = "Field" Тогда
-
-			ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", "ОписаниеСтроки = Новый Соответствие();", "RowDescription = New Map();"));
-
-			Пока Читатель.ТипУзла <> ТипУзлаXML.КонецЭлемента Цикл
-				
-				Если Читатель.Имя = "Field" Тогда
-
-					ЗаголовокСтолбца = "";
-					ТекстЯчейки = "";
-					Пока Читатель.ПрочитатьАтрибут() Цикл
-						Если Читатель.Имя = "title" Тогда
-							ЗаголовокСтолбца = Читатель.Значение;
-						ИначеЕсли Читатель.Имя = "cellText" Тогда
-							ТекстЯчейки = Читатель.Значение;
-						Иначе
-							ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-						КонецЕсли;
-					КонецЦикла;
-					ДобавитьСтроку(Писатель, ? (ВариантВстроенногоЯзыка = "ru", 
-												"ОписаниеСтроки.Вставить(""", 
-												"RowDescription.Insert(""") + 
-												ЗаголовокСтолбца + """, """ + УдвоитьКавычки(ТекстЯчейки) + """);");
-					Читатель.Прочитать();
-
-				Иначе
-
-					ВызватьИсключение НСтр("ru = 'Неопознанный узел '") + Читатель.Имя + ": " + Читатель.Значение;
-
-				КонецЕсли;
-
-				Читатель.Прочитать();
-
-			КонецЦикла;
-
-			ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Свернуть(ОписаниеСтроки);", ".Collapse(RowDescription);"), Истина);
-
-		Иначе
-
-			ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Свернуть();", ".Collapse();"), Истина);
-
-		КонецЕсли;
-		
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Свернуть", "Collapse");
-
-	ИначеЕсли Читатель.Имя = "close" Тогда
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".Закрыть();", ".Close();"), Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "Закрыть", "Close");
-		ОкноБылоЗакрыто = Истина;
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "chooseUserMessage" Тогда
-		ТекстСообщения = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "messageText" Тогда
-				ТекстСообщения = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВыбратьСообщениеПользователю(""", ".ChooseUserMessage(""") + ТекстСообщения + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВыбратьСообщениеПользователю", "ChooseUserMessage");
-		Читатель.Прочитать();
-
-	ИначеЕсли Читатель.Имя = "executeCommand" Тогда
-		СсылкаНаКоманду = "";
-		Пока Читатель.ПрочитатьАтрибут() Цикл
-			Если Читатель.Имя = "url" Тогда
-				СсылкаНаКоманду = Читатель.Значение;
-			Иначе
-				ВызватьИсключение НСтр("ru = 'Неопознанный атрибут '") + Читатель.Имя + ": " + Читатель.Значение;
-			КонецЕсли;
-		КонецЦикла;
-		ДобавитьСтроку(Писатель, ИмяПеременной + ? (ВариантВстроенногоЯзыка = "ru", ".ВыполнитьКоманду(""", ".ExecuteCommand(""") + СсылкаНаКоманду + """);", Истина);
-		ПоследняяОбработаннаяКоманда = ? (ВариантВстроенногоЯзыка = "ru", "ВыполнитьКоманду", "ExecureCommand");
-		Читатель.Прочитать();
-
-	Иначе
-		Возврат Ложь;
-	КонецЕсли;
+	Reader.Read();
+
+	Return True;
+
+EndFunction
+
+Procedure ConvertCommandPartGotoSpecificRow(Val Reader, Val VariableName, Val Writer, Val TermInt, Val TermRus)
+
+	SwitchSelection = "";
+	While Reader.ReadAttribute() Do
+		If Reader.Name = "switchSelection" Then
+			SwitchSelection = Reader.Value;
+		Else
+			Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+	EndDo;
+	AddLine(Writer, VariableName + ? (ScriptVariant = "en", "." + TermInt + "(", "." + TermRus + "(") + SwitchSelection + ");", True);
+	LastProcessedCommand = ? (ScriptVariant = "en", TermInt, TermRus);
+	Reader.Read();
+
+EndProcedure
+
+Procedure ConvertCommandPartRowDescription(Val Reader, Val VariableName, Val Writer, Val TermInt, Val TermRus)
+
+	Reader.Read();
+	If Reader.NodeType = XMLNodeType.StartElement And Reader.Name = "Field" Then
+		ConvertCommandPartRowDescriptionPartInt(Reader, Writer);
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", "." + TermInt + "(RowDescription);", "." + TermRus + "(ОписаниеСтроки);"), True);
+	Else
+		AddLine(Writer, VariableName + ? (ScriptVariant = "en", "." + TermInt +"();", "." + TermRus + "();"), True);
+	EndIf;
+
+EndProcedure
+
+Procedure ConvertCommandPartRowDescriptionPartInt(Val Reader, Val Writer)
+
+	AddLine(Writer, ? (ScriptVariant = "en", "RowDescription = New Map();", "ОписаниеСтроки = Новый Соответствие();"));
+
+	While Reader.NodeType <> XMLNodeType.EndElement Do
+		If Reader.Name = "Field" Then
+			ColumnTitle = "";
+			CellText = "";
+			While Reader.ReadAttribute() Do
+				If Reader.Name = "title" Then
+					ColumnTitle = Reader.Value;
+				ElsIf Reader.Name = "cellText" Then
+					CellText = Reader.Value;
+				Else
+					Raise NStr("en = 'Unknown attribute '; ru = 'Неопознанный атрибут '") + Reader.Name + ": " + Reader.Value;
+				EndIf;
+			EndDo;
+			AddLine(Writer, ? (ScriptVariant = "en", "RowDescription.Insert(""", "ОписаниеСтроки.Вставить(""") + 
+					ColumnTitle + """, """ + DoubleQuotationMarks(CellText) + """);");
+			Reader.Read();
+		Else
+			Raise NStr("en = 'Unknown node '; ru = 'Неопознанный узел '") + Reader.Name + ": " + Reader.Value;
+		EndIf;
+		Reader.Read();
+	EndDo;
+
+EndProcedure
+
+// { xUnitFor1C
+
+Функция Initialization()
 	
-	Читатель.Прочитать();
-
-	Возврат Истина;
-
-КонецФункции
-
-Функция Инициализация()
+	TempFilesDir = TempFilesDir();
 	
-	ДвоичныеДанныеПрограммыРаспаковки = ПолучитьМакет("UnpackV8");
-	ДвоичныеДанныеDLL=ЭтотОбъект.ПолучитьМакет("zlib1");
-	ДвоичныеДанныеПрограммыРаспаковки.Записать(КаталогВременныхФайлов()+"UnpackV8.exe");
-	ДвоичныеДанныеDLL.Записать(КаталогВременныхФайлов()+"zlib1.dll");
-	ФайлПрограммыРаспаковки = Новый Файл(КаталогВременныхФайлов()+"UnpackV8.exe");
-	ФайлDLL=Новый Файл(КаталогВременныхФайлов()+"zlib1.dll");
+	BinaryDataUnpacker = GetTemplate("UnpackV8");
+	BinaryDataDLL=ThisObject.GetTemplate("zlib1");
+	BinaryDataUnpacker.Write(TempFilesDir+"UnpackV8.exe");
+	BinaryDataDLL.Write(TempFilesDir+"zlib1.dll");
+	FileUnpackApplication = Новый File(TempFilesDir+"UnpackV8.exe");
+	FileDLL=Новый File(TempFilesDir+"zlib1.dll");
 	
-	Возврат ФайлПрограммыРаспаковки; 	
+	Возврат FileUnpackApplication; 	
 	
 КонецФункции
 
-Функция СоздатьВнешнююОбработку(ТекстДляПреобразования) Экспорт
+Функция CreateDataProcessor(TextToConvert) Экспорт
 	
-	ТекстПроцедуры = Преобразовать(ТекстДляПреобразования);
-	ТекстПроцедуры = СтрЗаменить(ТекстПроцедуры, """", """""");
+	TextProcedure = Convert(TextToConvert);
+	TextProcedure = StrReplace(TextProcedure, """", """""");
 	
-	ФайлПрограммыРаспаковки = Инициализация();
+	FileUnpackApplication = Initialization();
 	
-	ГлобальныйКлюч = "" + Новый УникальныйИдентификатор;
+	GlobalKey = "" + Новый UUID;
 	
-	лПутьКШаблонуВнешнейОбработки = КаталогВременныхФайлов() + ГлобальныйКлюч;
-	Файл = Новый Файл(ПолучитьИмяВременногоФайла());
+	localPathToExternalDataProcessor = TempFilesDir() + GlobalKey;
+	File = Новый File(GetTempFileName());
 	
-	ПолучитьМакет("ШаблонТеста_ВнешняяОбработка").Записать(Файл.ПолноеИмя);
+	GetTemplate("ШаблонТеста_ВнешняяОбработка").Write(File.FullName);
 	
-	ВременныйФайл = ПолучитьИмяВременногоФайла("epf");
+	TempFile = GetTempFileName("epf");
 	
-	СтрокаКоманды = """"+ФайлПрограммыРаспаковки.ПолноеИмя+""" -parse """+Файл.ПолноеИмя+""" """+лПутьКШаблонуВнешнейОбработки+"""";
-	ЗапуститьПриложение(СтрокаКоманды, , Истина);
+	StringCommand = """"+FileUnpackApplication.FullName+""" -parse """+File.FullName+""" """+localPathToExternalDataProcessor+"""";
+	RunApp(StringCommand, , Истина);
 	
-	РазобранныеФайлы = НайтиФайлы(лПутьКШаблонуВнешнейОбработки, "*.*");
-	Если РазобранныеФайлы.Количество() = 0 Тогда
-		Сообщить("Не удалось разобрать макет внешней обработки теста командой <"+СтрокаКоманды+">");
+	ParsedFiles = НайтиФайлы(localPathToExternalDataProcessor, "*.*");
+	Если ParsedFiles.Количество() = 0 Тогда
+		NewMessage = New UserMessage();
+		NewMessage.Text = NStr("ru = 'Не удалось разобрать макет внешней обработки теста командой <"+StringCommand+">'");
+		NewMessage.Message();
 		Возврат "";
 	КонецЕсли;
 	
-	//Заменить текст. 
-	ФайлТекстаМодуляОбработки = Новый Файл(лПутьКШаблонуВнешнейОбработки + "\8401ee62-68b8-43ea-8738-0c08cbc8c901.0");
-	ТекстовыйДокументМодуля = Новый ТекстовыйДокумент;
-	ТекстовыйДокументМодуля.Прочитать(ФайлТекстаМодуляОбработки.ПолноеИмя);
-	ТекстМодуля = ТекстовыйДокументМодуля.ПолучитьТекст();
+	// Replace text
+	FileTextModule = Новый File(localPathToExternalDataProcessor + "\8401ee62-68b8-43ea-8738-0c08cbc8c901.0");
+	TextDocumentModule = Новый TextDocument;
+	TextDocumentModule.Прочитать(FileTextModule.FullName);
+	TextModule = TextDocumentModule.GetText();
 	
-	ТекстМодуля = СтрЗаменить(ТекстМодуля, "Процедура НазваниеПроцедуры_ТестовыйСценарий(тестовоеПриложение) КонецПроцедуры", Символы.ПС);
-	ТекстМодуля = СтрЗаменить(ТекстМодуля, "НазваниеПроцедуры_Тест_ГУИ_83", "Тест_"+ИмяОсновнойПроцедуры);
-	ТекстМодуля = СтрЗаменить(ТекстМодуля, "НазваниеПроцедуры_ТестовыйСценарий", ИмяОсновнойПроцедуры);
-	ТекстМодуля = СтрЗаменить(ТекстМодуля, "//ЗАМЕНИТЬТЕСТОВОЙПРОЦЕДУРОЙ", ТекстПроцедуры);
+	TextModule = СтрЗаменить(TextModule, "Процедура НазваниеПроцедуры_ТестовыйСценарий(тестовоеПриложение) КонецПроцедуры", Chars.LF);
+	TextModule = СтрЗаменить(TextModule, "НазваниеПроцедуры_Тест_ГУИ_83", "Тест_"+MainProcedureName);
+	TextModule = СтрЗаменить(TextModule, "НазваниеПроцедуры_ТестовыйСценарий", MainProcedureName);
+	TextModule = СтрЗаменить(TextModule, "//ЗАМЕНИТЬТЕСТОВОЙПРОЦЕДУРОЙ", TextProcedure);
 	
-	ТекстовыйДокументМодуля.УстановитьТекст(ТекстМодуля);
-	ТекстовыйДокументМодуля.Записать(ФайлТекстаМодуляОбработки.ПолноеИмя);
+	TextDocumentModule.SetText(TextModule);
+	TextDocumentModule.Write(FileTextModule.FullName);
 	
-	//Сохраним в макет наш файл. 
+	// Сохраним в макет наш файл. 
 	
-	ЗаписьТекста = Новый ЗаписьТекста;
-	ЗаписьТекста.Открыть(лПутьКШаблонуВнешнейОбработки + "\1b3a3d0f-5dc6-47e8-bad6-38c097bc00d4.0");
-	ЗаписьТекста.Записать(ТекстДляПреобразования);
-	ЗаписьТекста.Закрыть();
+	TextWriter = Новый TextWriter;
+	TextWriter.Open(localPathToExternalDataProcessor + "\1b3a3d0f-5dc6-47e8-bad6-38c097bc00d4.0");
+	TextWriter.Write(TextToConvert);
+	TextWriter.Close();
 			
-	//Заменить имена. 
-	ФайлТекстаЗаголовков = Новый Файл(лПутьКШаблонуВнешнейОбработки + "\4e93fd08-5eda-44dd-92ef-b84867283b1e");
-	ТекстовыйДокументЗаголовков = Новый ТекстовыйДокумент;
-	ТекстовыйДокументЗаголовков.Прочитать(ФайлТекстаЗаголовков.ПолноеИмя);
-	Текст = ТекстовыйДокументЗаголовков.ПолучитьТекст();
-	Текст = СтрЗаменить(Текст, "ИмяВнешнейОбработки", "Тест"+ИмяОсновнойПроцедуры);
-	ТекстовыйДокументЗаголовков.УстановитьТекст(Текст);
-	ТекстовыйДокументЗаголовков.Записать(ФайлТекстаЗаголовков.ПолноеИмя);
-	//
-	//Упаковать. 
-	ВременныйФайл = ПолучитьИмяВременногоФайла("epf");
+	// Replace names 
+	FileTextHeaders = Новый File(localPathToExternalDataProcessor + "\4e93fd08-5eda-44dd-92ef-b84867283b1e");
+	TextDocumentHeaders = Новый TextDocument;
+	TextDocumentHeaders.Read(FileTextHeaders.FullName);
+	Text = TextDocumentHeaders.GetText();
+	Text = StrReplace(Text, "ИмяВнешнейОбработки", "Тест"+MainProcedureName);
+	TextDocumentHeaders.SetText(Text);
+	TextDocumentHeaders.Write(FileTextHeaders.FullName);
 	
-	СтрокаКоманды = """"+ФайлПрограммыРаспаковки.ПолноеИмя+""" -build """+лПутьКШаблонуВнешнейОбработки+""" """+ВременныйФайл+"""";
-	ЗапуститьПриложение(СтрокаКоманды, , Истина);
+	// Pack 
+	TempFile = GetTempFileName("epf");
 	
-	РезультатСтрока = "";
-	Файл = Новый Файл(ВременныйФайл);
-	Если Файл.Существует() Тогда 
-		ДвоичныеДанные = Новый ДвоичныеДанные(Файл.ПолноеИмя);
-		РезультатСтрока = Base64Строка(ДвоичныеДанные);
+	StringCommand = """"+FileUnpackApplication.FullName+""" -build """+localPathToExternalDataProcessor+""" """+TempFile+"""";
+	RunApp(StringCommand, , Истина);
+	
+	ResultString = "";
+	File = Новый File(TempFile);
+	Если File.Exist() Тогда 
+		BinaryData = Новый BinaryData(File.FullName);
+		ResultString = Base64String(BinaryData);
 	КонецЕсли;
 	
-	Возврат РезультатСтрока;
+	Возврат ResultString;
 	
 КонецФункции
+
+// } xUnitFor1C
