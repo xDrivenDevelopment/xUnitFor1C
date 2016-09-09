@@ -169,7 +169,7 @@
 {7,3,0,1,100},
 {7,3,0,1,100},
 {7,3,0,1,100},1,0,0,4,0,"Имя",
-{},29,0,
+{},18,0,
 {1,0},
 {"Pattern",
 {"S"}
@@ -222,7 +222,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {7,3,0,1,100},
 {7,3,0,1,100},
 {7,3,0,1,100},1,0,0,4,0,"Путь",
-{},15,0,
+{},10,0,
 {1,0},
 {"Pattern",
 {"S"}
@@ -275,7 +275,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {7,3,0,1,100},
 {7,3,0,1,100},
 {7,3,0,1,100},1,0,0,4,0,"ТипСтроки",
-{},15,0,
+{},10,0,
 {1,0},
 {"Pattern",
 {"N",10,0,1}
@@ -435,7 +435,7 @@ hrJA6lgD5gAAAABJRU5ErkJggg==}
 {2,-1,6,0}
 },
 {0,
-{2,6,2,35},
+{2,6,2,34},
 {2,-1,6,0}
 },
 {0,
@@ -513,7 +513,7 @@ A0Qbgk0z0YbgC3miYgVfyBMVK/hCfqTFCqEQJxgjhEKcYIwQCnGKYwQXAACvVTho
 {2,-1,6,0}
 },
 {0,
-{2,7,2,35},
+{2,7,2,34},
 {2,-1,6,0}
 },
 {0,
@@ -584,7 +584,7 @@ A0Qbgk0z0YbgC3miYgVfyBMVK/hCfqTFCqEQJxgjhEKcYIwQCnGKYwQXAACvVTho
 {2,-1,6,0}
 },
 {0,
-{2,9,2,35},
+{2,9,2,34},
 {2,-1,6,0}
 },
 {0,
@@ -601,7 +601,7 @@ A0Qbgk0z0YbgC3miYgVfyBMVK/hCfqTFCqEQJxgjhEKcYIwQCnGKYwQXAACvVTho
 {0}
 }
 }
-},400,292,1,0,1,4,4,366,400,292,96},
+},400,292,1,0,1,4,4,367,600,438,144},
 {
 {5},8,
 {3,
