@@ -1,8 +1,6 @@
 ﻿3ff08944-a004-49a6-bc1f-2c332c3d8712.0\info-->und\3ff08944-a004-49a6-bc1f-2c332c3d8712.0\info
-3ff08944-a004-49a6-bc1f-2c332c3d8712.0\text-->ObjectModule.txt
+3ff08944-a004-49a6-bc1f-2c332c3d8712.0\text-->ObjectModule.bsl
 6722f33c-a0c0-4fd3-a14e-3cb09ea508e0-->und\6722f33c-a0c0-4fd3-a14e-3cb09ea508e0
-6722f33c-a0c0-4fd3-a14e-3cb09ea508e0.0-->C:\Projects\GitHub\xUnitFor1C\src\Tests\Plugins\Тесты_ЗагрузчикИзПодсистемКонфигурации\Form\Форма\Форма.txt
-6722f33c-a0c0-4fd3-a14e-3cb09ea508e0.0-->und\6722f33c-a0c0-4fd3-a14e-3cb09ea508e0.0
 6722f33c-a0c0-4fd3-a14e-3cb09ea508e0.0-->und\6722f33c-a0c0-4fd3-a14e-3cb09ea508e0.0
 90851520-10fe-4eef-9409-585f8222427b-->und\90851520-10fe-4eef-9409-585f8222427b
 copyinfo-->und\copyinfo
