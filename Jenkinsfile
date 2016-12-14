@@ -41,16 +41,20 @@ node("slave") {
     def xddTestRunner = "./build/out/xddTestRunner.epf";
     def connstring = """--ibname /F"./build/ib" """;
     
+    stage "create admin user"
     echo "create admin user"
     command = """oscript ${vanessa_runner}/runner.os xunit ./tests/init --reportxunit "./build/init-report.xml" ${connstring} --pathxunit ${xddTestRunner} """ 
     if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
     
     step([$class: 'JUnitResultArchiver', testResults: '**/build/init-report.xml'])
+
+    def user_pwd = """--db-user admin """;
+    connstring = """${connstring} ${user_pwd} """;    
     
     stage "build"
 	
     echo "build catalogs"
-    command = """oscript ${vanessa_runner}/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
+    command = """oscript ${vanessa_runner}/runner.os compileepf ${v8version} ${connstring} ./ ./build/out/ """
     // command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
     if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
 
