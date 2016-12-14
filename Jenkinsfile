@@ -51,7 +51,7 @@ node("slave") {
     
     stage "create admin user"
     echo "create admin user"
-    command = """oscript ${vanessa_runner}/runner.os xunit ./tests/init --reportxunit "./build/init-report.xml" ${connstring} --pathxunit ${xddTestRunner} """ 
+    command = """oscript ${vanessa_runner}/runner.os xunit ./build/out/tests/init --reportxunit "./build/init-report.xml" ${connstring} --pathxunit ${xddTestRunner} """ 
     if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
     
     step([$class: 'JUnitResultArchiver', testResults: '**/build/init-report.xml'])
