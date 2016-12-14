@@ -60,9 +60,9 @@ node("slave") {
     connstring = """${connstring} ${user_pwd} """;    
 
     stage "test"
-    command = """oscript ${vanessa_runner}/runner.os xunit "./build/out/Tests" ${v8version} ${connstring} --pathxunit ${xddTestRunner}  --reportxunit ./build/report.xml"""
+    command = """oscript ${vanessa_runner}/runner.os xunit "./build/out/Tests/Utils" ${v8version} ${connstring} --pathxunit ${xddTestRunner}  --reportxunit ./build/report.xml"""
     // command = """oscript ${vanessa_runner}/runner.os xunit "./build/out/Tests" ${v8version} --ibname /F"./build/ib" --path ${xddTestRunner}  --report ./build/report.xml"""
-    if (isUnix){ sh "${command}" } else {bat "chcp 1251\n${command}"}
+    if (isUnix()){ sh "${command}" } else {bat "chcp 1251\n${command}"}
 
     step([$class: 'JUnitResultArchiver', testResults: '**/build/report.xml'])
     
