@@ -1,6 +1,6 @@
 #!groovy
 node("slave") {
-    stage "Получение исходных кодов"
+    stage "checkout"
     //git url: 'https://github.com/silverbulleters/vanessa-behavior-new.git'
     
     checkout scm
@@ -20,7 +20,7 @@ node("slave") {
 
     def vanessa_runner = "./vanessa-runner/tools";
 
-    stage "Подготовка окружения"
+    stage "init base"
 
     echo "${env.WORKSPACE}"
 
@@ -47,7 +47,7 @@ node("slave") {
     
     step([$class: 'JUnitResultArchiver', testResults: '**/build/init-report.xml'])
     
-    stage "Сборка поставки"
+    stage "build"
 	
     echo "build catalogs"
     command = """oscript ${vanessa_runner}/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
@@ -114,7 +114,7 @@ node("slave") {
     //     step([$class: 'ArtifactArchiver', artifacts: '**/build/out/features/Libraries/**/*.feature', fingerprint: true])    
     // }
 
-    stage "Публикация релизов"
+    stage "Publish releases"
 
     echo "stable if master, pre-release if have release, nigthbuild if develop"
 
