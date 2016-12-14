@@ -38,8 +38,16 @@ node("slave") {
         if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
     }
     
-    def xddTestRunner = "./build/out/xddTestRunner.epf";
+    stage "build"
+    
     def connstring = """--ibname /F"./build/ib" """;
+	
+    echo "build catalogs"
+    command = """oscript ${vanessa_runner}/runner.os compileepf ${v8version} ${connstring} ./ ./build/out/ """
+    // command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
+    if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
+    
+    def xddTestRunner = "./build/out/xddTestRunner.epf";
     
     stage "create admin user"
     echo "create admin user"
@@ -50,13 +58,6 @@ node("slave") {
 
     def user_pwd = """--db-user admin """;
     connstring = """${connstring} ${user_pwd} """;    
-    
-    stage "build"
-	
-    echo "build catalogs"
-    command = """oscript ${vanessa_runner}/runner.os compileepf ${v8version} ${connstring} ./ ./build/out/ """
-    // command = """oscript -encoding=utf-8 tools/runner.os compileepf ${v8version} --ibname /F"./build/ib" ./ ./build/out/ """
-    if (isUnix()) {sh "${command}"} else {bat "chcp 1251\n${command}"}       
 
     stage "test"
     command = """oscript ${vanessa_runner}/runner.os xunit "./build/out/Tests" ${v8version} ${connstring} --pathxunit ${xddTestRunner}  --reportxunit ./build/report.xml"""
