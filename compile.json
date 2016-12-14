@@ -1,0 +1,65 @@
+﻿[
+    {
+        "srctoepf" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./", 
+            "outDir":"./build/out/",
+            "name":"src_all",
+            "autoupdate":[
+                {"autoupdate":"epf_all"}
+            ]
+
+        }
+
+    },
+    {
+        "epftosrc" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./build/out/", 
+            "outDir":"./",
+            "name":"epf_all",
+            "autoupdate": "src_all" 
+        }
+
+    },
+    {
+        "srctoepf" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./xddTestRunner/", 
+            "outDir":"./build/out/",
+            "name":"src_xddTestRunner",
+            "autoupdate": "epf_xddTestRunner"
+        }
+
+    },
+    {
+        "epftosrc" : {
+            "connectionstring":"/F./build/ibservice", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./build/out/xddTestRunner.epf", 
+            "outDir":"./",
+            "name":"epf_xddTestRunner",
+            "autoupdate": "src_xddTestRunner" 
+        }
+
+    }, 
+    {
+        "srccftoib" : {
+            "connectionstring":"/F./build/ib", 
+            "user":"", 
+            "password":"", 
+            "inDir":"./lib/CF/83/",
+            "autoupdate":"true"
+        }
+
+    }
+    
+]
+   
