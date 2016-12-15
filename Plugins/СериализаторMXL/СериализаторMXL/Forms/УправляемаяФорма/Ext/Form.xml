@@ -93,10 +93,16 @@
 									<v8:content>Группа метаданные</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<ExtendedTooltip name="ГруппаМетаданныеРасширеннаяПодсказка" id="349"/>
 							<ChildItems>
 								<UsualGroup name="Группа2" id="138">
+									<HorizontalStretch>true</HorizontalStretch>
 									<Group>Horizontal</Group>
+									<ChildrenAlign>None</ChildrenAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>DontUse</ThroughAlign>
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="350"/>
 									<ChildItems>
 										<CheckBoxField name="ВыгружатьКод" id="86">
@@ -165,6 +171,7 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа1" id="78">
+									<HorizontalStretch>true</HorizontalStretch>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>

@@ -80,6 +80,9 @@
 			<Template>СозданиеСправочниковОбразующихЦиклическуюЗависимость</Template>
 			<Template>СозданиеГруппыСЭлементамиТолькоДляГруппы</Template>
 			<Template>СозданиеУзлаПланаОбмена</Template>
+			<Template>СозданиеПВХ</Template>
+			<Template>СозданиеСчета</Template>
+			<Template>СозданиеВидаРасчета</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
