@@ -65,7 +65,7 @@ node("slave") {
 
     step([$class: 'JUnitResultArchiver', testResults: '**/build/report.xml'])
     
-    step([$class: 'ArtifactArchiver', artifacts: '**/build/out/*.epf', fingerprint: true])
+    step([$class: 'ArtifactArchiver', artifacts: '**/build/out/**/*.epf', fingerprint: true])
     
     // stage "Проверка поведения BDD"
     // def testsettings = "VBParams837UF.json";
