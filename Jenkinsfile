@@ -1,6 +1,6 @@
 #!groovy
 node("slave") {
-    stage "checkout"
+    stage "Получение исходных кодов"
     //git url: 'https://github.com/silverbulleters/vanessa-behavior-new.git'
     
     checkout scm
@@ -20,7 +20,7 @@ node("slave") {
 
     def vanessa_runner = "./vanessa-runner/tools";
 
-    stage "init base"
+    stage "Создание тестовой ИБ"
 
     echo "${env.WORKSPACE}"
 
@@ -37,7 +37,7 @@ node("slave") {
         cmd(command)
     }
     
-    stage "Сборка"
+    stage "Сборка из исходников"
     
     def connstring = """--ibname /F"./build/ib" """;
     def binary_data = "./build/out";
@@ -48,7 +48,8 @@ node("slave") {
     
     def xddTestRunner = "${binary_data}/xddTestRunner.epf";
     
-    stage "create admin user"
+    stage "Создание пользователя-администратора"
+    
     echo "create admin user"
     command = """oscript ${vanessa_runner}/runner.os xunit ${binary_data}/tests/init --reportxunit "./build/init-report.xml" ${connstring} --pathxunit ${xddTestRunner} """ 
     cmd(command)
@@ -58,18 +59,19 @@ node("slave") {
     def user_pwd = """--db-user admin """;
     connstring = """${connstring} ${user_pwd} """;    
 
-    stage "\u0422\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435"
-    // stage "test"
+    stage "Тестирование"
+
     command = """oscript ${vanessa_runner}/runner.os xunit "${binary_data}/Tests" ${v8version} ${connstring} --pathxunit ${xddTestRunner}  --reportxunit ./build/report.xml"""
     cmd(command)
 
+    stage "Сборка поставки"
     step([$class: 'JUnitResultArchiver', testResults: '**/build/report.xml'])
     
     step([$class: 'ArtifactArchiver', artifacts: '**/build/out/**/*.epf', fingerprint: true])    
 
-    stage "Publish releases"
+    // stage "Публикация релиза"
 
-    echo "stable if master, pre-release if have release, nigthbuild if develop"
+    // echo "stable if master, pre-release if have release, nigthbuild if develop"
 
 }
 
