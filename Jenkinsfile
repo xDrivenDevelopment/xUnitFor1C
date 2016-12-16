@@ -63,10 +63,9 @@ node("slave") {
     
     echo "create admin user"
     command = """oscript ${vanessa_runner}/runner.os xunit ${binary_data}/tests/init --reportxunit "./build/init-report.xml" ${connstring} --pathxunit ${xddTestRunner} """ 
+    command = """oscript ${vanessa_runner}/runner.os run --command AdminCreate ${connstring} """ 
     cmd(command)
     
-    step([$class: 'JUnitResultArchiver', testResults: '**/build/init-report.xml'])
-
     def user_pwd = """--db-user admin """;
     connstring = """${connstring} ${user_pwd} """;    
 
