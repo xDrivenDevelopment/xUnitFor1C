@@ -5,13 +5,15 @@ SET projectdir=%~dp0..
 SET mypath=C:\projects\vanessa-runner\tools
 echo %mypath%
 
+pushd %projectdir%
+
 rem SET USERPWD=--db-user base --db-pwd 234567890
 rem SET connstring=
 SET USERPWD=--db-user admin
 rem 
 SET RUNNER_ENV=production
 
-set BUILDPATH=%projectdir%\build
+set BUILDPATH=./build
 rem if not exist %BUILDPATH% set BUILDPATH=..\build
 
 SET connstring=--ibname /F"%BUILDPATH%\ib" %USERPWD%

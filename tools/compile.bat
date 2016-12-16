@@ -6,7 +6,9 @@ SET mypath=C:\projects\vanessa-runner\tools
 echo %mypath%
 SETLOCAL
 
-set BUILDPATH=%projectdir%\build
+pushd %projectdir%
+
+set BUILDPATH=.\build
 rem if not exist %BUILDPATH% set BUILDPATH=..\build
 
 rem set RUNNER_IBNAME=/F"%BUILDPATH%\ib"
