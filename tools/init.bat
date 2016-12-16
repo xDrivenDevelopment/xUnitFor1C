@@ -22,15 +22,15 @@ SET RUNNER_ENV=production
 SET connstring=--ibname /F"%BUILDPATH%\ib"
 
 IF "%~1"=="" (
-set mode="./Tests\cf\83"
+set config-sources="./Tests\cf\83"
 ) else (
-set mode=%1
+set config-sources=%1
 )
 
 echo "init"
 
-oscript %runner-dir%/init.os init-dev --src %mode%
-oscript %runner-dir%/init.os init-dev --src %mode% --dev
+oscript %runner-dir%/init.os init-dev --src %config-sources%
+oscript %runner-dir%/init.os init-dev --src %config-sources% --dev
 
 echo "create admin user - ib"
 oscript %runner-dir%/runner.os run --command AdminCreate %connstring% 
