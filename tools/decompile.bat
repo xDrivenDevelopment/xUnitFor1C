@@ -3,10 +3,13 @@ chcp 65001 >nul
 rem SET mypath=%~dp0
 SET projectdir=%~dp0..
 
-SET mypath=C:\projects\vanessa-runner\tools
-echo %mypath%
-
 pushd %projectdir%
+
+if not exist ./vanessa-runner (
+    git clone https://github.com/silverbulleters/vanessa-runner.git ./vanessa-runner
+) 
+SET mypath=./vanessa-runner
+echo %mypath%
 
 IF "%~1"=="" (
 set config-sources="./Tests\cf\83"
@@ -27,7 +30,7 @@ SET connstring=--ibname /F"%BUILDPATH%\ib" %USERPWD%
 
 echo Получение исходников внешних обработок
 @rem oscript -encoding=utf-8 %mypath%/runner.os decompileepf %BUILDPATH%\out\ %BUILDPATH%\..\src %connstring% 
-oscript %mypath%/runner.os decompileepf %BUILDPATH%\out\ %BUILDPATH%\.. %connstring% 
+rem script %mypath%/runner.os decompileepf %BUILDPATH%\out\ %BUILDPATH%\.. %connstring% 
 
 echo Получение исходников конфигурации
-oscript %mypath%/runner.os decompilecurrent %config-sources% %connstring% 
+rem oscript %mypath%/runner.os decompilecurrent %config-sources% %connstring% 
