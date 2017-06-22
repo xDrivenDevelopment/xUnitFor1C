@@ -5,7 +5,7 @@
 {09ccdc77-ea1a-4a6d-ab1c-3435eada2433,
 {1,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -30,7 +30,7 @@
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},25,2,
+{1,0},0,0,100,0},25,2,
 {0,11,1},
 {0,13,0},2,
 {0,7,1},
@@ -44,27 +44,25 @@
 {0,44,3},
 {0,45,3},
 {0,47,3},0,0,
-{4,1,
+{7,1,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},0,1,
+{0},"",-1,-1,1,0,""},100,0,0},0,1,
 {1,1,
 {4,
 {1,1,
 {"ru","Страница1"}
 },
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},-1,1,1,"Страница1",1,
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,2,0},-1,1,1,"Страница1",1,
 {3,4,
 {0}
 },
@@ -86,7 +84,7 @@
 {e69bf21d-97b2-4f37-86db-675aea9ec2cb,2,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -111,20 +109,15 @@
 },
 {3,0,
 {0},4,1,0,00000000-0000-0000-0000-000000000000},
-{1,0},0,0},9,2,1,0,1,1,
+{1,0},0,0,100,0},9,2,1,0,1,1,
 {5,c45fa92b-aba3-4d9e-a9fe-274560abc287,370,1,8,
-{6,e78813d3-a812-4e44-af75-d4c67aabc8f9,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,7d7668c4-8275-4f29-b75e-810ba0964232,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,a7dbb167-fb37-492e-82d4-80d725cc0417,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
-{6,4294967295,00000000-0000-0000-0000-000000000000,142,
-{1,99,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0},0,1},0},
-{6,326addf1-9d92-4bbb-bf1a-d2b9d5673a0f,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,1192eb7a-2b86-4bdf-83f8-cb3946121f34,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,3925c53a-9e21-46cf-b5fc-e190d5ac4ca7,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,6a650384-01f3-4590-a8f0-d622556938e7,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,c36dd941-1e1c-414d-ae44-88b8fc9b7056,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,ec771a9b-a794-45b6-9b68-37ae4d14bddc,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,af7c56b8-07dd-4af8-93ae-6fb0341e9683,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель1ПротестироватьЗагрузкуМакета",
 {1,"КоманднаяПанель1ПротестироватьЗагрузкуМакета",
 {1,1,
@@ -144,27 +137,12 @@
 {4,1,
 {0,20ebc47b-f4d9-439c-acd3-fdc624fbac2a},"",-1,-1,1,0,""}
 },
-{6,2432aa9d-85cd-452e-ab81-2d73169859f4,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"КоманднаяПанель1СохранитьМакетДанныхВФайл",
-{1,"КоманднаяПанель1СохранитьМакетДанныхВФайл",
-{1,1,
-{"ru","Сохранить макет данных в файл"}
-},
-{1,1,
-{"ru","Сохранить макет данных в файл"}
-},
-{1,1,
-{"ru","Сохранить макет данных в файл"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},1,
-{4,1,
-{0,818ab7d0-4654-4542-bd5e-fd9d1352b5a1},"",-1,-1,1,0,""}
-},
-{6,072bf588-afa5-4a49-ae36-99d689d08d97,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,859a98b9-c57c-46cf-b901-251a846f77ed,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,4294967295,00000000-0000-0000-0000-000000000000,142,
+{1,99,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0},0,1},0},
+{6,ccb3ec1a-bed9-41f3-8089-b0314778715c,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,1bf4b28c-092f-4e55-a00d-7267a3c55be8,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель1ПодменюСоздатьМакетДанных",
 {1,"КоманднаяПанель1ПодменюСоздатьМакетДанных",
 {1,1,
@@ -183,36 +161,56 @@
 },1,
 {4,1,
 {0,affb1617-24bc-4170-9c84-0902cc3ef206},"",-1,-1,1,0,""}
+},
+{6,06ad02f5-7c16-4bb1-85fd-a0d471bbe7e9,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КоманднаяПанель1СохранитьМакетДанныхВФайл",
+{1,"КоманднаяПанель1СохранитьМакетДанныхВФайл",
+{1,1,
+{"ru","Сохранить макет данных в файл"}
+},
+{1,1,
+{"ru","Сохранить макет данных в файл"}
+},
+{1,1,
+{"ru","Сохранить макет данных в файл"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,8,3925c53a-9e21-46cf-b5fc-e190d5ac4ca7,
+{4,1,
+{0,818ab7d0-4654-4542-bd5e-fd9d1352b5a1},"",-1,-1,1,0,""}
+},1,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,8,ccb3ec1a-bed9-41f3-8089-b0314778715c,
 {8,"Разделитель4",0,1,
 {1,1,
 {"ru","Действие2"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,38,1e2,2,0,1,0,0,0,0},072bf588-afa5-4a49-ae36-99d689d08d97,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,38,1e2,2,0,1,0,0,0,0},1bf4b28c-092f-4e55-a00d-7267a3c55be8,
 {8,"ПодменюСоздатьМакетДанных",0,1,
 {1,1,
 {"ru","Создать макет данных"}
-},1,c45fa92b-aba3-4d9e-a9fe-274560abc287,81,1e2,0,3,1,0,0,0,0},c36dd941-1e1c-414d-ae44-88b8fc9b7056,
+},1,c45fa92b-aba3-4d9e-a9fe-274560abc287,81,1e2,0,3,1,0,0,0,0},7d7668c4-8275-4f29-b75e-810ba0964232,
 {8,"Разделитель1",0,1,
 {1,1,
 {"ru","Действие1"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,11,1e2,2,0,1,0,0,0,0},ec771a9b-a794-45b6-9b68-37ae4d14bddc,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,11,1e2,2,0,1,0,0,0,0},af7c56b8-07dd-4af8-93ae-6fb0341e9683,
 {8,"ПротестироватьЗагрузкуМакета",0,1,
 {1,1,
 {"#","Протестировать загрузку макета"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,12,1e2,0,3,1,0,0,0,0},e78813d3-a812-4e44-af75-d4c67aabc8f9,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,12,1e2,0,3,1,0,0,0,0},1192eb7a-2b86-4bdf-83f8-cb3946121f34,
 {8,"Разделитель2",0,1,
 {1,1,
 {"ru","Действие1"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,13,1e2,2,0,1,0,0,0,0},2432aa9d-85cd-452e-ab81-2d73169859f4,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,13,1e2,2,0,1,0,0,0,0},06ad02f5-7c16-4bb1-85fd-a0d471bbe7e9,
 {8,"СохранитьМакетДанныхВФайл",0,1,
 {1,1,
 {"#","Сохранить макет данных в файл"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,14,1e2,0,3,1,0,0,0,0},326addf1-9d92-4bbb-bf1a-d2b9d5673a0f,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,14,1e2,0,3,1,0,0,0,0},6a650384-01f3-4590-a8f0-d622556938e7,
 {8,"Разделитель3",0,1,
 {1,1,
 {"ru","Действие2"}
-},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,16,1e2,2,0,1,0,0,0,0},a7dbb167-fb37-492e-82d4-80d725cc0417,
+},0,c45fa92b-aba3-4d9e-a9fe-274560abc287,16,1e2,2,0,1,0,0,0,0},859a98b9-c57c-46cf-b901-251a846f77ed,
 {8,"Действие1",0,1,
 {1,1,
 {"#","Действие1"}
@@ -253,7 +251,7 @@
 {0}
 },
 {236a17b3-7f44-46d9-a907-75f9cdc61ab5,7,
-{17,8,340,929,492,5,5,1,1,
+{18,8,340,929,492,5,5,1,1,
 {3,3,
 {-22}
 },
@@ -292,10 +290,10 @@
 {-3}
 },0,0,0,"",0,
 {3,0,0,100,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,"",0,0,0,0,0,0,0},
-{0},0,0},0,1,
+{0},0,0,0,1},0,1,
 {3,0,0,100,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,"ru",0,1,
 {3,0,0,0,0,00000000-0000-0000-0000-000000000000},0,0,0,0,0},1,1,
-{0},0,0,0,1,1,1,0,1,1,0,0,0,0},
+{0},0,0,0,1,1,1,0,1,1,0,0,0,0,1,1},
 {8,8,340,929,492,1,
 {0,
 {2,11,1,0},
@@ -327,7 +325,7 @@
 {36e52348-5d60-4770-8e89-a16ed50a2006,11,
 {0,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -352,7 +350,7 @@
 },
 {3,0,
 {-18},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},2,2,0}
+{1,0},0,0,100,0},2,2,0}
 },
 {8,8,336,929,340,1,
 {0,
@@ -390,7 +388,7 @@
 {09ccdc77-ea1a-4a6d-ab1c-3435eada2433,13,
 {1,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -415,7 +413,7 @@
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},25,16,
+{1,0},0,0,100,0},25,16,
 {0,15,0},
 {0,15,1},
 {0,16,0},
@@ -461,27 +459,25 @@
 {0,24,3},
 {0,25,3},
 {0,31,3},0,0,
-{4,1,
+{7,1,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},1,1,
+{0},"",-1,-1,1,0,""},100,0,0},1,1,
 {1,3,
 {4,
 {1,1,
 {"ru","Метаданные"}
 },
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},-1,1,1,"СтраницаМетаданные",1,
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,2,0},-1,1,1,"СтраницаМетаданные",1,
 {3,4,
 {0}
 },
@@ -493,14 +489,13 @@
 {1,1,
 {"ru","Таблица данных"}
 },
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},-1,1,1,"СтраницаТаблицаДанных",1,
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,2,0},-1,1,1,"СтраницаТаблицаДанных",1,
 {3,4,
 {0}
 },
@@ -512,14 +507,13 @@
 {1,1,
 {"ru","Пользователи ИБ"}
 },
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},-1,1,1,"СтраницаПользователиИБ",1,
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,2,0},-1,1,1,"СтраницаПользователиИБ",1,
 {3,4,
 {0}
 },
@@ -575,7 +569,7 @@
 {e69bf21d-97b2-4f37-86db-675aea9ec2cb,5,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -600,11 +594,11 @@
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},9,2,1,0,1,1,
+{1,0},0,0,100,0},9,2,1,0,1,1,
 {5,c57d1982-5648-4cf0-a874-e4b7f130b2f9,647,1,2,
-{6,8e9ae3e3-2500-4a51-baa4-874ce5a41f71,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,12751d3c-ee27-4c37-a8ce-a5b3dc044dc8,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,0a6eb25d-e2b4-4019-86ed-7cdc188311e0,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,878ca97e-fac7-4dcd-b052-8c394787999d,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель2ОчиститьТаблицуДанных",
 {1,"КоманднаяПанель2ОчиститьТаблицуДанных",
 {1,1,
@@ -624,11 +618,11 @@
 {4,1,
 {-2},"",-1,-1,1,0,""}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,8e9ae3e3-2500-4a51-baa4-874ce5a41f71,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,12751d3c-ee27-4c37-a8ce-a5b3dc044dc8,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие9"}
-},0,c57d1982-5648-4cf0-a874-e4b7f130b2f9,88,1e2,2,0,1,0,0,0,0},0a6eb25d-e2b4-4019-86ed-7cdc188311e0,
+},0,c57d1982-5648-4cf0-a874-e4b7f130b2f9,88,1e2,2,0,1,0,0,0,0},878ca97e-fac7-4dcd-b052-8c394787999d,
 {8,"ОчиститьТаблицуДанных",0,1,
 {1,1,
 {"ru","Очистить"}
@@ -674,7 +668,7 @@
 {"#",29b6a235-8506-4b28-9b61-48d9cb0967ae}
 },
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -699,8 +693,8 @@
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},
-{17,117578765,
+{1,0},0,0,100,2},
+{18,117578765,
 {3,4,
 {0}
 },
@@ -730,7 +724,7 @@
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","N"}
 },
@@ -765,7 +759,7 @@
 {7,3,0,1,100},1,0,0,4,0,"НомерСтроки",
 {},4,0,
 {1,0},
-{"Pattern"},0,1,00000000-0000-0000-0000-000000000000},
+{"Pattern"},0,1,00000000-0000-0000-0000-000000000000,0,0,0},
 {-2},
 {-1},
 {-1}
@@ -774,7 +768,7 @@
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Ссылка"}
 },
@@ -815,18 +809,17 @@
 {"#",e61ef7b8-f3e1-4f4b-8ac7-676e90524997}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcN1VM9bhUxEKahiZQ7PJl2R7LHY3t8CxoO4N31lhRR
-qKInhQKatBR0CE4AEognQpQreE/CFfDPvn3RC0QpaLDXPzPz+ZsZewefPqnt1/Xt
-he9OTy7E83B+Hs9eiio8Ex0qmgKNDLYPBOSIIZiowGqNvWF2juV2D9bcT6N0BnS0
-GiiEAMHrCJ4MKs1yNM6v4GhVnFzPMOnMRxP1wGFwYJ2NXhok79329KTi26d0p4qk
-OyqL3FuPZdfpTmaokjk02RC6LID4tzP35XbCHStQHTQ1GlBcvORetaqrTvOEvqrV
-Mqs7EhpTV2rhiRdiu65CrDDZzAtKVhuo8hW7aIcesK4M98O705V1zqEyh7wKTk1R
-9WjAu8EAjXkXej0BDz4Ya4xCjA0slwZ/mPZtT82GDUrXgx+CA0KTd5oNRJ5G6waK
-irjgyu3go5j3OWUHi4/RIU9kIkRp839l2YEfuQcZ+slKloRolzt5ZOQLcX3tXA+5
-BrQl10VlPQ4DgpU5DzLaANM4AjKRRM2O7NCuSKRP6XP6kq7Tbn6bd+/yuEk389X8
-Jn2cX89X2fIj6z7Ml2mX3qfv6Wf6lhFl7NJONO//hqVmIc5eiWO+Tfp6INxkvpVx
-k24L5SazHHMe7ub/4n24pFq5tJdf3r+V5FpA298=},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcN1VM9bhUxEKagipQ7PJnWI3nssce+BQ0H8O56S4oo
+VNGToCBNWgo6BCcACcQTIcoVvHeg5wrY67f70CNEFGnw/8x8/sYzO/vj8aO5/by+
+vQjy9ORCPI3n5+nsuZiFJ0JqpDHS4MF1kYCYPESbEJwxurPeM3u1XcDGd+Og2IJJ
+zgDFGCEGkyCQ1Wi8GiyHFZwcppE7D6MpfDRSBz72DI5dCspqCoG3pyczvg20Eqtk
+JNVNLdZjmaWRqkBRlaephjB1A63/dudPud3gY4XGg2Z+DaCvXkqftShVE4t3iVtp
+VJP2K/4maWvnndojxTOxXXchVphq5j1KzTbAOqpdtEv3WFeGOx556OiYWdcUL/Hp
+GYljwk5bCNxboKGcYmdG8H2I1lmLWqeWDLVvcMeytIXaW2+14g5CHxlI23Iy3kLy
+4+C4p4TkK67mR/8T8xJVcdBGU9QwsFatccQyoQu67zU4VTySNRY8DQNoT6S08Uyu
+b8GI/CF/zJ/ydd5Nl+X0psybfDNdTa/z++nVdFUs34ru3fQy7/Lb/DV/z18Kos5d
+3onm/WFY5ijE2QtxzLfJnw+Em8K3Mm7ybaXcFJZjzkNu/i/e+8u/lfb68eud9vus
+xb79BQ==},0},0,0,0},
 {0,708a2cac-1726-438b-94d8-aa7c9447b3a0},
 {-1},
 {-1}
@@ -835,7 +828,7 @@ k24L5SazHHMe7ub/4n24pFq5tJdf3r+V5FpA298=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Метаданное"}
 },
@@ -874,12 +867,11 @@ k24L5SazHHMe7ub/4n24pFq5tJdf3r+V5FpA298=},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {0,ed59e5f4-5d76-4fdc-82e3-929b6bac9114},
 {-1},
 {-1}
@@ -888,7 +880,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Имя переменной"}
 },
@@ -927,12 +919,11 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {0,4c88b9d2-3975-40da-ad74-9a82a21b356f},
 {-1},
 {-1}
@@ -941,7 +932,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Выгружать код/номер"}
 },
@@ -978,7 +969,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {1,0},
 {"Pattern",
 {"S",10,1}
-},0,1,00000000-0000-0000-0000-000000000000},
+},0,1,00000000-0000-0000-0000-000000000000,0,0,0},
 {-1},
 {0,7f9c01b3-0d10-4675-90c1-3da13269f871},
 {-1}
@@ -987,7 +978,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Режим поиска"}
 },
@@ -1026,12 +1017,11 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {0,88963759-0a6a-4839-bed2-219c5763c0c8},
 {-1},
 {-1}
@@ -1040,7 +1030,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Режим создания"}
 },
@@ -1079,18 +1069,17 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {0,5825a722-21bd-4ffe-b328-3e3f2e4b3c4c},
 {-1},
 {-1}
 },0,0}
 }
-},0,0,0,0,0,0,0}
+},0,0,0,0,0,0,0,100,1,2}
 },
 {51d1e122-c0f3-496f-901e-806df8206ba9,
 {2,1,
@@ -1133,7 +1122,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"#",e603c0f2-92fb-4d47-8f38-a44a381cf235}
 },
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1158,8 +1147,8 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},
-{17,117644833,
+{1,0},0,0,100,2},
+{18,117644833,
 {3,4,
 {0}
 },
@@ -1189,7 +1178,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {737535a4-21e6-4971-8513-3e3173a9fedd,
 {8,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Данные для выгрузки"}
 },
@@ -1363,7 +1352,7 @@ NBYWFhbm5oKCgoKCgoKCgoKCgoKC5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm
 {1,0},
 {"Pattern",
 {"S"}
-},0,1,00000000-0000-0000-0000-000000000000},
+},0,1,00000000-0000-0000-0000-000000000000,0,0,0},
 {-1},
 {-1},
 {-1}
@@ -1372,7 +1361,7 @@ NBYWFhbm5oKCgoKCgoKCgoKCgoKC5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm
 {737535a4-21e6-4971-8513-3e3173a9fedd,
 {8,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","При необходимости"}
 },
@@ -1413,17 +1402,16 @@ NBYWFhbm5oKCgoKCgoKCgoKCgoKC5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm
 {"B"}
 },0,1,35af3d93-d7c7-4a2e-a8eb-bac87a1a3f26,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNdY7bCcMwDEXbr0Igm0igh4PtdfJaImiyfnSkrlBb
-Dik0qSS4ukJH6HG/ebyfr42h77ZWrOBOIVQh6zu78hEUqKwykZXGN7QKivxjzr4R
-8Xcg/J1QQ4rWDElZJsooQ1wxjJJxlEQoKcxzyss68eIgQ2MMhsOyf1wa3a+RHf98
-AA==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNdU7bDcMwCGx/I+WzW4AE2KntdfJaImKyfnSkrlCM
+01TqA5COOzjpLueT1+N23xj6bmvDAzgLECuQ9p3+4gkCkL0ykdriH6ECivzzfPPm
+SJ+C8FuhZjGsHXNgmaigDGnFOErBUTKh5DjPuSzrxIsbGXaPBazr9RDZc7cDq0Wi
+V+uR7gk=},0},0,0,0},
 {-1},
 {-1},
 {-1}
 },"","ВыгружатьПриНеобходимости","",0}
 }
-},0,0,0,0,0,0,0}
+},0,0,0,0,0,0,0,100,1,2}
 },
 {9ab3fa70-d2e0-4e44-baac-730682272ed2,
 {4,1,0,
@@ -1519,7 +1507,7 @@ AA==},0}
 {0fc7e20d-f241-460c-bdf4-5ad88e5474a5,15,
 {3,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1544,20 +1532,19 @@ AA==},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},10,
+{1,0},0,0,100,0},11,
 {1,1,
 {"ru","Период выгрузки:"}
 },4,1,0,0,0,
 {0,0,0},0,
 {1,0},1,
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},4,0,0,0},
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,0,0},4,0,0,0,0,0,0,0},
 {0}
 },
 {8,6,6,106,25,1,
@@ -1595,7 +1582,7 @@ AA==},0}
 },
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1622,7 +1609,7 @@ AA==},0}
 {-18},0,0,0},
 {1,1,
 {"ru","Начальная дата выгрузки документов и регистров сведений"}
-},0,0},29,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,4,0,
+},0,0,100,1},30,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,4,0,
 {"U"},
 {"U"},"",0,1,0,0,0,0,
 {4,0,
@@ -1630,7 +1617,7 @@ AA==},0}
 {4,0,
 {0},"",-1,-1,1,0,""},2,0,0,
 {0,0,0},
-{1,0},0,0,0,0,0,0,0,16777215}
+{1,0},0,0,0,0,0,0,0,16777215,1}
 },
 {1,
 {9a7643d2-19e9-45e2-8893-280bc9195a97,
@@ -1676,7 +1663,7 @@ AA==},0}
 },
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1703,7 +1690,7 @@ AA==},0}
 {-18},0,0,0},
 {1,1,
 {"ru","Конечная дата выгрузки документов и регистров сведений"}
-},0,0},29,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,4,0,
+},0,0,100,1},30,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,4,0,
 {"U"},
 {"U"},"",0,1,0,0,0,0,
 {4,0,
@@ -1711,7 +1698,7 @@ AA==},0}
 {4,0,
 {0},"",-1,-1,1,0,""},2,0,0,
 {0,0,0},
-{1,0},0,0,0,0,0,0,0,16777215}
+{1,0},0,0,0,0,0,0,0,16777215,1}
 },
 {1,
 {9a7643d2-19e9-45e2-8893-280bc9195a97,
@@ -1753,7 +1740,7 @@ AA==},0}
 {6ff79819-710e-4145-97cd-1618da79e3e2,18,
 {1,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1780,13 +1767,13 @@ AA==},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Установить период выгрузки"}
-},0,0},13,
+},0,0,100,0},14,
 {1,1,
 {"ru","..."}
 },1,1,0,0,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
-{0,0,0},0,0,0,0,0},
+{0,0,0},0,0,0,0,0,1},
 {1,
 {0,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КнопкаУстановкиПериодаНажатие",
@@ -1840,7 +1827,7 @@ AA==},0}
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1867,10 +1854,10 @@ AA==},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Использовать отбор по периоду для всех объектов, включая те, для которых заданы ограничения"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Отбор по периоду для всех объектов"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,273,6,480,25,1,
@@ -1905,7 +1892,7 @@ AA==},0}
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1932,10 +1919,10 @@ AA==},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Выгружить вместе с документом его движения"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Выгружать с документом все его движения"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,6,54,249,73,1,
@@ -1969,7 +1956,7 @@ AA==},0}
 {0fc7e20d-f241-460c-bdf4-5ad88e5474a5,21,
 {3,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -1994,20 +1981,19 @@ AA==},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},10,
+{1,0},0,0,100,0},11,
 {1,1,
 {"ru","Выгрузка периодических регистров:"}
 },4,1,0,0,0,
 {0,0,0},0,
 {1,0},1,
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},4,0,0,0},
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,0,0},4,0,0,0,0,0,0,0},
 {0}
 },
 {8,6,30,195,49,1,
@@ -2041,7 +2027,7 @@ AA==},0}
 {64483e7f-3833-48e2-8c75-2c31aac49f6e,22,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -2066,7 +2052,7 @@ AA==},0}
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},29,0,0,1,0,1,0,0,0,0,1,0,0,255,0,0,4,0,
+{1,0},0,0,100,1},30,0,0,1,0,1,0,0,0,0,1,0,0,255,0,0,4,0,
 {"U"},
 {"U"},"",0,1,1,1,
 {9,
@@ -2108,7 +2094,7 @@ AA==},0}
 {4,0,
 {0},"",-1,-1,1,0,""},0,0,0,
 {0,0,0},
-{1,0},0,0,0,0,0,0,0,16777215},
+{1,0},0,0,0,0,0,0,0,16777215,1},
 {0}
 },
 {8,208,30,418,49,1,
@@ -2147,7 +2133,7 @@ AA==},0}
 {"#",f6841c6b-6c71-4c82-ae9e-d08b49db326c}
 },
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -2172,8 +2158,8 @@ AA==},0}
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},
-{17,33775149,
+{1,0},0,0,100,2},
+{18,33775149,
 {3,4,
 {0}
 },
@@ -2203,7 +2189,7 @@ AA==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,0},
 {1,0},
 {1,0},22,0,-1,0,-1,12656128,
@@ -2240,11 +2226,10 @@ AA==},0}
 {"S",10,1}
 },0,1,35af3d93-d7c7-4a2e-a8eb-bac87a1a3f26,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNdY7bCcMwDEXbr0Igm0igh4PtdfJaImiyfnSkrlBb
-Dik0qSS4ukJH6HG/ebyfr42h77ZWrOBOIVQh6zu78hEUqKwykZXGN7QKivxjzr4R
-8Xcg/J1QQ4rWDElZJsooQ1wxjJJxlEQoKcxzyss68eIgQ2MMhsOyf1wa3a+RHf98
-AA==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNdU7bDcMwCGx/I+WzW4AE2KntdfJaImKyfnSkrlCM
+01TqA5COOzjpLueT1+N23xj6bmvDAzgLECuQ9p3+4gkCkL0ykdriH6ECivzzfPPm
+SJ+C8FuhZjGsHXNgmaigDGnFOErBUTKh5DjPuSzrxIsbGXaPBazr9RDZc7cDq0Wi
+V+uR7gk=},0},0,0,0},
 {-1},
 {0},
 {-1}
@@ -2253,7 +2238,7 @@ AA==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -2296,14 +2281,13 @@ AA==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {1},
 {-1},
 {-1}
@@ -2312,7 +2296,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -2349,11 +2333,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {2},
 {-1},
 {-1}
@@ -2362,7 +2345,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -2399,11 +2382,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {3},
 {-1},
 {-1}
@@ -2412,7 +2394,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -2451,12 +2433,11 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {4},
 {-1},
 {-1}
@@ -2465,7 +2446,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -2504,12 +2485,11 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {5},
 {-1},
 {-1}
@@ -2518,7 +2498,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -2561,14 +2541,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {6},
 {-1},
 {-1}
@@ -2577,7 +2556,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -2614,11 +2593,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {7},
 {-1},
 {-1}
@@ -2627,7 +2605,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -2664,11 +2642,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {8},
 {-1},
 {-1}
@@ -2677,7 +2654,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Тип группы"}
 },
@@ -2716,14 +2693,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"#",b1668747-cd01-442e-84b7-15a47d05c599}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVI7bgQhDI1SrrSXIC2WeGBguEWaHABmmDJFtEqz
-4mQpcqRcIcDssj8l2MLYfja24fP5qa+fr+9jkPvdUbzGwyF/vIuuvAiZ4Nzk2dO8
-KBCzzjRx8gQb2S/KzjaEst+Vht8YRqJpRnIT6uy91700UlUolCr10BGmCdL6r5hH
-fYvw9waNi6VXQ5jaLZW6FbJfWjcduhlX+0U24q048SbKkELcgKr5hFLdR2jc/GIL
-+sc7MjwWd0Vw3nsNe+6q9wTEVWUESmmpb6PhKEwhExue2VoX19kNcHtMrjmSSUwr
-R0McZkUR0dI0JxscbE3Yx+cksoWOMRES19R5ramNt7QqGJ9yWJaAUXi5+TmtdOrj
-H3xCbSMbDZZf},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WbDAw3KKbHgAYZtlFlV1E
+LtZFj9QrlE9CmvQztsZj+9k8mzk9PvTn8/3j6OV+dxTP4XDIb6+iO09CRrJ2cewg
+rUjArDIsHB2QCexWNMl4X/a70vBDyUhqnpbcDF6y976TWmKFEmKpHx2hmwGl/qr5
+6Y8Kdx9QdI10NkBLO6VKj5LE4dbTJRWpcXjf3lfbhAdF8SLKtELcgGr4jMKeA2ra
+8mIU/ZOdHX6heBWyzjnVFnyZrs9GFDbM5CHGtd6RIgt+8RlYc2JjbNiSneB2qVy7
+RB0ZNg4a2CeEQMHAkqLxlkxt2NdoJWVDKoQIFLm2zlttrZ2BDUm7mP26eprUy80f
+1MhDJzr1jBpLmyOWLw==},0},0,0,0},
 {9},
 {-1},
 {-1}
@@ -2732,7 +2708,7 @@ H3xCbSMbDZZf},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -2771,12 +2747,11 @@ H3xCbSMbDZZf},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {10},
 {-1},
 {-1}
@@ -2785,7 +2760,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Тип группы"}
 },
@@ -2824,14 +2799,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"#",b1668747-cd01-442e-84b7-15a47d05c599}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVI7bgQhDI1SrrSXIC2WeGBguEWaHABmmDJFtEqz
-4mQpcqRcIcDssj8l2MLYfja24fP5qa+fr+9jkPvdUbzGwyF/vIuuvAiZ4Nzk2dO8
-KBCzzjRx8gQb2S/KzjaEst+Vht8YRqJpRnIT6uy91700UlUolCr10BGmCdL6r5hH
-fYvw9waNi6VXQ5jaLZW6FbJfWjcduhlX+0U24q048SbKkELcgKr5hFLdR2jc/GIL
-+sc7MjwWd0Vw3nsNe+6q9wTEVWUESmmpb6PhKEwhExue2VoX19kNcHtMrjmSSUwr
-R0McZkUR0dI0JxscbE3Yx+cksoWOMRES19R5ramNt7QqGJ9yWJaAUXi5+TmtdOrj
-H3xCbSMbDZZf},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WbDAw3KKbHgAYZtlFlV1E
+LtZFj9QrlE9CmvQztsZj+9k8mzk9PvTn8/3j6OV+dxTP4XDIb6+iO09CRrJ2cewg
+rUjArDIsHB2QCexWNMl4X/a70vBDyUhqnpbcDF6y976TWmKFEmKpHx2hmwGl/qr5
+6Y8Kdx9QdI10NkBLO6VKj5LE4dbTJRWpcXjf3lfbhAdF8SLKtELcgGr4jMKeA2ra
+8mIU/ZOdHX6heBWyzjnVFnyZrs9GFDbM5CHGtd6RIgt+8RlYc2JjbNiSneB2qVy7
+RB0ZNg4a2CeEQMHAkqLxlkxt2NdoJWVDKoQIFLm2zlttrZ2BDUm7mP26eprUy80f
+1MhDJzr1jBpLmyOWLw==},0},0,0,0},
 {11},
 {-1},
 {-1}
@@ -2840,7 +2814,7 @@ H3xCbSMbDZZf},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -2883,14 +2857,13 @@ H3xCbSMbDZZf},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {12},
 {-1},
 {-1}
@@ -2899,7 +2872,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -2936,11 +2909,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {13},
 {-1},
 {-1}
@@ -2949,7 +2921,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -2986,11 +2958,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {14},
 {-1},
 {-1}
@@ -2999,7 +2970,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -3038,14 +3009,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {15},
 {-1},
 {-1}
@@ -3054,7 +3024,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -3093,12 +3063,11 @@ ySfUNrLZYP0F},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {16},
 {-1},
 {-1}
@@ -3107,7 +3076,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -3150,14 +3119,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {17},
 {-1},
 {-1}
@@ -3166,7 +3134,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -3203,11 +3171,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {18},
 {-1},
 {-1}
@@ -3216,7 +3183,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -3253,11 +3220,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {19},
 {-1},
 {-1}
@@ -3266,7 +3232,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -3305,14 +3271,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {20},
 {-1},
 {-1}
@@ -3321,7 +3286,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Тип группы"}
 },
@@ -3360,14 +3325,13 @@ ySfUNrLZYP0F},0}
 {"#",b1668747-cd01-442e-84b7-15a47d05c599}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVI7bgQhDI1SrrSXIC2WeGBguEWaHABmmDJFtEqz
-4mQpcqRcIcDssj8l2MLYfja24fP5qa+fr+9jkPvdUbzGwyF/vIuuvAiZ4Nzk2dO8
-KBCzzjRx8gQb2S/KzjaEst+Vht8YRqJpRnIT6uy91700UlUolCr10BGmCdL6r5hH
-fYvw9waNi6VXQ5jaLZW6FbJfWjcduhlX+0U24q048SbKkELcgKr5hFLdR2jc/GIL
-+sc7MjwWd0Vw3nsNe+6q9wTEVWUESmmpb6PhKEwhExue2VoX19kNcHtMrjmSSUwr
-R0McZkUR0dI0JxscbE3Yx+cksoWOMRES19R5ramNt7QqGJ9yWJaAUXi5+TmtdOrj
-H3xCbSMbDZZf},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WbDAw3KKbHgAYZtlFlV1E
+LtZFj9QrlE9CmvQztsZj+9k8mzk9PvTn8/3j6OV+dxTP4XDIb6+iO09CRrJ2cewg
+rUjArDIsHB2QCexWNMl4X/a70vBDyUhqnpbcDF6y976TWmKFEmKpHx2hmwGl/qr5
+6Y8Kdx9QdI10NkBLO6VKj5LE4dbTJRWpcXjf3lfbhAdF8SLKtELcgGr4jMKeA2ra
+8mIU/ZOdHX6heBWyzjnVFnyZrs9GFDbM5CHGtd6RIgt+8RlYc2JjbNiSneB2qVy7
+RB0ZNg4a2CeEQMHAkqLxlkxt2NdoJWVDKoQIFLm2zlttrZ2BDUm7mP26eprUy80f
+1MhDJzr1jBpLmyOWLw==},0},0,0,0},
 {21},
 {-1},
 {-1}
@@ -3376,7 +3340,7 @@ H3xCbSMbDZZf},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -3415,14 +3379,13 @@ H3xCbSMbDZZf},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {22},
 {-1},
 {-1}
@@ -3431,7 +3394,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -3470,12 +3433,11 @@ ySfUNrLZYP0F},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {23},
 {-1},
 {-1}
@@ -3484,7 +3446,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Тип группы"}
 },
@@ -3523,14 +3485,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"#",b1668747-cd01-442e-84b7-15a47d05c599}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVI7bgQhDI1SrrSXIC2WeGBguEWaHABmmDJFtEqz
-4mQpcqRcIcDssj8l2MLYfja24fP5qa+fr+9jkPvdUbzGwyF/vIuuvAiZ4Nzk2dO8
-KBCzzjRx8gQb2S/KzjaEst+Vht8YRqJpRnIT6uy91700UlUolCr10BGmCdL6r5hH
-fYvw9waNi6VXQ5jaLZW6FbJfWjcduhlX+0U24q048SbKkELcgKr5hFLdR2jc/GIL
-+sc7MjwWd0Vw3nsNe+6q9wTEVWUESmmpb6PhKEwhExue2VoX19kNcHtMrjmSSUwr
-R0McZkUR0dI0JxscbE3Yx+cksoWOMRES19R5ramNt7QqGJ9yWJaAUXi5+TmtdOrj
-H3xCbSMbDZZf},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WbDAw3KKbHgAYZtlFlV1E
+LtZFj9QrlE9CmvQztsZj+9k8mzk9PvTn8/3j6OV+dxTP4XDIb6+iO09CRrJ2cewg
+rUjArDIsHB2QCexWNMl4X/a70vBDyUhqnpbcDF6y976TWmKFEmKpHx2hmwGl/qr5
+6Y8Kdx9QdI10NkBLO6VKj5LE4dbTJRWpcXjf3lfbhAdF8SLKtELcgGr4jMKeA2ra
+8mIU/ZOdHX6heBWyzjnVFnyZrs9GFDbM5CHGtd6RIgt+8RlYc2JjbNiSneB2qVy7
+RB0ZNg4a2CeEQMHAkqLxlkxt2NdoJWVDKoQIFLm2zlttrZ2BDUm7mP26eprUy80f
+1MhDJzr1jBpLmyOWLw==},0},0,0,0},
 {24},
 {-1},
 {-1}
@@ -3539,7 +3500,7 @@ H3xCbSMbDZZf},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -3578,14 +3539,13 @@ H3xCbSMbDZZf},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {25},
 {-1},
 {-1}
@@ -3594,7 +3554,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -3637,14 +3597,13 @@ ySfUNrLZYP0F},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {26},
 {-1},
 {-1}
@@ -3653,7 +3612,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -3690,11 +3649,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {27},
 {-1},
 {-1}
@@ -3703,7 +3661,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -3740,11 +3698,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {28},
 {-1},
 {-1}
@@ -3753,7 +3710,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Режим отображения"}
 },
@@ -3790,11 +3747,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {29},
 {-1},
 {-1}
@@ -3803,7 +3759,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -3842,12 +3798,11 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {30},
 {-1},
 {-1}
@@ -3856,7 +3811,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Тип группы"}
 },
@@ -3895,14 +3850,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"#",b1668747-cd01-442e-84b7-15a47d05c599}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVI7bgQhDI1SrrSXIC2WeGBguEWaHABmmDJFtEqz
-4mQpcqRcIcDssj8l2MLYfja24fP5qa+fr+9jkPvdUbzGwyF/vIuuvAiZ4Nzk2dO8
-KBCzzjRx8gQb2S/KzjaEst+Vht8YRqJpRnIT6uy91700UlUolCr10BGmCdL6r5hH
-fYvw9waNi6VXQ5jaLZW6FbJfWjcduhlX+0U24q048SbKkELcgKr5hFLdR2jc/GIL
-+sc7MjwWd0Vw3nsNe+6q9wTEVWUESmmpb6PhKEwhExue2VoX19kNcHtMrjmSSUwr
-R0McZkUR0dI0JxscbE3Yx+cksoWOMRES19R5ramNt7QqGJ9yWJaAUXi5+TmtdOrj
-H3xCbSMbDZZf},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WbDAw3KKbHgAYZtlFlV1E
+LtZFj9QrlE9CmvQztsZj+9k8mzk9PvTn8/3j6OV+dxTP4XDIb6+iO09CRrJ2cewg
+rUjArDIsHB2QCexWNMl4X/a70vBDyUhqnpbcDF6y976TWmKFEmKpHx2hmwGl/qr5
+6Y8Kdx9QdI10NkBLO6VKj5LE4dbTJRWpcXjf3lfbhAdF8SLKtELcgGr4jMKeA2ra
+8mIU/ZOdHX6heBWyzjnVFnyZrs9GFDbM5CHGtd6RIgt+8RlYc2JjbNiSneB2qVy7
+RB0ZNg4a2CeEQMHAkqLxlkxt2NdoJWVDKoQIFLm2zlttrZ2BDUm7mP26eprUy80f
+1MhDJzr1jBpLmyOWLw==},0},0,0,0},
 {31},
 {-1},
 {-1}
@@ -3911,7 +3865,7 @@ H3xCbSMbDZZf},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Режим отображения"}
 },
@@ -3948,11 +3902,10 @@ H3xCbSMbDZZf},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {32},
 {-1},
 {-1}
@@ -3961,7 +3914,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -4000,12 +3953,11 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {33},
 {-1},
 {-1}
@@ -4014,7 +3966,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -4057,14 +4009,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {34},
 {-1},
 {-1}
@@ -4073,7 +4024,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -4110,11 +4061,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {35},
 {-1},
 {-1}
@@ -4123,7 +4073,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -4160,11 +4110,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {36},
 {-1},
 {-1}
@@ -4173,7 +4122,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Дата"}
 },
@@ -4210,11 +4159,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {37},
 {-1},
 {-1}
@@ -4223,7 +4171,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -4262,12 +4210,11 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {38},
 {-1},
 {-1}
@@ -4276,7 +4223,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -4319,14 +4266,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {39},
 {-1},
 {-1}
@@ -4335,7 +4281,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -4372,11 +4318,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {40},
 {-1},
 {-1}
@@ -4385,7 +4330,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -4422,11 +4367,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {41},
 {-1},
 {-1}
@@ -4435,7 +4379,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Дата"}
 },
@@ -4472,11 +4416,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {42},
 {-1},
 {-1}
@@ -4485,7 +4428,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -4528,14 +4471,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {43},
 {-1},
 {-1}
@@ -4544,7 +4486,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -4581,11 +4523,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {44},
 {-1},
 {-1}
@@ -4594,7 +4535,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -4631,11 +4572,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {45},
 {-1},
 {-1}
@@ -4644,7 +4584,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Дата"}
 },
@@ -4681,11 +4621,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {46},
 {-1},
 {-1}
@@ -4694,7 +4633,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -4733,14 +4672,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {47},
 {-1},
 {-1}
@@ -4749,7 +4687,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -4788,12 +4726,11 @@ ySfUNrLZYP0F},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {48},
 {-1},
 {-1}
@@ -4802,7 +4739,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -4845,14 +4782,13 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {49},
 {-1},
 {-1}
@@ -4861,7 +4797,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -4898,11 +4834,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {50},
 {-1},
 {-1}
@@ -4911,7 +4846,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -4948,11 +4883,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {51},
 {-1},
 {-1}
@@ -4961,7 +4895,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Дата"}
 },
@@ -4998,11 +4932,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {52},
 {-1},
 {-1}
@@ -5011,7 +4944,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Применение"}
 },
@@ -5050,14 +4983,13 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"#",27d7d459-265e-4fac-9685-d86b957f211f}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJNbkQhCG66nGQuYbeSiKI+btFND6BPXXbRTLqZ
-eLIueqReoeqbcf7SChGBDwT08/lprJ+v7yPL/e4oXsPhkD/exVBehNQ++USWQTub
-gUpYgd1iIS0usvVFI5a639WO3xiNxK4ZSV2os/de99JI1aCoVG2HgTBdgNZ/xTzq
-W4S/N2i8WEY1gEu/pdGwohyXtk3zMOPVfpGdaCtOvIk6pRA3oGY+odTwAXbufrEF
-/eOdGR6LuyJ03nuN9tzV6AkxFJWRIcaEQBod8MLtlQytZK0LZXUT3B+TWo5oIkGh
-YIB4VRAwWFjWaNmhbQnH+JzEbFGHEAEjtdS5tNTGWygKjY+ZU2Kchdebn9NLhzH+
-ySfUNrLZYP0F},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVJLbgMhDK26jJRL0C2WMNgw3KKbHgAGWHZRZReR
+i3XRI/UK5ZNMmvQztsZj+9k8mzk9Pozn8/3j6OV+dxTP4XDIb69iOE9CapdcIvag
+LWegElbwdmFIi42eXdGIpe53teOnIkvsnpHUjbpk730njVQNikrV9jEQphvQ+q+a
+n/6scPcBjdfIYAO49FOajChKNd12usQqjZret/fVdqFJUbyIulkhbkAtfEapkQPs
+2vNiFv2T3Tr8QvEqaJ1zui/4Mt2YDTEUldFDjAmBNFrwi2+3ZWglZhvKajdwv1Rq
+XaKJBIWCAfKrgoCBYVkje4vcGo41WomZUYcQASO11rm01sYxFIXGxexT8rhRrzd/
+UCcPg+imZ9Rc2jZi/QI=},0},0,0,0},
 {53},
 {-1},
 {-1}
@@ -5066,7 +4998,7 @@ ySfUNrLZYP0F},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Левое значение"}
 },
@@ -5109,14 +5041,13 @@ ySfUNrLZYP0F},0}
 {"N"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEInWT
-RZVdNCfrokfqFQqGTKOJWkB+2M+GZ3i/v5Px/fl1Zr3dnNVLOp3Kx1GJ86hmwQel
-mWyJSBNMhRFcSAg7U43zZA+u5JQn6smvo+hp4LOatxvZ9kVWU/Osdg3wwq79oK3G
-mkqIc91Ihm0AxvxVc+v3irAOGPqNiBqg2G6pU6Kk5dJqDEuYhqUrz3gv6Lo89TY6
-bqjUkoadHlkoHFBbjVe96B92OeFW3tWkKYRgyF/6MmL2Nu8wefA5MNRvisDJO8jk
-D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
-},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVFLbgMhDK26jJRL0C2WbD4D3lZdV5WqHoAEsqyU
+KrtoTtZFj9QrFAyZVNPPgGyenw3P4+PtjXyf7x9n1tvNWT2l06m8vSoB92oWf6c0
+ky0RaYKpMIILCWFnqnGe7MGVnPJEPfl5FD0M/6jm7UaOfZPX1JDVrjm8sGsctNVY
+UwlxrgfJsM2BMX/V/MS9IqwDhq4RUQMU2yt1SZQ0dlhf17Uxix0NS9+Q8V686yLV
+y+i7eaWWNOz0yELhgNpuvOpF/7DLDb+IvC6aQgim/eJLf0bM3uYdJg8+B4Y6rgic
+vINM/kA8ERcr41+qOIXJ2WygUrXAFwMxsgUTcbdnYp84dMHrlrE3LSMYl4lK6uq7
+5vkL},0},0,0,0},
 {54},
 {-1},
 {-1}
@@ -5125,7 +5056,7 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Вид сравнения"}
 },
@@ -5162,11 +5093,10 @@ D8QTcbHy7ctrcAqTs9lApWqBLwZiZAsm4m7PxD5x6HLXDWNvWZ5+HCYaqWvviucf
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {55},
 {-1},
 {-1}
@@ -5175,7 +5105,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Правое значение"}
 },
@@ -5212,11 +5142,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {56},
 {-1},
 {-1}
@@ -5225,7 +5154,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Дата"}
 },
@@ -5262,11 +5191,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {57},
 {-1},
 {-1}
@@ -5275,7 +5203,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Режим отображения"}
 },
@@ -5312,11 +5240,10 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {1,0},
 {"Pattern"},0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNm8vIAAbvd++vttTh5apWCkgsKUktylOqBfEgyNBY
-xxDEM9YxAVEGtbxctdj45jrGOgZApYYGBrVABliFMYjSNTLCpQeTD9Fhji5gZIgQ
-AbtG19ACZAsQgkUNdcCWAgkjS7CwIUQSCiE8I1NTMG0CcZ5SKMSbYFpJCUUTUBiq
-ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVCxEcIwDIQ2d1lCtXIn2TEOW9AwAAUtBZcup3GY
+goKRWAFLIiFAwNZZfklvvXxZr2zdr7dhi3U1wO7Q98fzCUSRGydkRRFbdSR1JUs4
+Y0QqpUwk5WIVUV0Twi/ON3ZG/gwEfkVMTcOddinboozksHRHFozkyEtwjkJK5lsX
+CXsf1jzAG6mEn1VkuYbVNA9O+pOdXlgQOZO0yTkH/eJxPhpPFzLR5AE=},0},0,0,0},
 {58},
 {-1},
 {-1}
@@ -5325,7 +5252,7 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {48a6ebc3-fcc8-4f8f-b399-459fb32aa46b,
 {4,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Представление"}
 },
@@ -5364,18 +5291,17 @@ ygAsp2sIQiB5JYgmPLJwEzCdh+wkM3NzcyNDU5i/DGAkxBlwTbUA},0}
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {59},
 {-1},
 {-1}
 },0}
 }
-},0,0,0,0,0,0,0}
+},0,0,0,0,0,0,0,100,1,2}
 },
 {44c6793c-98d3-4635-bbfe-58bbded2bb4e,
 {3,0,0}
@@ -5450,7 +5376,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {e69bf21d-97b2-4f37-86db-675aea9ec2cb,24,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5475,11 +5401,9 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},9,2,1,0,1,1,
+{1,0},0,0,100,0},9,2,1,0,1,1,
 {5,d0a52278-ca43-4762-b8e3-8d872ef8fe2d,332,1,2,
-{6,4d219469-6995-4d00-ac24-aeeffe3d4217,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,c250b126-d5e7-4b7a-b0f5-69b6b09e3766,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,f76df138-e2d9-448c-a848-bfc20db04dac,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанельКомпоновщикОтборПоказатьРезультатаОтбора",
 {1,"КоманднаяПанельКомпоновщикОтборПоказатьРезультатаОтбора",
 {1,1,
@@ -5502,12 +5426,14 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {1,1,
 {"ru","Показать выбранные записи"}
 }
-},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,4d219469-6995-4d00-ac24-aeeffe3d4217,
+},
+{6,7fbd41ee-b7d7-4ae2-ae7b-b8699eef96eb,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,7fbd41ee-b7d7-4ae2-ae7b-b8699eef96eb,
 {8,"Разделитель1",0,1,
 {1,1,
 {"ru","Действие4"}
-},0,d0a52278-ca43-4762-b8e3-8d872ef8fe2d,8,1e2,2,0,1,0,0,0,0},c250b126-d5e7-4b7a-b0f5-69b6b09e3766,
+},0,d0a52278-ca43-4762-b8e3-8d872ef8fe2d,8,1e2,2,0,1,0,0,0,0},f76df138-e2d9-448c-a848-bfc20db04dac,
 {8,"ПоказатьРезультатаОтбора",0,3,
 {1,1,
 {"ru","Показать выбранные"}
@@ -5550,7 +5476,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {e69bf21d-97b2-4f37-86db-675aea9ec2cb,25,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5575,31 +5501,9 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},9,2,0,0,1,1,
+{1,0},0,0,100,0},9,2,0,0,1,1,
 {5,8d6538eb-fa47-46f2-82d7-07ab238d41c2,3,1,3,
-{6,ab21c066-1459-4ca1-bf53-72a12da2b1e8,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,3bd77e53-301a-4fbd-b76c-dc2ab3099e65,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"КоманднаяПанельДеревоМетаданныхЗаполнитьТаблицуДанных",
-{1,"КоманднаяПанельДеревоМетаданныхЗаполнитьТаблицуДанных",
-{1,1,
-{"ru","Заполнить таблицу данных"}
-},
-{1,1,
-{"ru","Заполнить таблицу данных"}
-},
-{1,1,
-{"ru","Заполнить таблицу данных"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},1,
-{4,1,
-{-8},"",-1,-1,1,0,""}
-},
-{6,133da725-c724-4b49-a628-b00899a8c08d,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,bbd6e885-6a22-41b7-9390-db5290b080e7,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанель1ПересчетВыгружаемыхПоСсылке",
 {1,"КоманднаяПанель1ПересчетВыгружаемыхПоСсылке",
 {1,1,
@@ -5632,16 +5536,38 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 ////+P+AZmj////4D4BmaIiIiIgAgGZmZo///wCAZmZmj///8IBmZmaIiIiIgA==
 }
 },0,""}
+},
+{6,2256bd31-0ada-464c-9cb4-b46236d08f4e,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КоманднаяПанельДеревоМетаданныхЗаполнитьТаблицуДанных",
+{1,"КоманднаяПанельДеревоМетаданныхЗаполнитьТаблицуДанных",
+{1,1,
+{"ru","Заполнить таблицу данных"}
+},
+{1,1,
+{"ru","Заполнить таблицу данных"}
+},
+{1,1,
+{"ru","Заполнить таблицу данных"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,133da725-c724-4b49-a628-b00899a8c08d,
+{4,1,
+{-8},"",-1,-1,1,0,""}
+},
+{6,f85ea984-c2e9-4570-904b-c21edf61e889,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},1,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,bbd6e885-6a22-41b7-9390-db5290b080e7,
 {8,"ПересчетВыгружаемыхПоСсылке",0,2,
 {1,1,
 {"ru","Объекты по ссылкам"}
-},1,8d6538eb-fa47-46f2-82d7-07ab238d41c2,1,1e2,0,3,1,0,0,0,0},ab21c066-1459-4ca1-bf53-72a12da2b1e8,
+},1,8d6538eb-fa47-46f2-82d7-07ab238d41c2,1,1e2,0,3,1,0,0,0,0},f85ea984-c2e9-4570-904b-c21edf61e889,
 {8,"Разделитель",0,1,
 {1,1,
 {"ru","Действие"}
-},0,8d6538eb-fa47-46f2-82d7-07ab238d41c2,3,1e2,2,0,1,0,0,0,0},3bd77e53-301a-4fbd-b76c-dc2ab3099e65,
+},0,8d6538eb-fa47-46f2-82d7-07ab238d41c2,3,1e2,2,0,1,0,0,0,0},2256bd31-0ada-464c-9cb4-b46236d08f4e,
 {8,"ЗаполнитьТаблицуДанных",0,1,
 {1,1,
 {"#","Заполнить таблицу данных"}
@@ -5686,7 +5612,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5713,10 +5639,10 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Выгружать код"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Выгружать код / номер в макет"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,257,54,440,73,1,
@@ -5753,7 +5679,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5780,10 +5706,10 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Выгружать ссылку"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Выгружать ссылку"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,444,54,558,73,1,
@@ -5820,7 +5746,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5847,10 +5773,10 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Связь по гуид"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Связь по гуид"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,567,54,658,73,1,
@@ -5887,7 +5813,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5914,10 +5840,10 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Только создание"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Только создание"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,422,30,531,49,1,
@@ -5954,7 +5880,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {1,
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -5981,10 +5907,10 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,1,
 {"ru","Обмен данными"}
-},0,0},5,
+},0,0,100,0},6,
 {1,1,
 {"ru","Обмен данными"}
-},1,0,1,0},3,0,0,0,0},
+},1,0,1,0,100,1},4,0,0,0,0,0},
 {0}
 },
 {8,549,30,658,49,1,
@@ -6023,7 +5949,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {"#",8c4a53bd-2ffc-4f04-a9c8-f69b557900f6}
 },
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -6048,8 +5974,8 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},
-{17,117578765,
+{1,0},0,0,100,2},
+{18,117578765,
 {3,4,
 {0}
 },
@@ -6079,7 +6005,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","N"}
 },
@@ -6114,7 +6040,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {7,3,0,1,100},1,0,0,4,0,"НомерСтроки",
 {},4,0,
 {1,0},
-{"Pattern"},0,1,00000000-0000-0000-0000-000000000000},
+{"Pattern"},0,1,00000000-0000-0000-0000-000000000000,0,0,0},
 {-2},
 {-1},
 {-1}
@@ -6123,7 +6049,7 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Имя"}
 },
@@ -6162,12 +6088,11 @@ AP+IiGZggA8AD4/4ZmCA//AAj/hmYI///wCP+IiAj///8I/4/4CIiIiIj/j/gGZo
 {"S",100,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDoIwDNUrCT+x85asG7D1L0yMH4DK1YPhRvZl
-Hvwkz95cW0CFKF0ofW+vfeW53fDzuN0H1GUxqF3b9931orjYKw3WakhlkQiQA14D
-VV5XlOzELuugvc5iapHyB9/wlIxzvzTrWhRhCTh4I+zGQKQpORgFzUPzyyHDIOQY
-UtFyFJXYUweV5qzUlyjD4y3LnAE6xCsR/WHnDmt7n5aaEIKDetqLt8I2NJU/OwPY
-oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDAXGSr1EZkeKk7ZJboGEOECBrgyoW5WT
+MXAkrkBs01LKp4nkvmc/+znrzYq/+/U2RCiLQW3bvu8uZ8VgpwCNAUxlkYiQizUg
+IQcVBTNml9iDgyymFin/cIWjoK39pfnEovBLwuKLYTcaA03Jh1kEI1AWAGcESQnM
+EVXQqcSk2qs0RaXeRJl+VhnOaaRLeSWiP9mpwxeTM0uN997SE4/78Xax9U3lTlZj
+7KKu6s7qEKLTNpjDMWKs2+hl/nIDIzvwiz478lAUM2IhPQA=},0},0,0,0},
 {0,125e5b0a-0bc6-45cb-a336-cb6a4d287136},
 {-1},
 {-1}
@@ -6176,7 +6101,7 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Полное имя"}
 },
@@ -6215,12 +6140,11 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 {"S",255,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDIW1Ui+ROZFip2nqWyAhDlCgKwNiQzkZ
-A0diZiO2Wz5FkER13nt2/Nz7ciHrdrmeydbV2az602k4HoyAtbEYo4VcV5kJPRAs
-MAq24eAndY6TDdaXVPA+l4tkBA4O8VfNN9aKNCcQXoy4cdBxl7KFBStNywdJaFBx
-3Ip4OI6N2jMbk5/RmI+iQo9ZXjQHfFg3WvRHfb7wbe/dUptSQojTXDIV9altwh4d
-0ECuiQO6rqPgsPPbHQHFnpJ2n/v3OoH8yfFFaQlqRQ3kBw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDAXGSr1EZkeyk5Y0t0BCHKBAVwbUDeVk
+DByJKxDbpZTySSI579mO38tytZB1v94uEcriYjZt33fnkxGwNeDqGiiVRWJCD2WG
+kYeKAz6zcxzAA+ZSQkz5IhWeg3XuV88n1o4wJxy9GFFjqeEpeQtLgArz9GwAPCrS
+EpgitsixUpFmZ9IYjXlryvRQhZKzxIfzRpv+ZMcXvoicSFqHEBxNPl3cxTasK390
+lmIXbVV3zjZN9NY1uD9EinUbg86fO0D1ID86vChDScWohPQA},0},0,0,0},
 {0,8f38c53d-a655-4374-ad31-85648b2548a3},
 {-1},
 {-1}
@@ -6229,7 +6153,7 @@ MAq24eAndY6TDdaXVPA+l4tkBA4O8VfNN9aKNCcQXoy4cdBxl7KFBStNywdJaFBx
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Роли"}
 },
@@ -6268,12 +6192,11 @@ MAq24eAndY6TDdaXVPA+l4tkBA4O8VfNN9aKNCcQXoy4cdBxl7KFBStNywdJaFBx
 {"S"}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDcIwDIQvUpfIO5Fip23iLZAQAxTolwfqr8pk
-PBgJsQGJ3ZbSCpqozt3Z8Tmv7Ya/5/3Rky52vdo3XdferorBQcViF/NRNjgNGTld
-5mBHdYm9dtqmVLA2pgNnuBwM4q+aNZYKvyQQPgy7MRByl7SYBc1N0w+JaRBxWHNU
-ijl1VHGKSn0lJXrIsqwZyDvrSor+qNMNa3NzQ7X3HqEap+KZqPF16S5ogFoyZdWi
-CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIQVqZ/I7Eh20jbJL5AQDyjQlQF1q/Iy
+Bp7EzEZitwVaILHknH2Oz36sV3zu11sfoNj0att0XXs5KwY7FYtNzE8xqoAyslBm
+h2N2jh1YwEQlxJgezLDZaWN+1SyxVLh5wNArwmo0+dwlXY4SoMDUHSiCRUFCgSUq
+RaLaqzh5pT5IKTywkHOasuW8kqI/2emHLxLfBNXOOZMXPE7Hs4XG1aU9GU2hDbqs
+WqO9D1Ybj4djoFA1wUn/+QQoM/A+hx+5KYkYkRCf},0},0,0,0},
 {0,48667483-dd77-4d30-9cd6-6e2a8fb4a14f},
 {-1},
 {-1}
@@ -6282,7 +6205,7 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Аутентификация стандартная"}
 },
@@ -6321,12 +6244,11 @@ CYGcwWBPZwKqGvLSfenfygT8jsON3BLEihiIbw==},0}
 {"S",10,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj+ROZFip23iXyAhHlCgKwPqVuVl
-DDyJkZXEbgu0giSqc76cfe5zu+H1uN0H0mUxqF3b9931ohjslQarIZZFzFgOOA0Z
-OV3lYCd2ib12OolTBRvThV+4HAziL80ai8IvEwjvDLsxEHKXtDkLmpumDxKnQchx
-CwIBlbhTBxXnqNSXJqXHV5Y5A/lkXonoDztXWLv7dNR47xHqaSweilrfVO6MBqgj
-U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDIUVqZfI7Eh20jbJLZAQByjQlQF1q3Iy
+Bo7EESCx21LKp43kPNvPfi+P9Yq/+/XWByg2vdo2XddezorBTgEhUCw2MWM5VAFl
+ZKHMAcfqEjuwkMhpAsZ04Q6bgzbmF+cTC8MtE4ZeGVajyect6ecsAQpM25MBsChI
+WmCOSEApGtVexSkq9cZJ6aELuaYpn1xXQvpTnSZ80ThTVDvnTH7h0R6bC42rS3sy
+mkIbdFm1RnsfrDYeD8dAoWqCk/1LByge+EGHibyURIxIiE8=},0},0,0,0},
 {0,81518c3c-ec9f-4b7a-aee3-1b61b961744a},
 {-1},
 {-1}
@@ -6335,7 +6257,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Аутентификация ОС"}
 },
@@ -6374,12 +6296,11 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {"S",10,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj+ROZFip23iXyAhHlCgKwPqVuVl
-DDyJkZXEbgu0giSqc76cfe5zu+H1uN0H0mUxqF3b9931ohjslQarIZZFzFgOOA0Z
-OV3lYCd2ib12OolTBRvThV+4HAziL80ai8IvEwjvDLsxEHKXtDkLmpumDxKnQchx
-CwIBlbhTBxXnqNSXJqXHV5Y5A/lkXonoDztXWLv7dNR47xHqaSweilrfVO6MBqgj
-U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDIUVqZfI7Eh20jbJLZAQByjQlQF1q3Iy
+Bo7EESCx21LKp43kPNvPfi+P9Yq/+/XWByg2vdo2XddezorBTgEhUCw2MWM5VAFl
+ZKHMAcfqEjuwkMhpAsZ04Q6bgzbmF+cTC8MtE4ZeGVajyect6ecsAQpM25MBsChI
+WmCOSEApGtVexSkq9cZJ6aELuaYpn1xXQvpTnSZ80ThTVDvnTH7h0R6bC42rS3sy
+mkIbdFm1RnsfrDYeD8dAoWqCk/1LByge+EGHibyURIxIiE8=},0},0,0,0},
 {0,eb823c40-ef8a-40b4-909e-43c5f08beec8},
 {-1},
 {-1}
@@ -6388,7 +6309,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Пользователь ОС"}
 },
@@ -6427,18 +6348,17 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {"S",10,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVAxDsIwDIS1Uj+ROZFip23iXyAhHlCgKwPqVuVl
-DDyJkZXEbgu0giSqc76cfe5zu+H1uN0H0mUxqF3b9931ohjslQarIZZFzFgOOA0Z
-OV3lYCd2ib12OolTBRvThV+4HAziL80ai8IvEwjvDLsxEHKXtDkLmpumDxKnQchx
-CwIBlbhTBxXnqNSXJqXHV5Y5A/lkXonoDztXWLv7dNR47xHqaSweilrfVO6MBqgj
-U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDIUVqZfI7Eh20jbJLZAQByjQlQF1q3Iy
+Bo7EESCx21LKp43kPNvPfi+P9Yq/+/XWByg2vdo2XddezorBTgEhUCw2MWM5VAFl
+ZKHMAcfqEjuwkMhpAsZ04Q6bgzbmF+cTC8MtE4ZeGVajyect6ecsAQpM25MBsChI
+WmCOSEApGtVexSkq9cZJ6aELuaYpn1xXQvpTnSZ80ThTVDvnTH7h0R6bC42rS3sy
+mkIbdFm1RnsfrDYeD8dAoWqCk/1LByge+EGHibyURIxIiE8=},0},0,0,0},
 {0,4a598a3c-f0a3-4431-84bd-f3073a683a04},
 {-1},
 {-1}
 },0,0}
 }
-},0,0,0,0,0,0,0}
+},0,0,0,0,0,0,0,100,1,2}
 },
 {51d1e122-c0f3-496f-901e-806df8206ba9,
 {2,1,
@@ -6478,7 +6398,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {0fc7e20d-f241-460c-bdf4-5ad88e5474a5,48,
 {3,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -6508,20 +6428,19 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 Если значение = 0, то данный механизм не применяется и выгружаются элементы с признаком ""При необходимости""
 `Значение = 1` нужно для выгрузки вообще без подчиненных, только явно заданные метаданные
 Если значение > 1, то выгружаем подчиненные элементы этого или меньшего уровня зависимости"}
-},0,0},10,
+},0,0,100,0},11,
 {1,1,
 {"ru","Уровень выгрузки зависимых:"}
 },0,1,0,0,0,
 {0,0,0},0,
 {1,0},1,
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},4,0,0,0},
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,0,0},4,0,0,0,0,0,0,0},
 {0}
 },
 {8,486,6,652,25,1,
@@ -6561,7 +6480,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 },
 {
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -6591,7 +6510,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 Если значение = 0, то данный механизм не применяется и выгружаются элементы с признаком ""При необходимости""
 `Значение = 1` нужно для выгрузки вообще без подчиненных, только явно заданные метаданные
 Если значение > 1, то выгружаем подчиненные элементы этого или меньшего уровня зависимости"}
-},0,0},29,0,0,0,0,0,0,0,1,0,1,0,0,10,0,1,4,0,
+},0,0,100,1},30,0,0,0,0,0,0,0,1,0,1,0,0,10,0,1,4,0,
 {"U"},
 {"U"},"",0,1,0,0,0,0,
 {4,0,
@@ -6599,7 +6518,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {4,0,
 {0},"",-1,-1,1,0,""},0,0,0,
 {0,0,0},
-{1,0},0,0,0,0,0,0,0,16777215}
+{1,0},0,0,0,0,0,0,0,16777215,1}
 },
 {1,
 {9a7643d2-19e9-45e2-8893-280bc9195a97,
@@ -6664,7 +6583,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {e69bf21d-97b2-4f37-86db-675aea9ec2cb,44,
 {2,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -6689,7 +6608,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},9,2,1,0,1,1,
+{1,0},0,0,100,0},9,2,1,0,1,1,
 {5,5a5decba-2cde-45c2-8a37-1f68a74d1d8e,108,1,0,1,
 {5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,0,
 {0,0,
@@ -6733,7 +6652,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {"#",98b04553-a240-4611-9cc9-f584c76122c4}
 },
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -6758,8 +6677,8 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 },
 {3,1,
 {-18},0,0,0},
-{1,0},0,0},
-{17,117578765,
+{1,0},0,0,100,2},
+{18,117578765,
 {3,4,
 {0}
 },
@@ -6789,7 +6708,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","N"}
 },
@@ -6824,7 +6743,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {7,3,0,1,100},1,0,0,4,0,"НомерСтроки",
 {},4,0,
 {1,0},
-{"Pattern"},0,1,00000000-0000-0000-0000-000000000000},
+{"Pattern"},0,1,00000000-0000-0000-0000-000000000000,0,0,0},
 {-2},
 {-1},
 {-1}
@@ -6833,7 +6752,7 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Имя"}
 },
@@ -6872,12 +6791,11 @@ U9UdmhDIGQz2eCKguiUv3Zf+rUzAP3KsyC1BrIiB+AI=},0}
 {"S",50,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVBBDoIwENQrCZ/oeZt0W0rZX5gYH4DK1YPhRvoy
-Dz7Jo1fbXUCFKG1YZqbTneW53fDzuN0HgrIY1K7t++56UQz2CrwBjGURM5aNDjAj
-B1UuZlKXOICDZAY0JqYPPuFy0db+8qyxOMKSsPhmOI3GJndJi1kEbppelphGEccl
-yAuoJJ06qDhXpb48iR5PGdY05p11JaY/6nzDOt1nojqEYNFPY/FQ1Ia6cmerkTrS
-le+sbhpy2jbmeCIk31KQ7sv8RibgHzneyC1RokiA+AI=},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDIUVqZfI7Eh20jTNLZAQByjQlQF1q3Iy
+Bo7EESCx21LKJ4nkPNsvfi+P9YrX/XrrAxSbXm2brmsvZ8Vgp8AhUCw2MWM55IAy
+slDmgGN1iT1YSGQgxJgu3GFz0Mb84nxiYfhlwtArw2o01XlK2pwlQIFpejIAFgVJ
+C8yRE1CKRrVXcYpKvXFSeuhCrmnKJ9eVkP5Upxe+aJwpqrz3Jv/waI/NhcZXpT0Z
+TaENunSt0XUdrDY1Ho6BgmuCl/lLByge+EOHF3koiRiREJ8=},0},0,0,0},
 {0,b16214df-96aa-43e1-acd6-f91fa08bd489},
 {-1},
 {-1}
@@ -6886,7 +6804,7 @@ le+sbhpy2jbmeCIk31KQ7sv8RibgHzneyC1RokiA+AI=},0}
 {c2cf1953-2796-4fe2-b78c-ff84140b124e,
 {1,
 {8,
-{16,
+{17,
 {1,1,
 {"ru","Значение"}
 },
@@ -6925,18 +6843,17 @@ le+sbhpy2jbmeCIk31KQ7sv8RibgHzneyC1RokiA+AI=},0}
 {"S",100,1}
 },0,1,381ed624-9217-4e63-85db-c4c3cb87daae,
 {
-{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVDBDoIwDNUrCT+x85asG7D1L0yMH4DK1YPhRvZl
-Hvwkz95cW0CFKF0ofW+vfeW53fDzuN0H1GUxqF3b9931orjYKw3WakhlkQiQA14D
-VV5XlOzELuugvc5iapHyB9/wlIxzvzTrWhRhCTh4I+zGQKQpORgFzUPzyyHDIOQY
-UtFyFJXYUweV5qzUlyjD4y3LnAE6xCsR/WHnDmt7n5aaEIKDetqLt8I2NJU/OwPY
-oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
-},
+{#base64:AgFTS2/0iI3BTqDV67a9oKcNfVA7DsIwDAXGSr1EZkeKk7ZJboGEOECBrgyoW5WT
+MXAkrkBs01LKp4nkvmc/+znrzYq/+/U2RCiLQW3bvu8uZ8VgpwCNAUxlkYiQizUg
+IQcVBTNml9iDgyymFin/cIWjoK39pfnEovBLwuKLYTcaA03Jh1kEI1AWAGcESQnM
+EVXQqcSk2qs0RaXeRJl+VhnOaaRLeSWiP9mpwxeTM0uN997SE4/78Xax9U3lTlZj
+7KKu6s7qEKLTNpjDMWKs2+hl/nIDIzvwiz478lAUM2IhPQA=},0},0,0,0},
 {0,f0a10b2c-d0c5-4677-ae4c-1056208f006a},
 {-1},
 {-1}
 },0,0}
 }
-},0,0,0,0,0,0,0}
+},0,0,0,0,0,0,0,100,1,2}
 },
 {51d1e122-c0f3-496f-901e-806df8206ba9,
 {2,1,
@@ -6976,7 +6893,7 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 {0fc7e20d-f241-460c-bdf4-5ad88e5474a5,46,
 {3,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -7001,20 +6918,19 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 },
 {3,0,
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},10,
+{1,0},0,0,100,0},11,
 {1,1,
 {"ru","Дополнительные свойства:"}
 },4,1,0,0,0,
 {0,0,0},0,
 {1,0},1,
-{4,4,
+{7,4,
 {4,1,
 {0,31b93f03-0ba2-4631-a171-0d3a3d2ecc48},"",-1,-1,1,0,""},
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},4,0,0,0},
+{0},"",-1,-1,1,0,""},100,0,0},4,0,0,0,0,0,0,0},
 {0}
 },
 {8,712,42,929,67,1,
@@ -7050,7 +6966,7 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 {36e52348-5d60-4770-8e89-a16ed50a2006,47,
 {0,
 {
-{13,1,
+{15,1,
 {3,4,
 {0}
 },
@@ -7075,7 +6991,7 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 },
 {3,0,
 {-18},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
-{1,0},0,0},2,0,0}
+{1,0},0,0,100,0},2,0,0}
 },
 {8,708,33,712,336,1,
 {0,
@@ -7111,7 +7027,7 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 {0}
 }
 }
-},937,500,1,0,1,4,4,398,937,500,96},
+},937,500,1,0,1,4,4,400,937,500,96},
 {
 {0},14,
 {2,
@@ -7267,11 +7183,10 @@ oanqzpkY0RsX7fGEgHWLQaYv/VvZgP/k2JFHglgRA+kF},0}
 },0,4,1,0,0,0,
 {0},
 {0},
-{4,0,
-{4,0,
-{0},"",-1,-1,1,0,""},
+{7,0,
 {4,0,
 {0},"",-1,-1,1,0,""},
 {4,0,
-{0},"",-1,-1,1,0,""}
-},1,2,0,0,1,1}
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},100,0,0},1,2,0,0,1,1}
