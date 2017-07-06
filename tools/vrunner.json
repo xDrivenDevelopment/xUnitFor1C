@@ -1,0 +1,17 @@
+{
+    "default": {
+        "--ibname": "/F./build/ib",
+        "--db-user": "Admin",
+        "--db-pwd": "",
+        "--ordinaryapp": "0"
+    },
+    "xunit": {
+        "--xddConfig": "tools/xUnitParams.json",
+        "testsPath": "tests/smoke",
+        "--reportsxunit": "ГенераторОтчетаJUnitXML{build/junit.xml};ГенераторОтчетаAllureXML{build/allure.xml}",
+        "--xddExitCodePath": "build/xddExitCodePath.txt",
+        "--workspace": ".",
+        "--pathxunit": "xddTestRunner.epf",
+        "--additional": "/DisplayAllFunctions /L ru"
+    }
+}
