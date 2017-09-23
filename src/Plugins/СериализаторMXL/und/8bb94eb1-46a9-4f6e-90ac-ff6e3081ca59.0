@@ -1,5 +1,5 @@
 ﻿{3,
-{42,0,1,0,0,1,0,1,00000000-0000-0000-0000-000000000000,1,
+{46,0,1,0,0,1,0,1,00000000-0000-0000-0000-000000000000,1,
 {1,0},0,0,1,1,1,0,1,0,
 {2,3ccc650e-f631-4cae-8e33-3eaac610b5f9,"ПриОткрытии",9f2e5ddb-3492-4f5d-8f0d-416b8d1d5c5b,"ПриСозданииНаСервере",1,0,3ccc650e-f631-4cae-8e33-3eaac610b5f9,0,1,9f2e5ddb-3492-4f5d-8f0d-416b8d1d5c5b,0,1},
 {0},1,
@@ -821,7 +821,7 @@ zvn7AAAAAElFTkSuQmCC}
 {0}
 },0,0,0,1,
 {1,0},0,0,3,3,2,0,1,0},1,143c00f7-a42d-4cd7-9189-88e4467dc768,
-{50,
+{51,
 {130,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
 {0,
 {0,
@@ -2090,7 +2090,7 @@ HoExPB1kPILJoWM4A9nJZBlALsYqSDz+zwAAZdW/S/xR30IAAAAASUVORK5CYII=
 },0,1,2,
 {1,
 {1,0},0},0,0,1,0,0,1,0,3,3},2,
-{130,2},0,3,3},0,1,0,0,1,0,3,3,0},1,0,1,
+{130,2},0,3,3},0,1,0,0,1,0,3,3,0,1,0},1,0,1,
 {10,
 {4,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"ГруппаСтруктураРасширеннаяПодсказка",
 {1,0},
@@ -2138,7 +2138,7 @@ HoExPB1kPILJoWM4A9nJZBlALsYqSDz+zwAAZdW/S/xR30IAAAAASUVORK5CYII=
 {0}
 },1,0,1,1,
 {1,0},0,0,3,3,2,0,1,1},1,143c00f7-a42d-4cd7-9189-88e4467dc768,
-{50,
+{51,
 {7,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
 {0,
 {0,
@@ -2626,7 +2626,7 @@ HoExPB1kPILJoWM4A9nJZBlALsYqSDz+zwAAZdW/S/xR30IAAAAASUVORK5CYII=
 },0,1,2,
 {1,
 {1,0},0},0,0,1,0,0,1,0,3,3},2,
-{7,2},0,3,3},0,1,0,0,1,0,3,3,0},1,0,1,
+{7,2},0,3,3},0,1,0,0,1,0,3,3,0,1,0},1,0,1,
 {10,
 {6,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"ГруппаКорзинаРасширеннаяПодсказка",
 {1,0},
@@ -2679,7 +2679,7 @@ HoExPB1kPILJoWM4A9nJZBlALsYqSDz+zwAAZdW/S/xR30IAAAAASUVORK5CYII=
 {0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
 },0,1,2,
 {1,
-{1,0},0},0,0,1,0,0,1,0,3,3},0,3,3},1,"",0,0,0,0,0,0,3,3,0,0,0},"&НаСервере
+{1,0},0},0,0,1,0,0,1,0,3,3},0,3,3},1,"",0,0,0,0,0,0,3,3,0,0,0,100,1,1,0},"&НаСервере
 Процедура ПриСозданииНаСервере(Отказ, СтандартнаяОбработка)
 	
 	Параметры.Свойство(""ИмяТипаМетаданных"",ИмяТипаМетаданных);
@@ -3817,7 +3817,8 @@ CQkJCTxkY3Njb3I6dmFsdWUgeHNpOnR5cGU9InY4dWk6Rm9udCIgcmVmPSJzeXM6
 RGVmYXVsdEdVSUZvbnQiIGJvbGQ9InRydWUiIGl0YWxpYz0iZmFsc2UiIHVuZGVy
 bGluZT0iZmFsc2UiIHN0cmlrZW91dD0iZmFsc2UiIGtpbmQ9IldpbmRvd3NGb250
 Ii8+DQoJCQkJPC9kY3Njb3I6aXRlbT4NCgkJCTwvYXBwZWFyYW5jZT4NCgkJPC9p
-dGVtPg0KCTwvY29uZGl0aW9uYWxBcHBlYXJhbmNlPg0KPC9TZXR0aW5ncz4=}
+dGVtPg0KCTwvY29uZGl0aW9uYWxBcHBlYXJhbmNlPg0KCTxvdXRwdXRQYXJhbWV0
+ZXJzLz4NCjwvU2V0dGluZ3M+}
 },
 {0,0},
 {0,7,
