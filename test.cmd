@@ -5,7 +5,7 @@
 
 @set RUNNER_IBCONNECTION=/F./build/ibservice
 
-@call runner init-dev --src src/tests/cf/83
+@REM @call runner init-dev --src src/tests/cf/83
 
 @IF ERRORLEVEL 1 goto error
 
@@ -13,9 +13,11 @@
 
 @REM @IF ERRORLEVEL 1 goto error
 
-@call runner run --command СоздатьАдминистратора
+@REM @call runner run --command СоздатьАдминистратора
 
 @IF ERRORLEVEL 1 goto error
+
+erase /q .\build\out\allure
 
 @echo .
 @echo Дымовое тестирование
@@ -23,6 +25,8 @@
 @call runner xunit --settings tools/vrunner.json
 
 @call allure generate ./build/out/allure
+
+@IF ERRORLEVEL 1 goto error
 
 @call allure report open
 
