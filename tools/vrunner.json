@@ -1,0 +1,22 @@
+{
+    "default": {
+        "--ibconnection": "/F./build/ibservice",
+        "--db-user": "Admin",
+        "--db-pwd": "",
+        "--ordinaryapp": "0"
+    },
+    "vanessa": {
+        "--vanessasettings": "./tools/VBParams.json",
+        "--workspace": ".",
+        "--pathvanessa": "./tools/vanessa-behavior/vanessa-behavior.epf",
+        "--additional": "/DisplayAllFunctions /L ru"
+    },
+    "xunit": {
+        "--xddConfig": "tools/xUnitParams.json",
+        "testsPath": "tests/smoke",
+        "--reportsxunit": "ГенераторОтчетаJUnitXML{build/out/junit.xml};ГенераторОтчетаAllureXML{build/out/allure/allure-testsuite.xml}",
+        "--xddExitCodePath": "build/out/xddExitCodePath.txt",
+        "--pathxunit": "xddTestRunner.epf",
+        "--additional": "/DisplayAllFunctions /L ru"
+    }
+}
