@@ -13,7 +13,7 @@
     },
     "xunit": {
         "--xddConfig": "tools/xUnitParams.json",
-        "testsPath": "tests/smoke",
+        "testsPath": "tests",
         "--reportsxunit": "ГенераторОтчетаJUnitXML{build/out/junit.xml};ГенераторОтчетаAllureXML{build/out/allure/allure-testsuite.xml}",
         "--xddExitCodePath": "build/out/xddExitCodePath.txt",
         "--pathxunit": "xddTestRunner.epf",
