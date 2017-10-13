@@ -28,7 +28,7 @@ erase /q .\build\out\allure
 
 @IF ERRORLEVEL 1 goto error
 
-@call allure report open
+@call allure open
 
 @goto end
 
