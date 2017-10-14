@@ -17,7 +17,7 @@
 
 @IF ERRORLEVEL 1 goto error
 
-erase /q .\build\out\allure
+@erase /q .\build\out\allure
 
 @echo .
 @echo Дымовое тестирование
