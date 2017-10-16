@@ -178,6 +178,7 @@
 			<ChartOfCharacteristicTypes>ВидыСубконто1</ChartOfCharacteristicTypes>
 			<ChartOfAccounts>ПланСчетов1</ChartOfAccounts>
 			<AccountingRegister>РегистрБухгалтерии1</AccountingRegister>
+			<ChartOfCalculationTypes>ПланВидовРасчета1</ChartOfCalculationTypes>
 			<BusinessProcess>БизнесПроцесс1</BusinessProcess>
 			<BusinessProcess>БизнесПроцесс2</BusinessProcess>
 			<Task>Задача1</Task>
