@@ -1,4 +1,4 @@
-﻿#################
+#################
 ## Eclipse
 #################
 
@@ -171,3 +171,7 @@ Gradle/Ant/.gradle/1.11/taskArtifacts/fileSnapshots.bin
 Gradle/Ant/.gradle/1.11/taskArtifacts/taskArtifacts.bin
 Gradle/gradle-app.setting
 лог_тестирования.mxl
+allure-report/
+
+src/Tests/cf/83/ConfigDumpInfo.xml
+src/Tests/cf/83-no-modal/ConfigDumpInfo.xml
