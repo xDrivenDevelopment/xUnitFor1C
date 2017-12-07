@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<uilog xmlns:d1p1="http://v8.1c.ru/8.3/uilog">
+	<ClientApplicationWindow caption="Все функции">
+		<Form title="Все функции">
+			<FormTable name="Table" title="Table">
+				<expand/>
+				<gotoRow direction="down">
+					<Field title="Имя" cellText="Должности"/>
+				</gotoRow>
+				<gotoRow/>
+				<choose/>
+			</FormTable>
+		</Form>
+		<close/>
+	</ClientApplicationWindow>
+</uilog>

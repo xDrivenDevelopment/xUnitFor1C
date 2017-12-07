@@ -78,6 +78,13 @@
 КонецФункции
 
 &НаКлиенте
+Функция ЧтоПроверяемоеЗначение(КонтейнерУтверждения) Экспорт
+	ВыполнитьМетодОбъектаНаСервере(""Что"", 2, КонтейнерУтверждения.ПроверяемоеЗначение, КонтейнерУтверждения.ДопСообщениеОшибки);
+	
+	Возврат ЭтаФорма;
+КонецФункции
+
+&НаКлиенте
 Функция Не_() Экспорт
 	ВыполнитьМетодОбъектаНаСервере(""Не_"", 0);
 	
@@ -333,8 +340,7 @@ Oi8vdjguMWMucnUvOC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFj
 LnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4
 LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0
 cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDov
-L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPg0KCTxvdXRwdXRQ
-YXJhbWV0ZXJzLz4NCjwvU2V0dGluZ3M+}
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 },
 {0,0},
 {0,0},
