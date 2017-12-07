@@ -1,0 +1,9 @@
+﻿1cf998ab-1985-40a8-ac5a-5ab60ce893c6-->und\1cf998ab-1985-40a8-ac5a-5ab60ce893c6
+1cf998ab-1985-40a8-ac5a-5ab60ce893c6.0-->und\1cf998ab-1985-40a8-ac5a-5ab60ce893c6.0
+448642c3-8c8b-4823-ab80-cb0e50b6c124.0\info-->und\448642c3-8c8b-4823-ab80-cb0e50b6c124.0\info
+448642c3-8c8b-4823-ab80-cb0e50b6c124.0\text-->ObjectModule.bsl
+60ee7a9c-730e-49b4-822c-bf05644cd1fe-->und\60ee7a9c-730e-49b4-822c-bf05644cd1fe
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
