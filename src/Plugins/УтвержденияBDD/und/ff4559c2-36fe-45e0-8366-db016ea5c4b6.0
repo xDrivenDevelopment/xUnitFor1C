@@ -79,7 +79,7 @@
 
 &НаКлиенте
 Функция ЧтоПроверяемоеЗначение(КонтейнерУтверждения) Экспорт
-	ВыполнитьМетодОбъектаНаСервере(""Что"", 2, КонтейнерУтверждения.ПроверяемоеЗначение, КонтейнерУтверждения.ДопСообщениеОшибки);
+	ВыполнитьМетодОбъектаНаСервере(""Что"", 2, КонтейнерУтверждения.Объект.ПроверяемоеЗначение, КонтейнерУтверждения.Объект.ДопСообщениеОшибки);
 	
 	Возврат ЭтаФорма;
 КонецФункции
@@ -314,7 +314,7 @@
 {1},0,"Объект",
 {1,0},
 {"Pattern",
-{"#",0de6aad2-9efc-4c4b-9e08-181ac08460c6}
+{"#",52cf150a-4565-4ce2-8539-2ce2755f6d76}
 },
 {0,
 {0,
@@ -340,7 +340,8 @@ Oi8vdjguMWMucnUvOC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFj
 LnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4
 LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0
 cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDov
-L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPg0KCTxvdXRwdXRQ
+YXJhbWV0ZXJzLz4NCjwvU2V0dGluZ3M+}
 },
 {0,0},
 {0,0},
