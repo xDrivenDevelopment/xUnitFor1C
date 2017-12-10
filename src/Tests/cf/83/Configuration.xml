@@ -142,6 +142,8 @@
 			<Catalog>СправочникСТабЧастью</Catalog>
 			<Catalog>ПодчиненныйСправочник</Catalog>
 			<Catalog>СправочникСоСсылкойНаСамогоСебя</Catalog>
+			<Catalog>ПодчиненныйСДвумяВладельцами</Catalog>
+			<Catalog>СправочникСОбязательнымРеквизитом</Catalog>
 			<Document>Документ1</Document>
 			<Document>Документ2</Document>
 			<Enum>Перечисление1</Enum>
